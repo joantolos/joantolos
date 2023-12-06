@@ -10,19 +10,8 @@ export const BLOG : Blog =
     "posts":
       [
         {
-          "id": "traffic-light-simulator",
-          "date": "December 15, 2023",
-          "title": "Traffic light simulator",
-          "subtitle": "Testing my skills on HTML, CSS and Javascript with a simple proof of concept.",
-          "summary": "Have you ever think about how the traffic light sequences all over the city are programmed? I did... This is another case of real-life inspirated proof of concept. For this one, I am trying to replicate the behaviour of a couple of traffic lights in my neighbourhood, one for vehicles and another one for pedestrians. The constraint is to only use technologies outside my comfort zone: HTML, CSS and Javascript.",
-          "featuredImage": "./assets/images/trafficLightSimulator/featuredImage.png",
-          "thumb": "./assets/images/trafficLightSimulator/thumb.png",
-          "tags": ["code"],
-          "active": false
-        },
-        {
           "id": "the-consequences-of-coding",
-          "date": "November 15, 2023",
+          "date": "January 15, 2024",
           "title": "The consequences of coding",
           "subtitle": "Real world examples of the negative consequences when coders fail to apply responsability.",
           "summary": "Two notorious cases about big companies failing to apply responsability on their coding. We explore the nasty consequences of poorly decision making from diferent organizational layers.",
@@ -30,6 +19,17 @@ export const BLOG : Blog =
           "thumb": "./assets/images/theConsequencesOfCoding/thumb.png",
           "tags": ["business","code","life"],
           "active": false
+        },
+        {
+          "id": "traffic-light-simulator",
+          "date": "December 6, 2023",
+          "title": "Traffic light simulator",
+          "subtitle": "Testing my skills on HTML, CSS and Javascript with a simple proof of concept.",
+          "summary": "Have you ever think about how the traffic light sequences all over the city are programmed? I did... This is another case of real-life inspirated proof of concept. For this one, I am trying to replicate the behaviour of a couple of traffic lights in my neighbourhood, one for vehicles and another one for pedestrians. The constraint is to only use technologies outside my comfort zone: HTML, CSS and Javascript.",
+          "featuredImage": "./assets/images/trafficLightSimulator/featuredImage.png",
+          "thumb": "./assets/images/trafficLightSimulator/thumb.png",
+          "tags": ["code"],
+          "active": true
         },
         {
           "id": "dopamine-fasting",
