@@ -14,10 +14,6 @@ app.get('/ping', cors(), function(req, res) {
   res.json({ site: 'Alive!' });
 });
 
-//app.get('/podcast-feed', cors(), function(req, res) {
-//  res.sendFile(path.join(__dirname + '/dist/assets/podcast/feed.rss')); 
-//});
-
 app.post('/submit-contact-form', cors(), function(req, res) {
   getTransporter().sendMail(getMailData(req.body), (error, info) => {
     if (error) console.log(error);
