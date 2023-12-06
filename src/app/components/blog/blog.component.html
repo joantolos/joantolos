@@ -1,0 +1,57 @@
+<main>
+  <div class="container">
+
+    <div class="list-container">
+      <div *ngFor="let post of getPosts()" class="list-item">
+        <p class="title" (click)="selectPost(post)">{{ post.title }}</p>
+        <p class="subtitle">{{ post.subtitle }}</p>
+        <p class="subtitle">
+          <mat-icon>calendar_today</mat-icon>
+          {{ post.date | date: 'mediumDate' }}
+        </p>
+        <div class="featuredImage" style="background-image: url({{ post.thumb }})" (click)="selectPost(post)"></div>
+        <mat-card-content class="blog-content">
+          <p>{{ post.summary }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="app-button" (click)="selectPost(post)">CONTINUE READING</button>
+        </mat-card-actions>
+      </div>
+      <div class="previous-next-buttons">
+        <button class="app-button" [disabled]="isPreviousDisabled()" (click)="decrementPage()"><div class="material-symbols-outlined" >chevron_left</div> PREVIOUS PAGE</button>
+        <button class="app-button" [disabled]="isNextDisabled()" (click)="incrementPage()">NEXT PAGE <div class="material-symbols-outlined">chevron_right</div></button>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="recent-posts-box">
+        <div class="sidebar-title">RECENT POSTS</div>
+        <mat-card-content class="blog-content">
+          <div *ngFor="let post of recentPosts" >
+            <div class="links-list-container">
+              <div class="recent-title" (click)="selectPost(post)">{{ post.title }}</div>
+              <div class="subtitle">{{ post.date }}</div>
+            </div>
+          </div>
+        </mat-card-content>
+        <p></p>
+        <mat-card-actions>
+          <button class="app-button" (click)="navigateToBlog()">VIEW MORE POSTS</button>
+        </mat-card-actions>
+      </div>
+
+      <div class="categories-box">
+        <div class="sidebar-title">CATEGORIES</div>
+        <mat-card-content class="mat-chip-container">
+          <mat-chip-list>
+            <mat-basic-chip *ngFor="let category of categories" (click)="selectCategory(category)" [ngStyle]="{'background': category.selected ? '#222221' : '#f5f4f4', color: category.selected ? 'white' : '#898988'}">{{category.name}} {{category.count}}</mat-basic-chip>
+          </mat-chip-list>
+        </mat-card-content>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+

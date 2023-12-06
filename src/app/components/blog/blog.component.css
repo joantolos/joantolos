@@ -1,0 +1,259 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-posts-box,
+.categories-box {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.recent-posts-box {
+  margin-top: 15px;
+}
+
+.featuredImage {
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 250px;
+  background-size: cover;
+  margin-left: -21px;
+  margin-right: -21px;
+}
+
+.list-container {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.title {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #222221;
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+.sidebar-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #222221;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  color: #898988;
+}
+
+.subtitle mat-icon {
+  margin-right: 5px;
+}
+
+.recent-title {
+  font-weight: 600;
+  color: #222221;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.audio-player {
+  width: 100%;
+  margin-top: 10px;
+  grid-column: 1 / -1;
+}
+
+.previous-next-buttons {
+  margin-top: 25px;
+}
+
+.material-symbols-outlined {
+  padding-bottom: 2px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.mat-basic-chip {
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  margin-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ebf9ff;
+  color: #898988;
+  border: 1px solid #898988;
+}
+
+/* Tablet */
+@media (min-width: 800px) and (max-width: 999px) {
+
+  .previous-next-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .featuredImage {
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 250px;
+    background-size: cover;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1000px) and (max-width: 1299px) {
+
+  .container {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar {
+    width: 35%;
+  }
+
+  .list-container {
+    width: 65%;
+    padding-right: 20px;
+  }
+
+  .previous-next-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .featuredImage {
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 250px;
+    background-size: cover;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+/* Medium Desktop */
+@media (min-width: 1300px) and (max-width: 1599px) {
+
+  .container {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .sidebar {
+    width: 35%;
+  }
+
+  .list-container {
+    width: 65%;
+    padding-right: 20px;
+  }
+
+  .previous-next-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .featuredImage {
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 250px;
+    background-size: cover;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+/* Big Desktop */
+@media (min-width: 1600px) {
+
+  .container {
+    display: flex;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .sidebar {
+    width: 35%;
+  }
+
+  .list-container {
+    width: 65%;
+    padding-right: 20px;
+  }
+
+  .previous-next-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .featuredImage {
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 250px;
+    background-size: cover;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}

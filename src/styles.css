@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #f5f4f4;
+}
+
+a {
+  color: #4fa4e5;
+  font-weight: 700;
+}
+
+.app-button {
+  text-align: center;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+  color: #898988;
+  border: 1px solid #898988;
+}
+
+button:disabled {
+  border: 1px solid #dedede;
+  background-color: #f5f4f4;
+  color: #dedede;
+  cursor: auto;
+}
+
+@media (min-width:800px) {
+  button {
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background: white;
+    color: #898988;
+    border: 1px solid #898988;
+  }
+}
+
+img[src*="postImageBig"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}
+
+img[src*="postImageMedium"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+}
+
+img[src*="postImageSmall"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+img[src*="postImageExtraSmall"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%
+}

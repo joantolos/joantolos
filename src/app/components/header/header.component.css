@@ -1,0 +1,102 @@
+header {
+  background: #222221;
+  color: #dedede;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+
+.links {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  display: none;
+}
+
+a {
+  font-weight: 450;
+  margin-right: 25px;
+}
+
+.links {
+  display: none;
+}
+
+/* Tablet */
+@media (min-width:800px) {
+  a {
+    color: #dedede;
+  }
+
+  header {
+    background: #222221;
+    color: #dedede;
+    position: sticky;
+    padding-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .links {
+    padding-left: 15px;
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width:1300px) {
+  a {
+    color: #dedede;
+  }
+
+  header {
+    background: #222221;
+    color: #dedede;
+    position: sticky;
+    padding-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .links {
+    padding-left: 80px;
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Big Desktop */
+@media (min-width:1600px) {
+  a {
+    color: #dedede;
+  }
+
+  header {
+    background: #222221;
+    color: #dedede;
+    position: sticky;
+    padding-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .links {
+    padding-left: 300px;
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+<main *ngIf="post">
+  <mat-card class="post-card">
+
+    <mat-card-header class="post-header">
+      <mat-card-title class="post-title">{{ post.title }}</mat-card-title>
+      <mat-card-subtitle class="post-subtitle">{{ post.subtitle }}</mat-card-subtitle>
+      <mat-card-subtitle class="post-date">{{ post.date }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <div class="postFeaturedImage" style="background-image: url({{ post.featuredImage }})"></div>
+    <div class="post-content">
+      <markdown ngPreserveWhitespaces clipboard lineNumbers [src]="'./assets/posts/' + post.id + '.md'"></markdown>
+    </div>
+  </mat-card>
+</main>

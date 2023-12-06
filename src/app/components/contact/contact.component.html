@@ -1,0 +1,37 @@
+<main>
+  <mat-card class="post-card">
+    <mat-card-header class="post-header">
+      <mat-card-title class="post-title">Contact</mat-card-title>
+      <mat-card-subtitle class="post-date">DROP ME A LINE AND I WILL BE ANSWERING SOON</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="post-content">
+      <form #contactForm = "ngForm" class="form-container" (ngSubmit)="sendForm()">
+        <mat-form-field>
+          <mat-label>Full name</mat-label>
+          <input matInput placeholder="John Doe" [formControl]="name" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="john.doe@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Subject</mat-label>
+          <input matInput placeholder="I want to talk about..." [formControl]="subject" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea matInput placeholder="Write something..." [formControl]="message" required></textarea>
+        </mat-form-field>
+        <mat-card-actions>
+          <button class="app-button" type="submit" [disabled]="isFormInvalid()">SEND</button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="loading-spinner" *ngIf="isLoading">
+    <mat-spinner diameter="50"></mat-spinner>
+  </div>
+</main>

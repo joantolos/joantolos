@@ -1,0 +1,62 @@
+<main>
+  <div class="podcast-box-small" *ngIf=showPodcastTitle()>
+    <div class="podcast-title">PODCAST</div>
+    <p>Welcome to <b><i>Nada nuevo bajo el sol</i></b> (Nothing New Under the Sun), a captivating podcast where I share my experiences as a software developer.</p>
+    <p>Join me on this exciting journey as we explore the world of work, technology, and life.</p>
+    <p>I'll address your questions and comments on the show, so don't miss the chance to engage with me directly.</p>
+    <p>Listen here on the website or subscribe to your favorite podcast platform for updates. Let's dive into the fascinating world of software development together!</p>
+  </div>
+
+  <div class="container">
+    <div class="list-container">
+      <div *ngFor="let podcast of getEpisodes()" class="list-item">
+        <p class="title">{{ podcast.title }}</p>
+        <p class="subtitle">
+          <mat-icon>calendar_today</mat-icon>
+          {{ podcast.pubDate | date: 'mediumDate' }}
+        </p>
+        <p class="subtitle">
+          <mat-icon>access_time</mat-icon>
+          {{ calculateDurationInMinutes(podcast.duration) }} minutes
+        </p>
+        <p class="description">{{ extractDescriptionText(podcast.description) }}</p>
+        <div class="audio-player">
+          <audio controls>
+            <source [src]="podcast.enclosure.url" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="video-player" *ngIf="podcast.videoVisible === 'true'">
+          <iframe [src]="getVideoUrl(podcast.video)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="previous-next-buttons">
+        <button class="app-button" [disabled]="isPreviousDisabled()" (click)="decrementPage()"><div class="material-symbols-outlined" >chevron_left</div> PREVIOUS PAGE</button>
+        <button class="app-button" [disabled]="isNextDisabled()" (click)="incrementPage()">NEXT PAGE <div class="material-symbols-outlined">chevron_right</div></button>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="podcast-box">
+        <div class="podcast-title">PODCAST</div>
+        <p>Welcome to <b><i>Nada nuevo bajo el sol</i></b> (Nothing New Under the Sun), a captivating podcast where I share my experiences as a software developer.</p>
+        <p>Join me on this exciting journey as we explore the world of work, technology, and life.</p>
+        <p>I'll address your questions and comments on the show, so don't miss the chance to engage with me directly.</p>
+        <p>Listen here on the website or subscribe to your favorite podcast platform for updates. Let's dive into the fascinating world of software development together!</p>
+      </div>
+
+      <div class="subscribe-box">
+        <div class="subscribe-title">SUBSCRIBE</div>
+        <div class="social">
+          <a class="social-link" href="https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961" target="_blank"><img src="./assets/images/nadaNuevoBajoElSol/apple.png" alt="Listen on Apple Podcast"></a>
+          <a class="social-link" href="https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8" target="_blank"><img src="./assets/images/nadaNuevoBajoElSol/spotify.png" alt="Listen on Spotify"></a>
+          <a class="social-link" href="http://youtube.com/channel/UC4wf7OriE3f08dmbVvHykQg?sub_confirmation=1" target="_blank"><img src="./assets/images/nadaNuevoBajoElSol/youtube.png" alt="Listen on Youtube"></a>
+          <a class="social-link" href="https://feeds.buzzsprout.com/1758642.rss" target="_blank"><img src="./assets/images/nadaNuevoBajoElSol/rss.png" alt="Get the RSS feed"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+

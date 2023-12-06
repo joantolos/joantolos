@@ -1,0 +1,68 @@
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {PostComponent} from './components/post/post.component';
+import {BlogComponent} from './components/blog/blog.component';
+import {HomeComponent} from './components/home/home.component';
+import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
+import {AboutComponent} from './components/about/about.component';
+import {ContactComponent} from './components/contact/contact.component';
+import {PodcastComponent} from './components/podcast/podcast.component';
+import {PrivacyPolicyComponent} from "./components/privacy-policy/privacy-policy.component";
+import {TermsAndConditionsComponent} from "./components/terms-and-conditions/terms-and-conditions.component";
+import {CookiePolicyComponent} from "./components/cookie-policy/cookie-policy.component";
+import { StoreComponent } from './components/store/store.component';
+
+@NgModule({
+  imports: [RouterModule.forRoot([
+    {
+      path: '',
+      component: HomeComponent
+    },
+    {
+      path: 'home',
+      component: HomeComponent
+    },
+    {
+      path: 'blog/page/:page',
+      component: BlogComponent
+    },
+    {
+      path: 'blog/:id',
+      component: PostComponent
+    },
+    {
+      path: 'podcast/page/:page',
+      component: PodcastComponent
+    },
+    {
+      path: 'store',
+      component: StoreComponent
+    },
+    {
+      path: 'about',
+      component: AboutComponent
+    },
+    {
+      path: 'contact',
+      component: ContactComponent
+    },
+    {
+      path: 'privacy-policy',
+      component: PrivacyPolicyComponent
+    },
+    {
+      path: 'terms-and-conditions',
+      component: TermsAndConditionsComponent
+    },
+    {
+      path: 'cookie-policy',
+      component: CookiePolicyComponent
+    },
+    {
+      path: '**',
+      component: PageNotFoundComponent
+    }
+  ], {scrollPositionRestoration: 'enabled'})],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

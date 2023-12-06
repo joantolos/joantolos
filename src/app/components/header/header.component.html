@@ -1,0 +1,43 @@
+<header>
+  <div class="links">
+    <a [routerLink]="['']">Joan Tolós</a>
+    <a [routerLink]="['blog/page/1']">Blog</a>
+    <a [routerLink]="['podcast/page/1']">Podcast</a>
+    <a target="_blank" href="https://shop.spreadshirt.es/nadanuevobajoelsol">Store</a>
+    <a [routerLink]="['about']">About</a>
+    <a [routerLink]="['contact']">Contact</a>
+  </div>
+
+  <div class="hamburger">
+
+    <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu" style="padding-right: 200px">
+      <button mat-menu-item [routerLink]="['']" style="margin-right: 200px; margin-top: 20px">
+        <mat-icon>home</mat-icon>
+        <span>Joan Tolós</span>
+      </button>
+      <button mat-menu-item [routerLink]="['blog/page/1']">
+        <mat-icon>article</mat-icon>
+        <span>Blog</span>
+      </button>
+      <button mat-menu-item [routerLink]="['podcast/page/1']">
+        <mat-icon>headphones</mat-icon>
+        <span>Podcast</span>
+      </button>
+      <button mat-menu-item onclick="window.open('https://shop.spreadshirt.es/nadanuevobajoelsol', '_blank')">
+        <mat-icon>shopping_cart</mat-icon>
+        <span>Store</span>
+      </button>
+      <button mat-menu-item [routerLink]="['about']">
+        <mat-icon>person</mat-icon>
+        <span>About</span>
+      </button>
+      <button mat-menu-item [routerLink]="['contact']" style="margin-bottom: 20px">
+        <mat-icon>mail</mat-icon>
+        <span>Contact</span>
+      </button>
+    </mat-menu>
+
+  </div>
+
+</header>
