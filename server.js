@@ -10,6 +10,10 @@ app.use(cors())
 app.use(bp.json())
 app.use(bp.urlencoded({ extended: true }))
 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.get('/ping', cors(), function(req, res) {
   res.json({ site: 'Alive!' });
 });
