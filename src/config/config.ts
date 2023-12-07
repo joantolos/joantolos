@@ -11,6 +11,17 @@ export const BLOG : Blog =
       [
         {
           "id": "the-consequences-of-coding",
+          "date": "February 15, 2024",
+          "title": "The consequences of coding",
+          "subtitle": "Real world examples of the negative consequences when coders fail to apply responsability.",
+          "summary": "Two notorious cases about big companies failing to apply responsability on their coding. We explore the nasty consequences of poorly decision making from diferent organizational layers.",
+          "featuredImage": "./assets/images/theConsequencesOfCoding/featuredImage.png",
+          "thumb": "./assets/images/theConsequencesOfCoding/thumb.png",
+          "tags": ["business","code","life"],
+          "active": false
+        },
+        {
+          "id": "the-consequences-of-coding",
           "date": "January 15, 2024",
           "title": "The consequences of coding",
           "subtitle": "Real world examples of the negative consequences when coders fail to apply responsability.",
