@@ -3,6 +3,8 @@
 # Get the current timestamp
 timestamp=$(date +"%Y%m%d%H%M%S")
 
+rm -rf node_modules
+
 npm install --force
 
 ng build
