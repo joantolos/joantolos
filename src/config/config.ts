@@ -29,7 +29,7 @@ export const BLOG : Blog =
           "featuredImage": "./assets/images/angularBeanstalk/featuredImage.png",
           "thumb": "./assets/images/angularBeanstalk/thumb.png",
           "tags": ["code"],
-          "active": true
+          "active": false
         },
         {
           "id": "traffic-light-simulator",

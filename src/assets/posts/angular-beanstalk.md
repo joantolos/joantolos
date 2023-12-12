@@ -97,7 +97,7 @@ The Beanstalk server will run the command from npm so make sure that it is worki
 
 # Step 4: Login to your aws account
 
-Make sure you are logged in into the proper aws account, that probably means login using Azure login. Verify that your IAM user or role has the necessary permissions to create Elastic Beanstalk applications. The required permissions include **elasticbeanstalk:CreateApplication** and other permissions related to Elastic Beanstalk.
+Make sure you are logged in into the proper aws account, that probably means login using Azure login. Verify that your IAM user or role has the necessary permissions to create Elastic Beanstalk applications. The required permissions include **elasticbeanstalk:CreateApplication** and other permissions related to Elastic Beanstalk. Most power_user accounts include those permissions by default so you should be fine.
 
 # Step 5: AWS Elastic Beanstalk Configuration
 
@@ -152,6 +152,24 @@ eb open
 ```
 
 This should open your application in a new browser window.
+
+# Troubleshooting
+
+If there are issues during deployment, check the Elastic Beanstalk logs for errors. You can view logs using the AWS Management Console or the EB CLI:
+
+```javascript
+eb logs
+```
+
+Another useful way to investigate your app on AWS is connect to the machine itself:
+
+```javascript
+eb ssh
+cd /var/app/current
+ls -la
+```
+
+There you can see the files that are actually deployed.
 
 # Additional Notes:
 
