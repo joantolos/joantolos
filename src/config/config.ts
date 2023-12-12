@@ -1,6 +1,6 @@
 import {Blog} from "../app/model/blog";
 
-export const backend : string = "https://joantolos.herokuapp.com";
+export const backend : string = "https://joantolos-prod.eba-nmxuakgq.us-west-2.elasticbeanstalk.com";
 export const thumbWidth : number = 870;
 export const podcastEpisodesMax : number = 5; 
 export const BLOG : Blog =
@@ -21,14 +21,14 @@ export const BLOG : Blog =
           "active": false
         },
         {
-          "id": "the-consequences-of-coding",
+          "id": "angular-beanstalk",
           "date": "January 15, 2024",
-          "title": "The consequences of coding",
-          "subtitle": "Real world examples of the negative consequences when coders fail to apply responsability.",
-          "summary": "Two notorious cases about big companies failing to apply responsability on their coding. We explore the nasty consequences of poorly decision making from diferent organizational layers.",
-          "featuredImage": "./assets/images/theConsequencesOfCoding/featuredImage.png",
-          "thumb": "./assets/images/theConsequencesOfCoding/thumb.png",
-          "tags": ["business","code","life"],
+          "title": "Your Angular app deployed on AWS Elastic Beanstalk",
+          "subtitle": "A step by step tutorial to make your Angular app up and ready using Elastic Beanstalk service from AWS.",
+          "summary": "Discover the simplicity of deploying your Angular app on AWS Elastic Beanstalk with this step-by-step guide. From setting up your AWS account to configuring your app for deployment, this tutorial covers it all. Learn to create a production build, configure Elastic Beanstalk environments, and deploy seamlessly. Get your Angular app up and running on AWS in no time!",
+          "featuredImage": "./assets/images/angularBeanstalk/featuredImage.png",
+          "thumb": "./assets/images/angularBeanstalk/thumb.png",
+          "tags": ["code"],
           "active": false
         },
         {
