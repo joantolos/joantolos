@@ -1,8 +1,8 @@
 import {Blog} from "../app/model/blog";
 
-export const backend : string = "https://joantolos.com";
+export const backend : string = "https://joantolos-prod.eba-nmxuakgq.us-west-2.elasticbeanstalk.com";
 
-export const thumbWidth : number = 870;
+export const thumbWidth : number = 870; 
 export const podcastEpisodesMax : number = 5; 
 export const BLOG : Blog =
   {
