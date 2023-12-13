@@ -182,7 +182,7 @@ eb logs
 ```
 
 ## References:
-* _Illustration <a href="https://www.dreamstime.com/ai-generated-image-wolf-sheeps-clothing-image274359852" target="_blank">274359852</a> © <a href="https://www.dreamstime.com/graphicphoto_info" target="_blank">Graphicphoto</a> | <a href="https://www.dreamstime.com/stock-photos" target="_blank">Dreamstime.com</a>_
+* _Photo <a href="https://www.dreamstime.com/man-holding-cloud-computing-data-security-global-networking-technology-business-image172987728" target="_blank">172987728</a> © <a href="https://www.dreamstime.com/ipopba_info" target="_blank">Pop Nukoonrat</a> | <a href="https://www.dreamstime.com/stock-photos" target="_blank">Dreamstime.com</a>_
 * _<a href="https://angular.io/cli" target="_blank" alt="Angular CLI">Angular CLI</a>_
 * _<a href="https://docs.npmjs.com/cli/v10" target="_blank" alt="Angular CLI">NPM CLI</a>_
 * _<a href="https://aws.amazon.com/" target="_blank" alt="Amazon AWS">Amazon AWS</a>_
