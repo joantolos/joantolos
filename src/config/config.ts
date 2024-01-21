@@ -22,6 +22,17 @@ export const BLOG : Blog =
           "active": false
         },
         {
+          "id": "clean-code-clean-mind",
+          "date": "February 15, 2024",
+          "title": "Clean code, clean mind",
+          "subtitle": "ZZZ",
+          "summary": "XXX",
+          "featuredImage": "./assets/images/cleanCodeCleanMind/featuredImage.png",
+          "thumb": "./assets/images/cleanCodeCleanMind/thumb.png",
+          "tags": ["life","code"],
+          "active": false
+        },
+        {
           "id": "angular-beanstalk",
           "date": "January 15, 2024",
           "title": "Your Angular app deployed on AWS Elastic Beanstalk",
