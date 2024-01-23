@@ -39,7 +39,7 @@
     <enclosure url="https://d2n6quja4m53k3.cloudfront.net/ep-111-fundamentos-de-programacion-orientada-a-objetos.mp3" length="12182660" type="audio/mpeg" />
     <video>https://youtu.be/aGiRtxOmScE</video>
     <videoId>aGiRtxOmScE</videoId>
-    <videoVisible>false</videoVisible>
+    <videoVisible>true</videoVisible>
     <guid isPermaLink="false">ep-111-fundamentos-de-programacion-orientada-a-objetos</guid>
     <pubDate>Wed, 31 Jan 2024 08:00:00 +0200</pubDate>
     <itunes:duration>1006</itunes:duration>
