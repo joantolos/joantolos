@@ -30,6 +30,26 @@
   <itunes:image href="https://d2n6quja4m53k3.cloudfront.net/cover.jpg" />
   <itunes:category text="Technology" />
   <item>
+    <itunes:title>Ep.111: Fundamentos de programación orientada a objetos</itunes:title>
+    <title>Ep.111: Fundamentos de programación orientada a objetos</title>
+    <description><![CDATA[<p>En este episodio, exploramos a fondo el concepto fundamental de "Encapsulación" dentro del paradigma de programación orientada a objetos. Intentaremos desentrañar las capas de este principio clave, que implica encapsular datos y métodos en un solo componente, proporcionando así una interfaz clara y protegiendo la integridad de la información. A través de un ejemplo práctico y analogías sencillas, desmitificamos la encapsulación y destacamos su importancia en la creación de código modular, mantenible y eficiente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, exploramos a fondo el concepto fundamental de "Encapsulación" dentro del paradigma de programación orientada a objetos. Intentaremos desentrañar las capas de este principio clave, que implica encapsular datos y métodos en un solo componente, proporcionando así una interfaz clara y protegiendo la integridad de la información. A través de un ejemplo práctico y analogías sencillas, desmitificamos la encapsulación y destacamos su importancia en la creación de código modular, mantenible y eficiente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, exploramos a fondo el concepto fundamental de "Encapsulación" dentro del paradigma de programación orientada a objetos. Intentaremos desentrañar las capas de este principio clave, que implica encapsular datos y métodos en un solo componente, proporcionando así una interfaz clara y protegiendo la integridad de la información. A través de un ejemplo práctico y analogías sencillas, desmitificamos la encapsulación y destacamos su importancia en la creación de código modular, mantenible y eficiente.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://d2n6quja4m53k3.cloudfront.net/ep-111-fundamentos-de-programacion-orientada-a-objetos.mp3" length="12182660" type="audio/mpeg" />
+    <video>https://youtu.be/XXXXXX</video>
+    <videoId>XXXXXX</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-111-fundamentos-de-programacion-orientada-a-objetos</guid>
+    <pubDate>Wed, 31 Jan 2024 08:00:00 +0200</pubDate>
+    <itunes:duration>1006</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>111</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
     <itunes:title>Ep.110: Simulador luces de tráfico</itunes:title>
     <title>Ep.110: Simulador luces de tráfico</title>
     <description><![CDATA[<p>En este episodio, te voy a mostrar cómo he implementado el comportamiento de las luces de dos semáforos usando HTML, CSS y Javascript. Verás cómo he creado el código HTML para definir la estructura de los semáforos, el código CSS para darles estilo y color, y el código Javascript para controlar el cambio de luces y la sincronización entre los semáforos. También te explicaré los conceptos básicos de HTML, CSS y Javascript, y cómo se pueden usar para crear animaciones interactivas en la web. Si quieres aprender más sobre este proyecto, puedes ver el código fuente y el resultado final en los siguientes enlaces: https://github.com/joantolos/traffic-lights y https://joantolos.github.io/traffic-lights/. Espero que te guste este episodio y que te sirva de inspiración para tus propios proyectos de programación web. ¡Hasta la próxima!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
