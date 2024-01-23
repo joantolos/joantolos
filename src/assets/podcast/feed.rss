@@ -37,9 +37,9 @@
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos a fondo el concepto fundamental de "Encapsulación" dentro del paradigma de programación orientada a objetos. Intentaremos desentrañar las capas de este principio clave, que implica encapsular datos y métodos en un solo componente, proporcionando así una interfaz clara y protegiendo la integridad de la información. A través de un ejemplo práctico y analogías sencillas, desmitificamos la encapsulación y destacamos su importancia en la creación de código modular, mantenible y eficiente.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
     <enclosure url="https://d2n6quja4m53k3.cloudfront.net/ep-111-fundamentos-de-programacion-orientada-a-objetos.mp3" length="12182660" type="audio/mpeg" />
-    <video>https://youtu.be/XXXXXX</video>
-    <videoId>XXXXXX</videoId>
-    <videoVisible>true</videoVisible>
+    <video>https://youtu.be/aGiRtxOmScE</video>
+    <videoId>aGiRtxOmScE</videoId>
+    <videoVisible>false</videoVisible>
     <guid isPermaLink="false">ep-111-fundamentos-de-programacion-orientada-a-objetos</guid>
     <pubDate>Wed, 31 Jan 2024 08:00:00 +0200</pubDate>
     <itunes:duration>1006</itunes:duration>
