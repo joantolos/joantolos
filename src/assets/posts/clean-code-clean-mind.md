@@ -27,14 +27,14 @@ The ceiling was taking for granted, this is your core job... **of course** you a
 
 Because even that the job site is a work in progress and anyone would understand a bit of a mess, that place has an owner. We are working for a client that likes to see the project coming to life. We are building a house... what would be a home soon. So that wise man saw everything it needed to know about how the work was going by looking at the little details and the stuff that "does not matter", because how you do one thing, you do them all. If that floor is clean, you can be pretty confident that the ceiling will be pristine.
 
+It was fairly recently when I realised how similar our jobs really are. We use our creativity and tools available to build a small part of a bigger system. We want to do a quality job and being proud of it while remaining whitin a budget and a timeline. We need our job to be easy to maintain and grow. When I try to explain those similarities to him, he doesn’t quite get it but sometimes I smile thinking that maybe I ended up following my father steps after all. My grandfather would be weirdly proud (and confused)
+
 I learn two lessons from this whole experience:
 
 - I am able to do this job.
 - I don’t want to do this job.
 
 Pretty good insights for a teenager. Don't get me wrong, it is a very nice way to make a living, it's just not my thing.
-
-It was fairly recently when I realised how similar our jobs really are. We use our creativity and tools available to build a small part of a bigger system. We want to do a quality job and being proud of it while remaining whitin a budget and a timeline. We need our job to be easy to maintain and grow. When I try to explain those similarities to him, he doesn’t quite get it but sometimes I smile thinking that maybe I ended up following my father steps after all. My grandfather would be weirdly proud (and confused)
 
 Desktop examples. That is actually a good thing, because if you want to change a big thing, you can start with a smaller thing first so you learn the habit. You can clean up the virtual desktop first
 
