@@ -2,11 +2,13 @@ I was not always so lucky to have this job. As many of you, I had to work differ
 
 … the ultimatum: *“If you don’t want to go to school, you are going to work wit me”.* That was the end of the discussion and how my father became a construction worker. 
 
-He learn the trade along side with his father and made a living with his hands and back. Later on he specialised as a plasterer which gave him the opportunity to build decorative pieces that where going to the ceilings of some prestigious buildings in the city. Some of his work was very artistic and beautiful, creating pieces with symmetrical forms and rich patterns. This lateral move also allowed him to work more at the workshop and not so much on the field, which was the correct move as he aged.
+He learn the trade along side with his father and made a living with his hands and back. Later on he specialised as a plasterer which gave him the opportunity to build decorative pieces that were going to the ceilings of some prestigious buildings in the city. Some of his work was very artistic and beautiful, creating pieces with symmetrical forms and rich patterns. This lateral move also allowed him to work more at the workshop and not so much on the field, which was the correct move as he aged.
 
 My father version of that ultimatum for me was way better: _“You are old enough to start making some money so you are coming with me to learn how you do that. **You don’t have to do what I do but you have to do something**”_. Which I think is a pretty good improvement from the previous generation. 
 
 So there I went, waking up really early in the morning to work on construction in my school summer vacation. 
+
+# The days of building stuff with my hands
 
 I joined the crew of workers as one more and attended the first gathering where the boss distributed the work for the next weeks. I can say it was maybe my first job meeting ever: an informal gathering, standing up and in a hurry because there is work to do. Of course, I was not assigned to work alongside my father... that would have been too easy, "to work with daddy". I am sure my father arranged with his boss that I was assign with some decent guy, but not him.
 
@@ -23,22 +25,49 @@ I was genuinely curious. Why was this man looking at the floor when the progress
 
 The days passed and I finally gather the courage to ask him the question the very last day of the job, when the whole crew was gathered again... "Why you always look at the floor when you come visit" and he simply answered: “Because how you do one thing, you do them all”. Then he just walk away. I looked at my father and he looked at me with an expression saying: “there you go, you have your answer”. And that was the end of it.
 
-The ceiling was taking for granted, this is your core job... **of course** you are going to do it well, that is your businesss. Less than a perfect job on the ceiling was unacceptable. Where you can really make a difference is in the details, the little things. One of those details that seems obvious to me today: **the floor needs to be clean**. When you leave your job site for the day, that floor needs to be clean and presentable. Even if we are coming back tomorrow just to make a mess of that same floor again, just to clean it again at the end of the day. 
+To make the story short, I went to work with them for a couple more times and finally switched to a Desktop job, less phisically demanding (and infinitely more boring). I finished my studies, got my first job as a programmer and the rest is history. It was fairly recently when I realised how similar our jobs really are. We both use our creativity and tools available to build a small part of a bigger system. We want to do a quality job and being proud of the result while remaining whitin a budget and a timeline. We need our job to be easy to maintain and grow. 
 
-Because even that the job site is a work in progress and anyone would understand a bit of a mess, that place has an owner. We are working for a client that likes to see the project coming to life. We are building a house... what would be a home soon. So that wise man saw everything it needed to know about how the work was going by looking at the little details and the stuff that "does not matter", because how you do one thing, you do them all. If that floor is clean, you can be pretty confident that the ceiling will be pristine.
+When I try to explain those similarities to him, he doesn’t quite get it but sometimes I smile thinking that maybe I ended up following my father steps after all. My grandfather would be weirdly proud (and confused)
 
-It was fairly recently when I realised how similar our jobs really are. We use our creativity and tools available to build a small part of a bigger system. We want to do a quality job and being proud of it while remaining whitin a budget and a timeline. We need our job to be easy to maintain and grow. When I try to explain those similarities to him, he doesn’t quite get it but sometimes I smile thinking that maybe I ended up following my father steps after all. My grandfather would be weirdly proud (and confused)
-
-I learn two lessons from this whole experience:
+I learned two lessons from this whole experience:
 
 - I am able to do this job.
 - I don’t want to do this job.
 
 Pretty good insights for a teenager. Don't get me wrong, it is a very nice way to make a living, it's just not my thing.
 
-Desktop examples. That is actually a good thing, because if you want to change a big thing, you can start with a smaller thing first so you learn the habit. You can clean up the virtual desktop first
+# How you do one thing is how you do them all
 
-How you treat a waiter is how your treat everyone. Clean after you’re self, leave things better than your found them (boys out rule), take care of the details (even the ones that “you don’t see”). That is going to make you a better coder, a better coallege, a better friend, a better partner, a better parent, a better person. Because how you do one thing, you do them all.
+I tooked the answer the big boss gave me as a strange excentric response, but then I was able to understand what he meant. If we were working on the ceiling, then the ceiling was took for granted. This is your core job... **of course** you are going to do it well, that is your businesss. Less than a perfect job on the ceiling was unacceptable. Where you can really make a difference is in the details, the little things. One of those details that seems obvious to me today: **the floor needs to be clean**. When you leave your job site for the day, that floor needs to be clean and presentable. Even if we are coming back tomorrow just to make a mess of that same floor again, just to clean it again at the end of the day. 
+
+Because even that the job site is a work in progress and anyone would understand a bit of a mess, that place has an owner. We are working for a client that likes to see the project coming to life. We are building a house... what would be a home soon. So that wise man saw everything it needed to know about how the work was going by looking at the little details and the stuff that "does not matter", because how you do one thing, you do them all. If that floor is clean, you can be pretty confident that the ceiling will be pristine.
+
+I tried to keep that lesson present in my following jobs and I still try it today when coding. I clean after myself, I try to leave things better than I found them, I take care of details, I care for things "that you don't see"... This is one way to strive for excellence. Doesn't mean that I always accomplish it but I sure aim for it.
+
+# It even works backwards
+
+For the sake of the argument, let's work with the premise that "how you do one thing you do them all". Maybe we can try and make it work backwards. Meaning, you can do "right" the little easy tasks and that will be contagious to your way and end up changing the way you do other more difficult tasks.
+
+For example, it is very probable that how you organize your phisical desktop is very similar to how you organize your virtual desktop in your computer. At least is is in my home... without entering in details, when you see a desk, if you open the computer on that desk you will see a pretty good virtual replica in terms of tidiness. You can start with the easier task of cleaning up your virtual Desktop on your computer, which is way easier than clean and organize your real one. You get the trick... you get acostumed to work with a "tidy virtual desktop" and since how you do one thing, you do them all, you are going to end up working in a real tidy desktop.
+
+The example is a bit of a strecth but I hope I get the point across. What I mean is that the little things matter because you get used to do things a certain way and that way permeates in other aspects of your life. We can take advantatge of that and do really well a bunch of little easy tasks in our day to day.
+
+# A couple silly examples
+
+I sing lullabies with my guitar at night to my children at sleep time. I really try to hit the notes right, every time. I try to improve my fingering on the guitar, I try to do it a little bit better each time. Do they care about the "quality" of the songs? Of course they don't, they couldn't care less... but I care. Because I think my children deserve my best. I am not going to win a Grammy award but I can make their songs enjoyable. I refuse to make the drill "in auto-pilot" hoping for them just to sleep so I can go on with other stuff. Right now I am playing guitar, I am singing, this is what it's important right now, let's do it right.
+
+Same thing when I sit down with them to draw and paint, we do it every Thursday. I am not very skilled at this at all, but I try hard to make something decent. Again, they only care that I am doing crafts with them, the final outcome it's not important. But while doing it like this, I am creating the habit of trying my best every time and habits are very powerful. Paying attention to these details, makes me more present and also makes me enjoy the activity way more. 
+
+# cOnclusion
+
+
+
+That is going to make you a better coder, a better coallege, a better friend, a better partner, a better parent, a better person. Because how you do one thing, you do them all.
+
+
+
+
+
 
 ## References:
 
