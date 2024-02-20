@@ -22,15 +22,26 @@ export const BLOG : Blog =
           "active": false
         },
         {
+          "id": "when-even-data-lies",
+          "date": "March 15, 2024",
+          "title": "When even data lies",
+          "subtitle": "Can two contradicting facts be true at the same time?",
+          "summary": "Exploring the importance of data-driven decision-making while highlighting its limitations, particularly when faced with conflicting information.",
+          "featuredImage": "./assets/images/whenEvenDataLies/featuredImage.png",
+          "thumb": "./assets/images/whenEvenDataLies/thumb.png",
+          "tags": ["code"],
+          "active": false
+        },
+        {
           "id": "clean-code-clean-mind",
           "date": "February 15, 2024",
           "title": "Clean code, clean mind",
-          "subtitle": "ZZZ",
-          "summary": "XXX",
+          "subtitle": "Transpose your coding habilities to your day to day",
+          "summary": "A reflection on the correlation between attention to detail in professional tasks, particularly in programming, and its broader impact on life. Drawing from personal experiences in various jobs, the post underscores how cultivating a mindset of precision and excellence in daily work not only enhances job performance but also permeates into personal life, fostering a sense of fulfillment and effectiveness across all endeavors.",
           "featuredImage": "./assets/images/cleanCodeCleanMind/featuredImage.png",
           "thumb": "./assets/images/cleanCodeCleanMind/thumb.png",
           "tags": ["life","code"],
-          "active": false
+          "active": true
         },
         {
           "id": "angular-beanstalk",
