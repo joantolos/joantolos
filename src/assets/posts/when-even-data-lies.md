@@ -47,4 +47,4 @@ I learnt the lesson of considering the limitations of relying solely on immediat
 
 ## References:
 
-* _Illustration <a href="https://www.dreamstime.com/real-fake-news-fact-checking-fact-checking-concept-two-rubber-stamps-text-real-fake-thumb-up-down-over-image112055497"  target="_blank">112055497</a> © <a href="https://www.dreamstime.com/olivier26_info"  target="_blank">Olivier Le Moal</a> | <a href="https://www.dreamstime.com/illustration/fact-checking.html"  target="_blank">Dreamstime.com</a>_
+* _Illustration <a href="https://www.behance.net/nuriabalaguesola" target="_blank">Núria Balagué</a>_
