@@ -31,6 +31,11 @@ import { StoreComponent } from './components/store/store.component';
       component: PostComponent
     },
     {
+      path: 'podcast',
+      redirectTo: 'podcast/page/1',
+      pathMatch: 'full'
+    },
+    {
       path: 'podcast/page/:page',
       component: PodcastComponent
     },
