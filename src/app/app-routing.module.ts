@@ -27,6 +27,11 @@ import { StoreComponent } from './components/store/store.component';
       component: BlogComponent
     },
     {
+      path: 'blog',
+      redirectTo: 'blog/page/1',
+      pathMatch: 'full'
+    },
+    {
       path: 'blog/:id',
       component: PostComponent
     },
