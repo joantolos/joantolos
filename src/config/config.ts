@@ -982,6 +982,19 @@ export const BLOG : Blog =
             "code"
           ],
           "active": true
+        },
+        {
+          "id": "civil-inattention",
+          "title": "Civil Inattention",
+          "date": "September 19, 2013",
+          "subtitle": "The Subtle Art of Polite Ignorance: Navigating Modern Social Spaces",
+          "summary": "Civil inattention, a concept coined by Erving Goffman, describes the polite act of subtly ignoring strangers to maintain privacy in public spaces like elevators or subways. This blog post explores its importance in social harmony, contrasting it with rude behavior that disregards others' presence. Reflecting on how economic hardship and societal engineering erode these manners, exacerbating social divisions, and comparing Western practices with the extreme courtesy observed in Japan to highlight the necessity of such social norms.",
+          "featuredImage": "./assets/images/civilInattention/featuredImage.png",
+          "thumb": "./assets/images/civilInattention/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };
