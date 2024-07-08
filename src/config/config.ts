@@ -984,6 +984,32 @@ export const BLOG : Blog =
           "active": true
         },
         {
+          "id": "important-urgent",
+          "title": "I focus on what's important, not what's urgent",
+          "date": "October 31, 2013",
+          "subtitle": "Embracing the Important Over the Urgent in Everyday Life",
+          "summary": "The importance of prioritizing meaningful connections over urgent tasks. Illustratung the enduring value of focusing on the 'why' rather than the 'what' in daily life, encouraging readers to choose what truly matters for lasting fulfillment.",
+          "featuredImage": "./assets/images/importantUrgent/featuredImage.png",
+          "thumb": "./assets/images/importantUrgent/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
+          "id": "playing-eating-sleeping",
+          "title": "Playing, Eating, Sleeping",
+          "date": "October 22, 2013",
+          "subtitle": "A Day in the Life of a Playful Kitten",
+          "summary": "This heartwarming narrative follows a day in the life of a lively kitten as it explores its home, seeks attention, and bonds with its owners through playful antics. From groggy morning greetings to attempts at stealing treats and ending with cozy bedtime rituals, the story captures the joy and unconditional love a pet brings to a home.",
+          "featuredImage": "./assets/images/playingEatingSleeping/featuredImage.png",
+          "thumb": "./assets/images/playingEatingSleeping/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
           "id": "civil-inattention",
           "title": "Civil Inattention",
           "date": "September 19, 2013",
