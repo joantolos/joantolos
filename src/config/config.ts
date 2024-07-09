@@ -997,6 +997,32 @@ export const BLOG : Blog =
           "active": true
         },
         {
+          "id": "making-mistakes-as-you-see-fit",
+          "title": "Making Mistakes as You See Fit",
+          "date": "October 8, 2013",
+          "subtitle": "Embracing Freedom and Personal Responsibility",
+          "summary": "This insightful piece delves into the importance of embracing freedom and the responsibility that comes with it. It discusses the common tendency to relinquish personal autonomy to avoid accountability for mistakes, instead blaming external factors. The author advocates for taking control of one’s destiny, using examples like political decisions and personal growth. The narrative emphasizes that true progress and fulfillment come from facing fears, making independent choices, and accepting the consequences, no matter the outcome.",
+          "featuredImage": "./assets/images/makingMistakesAsYouSeeFit/featuredImage.png",
+          "thumb": "./assets/images/makingMistakesAsYouSeeFit/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
+          "id": "kata-and-street-fighting",
+          "title": "Kata and Street Fighting",
+          "date": "September 19, 2013",
+          "subtitle": "Embracing Freedom and Personal Responsibility",
+          "summary": "This reflective piece explores the daily struggle of balancing grace and survival instincts. It compares morning routines and workplace challenges to martial arts and street fighting, highlighting the importance of both disciplined preparation and raw survival skills. The narrative underscores how life’s difficulties can shape us into resilient individuals, ready to face any challenge with a blend of finesse and grit.",
+          "featuredImage": "./assets/images/kataAndStreetFighting/featuredImage.png",
+          "thumb": "./assets/images/makingMikataAndStreetFightingstakesAsYouSeeFit/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
           "id": "playing-eating-sleeping",
           "title": "Playing, Eating, Sleeping",
           "date": "October 22, 2013",
