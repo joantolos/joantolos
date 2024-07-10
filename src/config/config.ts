@@ -1073,6 +1073,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "taste-of-candy",
+          "title": "Taste Of Candy",
+          "date": "August 12, 2013",
+          "subtitle": "A Day of Sun, Sea, and First Love",
+          "summary": "A teenage boy wakes up to a typical summer day filled with light, video games, friends, and the beach. As he navigates through his morning routine and spends time with his friends, his thoughts are constantly preoccupied with a girl he likes. Through playful beach games and shared moments, he experiences the excitement and nervousness of young love, culminating in a tender, unforgettable evening by the sea.",
+          "featuredImage": "./assets/images/tasteOfCandy/featuredImage.png",
+          "thumb": "./assets/images/tasteOfCandy/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };
