@@ -1086,6 +1086,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "why-i-do-what-i-do",
+          "title": "Why I Do What I Do",
+          "date": "August 7, 2013",
+          "subtitle": "The Journey from Video Games to Computer Science: A Personal Reflection",
+          "summary": "My journey into computer science, sparked by early encounters with video games, influential mentors, and a passion for technology. Remembering childhood experiences, friendships, and pivotal moments that shaped my professional path, culminating in a heartfelt response to a job interview question.",
+          "featuredImage": "./assets/images/whyIDoWhatIDo/featuredImage.png",
+          "thumb": "./assets/images/whyIDoWhatIDo/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };
