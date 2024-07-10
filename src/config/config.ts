@@ -1125,6 +1125,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "ive-been-to-africa",
+          "title": "I've Been to Africa",
+          "date": "July 25, 2013",
+          "subtitle": "A Journey through Ghana: Heat, Hospitality, and Heritage",
+          "summary": "Recounting the journey to Ghana to attend a friend's wedding, reflecting on the cultural richness, hospitality, and stark contrasts of the West African nation. From navigating the bustling streets of Accra to witnessing a traditional Ghanaian wedding and visiting historical sites like Cape Coast Castle, the narrative unfolds with personal insights into the local culture, cuisine, and people. Through encounters with locals, discussions on societal norms, and embracing the heat and flavors of Ghana, we can explore the country's complexities and finds unexpected connections.",
+          "featuredImage": "./assets/images/iveBeenToAfrica/featuredImage.png",
+          "thumb": "./assets/images/iveBeenToAfrica/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };
