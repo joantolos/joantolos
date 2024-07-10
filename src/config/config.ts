@@ -1105,9 +1105,22 @@ export const BLOG : Blog =
           "title": "Waiting for the Traffic Lights to Turn Green",
           "date": "July 29, 2013",
           "subtitle": "Navigating Life's Traffic Lights: Reflections on Acceptance and Change",
-          "summary": "This narrative describes a late-night journey home after work, reflecting on the metaphorical 'traffic lights' encountered in life—moments of pause and reflection. The author contrasts frustration with acceptance, emphasizing the importance of changing perspectives and embracing life's journey.",
+          "summary": "This narrative describes a late-night journey home after work, reflecting on the metaphorical 'traffic lights' encountered in life—moments of pause and reflection. Contrasting frustration with acceptance, emphasizing the importance of changing perspectives and embracing life's journey.",
           "featuredImage": "./assets/images/waitingForTheTrafficLightsToTurnGreen/featuredImage.png",
           "thumb": "./assets/images/waitingForTheTrafficLightsToTurnGreen/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
+          "id": "hyenas-dont-laugh",
+          "title": "Hyenas Don't Laugh",
+          "date": "July 29, 2013",
+          "subtitle": "Beware of the Hyenas: Navigating Deception and Predation in Society",
+          "summary": "This narrative metaphorically describes societal predators as hyenas, highlighting their deceptive nature and ruthless behavior. Constrasting noble aspirations with the lurking danger of those who exploit weaknesses, urging vigilance and resistance against becoming like them.",
+          "featuredImage": "./assets/images/hyenasDontLaugh/featuredImage.png",
+          "thumb": "./assets/images/hyenasDontLaugh/thumb.png",
           "tags": [
             "life"
           ],
