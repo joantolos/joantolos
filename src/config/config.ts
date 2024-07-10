@@ -997,6 +997,19 @@ export const BLOG : Blog =
           "active": true
         },
         {
+          "id": "playing-eating-sleeping",
+          "title": "Playing, Eating, Sleeping",
+          "date": "October 22, 2013",
+          "subtitle": "A Day in the Life of a Playful Kitten",
+          "summary": "This heartwarming narrative follows a day in the life of a lively kitten as it explores its home, seeks attention, and bonds with its owners through playful antics. From groggy morning greetings to attempts at stealing treats and ending with cozy bedtime rituals, the story captures the joy and unconditional love a pet brings to a home.",
+          "featuredImage": "./assets/images/playingEatingSleeping/featuredImage.png",
+          "thumb": "./assets/images/playingEatingSleeping/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
           "id": "making-mistakes-as-you-see-fit",
           "title": "Making Mistakes as You See Fit",
           "date": "October 8, 2013",
@@ -1023,19 +1036,6 @@ export const BLOG : Blog =
           "active": true
         },
         {
-          "id": "playing-eating-sleeping",
-          "title": "Playing, Eating, Sleeping",
-          "date": "October 22, 2013",
-          "subtitle": "A Day in the Life of a Playful Kitten",
-          "summary": "This heartwarming narrative follows a day in the life of a lively kitten as it explores its home, seeks attention, and bonds with its owners through playful antics. From groggy morning greetings to attempts at stealing treats and ending with cozy bedtime rituals, the story captures the joy and unconditional love a pet brings to a home.",
-          "featuredImage": "./assets/images/playingEatingSleeping/featuredImage.png",
-          "thumb": "./assets/images/playingEatingSleeping/thumb.png",
-          "tags": [
-            "life"
-          ],
-          "active": true
-        },
-        {
           "id": "civil-inattention",
           "title": "Civil Inattention",
           "date": "September 19, 2013",
@@ -1043,6 +1043,32 @@ export const BLOG : Blog =
           "summary": "Civil inattention, a concept coined by Erving Goffman, describes the polite act of subtly ignoring strangers to maintain privacy in public spaces like elevators or subways. This blog post explores its importance in social harmony, contrasting it with rude behavior that disregards others' presence. Reflecting on how economic hardship and societal engineering erode these manners, exacerbating social divisions, and comparing Western practices with the extreme courtesy observed in Japan to highlight the necessity of such social norms.",
           "featuredImage": "./assets/images/civilInattention/featuredImage.png",
           "thumb": "./assets/images/civilInattention/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
+          "id": "tired-of-living",
+          "title": "Tired of Living (Soup, Salad, and Tomato Bread)",
+          "date": "September 4, 2013",
+          "subtitle": "Reflections of a Weary Soul",
+          "summary": "An elderly woman reflects on her life, expressing a deep sense of weariness and longing for peace. As she sits watching the sunset, she reminisces about her past, the loved ones she has lost, and the simple joys that once brought her happiness. Now, faced with solitude and the passage of time, she grapples with the stark realities of aging and the desire for her struggles to come to an end.",
+          "featuredImage": "./assets/images/tiredOfLiving/featuredImage.png",
+          "thumb": "./assets/images/tiredOfLiving/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
+        },
+        {
+          "id": "on-decisions-and-farewells",
+          "title": "On Decisions And Farewells",
+          "date": "August 16, 2013",
+          "subtitle": "Embracing Change and the Courage to Let Go",
+          "summary": "Reflecting on the nature of making life-changing decisions, this piece delves into the fears and uncertainties that accompany significant choices. It explores the importance of courage and commitment in navigating life's paths, emphasizing the value of embracing farewells and change as essential components of personal growth and fulfillment.",
+          "featuredImage": "./assets/images/onDecisionsAndFarewells/featuredImage.png",
+          "thumb": "./assets/images/onDecisionsAndFarewells/thumb.png",
           "tags": [
             "life"
           ],
