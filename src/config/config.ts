@@ -1177,6 +1177,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "the-best-of-scrum",
+          "title": "The Best of Scrum",
+          "date": "June 5, 2013",
+          "subtitle": "Finding Motivation and Growth Through Scrum",
+          "summary": "Exploring the aspects of Scrum methodology that I find most valuable, particularly the emphasis on visibility, improvement, and the motivation that comes with starting new sprints. The reflection highlights how setting realistic, small goals and achieving them fosters a sense of accomplishment and drives continuous personal and team growth.",
+          "featuredImage": "./assets/images/theBestOfScrum/featuredImage.png",
+          "thumb": "./assets/images/theBestOfScrum/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };  
