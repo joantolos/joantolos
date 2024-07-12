@@ -23,14 +23,14 @@ export const BLOG : Blog =
         },
         {
           "id": "when-even-data-lies",
-          "date": "March 15, 2024",
+          "date": "July 12, 2024",
           "title": "When even data lies",
           "subtitle": "Can two contradicting facts be true at the same time?",
           "summary": "Exploring the importance of data-driven decision-making while highlighting its limitations, particularly when faced with conflicting information.",
           "featuredImage": "./assets/images/whenEvenDataLies/featuredImage.png",
           "thumb": "./assets/images/whenEvenDataLies/thumb.png",
           "tags": ["code"],
-          "active": false
+          "active": true
         },
         {
           "id": "clean-code-clean-mind",
@@ -1187,7 +1187,7 @@ export const BLOG : Blog =
           "featuredImage": "./assets/images/theBestOfScrum/featuredImage.png",
           "thumb": "./assets/images/theBestOfScrum/thumb.png",
           "tags": [
-            "life"
+            "code","life"
           ],
           "active": true
         }
