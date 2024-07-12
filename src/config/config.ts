@@ -1151,6 +1151,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "the-culture-of-the-table",
+          "title": "The Culture of the Table",
+          "date": "June 24, 2013",
+          "subtitle": "Navigating Social Pressures While Dieting",
+          "summary": "Exploring the intricate relationship between food, social interactions, and dieting. It highlights how deeply food and drink are ingrained in our social culture and the challenges one faces when trying to diet amidst constant social pressure.",
+          "featuredImage": "./assets/images/theCultureOfTheTable/featuredImage.png",
+          "thumb": "./assets/images/theCultureOfTheTable/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };  
