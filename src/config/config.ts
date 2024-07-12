@@ -1164,6 +1164,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "sants-station",
+          "title": "Sants Station",
+          "date": "June 11, 2013",
+          "subtitle": "A Glimpse into the Lives of Travelers at Sants Station",
+          "summary": "Describing my fondness for the bustling Sants station, highlighting the various people who pass through, their behaviors, and the unique culture that arises in such transient spaces.",
+          "featuredImage": "./assets/images/santsStation/featuredImage.png",
+          "thumb": "./assets/images/santsStation/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };  
