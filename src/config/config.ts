@@ -1138,6 +1138,20 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "the-nightmares-of-others",
+          "title": "The Nightmares of Others",
+          "date": "June 25, 2013",
+          "subtitle": "Finding Comfort in the Dark: How We Navigate Our Nightmares Together",
+          "summary": "Exploring nighttime experiences of comforting others during her nightmares. Reflection on the nature of fear and its impact on our lives.",
+          "featuredImage": "./assets/images/theNightmaresOfOthers/featuredImage.png",
+          "thumb": "./assets/images/theNightmaresOfOthers/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
-  };
+  };  
+  
