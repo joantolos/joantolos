@@ -1190,6 +1190,19 @@ export const BLOG : Blog =
             "code","life"
           ],
           "active": true
+        },
+        {
+          "id": "letting-go",
+          "title": "Letting Go",
+          "date": "May 30, 2013",
+          "subtitle": "Embracing Change: The Art of Letting Go",
+          "summary": "Reflecting on the process of moving and the insights it brings about our attachment to material possessions. It explores the joy of decluttering, the realization of how little we truly need, and the liberating feeling of letting go. The narrative highlights the emotional journey from attachment to excitement about new beginnings, emphasizing the importance of overcoming fear and embracing change.",
+          "featuredImage": "./assets/images/lettingGo/featuredImage.png",
+          "thumb": "./assets/images/lettingGo/thumb.png",
+          "tags": [
+            "code","life"
+          ],
+          "active": true
         }
       ]
   };  
