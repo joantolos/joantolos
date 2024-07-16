@@ -986,7 +986,7 @@ export const BLOG : Blog =
         {
           "id": "important-urgent",
           "title": "I focus on what's important, not what's urgent",
-          "date": "October 31, 2013",
+          "date": "July 13, 2015",
           "subtitle": "Embracing the Important Over the Urgent in Everyday Life",
           "summary": "The importance of prioritizing meaningful connections over urgent tasks. Illustratung the enduring value of focusing on the 'why' rather than the 'what' in daily life, encouraging readers to choose what truly matters for lasting fulfillment.",
           "featuredImage": "./assets/images/importantUrgent/featuredImage.png",
@@ -999,7 +999,7 @@ export const BLOG : Blog =
         {
           "id": "playing-eating-sleeping",
           "title": "Playing, Eating, Sleeping",
-          "date": "October 22, 2013",
+          "date": "June 25, 2015",
           "subtitle": "A Day in the Life of a Playful Kitten",
           "summary": "This heartwarming narrative follows a day in the life of a lively kitten as it explores its home, seeks attention, and bonds with its owners through playful antics. From groggy morning greetings to attempts at stealing treats and ending with cozy bedtime rituals, the story captures the joy and unconditional love a pet brings to a home.",
           "featuredImage": "./assets/images/playingEatingSleeping/featuredImage.png",
@@ -1012,7 +1012,7 @@ export const BLOG : Blog =
         {
           "id": "making-mistakes-as-you-see-fit",
           "title": "Making Mistakes as You See Fit",
-          "date": "October 8, 2013",
+          "date": "May 15, 2015",
           "subtitle": "Embracing Freedom and Personal Responsibility",
           "summary": "This insightful piece delves into the importance of embracing freedom and the responsibility that comes with it. It discusses the common tendency to relinquish personal autonomy to avoid accountability for mistakes, instead blaming external factors. The author advocates for taking control of one’s destiny, using examples like political decisions and personal growth. The narrative emphasizes that true progress and fulfillment come from facing fears, making independent choices, and accepting the consequences, no matter the outcome.",
           "featuredImage": "./assets/images/makingMistakesAsYouSeeFit/featuredImage.png",
@@ -1025,7 +1025,7 @@ export const BLOG : Blog =
         {
           "id": "kata-and-street-fighting",
           "title": "Kata and Street Fighting",
-          "date": "September 19, 2013",
+          "date": "April 4, 2015",
           "subtitle": "Embracing Freedom and Personal Responsibility",
           "summary": "This reflective piece explores the daily struggle of balancing grace and survival instincts. It compares morning routines and workplace challenges to martial arts and street fighting, highlighting the importance of both disciplined preparation and raw survival skills. The narrative underscores how life’s difficulties can shape us into resilient individuals, ready to face any challenge with a blend of finesse and grit.",
           "featuredImage": "./assets/images/kataAndStreetFighting/featuredImage.png",
@@ -1038,7 +1038,7 @@ export const BLOG : Blog =
         {
           "id": "civil-inattention",
           "title": "Civil Inattention",
-          "date": "September 19, 2013",
+          "date": "March 10, 2015",
           "subtitle": "The Subtle Art of Polite Ignorance: Navigating Modern Social Spaces",
           "summary": "Civil inattention, a concept coined by Erving Goffman, describes the polite act of subtly ignoring strangers to maintain privacy in public spaces like elevators or subways. This blog post explores its importance in social harmony, contrasting it with rude behavior that disregards others' presence. Reflecting on how economic hardship and societal engineering erode these manners, exacerbating social divisions, and comparing Western practices with the extreme courtesy observed in Japan to highlight the necessity of such social norms.",
           "featuredImage": "./assets/images/civilInattention/featuredImage.png",
@@ -1051,7 +1051,7 @@ export const BLOG : Blog =
         {
           "id": "tired-of-living",
           "title": "Tired of Living (Soup, Salad, and Tomato Bread)",
-          "date": "September 4, 2013",
+          "date": "February 20, 2015",
           "subtitle": "Reflections of a Weary Soul",
           "summary": "An elderly woman reflects on her life, expressing a deep sense of weariness and longing for peace. As she sits watching the sunset, she reminisces about her past, the loved ones she has lost, and the simple joys that once brought her happiness. Now, faced with solitude and the passage of time, she grapples with the stark realities of aging and the desire for her struggles to come to an end.",
           "featuredImage": "./assets/images/tiredOfLiving/featuredImage.png",
@@ -1064,7 +1064,7 @@ export const BLOG : Blog =
         {
           "id": "on-decisions-and-farewells",
           "title": "On Decisions And Farewells",
-          "date": "August 16, 2013",
+          "date": "January 15, 2015",
           "subtitle": "Embracing Change and the Courage to Let Go",
           "summary": "Reflecting on the nature of making life-changing decisions, this piece delves into the fears and uncertainties that accompany significant choices. It explores the importance of courage and commitment in navigating life's paths, emphasizing the value of embracing farewells and change as essential components of personal growth and fulfillment.",
           "featuredImage": "./assets/images/onDecisionsAndFarewells/featuredImage.png",
@@ -1077,7 +1077,7 @@ export const BLOG : Blog =
         {
           "id": "taste-of-candy",
           "title": "Taste Of Candy",
-          "date": "August 12, 2013",
+          "date": "December 4, 2014",
           "subtitle": "A Day of Sun, Sea, and First Love",
           "summary": "A teenage boy wakes up to a typical summer day filled with light, video games, friends, and the beach. As he navigates through his morning routine and spends time with his friends, his thoughts are constantly preoccupied with a girl he likes. Through playful beach games and shared moments, he experiences the excitement and nervousness of young love, culminating in a tender, unforgettable evening by the sea.",
           "featuredImage": "./assets/images/tasteOfCandy/featuredImage.png",
@@ -1090,7 +1090,7 @@ export const BLOG : Blog =
         {
           "id": "why-i-do-what-i-do",
           "title": "Why I Do What I Do",
-          "date": "August 7, 2013",
+          "date": "November 14, 2014",
           "subtitle": "The Journey from Video Games to Computer Science: A Personal Reflection",
           "summary": "My journey into computer science, sparked by early encounters with video games, influential mentors, and a passion for technology. Remembering childhood experiences, friendships, and pivotal moments that shaped my professional path, culminating in a heartfelt response to a job interview question.",
           "featuredImage": "./assets/images/whyIDoWhatIDo/featuredImage.png",
@@ -1103,7 +1103,7 @@ export const BLOG : Blog =
         {
           "id": "waiting-for-the-traffic-lights-to-turn-green",
           "title": "Waiting for the Traffic Lights to Turn Green",
-          "date": "July 29, 2013",
+          "date": "November 14, 2014",
           "subtitle": "Navigating Life's Traffic Lights: Reflections on Acceptance and Change",
           "summary": "This narrative describes a late-night journey home after work, reflecting on the metaphorical 'traffic lights' encountered in life—moments of pause and reflection. Contrasting frustration with acceptance, emphasizing the importance of changing perspectives and embracing life's journey.",
           "featuredImage": "./assets/images/waitingForTheTrafficLightsToTurnGreen/featuredImage.png",
@@ -1116,7 +1116,7 @@ export const BLOG : Blog =
         {
           "id": "hyenas-dont-laugh",
           "title": "Hyenas Don't Laugh",
-          "date": "July 29, 2013",
+          "date": "May 5, 2014",
           "subtitle": "Beware of the Hyenas: Navigating Deception and Predation in Society",
           "summary": "This narrative metaphorically describes societal predators as hyenas, highlighting their deceptive nature and ruthless behavior. Constrasting noble aspirations with the lurking danger of those who exploit weaknesses, urging vigilance and resistance against becoming like them.",
           "featuredImage": "./assets/images/hyenasDontLaugh/featuredImage.png",
@@ -1129,7 +1129,7 @@ export const BLOG : Blog =
         {
           "id": "ive-been-to-africa",
           "title": "I've Been to Africa",
-          "date": "July 25, 2013",
+          "date": "April 11, 2014",
           "subtitle": "A Journey through Ghana: Heat, Hospitality, and Heritage",
           "summary": "Recounting the journey to Ghana to attend a friend's wedding, reflecting on the cultural richness, hospitality, and stark contrasts of the West African nation. From navigating the bustling streets of Accra to witnessing a traditional Ghanaian wedding and visiting historical sites like Cape Coast Castle, the narrative unfolds with personal insights into the local culture, cuisine, and people. Through encounters with locals, discussions on societal norms, and embracing the heat and flavors of Ghana, we can explore the country's complexities and finds unexpected connections.",
           "featuredImage": "./assets/images/iveBeenToAfrica/featuredImage.png",
@@ -1142,7 +1142,7 @@ export const BLOG : Blog =
         {
           "id": "the-nightmares-of-others",
           "title": "The Nightmares of Others",
-          "date": "June 25, 2013",
+          "date": "March 14, 2014",
           "subtitle": "Finding Comfort in the Dark: How We Navigate Our Nightmares Together",
           "summary": "Exploring nighttime experiences of comforting others during her nightmares. Reflection on the nature of fear and its impact on our lives.",
           "featuredImage": "./assets/images/theNightmaresOfOthers/featuredImage.png",
@@ -1155,7 +1155,7 @@ export const BLOG : Blog =
         {
           "id": "the-culture-of-the-table",
           "title": "The Culture of the Table",
-          "date": "June 24, 2013",
+          "date": "February 14, 2014",
           "subtitle": "Navigating Social Pressures While Dieting",
           "summary": "Exploring the intricate relationship between food, social interactions, and dieting. It highlights how deeply food and drink are ingrained in our social culture and the challenges one faces when trying to diet amidst constant social pressure.",
           "featuredImage": "./assets/images/theCultureOfTheTable/featuredImage.png",
@@ -1168,7 +1168,7 @@ export const BLOG : Blog =
         {
           "id": "sants-station",
           "title": "Sants Station",
-          "date": "June 11, 2013",
+          "date": "January 13, 2014",
           "subtitle": "A Glimpse into the Lives of Travelers at Sants Station",
           "summary": "Describing my fondness for the bustling Sants station, highlighting the various people who pass through, their behaviors, and the unique culture that arises in such transient spaces.",
           "featuredImage": "./assets/images/santsStation/featuredImage.png",
@@ -1181,7 +1181,7 @@ export const BLOG : Blog =
         {
           "id": "the-best-of-scrum",
           "title": "The Best of Scrum",
-          "date": "June 5, 2013",
+          "date": "December 15, 2013",
           "subtitle": "Finding Motivation and Growth Through Scrum",
           "summary": "Exploring the aspects of Scrum methodology that I find most valuable, particularly the emphasis on visibility, improvement, and the motivation that comes with starting new sprints. The reflection highlights how setting realistic, small goals and achieving them fosters a sense of accomplishment and drives continuous personal and team growth.",
           "featuredImage": "./assets/images/theBestOfScrum/featuredImage.png",
@@ -1194,7 +1194,7 @@ export const BLOG : Blog =
         {
           "id": "letting-go",
           "title": "Letting Go",
-          "date": "May 30, 2013",
+          "date": "November 23, 2013",
           "subtitle": "Embracing Change: The Art of Letting Go",
           "summary": "Reflecting on the process of moving and the insights it brings about our attachment to material possessions. It explores the joy of decluttering, the realization of how little we truly need, and the liberating feeling of letting go. The narrative highlights the emotional journey from attachment to excitement about new beginnings, emphasizing the importance of overcoming fear and embracing change.",
           "featuredImage": "./assets/images/lettingGo/featuredImage.png",
@@ -1207,7 +1207,7 @@ export const BLOG : Blog =
         {
           "id": "the-contrails-of-airplanes",
           "title": "The Contrails of Airplanes",
-          "date": "May 30, 2013",
+          "date": "September 16, 2013",
           "subtitle": "Tracing the Skies: Embracing Change and Imperfection",
           "summary": "Reflecting on the beauty and symbolism of the contrails left by airplanes against a radiant blue sky. It contrasts the unnatural shapes of buildings with the natural canvas of the sky, pondering on the transient nature of these white streaks. The narrative delves into the wonder of flight and the marvels of science, while also using the impermanence of contrails as a metaphor for embracing change and the unexpected in life.",
           "featuredImage": "./assets/images/theContrailsOfAirplanes/featuredImage.png",
@@ -1220,7 +1220,7 @@ export const BLOG : Blog =
         {
           "id": "creating-and-destroying",
           "title": "Creating and Destroying",
-          "date": "May 30, 2013",
+          "date": "August 6, 2013",
           "subtitle": "The Dual Nature of Creation and Destruction",
           "summary": "Explores the intricate relationship between construction and deconstruction through the lens of urban development. The narrative reflects on the transformation of a chaotic construction site into a bustling commercial hub, emphasizing the creativity, challenges, and eventual detachment experienced by those involved in the project. It parallels the creation of physical spaces with the creation of art, highlighting the inevitability of change and the necessity of relinquishing control for growth and evolution.",
           "featuredImage": "./assets/images/creatingAndDestroying/featuredImage.png",
@@ -1233,7 +1233,7 @@ export const BLOG : Blog =
         {
           "id": "the-tenderness-of-small-things",
           "title": "The Tenderness of Small Things",
-          "date": "May 30, 2013",
+          "date": "July 24, 2013",
           "subtitle": "Cherishing Life's Small Delights",
           "summary": "Telling the story of a pet hamster and its daily life. The narrative delves into the charming habits and personality of the little creature, highlighting the affection and care it receives from its owner. Through vivid descriptions, the story captures the joy of observing and interacting with this small pet, emphasizing the importance of appreciating the tiny moments of tenderness and connection in life.",
           "featuredImage": "./assets/images/theTendernessOfSmallThings/featuredImage.png",
@@ -1246,7 +1246,7 @@ export const BLOG : Blog =
         {
           "id": "the-7-am-coffee",
           "title": "The 7 AM Coffee",
-          "date": "May 30, 2013",
+          "date": "June 14, 2013",
           "subtitle": "A Morning Ritual of Connection and Reflection",
           "summary": "Sharing a poignant morning ritual of savoring a coffee at a local bar before work. This quiet moment offers a glimpse into the lives of early risers, blending the past and present as the author reflects on childhood memories of accompanying their father. The piece captures the sense of community among strangers and the comforting rhythm of daily routines, revealing the subtle beauty in ordinary experiences.",
           "featuredImage": "./assets/images/the7AmCoffee/featuredImage.png",
@@ -1259,7 +1259,7 @@ export const BLOG : Blog =
         {
           "id": "superheroes-on-the-couch",
           "title": "Superheroes on the Couch",
-          "date": "May 30, 2013",
+          "date": "May 10, 2013",
           "subtitle": "Rediscovering Childhood Joys Through Imagination",
           "summary": "Recounting a solo evening watching a superhero movie that unexpectedly evokes nostalgic childhood memories. Immersed in the film, rediscovering the joy and passion of imaginative play from their youth. This introspective piece highlights how the unrestrained creativity of childhood can continue to shape and enrich one's adult life, prompting a renewed commitment to embrace imagination and passion in everyday activities.",
           "featuredImage": "./assets/images/superheroesOnTheCouch/featuredImage.png",
