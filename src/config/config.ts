@@ -1229,6 +1229,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "the-tenderness-of-small-things",
+          "title": "The Tenderness of Small Things",
+          "date": "May 30, 2013",
+          "subtitle": "Cherishing Life's Small Delights",
+          "summary": "Telling the story of a pet hamster and its daily life. The narrative delves into the charming habits and personality of the little creature, highlighting the affection and care it receives from its owner. Through vivid descriptions, the story captures the joy of observing and interacting with this small pet, emphasizing the importance of appreciating the tiny moments of tenderness and connection in life.",
+          "featuredImage": "./assets/images/theTendernessOfSmallThings/featuredImage.png",
+          "thumb": "./assets/images/theTendernessOfSmallThings/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };  
