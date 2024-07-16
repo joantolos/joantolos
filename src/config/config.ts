@@ -1242,6 +1242,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "the-7-am-coffee",
+          "title": "The 7 AM Coffee",
+          "date": "May 30, 2013",
+          "subtitle": "A Morning Ritual of Connection and Reflection",
+          "summary": "Sharing a poignant morning ritual of savoring a coffee at a local bar before work. This quiet moment offers a glimpse into the lives of early risers, blending the past and present as the author reflects on childhood memories of accompanying their father. The piece captures the sense of community among strangers and the comforting rhythm of daily routines, revealing the subtle beauty in ordinary experiences.",
+          "featuredImage": "./assets/images/the7AmCoffee/featuredImage.png",
+          "thumb": "./assets/images/the7AmCoffee/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };  
