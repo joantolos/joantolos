@@ -1255,6 +1255,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "superheroes-on-the-couch",
+          "title": "Superheroes on the Couch",
+          "date": "May 30, 2013",
+          "subtitle": "Rediscovering Childhood Joys Through Imagination",
+          "summary": "Recounting a solo evening watching a superhero movie that unexpectedly evokes nostalgic childhood memories. Immersed in the film, rediscovering the joy and passion of imaginative play from their youth. This introspective piece highlights how the unrestrained creativity of childhood can continue to shape and enrich one's adult life, prompting a renewed commitment to embrace imagination and passion in everyday activities.",
+          "featuredImage": "./assets/images/superheroesOnTheCouch/featuredImage.png",
+          "thumb": "./assets/images/superheroesOnTheCouch/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };  
