@@ -1200,7 +1200,20 @@ export const BLOG : Blog =
           "featuredImage": "./assets/images/lettingGo/featuredImage.png",
           "thumb": "./assets/images/lettingGo/thumb.png",
           "tags": [
-            "code","life"
+            "life"
+          ],
+          "active": true
+        },
+        {
+          "id": "the-contrails-of-airplanes",
+          "title": "The Contrails of Airplanes",
+          "date": "May 30, 2013",
+          "subtitle": "Tracing the Skies: Embracing Change and Imperfection",
+          "summary": "Reflecting on the beauty and symbolism of the contrails left by airplanes against a radiant blue sky. It contrasts the unnatural shapes of buildings with the natural canvas of the sky, pondering on the transient nature of these white streaks. The narrative delves into the wonder of flight and the marvels of science, while also using the impermanence of contrails as a metaphor for embracing change and the unexpected in life.",
+          "featuredImage": "./assets/images/theContrailsOfAirplanes/featuredImage.png",
+          "thumb": "./assets/images/theContrailsOfAirplanes/thumb.png",
+          "tags": [
+            "life"
           ],
           "active": true
         }
