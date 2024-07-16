@@ -1216,6 +1216,19 @@ export const BLOG : Blog =
             "life"
           ],
           "active": true
+        },
+        {
+          "id": "creating-and-destroying",
+          "title": "Creating and Destroying",
+          "date": "May 30, 2013",
+          "subtitle": "The Dual Nature of Creation and Destruction",
+          "summary": "Explores the intricate relationship between construction and deconstruction through the lens of urban development. The narrative reflects on the transformation of a chaotic construction site into a bustling commercial hub, emphasizing the creativity, challenges, and eventual detachment experienced by those involved in the project. It parallels the creation of physical spaces with the creation of art, highlighting the inevitability of change and the necessity of relinquishing control for growth and evolution.",
+          "featuredImage": "./assets/images/creatingAndDestroying/featuredImage.png",
+          "thumb": "./assets/images/creatingAndDestroying/thumb.png",
+          "tags": [
+            "life"
+          ],
+          "active": true
         }
       ]
   };  
