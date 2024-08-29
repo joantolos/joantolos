@@ -11,6 +11,17 @@ export const BLOG : Blog =
     "posts":
       [
         {
+          "id": "my-days-of-comedy",
+          "date": "August 29, 2024",
+          "title": "My days of comedy",
+          "subtitle": "Coping mechanisms when everything goes wrong",
+          "summary": "Placeholder",
+          "featuredImage": "./assets/images/myDaysOfComedy/featuredImage.png",
+          "thumb": "./assets/images/myDaysOfComedy/thumb.png",
+          "tags": ["life"],
+          "active": false
+        },
+        {
           "id": "the-consequences-of-coding",
           "date": "February 15, 2024",
           "title": "The consequences of coding",
