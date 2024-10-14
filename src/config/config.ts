@@ -33,17 +33,6 @@ export const BLOG : Blog =
           "active": false
         },
         {
-          "id": "when-even-data-lies",
-          "date": "July 12, 2024",
-          "title": "When even data lies",
-          "subtitle": "Can two contradicting facts be true at the same time?",
-          "summary": "Exploring the importance of data-driven decision-making while highlighting its limitations, particularly when faced with conflicting information.",
-          "featuredImage": "./assets/images/whenEvenDataLies/featuredImage.png",
-          "thumb": "./assets/images/whenEvenDataLies/thumb.png",
-          "tags": ["code"],
-          "active": true
-        },
-        {
           "id": "hexagonal-architecture",
           "date": "October 15, 2024",
           "title": "The road to hexagonal architecture",
@@ -53,6 +42,17 @@ export const BLOG : Blog =
           "thumb": "./assets/images/hexagonalArchitecture/thumb.png",
           "tags": ["code"],
           "active": false
+        },
+        {
+          "id": "when-even-data-lies",
+          "date": "July 12, 2024",
+          "title": "When even data lies",
+          "subtitle": "Can two contradicting facts be true at the same time?",
+          "summary": "Exploring the importance of data-driven decision-making while highlighting its limitations, particularly when faced with conflicting information.",
+          "featuredImage": "./assets/images/whenEvenDataLies/featuredImage.png",
+          "thumb": "./assets/images/whenEvenDataLies/thumb.png",
+          "tags": ["code"],
+          "active": true
         },
         {
           "id": "clean-code-clean-mind",
