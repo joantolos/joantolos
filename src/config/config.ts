@@ -44,6 +44,17 @@ export const BLOG : Blog =
           "active": true
         },
         {
+          "id": "hexagonal-architecture",
+          "date": "October 15, 2024",
+          "title": "The road to hexagonal architecture",
+          "subtitle": "A gentle introduction to hexagonal architecture analysing several architectures to get there.",
+          "summary": "Placeholder",
+          "featuredImage": "./assets/images/hexagonalArchitecture/featuredImage.png",
+          "thumb": "./assets/images/hexagonalArchitecture/thumb.png",
+          "tags": ["code"],
+          "active": false
+        },
+        {
           "id": "clean-code-clean-mind",
           "date": "February 15, 2024",
           "title": "Clean code, clean mind",
