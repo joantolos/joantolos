@@ -1,9 +1,12 @@
-The role of software architect has some many definitions as there are companies. This is a term that has lost its meaning, as it depends so much of the organization that trying to create a single definition is very hard. It can range from expert programmer up to defining the strategic technical direction for the company.
+The role of software architect has as many definitions as there are companies. This is a term that, in part, has lost its meaning, as it depends so heavily on the organization that trying to create a single definition is very difficult. The role can range from expert programmer to defining the company's strategic technical direction.
 
-# The laws of architecture
+I want to discuss the architecture of a piece of software, though some may consider this **software design** rather than **software architecture**, which is fine. The main goal of this post is to examine some of the most commonly used software architectures and learn how to choose between them based on requirements. Since Microservices Architecture is so widespread, I want to give special attention to Domain-Driven Design (DDD) and Hexagonal Architecture, which, by consensus, are considered the most appropriate ways to implement microservices.
 
-- Everything in software architecture is a trade-off.
-- Why is more important than how.
+This post is based basically on three books:
+
+* <a href="https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/" target="_blank">Fundamentals of Software Architecture O'Reilly</a>
+* <a href="https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543" target="_blank">Microservices Patterns: With examples in Java</a>
+* <a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Domain-Driven Design: Tackling Complexity in the Heart of Software</a>
 
 # Architecture Characteristics or "the ilities"
 
@@ -39,17 +42,26 @@ The role of software architect has some many definitions as there are companies.
 
 # I want it all
 
-We all want them all, of course. But this is just impossible... no single architectural style can achive all of those capabilities at the same time. More over, some are mutually exclusive from one another.
+We all want everything, of course. But this is impossible—no single architectural style can achieve all of these capabilities at once. Moreover, some are mutually exclusive.
 
-Applications can only support a few of the architecture characteristics listed for a variety of reasons. First, each of the supported characteristics requires design effort and perhaps structural support. Second, the bigger problem lies with the fact that each architecture characteristic often has an impact on others. For example, if you wnat to improve security, it will almost certainly negatively impact performance: the application must do more on-the-fly encryption, indirection for secrets hiding, and other activities that potentially degrade performance.
+Applications can only support a few architectural characteristics for various reasons. First, each supported characteristic requires design effort and possibly structural support. Second, the larger issue is that each architectural characteristic often impacts others. For example, if you want to improve security, it will almost certainly negatively impact performance: the application will need to perform additional on-the-fly encryption, add layers of indirection for secrets hiding, and other activities that may degrade performance.
 
-The good news is that we don't need them all. In fact, you probably need just a few for your application to thrive (not just succeed but thrive), you should concentrate on them. We need to differentiate between **what we want** and **what we really need**.
+The good news is that we don’t need all of them. In fact, you likely need just a few key characteristics for your application to thrive. Focus on those. It’s important to differentiate between what we want and what we truly need.
 
-Let's think of an example. It is always nice to have **scalability**, everyone wants scalability, right?. But do you really need it enough to pay the trade offs? Does your application rely in constant growth to succeed? Does your business model require an exponential grow of users? Apps like Twitter or Instagram, that base their business model on having huge amounts of always growing users, obviously need that kind of hard-core scalability. But... are you implementing Twitter? Let's be humble and really measure the number of users we expect to have.
+Let’s consider an example. **Scalability** is always desirable —everyone wants scalability, right? But do you need it enough to justify the trade-offs? Does your application rely on constant growth to succeed? Does your business model require exponential user growth? Apps like Twitter or Instagram, which base their models on having a huge, constantly growing user base, obviously need that level of hard-core scalability. But... are you building Twitter? Let’s be realistic and carefully measure the number of users we expect.
 
-Scalability is very expensive and we loose a lot of other useful characteritics if we go hard on it. Simplicity being one of the most obvious.
+Scalability is very costly, and we lose many other useful characteristics if we prioritize it too heavily—simplicity being one of the most obvious.
 
-# The main available architectures
+# The laws of architecture
+
+We can distile the above explanation into two laws:
+
+- **Everything in software architecture is a trade-off:** Every decision you make in software architecture comes with both benefits and drawbacks. In other words, there is no perfect solution that satisfies all requirements without some compromises.
+- **Why is more important than how:** Focusing on "why" helps ensure that architecture aligns with long-term goals and solves real problems, rather than just adding complexity for complexity’s sake. By understanding the underlying purpose, architects can make informed decisions that adapt to future changes in technology and requirements.
+
+
+
+# (Some of) The main available architectures
 
 # Microservices
 
@@ -60,6 +72,26 @@ Scalability is very expensive and we loose a lot of other useful characteritics 
 # Hexagonal architecture
 
  "However, we do follow and recommend the advice from domain-driven design to establish and use a ubiquitous language amongst fellow employees to help ensure fewer term-based misunderstandings"
+
+ # The relationship between DDD and Hexagonal Architecture
+
+- DDD is a philosophy for designing software that reflects complex business domains.
+- Hexagonal Architecture is one way to implement DDD by ensuring the core domain logic is decoupled from external systems.
+- Other architectural styles that can be used to implement DDD include:
+    - Layered Architecture (traditional approach)
+    - Clean Architecture (concentric rings, similar to Hexagonal)
+    - CQRS (separating command/write and query/read sides)
+    - Event-Driven Architecture (EDA) (using events for communication between domain contexts)
+
+Each of these architectures helps achieve the goals of DDD but offers different ways to structure the application based on your specific needs (e.g., scalability, modularity, testing).
+
+# Beyond DDD
+
+Data driven design
+Behaviour driven development (BDD)
+Model driven engineering (MDE)
+User-centered design (UCD)
+Component-based desing
 
 # Conclusion
 
