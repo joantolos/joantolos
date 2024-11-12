@@ -1,0 +1,110 @@
+The role of software architect has as many definitions as there are companies. This is a term that, in part, has lost its meaning, as it depends so heavily on the organization that trying to create a single definition is very difficult. The role can range from expert programmer to defining the company's strategic technical direction.
+
+I want to discuss the architecture of a piece of software, though some may consider this **software design** rather than **software architecture**, which is fine. The main goal of this post is to examine some of the most commonly used software architectures and learn how to choose between them based on requirements. Since Microservices Architecture is so widespread, I want to give special attention to Domain-Driven Design (DDD) and Hexagonal Architecture, which, by consensus, are considered the most appropriate ways to implement microservices.
+
+This post is based basically on three books:
+
+* <a href="https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/" target="_blank">Fundamentals of Software Architecture O'Reilly</a>
+* <a href="https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543" target="_blank">Microservices Patterns: With examples in Java</a>
+* <a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Domain-Driven Design: Tackling Complexity in the Heart of Software</a>
+
+# Architecture Characteristics or "the ilities"
+
+- **Operational Characteristics:**
+    - **Availability:** How long the system will need to be available (if 24/7, steps need to be in place to allow the system to be up and running quickly in case of any failure).
+    - **Continuity:** Disaster recovery capability.
+    - **Performance:** Including stress testing, peak analysis, analysis of the frequency of functions used, capacity required, and response times. Performance acceptance sometimes requires an exercise of its own, taking months to complete.
+    - **Recoverability:** Business continuity requirements. This will affect the backup strategy and requirements for duplicated hardware.
+    - **Reliability/safety:** Assess if the system needs to be fail-safe, or if it is mission critical in a way that affects lives. If it fails, will it cost the company large sums of money?
+    - **Robustness:** Ability to handle error and boundary conditions while running if something outside our control occurs like the Internet connection going down, a power outage or a hardware failure.
+    - **Scalability:** Ability for the system to perform and operate as the number of users or requests increases.
+
+- **Structural Characteristics:**
+    - **Configurability:** Ability for the end users to easily change aspects of the software's behaviour and configuration through usable interfaces.
+    - **Extensibility:** How important it is to plug new pieces of functionality in.
+    - **Installability:** Ease of system installation on all necessary platforms.
+    - **Leverageabiliy/reuse:** Ability to leverage common components across multiple products.
+    - **Localization:** Support for multiple languages on enty/query screens in data fields; on reports, multiple character requirements and units of measure or currencies.
+    - **Maintainability:** How easy it is to apply changes and enhance the system?
+    - **Portability:** Does the system need to run on more than one platform?
+    - **Supportability:** What level of technical support is needed by the application? What level of logging and other facilities are required to debug errors in the system?
+    - **Upgradeability:** Ability to easily/quickly upgrade from a previous version of this application/solution to a newer version on servers and clients.
+
+- **Cross-cutting Characteristics:**
+    - **Accessibility:** Access to all your users, including those with disabilities like colorblindness or hearing loss.
+    - **Archivability:** Will the data need to be archived or deleted after a period of time?
+    - **Authentication:** Security requirements to ensure users are who they say they are.
+    - **Authorization:** Security requierements to ensure users can access only certain functions within the application.
+    - **Legal:** What legislative constraints is the system operating in? What reservation of rights does the company require? Any regulations regarding the way the application is to be build or deployed?
+    - **Privacy:** Ability to hide transactions from internal company employees (Encrypted transactions).
+    - **Security:** Does the data need to be encrypted in the database? Encrypted for network communication between internal systems? What type of authentication needs to be in place for remote user access?
+    - **Usability/achievability:** Level of training required for users to achieve their goals with the application/solution. Usability requirements need to be treated as seriously as any other architectural issue.
+
+# I want it all
+
+We all want everything, of course. But this is impossible—no single architectural style can achieve all of these capabilities at once. Moreover, some are mutually exclusive.
+
+Applications can only support a few architectural characteristics for various reasons. First, each supported characteristic requires design effort and possibly structural support. Second, the larger issue is that each architectural characteristic often impacts others. For example, if you want to improve security, it will almost certainly negatively impact performance: the application will need to perform additional on-the-fly encryption, add layers of indirection for secrets hiding, and other activities that may degrade performance.
+
+The good news is that we don’t need all of them. In fact, you likely need just a few key characteristics for your application to thrive. Focus on those. It’s important to differentiate between what we want and what we truly need.
+
+Let’s consider an example. **Scalability** is always desirable —everyone wants scalability, right? But do you need it enough to justify the trade-offs? Does your application rely on constant growth to succeed? Does your business model require exponential user growth? Apps like Twitter or Instagram, which base their models on having a huge, constantly growing user base, obviously need that level of hard-core scalability. But... are you building Twitter? Let’s be realistic and carefully measure the number of users we expect.
+
+Scalability is very costly, and we lose many other useful characteristics if we prioritize it too heavily—simplicity being one of the most obvious.
+
+# The laws of architecture
+
+We can distile the above explanation into two laws:
+
+- **Everything in software architecture is a trade-off:** Every decision you make in software architecture comes with both benefits and drawbacks. In other words, there is no perfect solution that satisfies all requirements without some compromises.
+- **Why is more important than how:** Focusing on "why" helps ensure that architecture aligns with long-term goals and solves real problems, rather than just adding complexity for complexity’s sake. By understanding the underlying purpose, architects can make informed decisions that adapt to future changes in technology and requirements.
+
+
+
+# (Some of) The main available architectures
+
+# Microservices
+
+# Domain Driven Design (DDD)
+
+ (why domain centric)
+
+# Hexagonal architecture
+
+ "However, we do follow and recommend the advice from domain-driven design to establish and use a ubiquitous language amongst fellow employees to help ensure fewer term-based misunderstandings"
+
+ # The relationship between DDD and Hexagonal Architecture
+
+- DDD is a philosophy for designing software that reflects complex business domains.
+- Hexagonal Architecture is one way to implement DDD by ensuring the core domain logic is decoupled from external systems.
+- Other architectural styles that can be used to implement DDD include:
+    - Layered Architecture (traditional approach)
+    - Clean Architecture (concentric rings, similar to Hexagonal)
+    - CQRS (separating command/write and query/read sides)
+    - Event-Driven Architecture (EDA) (using events for communication between domain contexts)
+
+Each of these architectures helps achieve the goals of DDD but offers different ways to structure the application based on your specific needs (e.g., scalability, modularity, testing).
+
+# Beyond DDD
+
+Data driven design
+Behaviour driven development (BDD)
+Model driven engineering (MDE)
+User-centered design (UCD)
+Component-based desing
+
+# Conclusion
+
+## References:
+
+* _Photo <a href="https://www.dreamstime.com/stock-photography-architecture-plan-tools-image12802962" target="_blank">12802962</a> © 
+<a href="https://www.dreamstime.com/selestron76_info" target="_blank">Selestron76</a> | <a href="https://www.dreamstime.com/photos-images/architecture.html" target="_blank">Dreamstime.com</a>_
+* _<a href="https://fundamentalsofsoftwarearchitecture.com/" target="_blank">Fundamentals of Software Architecture Blog</a>_
+* _<a href="https://www.amazon.com/Fundamentals-Software-Architecture-Comprehensive-Characteristics/dp/1492043451" target="_blank">Fundamentals of Software Architecture</a>_
+* _<a href="https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/" target="_blank">Fundamentals of Software Architecture O'Reilly</a>_
+* _<a href="https://microservices.io/patterns/microservices.html" target="_blank">Microservices Pattern</a>_
+* _<a href="https://www.manning.com/books/microservices-patterns" target="_blank">Manning: Microservices Patterns: With examples in Java</a>_
+* _<a href="https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543" target="_blank">Microservices Patterns: With examples in Java</a>_
+* _<a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Domain-Driven Design: Tackling Complexity in the Heart of Software</a>_
+* _<a href="https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html" target="_blank">Isn't hexagonal architecture just 3 tier in a new dress?</a>_
+* _<a href="https://www.linkedin.com/pulse/stop-using-domain-driven-design-šimon-rácz" target="_blank">Stop using Domain-Driven Design</a>_
