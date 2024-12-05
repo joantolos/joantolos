@@ -69,6 +69,11 @@ import { StoreComponent } from './components/store/store.component';
       component: CookiePolicyComponent
     },
     {
+      path: 'cv',
+      redirectTo: 'assets/cv.pdf',
+      pathMatch: 'full'
+    },
+    {
       path: '**',
       component: PageNotFoundComponent
     }
