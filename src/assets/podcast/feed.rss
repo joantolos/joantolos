@@ -23,11 +23,11 @@
     <itunes:email>joan.tolos@gmail.com</itunes:email>
   </itunes:owner>
   <image>
-     <url>https://d2n6quja4m53k3.cloudfront.net/cover.jpg</url>
+     <url>https://www.joantolos.com/assets/podcast/cover.jpg</url>
      <title>Nada nuevo bajo el sol</title>
      <link>http://www.nadanuevobajoelsol.com</link>
   </image>
-  <itunes:image href="https://d2n6quja4m53k3.cloudfront.net/cover.jpg" />
+  <itunes:image href="https://www.joantolos.com/assets/podcast/cover.jpg" />
   <itunes:category text="Technology" />
   <item>
     <itunes:title>Ep.111: Fundamentos de programación orientada a objetos</itunes:title>
