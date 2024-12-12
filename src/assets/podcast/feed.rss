@@ -56,7 +56,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te voy a mostrar cómo he implementado el comportamiento de las luces de dos semáforos usando HTML, CSS y Javascript. Verás cómo he creado el código HTML para definir la estructura de los semáforos, el código CSS para darles estilo y color, y el código Javascript para controlar el cambio de luces y la sincronización entre los semáforos. También te explicaré los conceptos básicos de HTML, CSS y Javascript, y cómo se pueden usar para crear animaciones interactivas en la web. Si quieres aprender más sobre este proyecto, puedes ver el código fuente y el resultado final en los siguientes enlaces: https://github.com/joantolos/traffic-lights y https://joantolos.github.io/traffic-lights/. Espero que te guste este episodio y que te sirva de inspiración para tus propios proyectos de programación web. ¡Hasta la próxima!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te voy a mostrar cómo he implementado el comportamiento de las luces de dos semáforos usando HTML, CSS y Javascript. Verás cómo he creado el código HTML para definir la estructura de los semáforos, el código CSS para darles estilo y color, y el código Javascript para controlar el cambio de luces y la sincronización entre los semáforos. También te explicaré los conceptos básicos de HTML, CSS y Javascript, y cómo se pueden usar para crear animaciones interactivas en la web. Si quieres aprender más sobre este proyecto, puedes ver el código fuente y el resultado final en los siguientes enlaces: https://github.com/joantolos/traffic-lights y https://joantolos.github.io/traffic-lights/. Espero que te guste este episodio y que te sirva de inspiración para tus propios proyectos de programación web. ¡Hasta la próxima!</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-110-simulador-luces-de-trafico.mp3" length="22100750" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-110-simulador-luces-de-trafico.mp3" length="22100750" type="audio/mpeg" />
     <video>https://youtu.be/oibjxrfRiNg</video>
     <videoId>oibjxrfRiNg</videoId>
     <videoVisible>true</videoVisible>
@@ -76,7 +76,7 @@
     <content:encoded><![CDATA[<p>En este episodio del podcast, exploro el mundo de los conflictos artificiales y los lobbies que se dedican a mantener un discurso crispado y un ambiente de enfrentamiento. Descubriremos cómo ciertos grupos de poder manipulan las narrativas para fomentar la división y obstaculizar el progreso social. A través de análisis de estrategias de desinformación, podemos entrever las tácticas utilizadas para perpetuar los conflictos artificiales y cómo esto afecta a nuestras sociedades.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio del podcast, exploro el mundo de los conflictos artificiales y los lobbies que se dedican a mantener un discurso crispado y un ambiente de enfrentamiento. A medida que analizamos casos históricos y contemporáneos, descubrimos cómo ciertos grupos de poder manipulan las narrativas para fomentar la división y obstaculizar el progreso social. A través de análisis de estrategias de desinformación, podemos entrever las tácticas utilizadas para perpetuar los conflictos artificiales y cómo esto afecta a nuestras sociedades.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-109-todos-somos-c.mp3" length="6902232" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-109-todos-somos-c.mp3" length="6902232" type="audio/mpeg" />
     <video>https://youtu.be/buu4MCvOn8E</video>
     <videoId>buu4MCvOn8E</videoId>
     <videoVisible>false</videoVisible>
@@ -96,7 +96,7 @@
     <content:encoded><![CDATA[<p>En este episodio, compartiré con vosotros la razón detrás de la disminución en la frecuencia de lanzamiento de nuevos episodios y cómo diferentes proyectos en los que estoy trabajando han afectado esta dinámica. Exploraré las diversas iniciativas que mantengo en marcha y cómo cada una de ellas requiere tiempo y dedicación. A través de esta honesta conversación, os brindaré una visión transparente de mi proceso creativo y los retos que enfrento para ofrecerles contenido de calidad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, compartiré con vosotros la razón detrás de la disminución en la frecuencia de lanzamiento de nuevos episodios y cómo diferentes proyectos en los que estoy trabajando han afectado esta dinámica. Exploraré las diversas iniciativas que mantengo en marcha y cómo cada una de ellas requiere tiempo y dedicación. A través de esta honesta conversación, os brindaré una visión transparente de mi proceso creativo y los retos que enfrento para ofrecerles contenido de calidad.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-108-disclaimer.mp3" length="6064009" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-108-disclaimer.mp3" length="6064009" type="audio/mpeg" />
     <video>https://youtu.be/ywmpfG2gCkA</video>
     <videoId>ywmpfG2gCkA</videoId>
     <videoVisible>false</videoVisible>
@@ -116,7 +116,7 @@
     <content:encoded><![CDATA[<p>En este nuevo episodio, utilizo la asombrosa capacidad de ChatGPT para resolver pruebas técnicas. En esta ocasión, me enfrento nuevamente a dos desafíos clásicos: FizzBuzz en Javascript y el balanceo de un árbol binario en Java. A medida que navegamos por los detalles de cada problema, exploramos diferentes enfoques y estrategias para abordarlos. A través de la inteligencia artificial de ChatGPT, logro resolverlos de manera eficiente y efectiva.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>CaCAEn este nuevo episodio, utilizo la asombrosa capacidad de ChatGPT para resolver pruebas técnicas. En esta ocasión, me enfrento nuevamente a dos desafíos clásicos: FizzBuzz en Javascript y el balanceo de un árbol binario en Java. A medida que navegamos por los detalles de cada problema, exploramos diferentes enfoques y estrategias para abordarlos. A través de la inteligencia artificial de ChatGPT, logro resolverlos de manera eficiente y efectiva.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-107-chatgpt-resuelve-pruebas-tecnicas.mp3" length="12338771" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-107-chatgpt-resuelve-pruebas-tecnicas.mp3" length="12338771" type="audio/mpeg" />
     <video>https://youtu.be/4nMWG83TsMA</video>
     <videoId>4nMWG83TsMA</videoId>
     <videoVisible>true</videoVisible>
@@ -136,7 +136,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploro la creciente importancia de mantenerse relevante en el mundo digital y las redes sociales. En un panorama en constante evolución, donde la presencia en línea puede ser determinante para el éxito personal y profesional, exploramos esta supuesta necesidad y planteo si realmente es tan relevante como podemos pensar en una primera instancia.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploro la creciente importancia de mantenerse relevante en el mundo digital y las redes sociales. En un panorama en constante evolución, donde la presencia en línea puede ser determinante para el éxito personal y profesional, exploramos esta supuesta necesidad y planteo si realmente es tan relevante como podemos pensar en una primera instancia.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-106-tu-presencia-en-internet.mp3" length="8516589" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-106-tu-presencia-en-internet.mp3" length="8516589" type="audio/mpeg" />
     <video>https://youtu.be/D6MlJLVm25c</video>
     <videoId>D6MlJLVm25c</videoId>
     <videoVisible>false</videoVisible>
@@ -156,7 +156,7 @@
     <content:encoded><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo del ETL (Extract, Transform, Load), un proceso fundamental en el ámbito de la gestión de datos. A medida que exploramos cada una de las fases del ETL, desde la extracción de datos de diversas fuentes hasta su transformación y finalmente su carga en un datawarehouse, desglosamos de manera clara y concisa los conceptos clave y las mejores prácticas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo del ETL (Extract, Transform, Load), un proceso fundamental en el ámbito de la gestión de datos. A medida que exploramos cada una de las fases del ETL, desde la extracción de datos de diversas fuentes hasta su transformación y finalmente su carga en un datawarehouse, desglosamos de manera clara y concisa los conceptos clave y las mejores prácticas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-105-que-es-un-etl.mp3" length="8887110" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-105-que-es-un-etl.mp3" length="8887110" type="audio/mpeg" />
     <video>https://youtu.be/iWtzMpqnrFM</video>
     <videoId>iWtzMpqnrFM</videoId>
     <videoVisible>true</videoVisible>
@@ -176,7 +176,7 @@
     <content:encoded><![CDATA[<p>En este episodio especial del podcast, te sumerjo en el fascinante mundo de los desafíos en el trabajo. Compartiré contigo un par de anécdotas personales en las que cometí errores graves en un entorno de producción, revelando los obstáculos que enfrenté y las lecciones valiosas que extraje de estas experiencias.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio especial del podcast, te sumerjo en el fascinante mundo de los desafíos en el trabajo. Compartiré contigo un par de anécdotas personales en las que cometí errores graves en un entorno de producción, revelando los obstáculos que enfrenté y las lecciones valiosas que extraje de estas experiencias.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-104-errores-en-produccion.mp3" length="11304992" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-104-errores-en-produccion.mp3" length="11304992" type="audio/mpeg" />
     <video>https://youtu.be/-DiNSmnSOLY</video>
     <videoId>-DiNSmnSOLY</videoId>
     <videoVisible>false</videoVisible>
@@ -196,7 +196,7 @@
     <content:encoded><![CDATA[<p>En este episodio de fin de año, hago una pausa para reflexionar sobre los últimos 12 meses y todo lo que hemos experimentado y aprendido.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio de fin de año, hago una pausa para reflexionar sobre los últimos 12 meses y todo lo que hemos experimentado y aprendido.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-103-resumen-2022.mp3" length="15783131" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-103-resumen-2022.mp3" length="15783131" type="audio/mpeg" />
     <video>https://youtu.be/wKTWHCa_5E4</video>
     <videoId>wKTWHCa_5E4</videoId>
     <videoVisible>false</videoVisible>
@@ -216,7 +216,7 @@
     <content:encoded><![CDATA[<p>En este episodio revelador del podcast, nos adentramos en el fascinante mundo de la salud mental y exploramos los impactos negativos de descuidar nuestro bienestar psicológico. A través de conversaciones, examino cómo el descuido de nuestra forma mental puede afectar todos los aspectos de nuestra vida, desde nuestras relaciones personales hasta nuestro rendimiento profesional.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio revelador del podcast, nos adentramos en el fascinante mundo de la salud mental y exploramos los impactos negativos de descuidar nuestro bienestar psicológico. A través de conversaciones, examino cómo el descuido de nuestra forma mental puede afectar todos los aspectos de nuestra vida, desde nuestras relaciones personales hasta nuestro rendimiento profesional.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-102-andar-en-reserva.mp3" length="13946208" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-102-andar-en-reserva.mp3" length="13946208" type="audio/mpeg" />
     <video>https://youtu.be/4fMoBetFhxo</video>
     <videoId>4fMoBetFhxo</videoId>
     <videoVisible>false</videoVisible>
@@ -236,7 +236,7 @@
     <content:encoded><![CDATA[<p>En este episodio del podcast, nos adentramos en el apasionante debate que ha surgido en torno al reciente cambio de dirección de Twitter. Exploramos en detalle las decisiones y políticas implementadas por la plataforma de redes sociales y su impacto en los usuarios, después que Elon Musk tomara las riendas de la compañía.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio del podcast, nos adentramos en el apasionante debate que ha surgido en torno al reciente cambio de dirección de Twitter. Exploramos en detalle las decisiones y políticas implementadas por la plataforma de redes sociales y su impacto en los usuarios, después que Elon Musk tomara las riendas de la compañía.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-101-el-caso-de-twitter.mp3" length="20840011" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-101-el-caso-de-twitter.mp3" length="20840011" type="audio/mpeg" />
     <video>https://youtu.be/J-6mB4tozk4</video>
     <videoId>J-6mB4tozk4</videoId>
     <videoVisible>true</videoVisible>
@@ -256,7 +256,7 @@
     <content:encoded><![CDATA[<p>En este episodio del podcast, desbloqueamos los secretos para destacar y aumentar tus posibilidades de conseguir ese trabajo deseado. A través de una serie de consejos prácticos y estrategias efectivas, exploro cómo maximizar tu atractivo como candidato durante el proceso de entrevistas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio del podcast, desbloqueamos los secretos para destacar y aumentar tus posibilidades de conseguir ese trabajo deseado. A través de una serie de consejos prácticos y estrategias efectivas, exploro cómo maximizar tu atractivo como candidato durante el proceso de entrevistas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-100-hazte-contratable.mp3" length="14585061" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-100-hazte-contratable.mp3" length="14585061" type="audio/mpeg" />
     <video>https://youtu.be/hSeIaaBEvwQ</video>
     <videoId>hSeIaaBEvwQ</videoId>
     <videoVisible>true</videoVisible>
@@ -276,7 +276,7 @@
     <content:encoded><![CDATA[<p>En este episodio de nuestro podcast, te adentrarás en el apasionante mundo de los circuitos digitales y descubrirás cómo diseñarlos de manera sencilla y efectiva utilizando la herramienta CircuitVerse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio de nuestro podcast, te adentrarás en el apasionante mundo de los circuitos digitales y descubrirás cómo diseñarlos de manera sencilla y efectiva utilizando la herramienta CircuitVerse.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-99-diseno-de-circuito-digital-online.mp3" length="11605899" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-99-diseno-de-circuito-digital-online.mp3" length="11605899" type="audio/mpeg" />
     <video>https://youtu.be/E48z0j9zrG4</video>
     <videoId>E48z0j9zrG4</videoId>
     <videoVisible>true</videoVisible>
@@ -296,7 +296,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos un mundo de posibilidades a través de diversas APIs gratuitas que están a disposición de desarrolladores y entusiastas. Descubrimos cómo estas interfaces permiten acceder a una gran cantidad de datos y funcionalidades para potenciar nuestras aplicaciones. Además, te presentaré en detalle la herramienta JSON Crack, una poderosa opción para representar de manera gráfica los datos en formato JSON. Como ejemplo práctico, te mostraré cómo utilizar una de las APIs para obtener información climática en tiempo real y, a través de JSON Crack, visualizarla de forma amigable. Prepárate para sumergirte en el fascinante mundo de las APIs y cómo aprovecharlas para llevar tus proyectos al siguiente nivel.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos un mundo de posibilidades a través de diversas APIs gratuitas que están a disposición de desarrolladores y entusiastas. Descubrimos cómo estas interfaces permiten acceder a una gran cantidad de datos y funcionalidades para potenciar nuestras aplicaciones. Además, te presentaré en detalle la herramienta JSON Crack, una poderosa opción para representar de manera gráfica los datos en formato JSON. Como ejemplo práctico, te mostraré cómo utilizar una de las APIs para obtener información climática en tiempo real y, a través de JSON Crack, visualizarla de forma amigable. Prepárate para sumergirte en el fascinante mundo de las APIs y cómo aprovecharlas para llevar tus proyectos al siguiente nivel.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-98-de-json-a-grafico.mp3" length="14225823" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-98-de-json-a-grafico.mp3" length="14225823" type="audio/mpeg" />
     <video>https://youtu.be/UGLeBsfOTEo</video>
     <videoId>UGLeBsfOTEo</videoId>
     <videoVisible>true</videoVisible>
@@ -316,7 +316,7 @@
     <content:encoded><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo de la "tail recursion". Exploraremos a fondo qué es la tail recursion y cómo se diferencia de la recursión tradicional. Para ilustrar su funcionamiento, presento un ejemplo práctico en JavaScript. A través de este ejemplo, podemos entender cómo la tail recursion optimiza el uso de la pila de llamadas, evitando desbordamientos en problemas con grandes conjuntos de datos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo de la "tail recursion". Exploraremos a fondo qué es la tail recursion y cómo se diferencia de la recursión tradicional. Para ilustrar su funcionamiento, presento un ejemplo práctico en JavaScript. A través de este ejemplo, podemos entender cómo la tail recursion optimiza el uso de la pila de llamadas, evitando desbordamientos en problemas con grandes conjuntos de datos.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-97-tail-recursion.mp3" length="17227286" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-97-tail-recursion.mp3" length="17227286" type="audio/mpeg" />
     <video>https://youtu.be/RM5E4IhrWWc</video>
     <videoId>RM5E4IhrWWc</videoId>
     <videoVisible>true</videoVisible>
@@ -336,7 +336,7 @@
     <content:encoded><![CDATA[<p>En este episodio del podcast, adentrémonos en la profunda problemática de los titulares incendiarios y el impacto que tienen en nuestras vidas digitales y la sociedad en general. Exploraremos cómo el auge del "clic bait" ha llevado a consecuencias preocupantes, donde la búsqueda desesperada por obtener clics y atención ha impulsado la propagación de titulares engañosos y, en algunos casos, incluso mentiras deliberadas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio del podcast, adentrémonos en la profunda problemática de los titulares incendiarios y el impacto que tienen en nuestras vidas digitales y la sociedad en general. Exploraremos cómo el auge del "clic bait" ha llevado a consecuencias preocupantes, donde la búsqueda desesperada por obtener clics y atención ha impulsado la propagación de titulares engañosos y, en algunos casos, incluso mentiras deliberadas. </p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-96-mentiras-por-clics-consequencias-del-titular-incendiario.mp3" length="15961270" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-96-mentiras-por-clics-consequencias-del-titular-incendiario.mp3" length="15961270" type="audio/mpeg" />
     <video>https://youtu.be/NIqPjESgQXM</video>
     <videoId>NIqPjESgQXM</videoId>
     <videoVisible>false</videoVisible>
@@ -356,7 +356,7 @@
     <content:encoded><![CDATA[<p>En este episodio del podcast, nos sumergimos en la fascinante vida profesional de Paul Lutus, un verdadero pionero e innovador en el mundo del software. Acompáñame mientras trazo el increíble viaje de este visionario por accidente, desde sus humildes comienzos hasta convertirse en una figura influyente en la industria tecnológica. Todo ello sin pasar por la universidad ni tener ningún tipo de formación reglada.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio del podcast, nos sumergimos en la fascinante vida profesional de Paul Lutus, un verdadero pionero e innovador en el mundo del software. Acompáñame mientras trazo el increíble viaje de este visionario por accidente, desde sus humildes comienzos hasta convertirse en una figura influyente en la industria tecnológica. Todo ello sin pasar por la universidad ni tener ningún tipo de formación reglada.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-95-exito-sin-pasar-por-la-universidad-la-historia-de-paul-lutus.mp3" length="22113743" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-95-exito-sin-pasar-por-la-universidad-la-historia-de-paul-lutus.mp3" length="22113743" type="audio/mpeg" />
     <video>https://youtu.be/mEtlWkI7pPE</video>
     <videoVisible>true</videoVisible>
     <videoId>mEtlWkI7pPE</videoId>
@@ -376,7 +376,7 @@
     <content:encoded><![CDATA[<p>Descubre el funcionamiento del algoritmo de "Binary Search". Exploro paso a paso cómo esta técnica de búsqueda permite encontrar un elemento en una lista ordenada de manera eficiente. No solo hablo de teoría, sino que también te guiaré a través de una implementación práctica utilizando el lenguaje de programación Java. Aprenderás cómo este algoritmo puede marcar la diferencia en la optimización de búsquedas en tus propios proyectos de desarrollo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Descubre el funcionamiento del algoritmo de "Binary Search". Exploro paso a paso cómo esta técnica de búsqueda permite encontrar un elemento en una lista ordenada de manera eficiente. No solo hablo de teoría, sino que también te guiaré a través de una implementación práctica utilizando el lenguaje de programación Java. Aprenderás cómo este algoritmo puede marcar la diferencia en la optimización de búsquedas en tus propios proyectos de desarrollo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-94-binary-search.mp3" length="18059859" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-94-binary-search.mp3" length="18059859" type="audio/mpeg" />
     <video>https://youtu.be/gFKuSMQZNcM</video>
     <videoId>gFKuSMQZNcM</videoId>
     <videoVisible>true</videoVisible>
@@ -396,7 +396,7 @@
     <content:encoded><![CDATA[<p>Sesión de preguntas y respuestas!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Sesión de preguntas y respuestas!</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-93-preguntas-y-respuestas.mp3" length="9541347" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-93-preguntas-y-respuestas.mp3" length="9541347" type="audio/mpeg" />
     <video>https://youtu.be/5JD_Te1_h54</video>
     <videoId>5JD_Te1_h54</videoId>
     <videoVisible>false</videoVisible>
@@ -414,7 +414,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploro a fondo la importancia de tener un trabajo con impacto y cómo esta elección influye directamente en la calidad de tu desempeño laboral. Aprenderemos cómo el sentido de propósito no solo impulsa la productividad y la satisfacción en el trabajo, sino que también contribuye a tu bienestar general.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploro a fondo la importancia de tener un trabajo con impacto y cómo esta elección influye directamente en la calidad de tu desempeño laboral. Aprenderemos cómo el sentido de propósito no solo impulsa la productividad y la satisfacción en el trabajo, sino que también contribuye a tu bienestar general.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-92-trabajo-con-impacto.mp3" length="10807443" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-92-trabajo-con-impacto.mp3" length="10807443" type="audio/mpeg" />
     <video>https://youtu.be/KjBSiT0FsZE</video>
     <videoId>KjBSiT0FsZE</videoId>
     <videoVisible>false</videoVisible>
@@ -434,7 +434,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos adentramos en el emocionante mundo de la programación y los algoritmos desde una perspectiva fresca y divertida: ¡enseñarle a los niños desde temprana edad! Descubriremos por qué aprender a programar a una edad temprana puede ser un verdadero superpoder para nuestros pequeños, potenciando su pensamiento lógico, creatividad y resolución de problemas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos adentramos en el emocionante mundo de la programación y los algoritmos desde una perspectiva fresca y divertida: ¡enseñarle a los niños desde temprana edad! Descubriremos por qué aprender a programar a una edad temprana puede ser un verdadero superpoder para nuestros pequeños, potenciando su pensamiento lógico, creatividad y resolución de problemas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-91-programacion-para-ninos.mp3" length="9345430" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-91-programacion-para-ninos.mp3" length="9345430" type="audio/mpeg" />
     <video>https://youtu.be/9xReBiOEA8Q</video>
     <videoId>9xReBiOEA8Q</videoId>
     <videoVisible>false</videoVisible>
@@ -454,7 +454,7 @@
     <content:encoded><![CDATA[<p>En este episodio nos adentramos en el mundo de los frameworks de programación y las motivaciones detrás de su existencia. ¿Por qué tantos programadores y desarrolladores recurren a estos conjuntos de herramientas predefinidas? ¿Qué problemas intentan resolver?</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio nos adentramos en el mundo de los frameworks de programación y las motivaciones detrás de su existencia. ¿Por qué tantos programadores y desarrolladores recurren a estos conjuntos de herramientas predefinidas? ¿Qué problemas intentan resolver?.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-90-entendiendo-los-frameworks.mp3" length="11913586" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-90-entendiendo-los-frameworks.mp3" length="11913586" type="audio/mpeg" />
     <video>https://youtu.be/wA_XHuKepao</video>
     <videoId>wA_XHuKepao</videoId>
     <videoVisible>true</videoVisible>
@@ -474,7 +474,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te invito a explorar el mundo del trabajo desde casa, donde veremos algunos de los beneficios y los inconvenientes de esta modalidad laboral en constante crecimiento. Descubre cómo la flexibilidad y la comodidad pueden aumentar la productividad y mejorar el equilibrio entre la vida laboral y personal. Sin embargo, también exploraremos los desafíos, como el aislamiento y las distracciones en el hogar, que a menudo se asocian con el teletrabajo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te invito a explorar el mundo del trabajo desde casa, donde veremos algunos de los beneficios y los inconvenientes de esta modalidad laboral en constante crecimiento. Descubre cómo la flexibilidad y la comodidad pueden aumentar la productividad y mejorar el equilibrio entre la vida laboral y personal. Sin embargo, también exploraremos los desafíos, como el aislamiento y las distracciones en el hogar, que a menudo se asocian con el teletrabajo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-89-beneficios-e-inconvenientes-de-trabajar-desde-casa.mp3" length="10736557" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-89-beneficios-e-inconvenientes-de-trabajar-desde-casa.mp3" length="10736557" type="audio/mpeg" />
     <video>https://youtu.be/u6LKrSTW7lY</video>
     <videoId>u6LKrSTW7lY</videoId>
     <videoVisible>false</videoVisible>
@@ -494,7 +494,7 @@
     <content:encoded><![CDATA[<p>En este episodio nos vamos al apasionante mundo de la programación a través del cine y la televisión. Vamos a sumergirnos en las mejores películas y series que han abordado el tema de la programación y la tecnología.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio nos vamos al apasionante mundo de la programación a través del cine y la televisión. Vamos a sumergirnos en las mejores películas y series que han abordado el tema de la programación y la tecnología.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-88-las-mejores-peliculas-y-series-sobre-programacion.mp3" length="9453002" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-88-las-mejores-peliculas-y-series-sobre-programacion.mp3" length="9453002" type="audio/mpeg" />
     <video>https://youtu.be/TiTmFUs5VzI</video>
     <videoId>TiTmFUs5VzI</videoId>
     <videoVisible>true</videoVisible>
@@ -514,7 +514,7 @@
     <content:encoded><![CDATA[<p>En este episodio, desentrañamos el emocionante mundo laboral y exploramos las diferencias fundamentales entre trabajar en una startup, en una consultora y en una gran multinacional.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, desentrañamos el emocionante mundo laboral y exploramos las diferencias fundamentales entre trabajar en una startup, en una consultora y en una gran multinacional.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-87-start-ups-vs-consultoras-vs-grandes-multinacionales.mp3" length="5423111" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-87-start-ups-vs-consultoras-vs-grandes-multinacionales.mp3" length="5423111" type="audio/mpeg" />
     <video>https://youtu.be/ZSsPO2WiaXc</video>
     <videoId>ZSsPO2WiaXc</videoId>
     <videoVisible>false</videoVisible>
@@ -534,7 +534,7 @@
     <content:encoded><![CDATA[<p>En este episodio nos sumergimos en el mundo de la programación en Java y exploramos una estructura de datos interesante: los "records" introducidos en Java 14. Vamos a adentrarnos en qué son los records, cómo funcionan y por qué son tan útiles en el desarrollo de software.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio nos sumergimos en el mundo de la programación en Java y exploramos una estructura de datos interesante: los "records" introducidos en Java 14. Vamos a adentrarnos en qué son los records, cómo funcionan y por qué son tan útiles en el desarrollo de software.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-86-java-records.mp3" length="13535869" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-86-java-records.mp3" length="13535869" type="audio/mpeg" />
     <video>https://youtu.be/ZLp5C4i9qr0</video>
     <videoId>ZLp5C4i9qr0</videoId>
     <videoVisible>true</videoVisible>
@@ -554,7 +554,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos sumergimos en el mundo de Scrum y exploramos uno de los aspectos más cruciales a la vez que polémicos: las estimaciones. Descubriremos cómo el framework Scrum utiliza técnicas de estimación para planificar y ejecutar proyectos de manera eficiente. También como pueden llegar entorpecer el buen funcionamento del proyecto.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos sumergimos en el mundo de Scrum y exploramos uno de los aspectos más cruciales a la vez que polémicos: las estimaciones. Descubriremos cómo el framework Scrum utiliza técnicas de estimación para planificar y ejecutar proyectos de manera eficiente. También como pueden llegar entorpecer el buen funcionamento del proyecto.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-85-scrum-estimaciones-o-la-bola-de-cristal.mp3" length="7508605" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-85-scrum-estimaciones-o-la-bola-de-cristal.mp3" length="7508605" type="audio/mpeg" />
     <video>https://youtu.be/VxlKdpeWoI0</video>
     <videoId>VxlKdpeWoI0</videoId>
     <videoVisible>true</videoVisible>
@@ -574,7 +574,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos el impacto duradero de la filosofía estoica en la cultura popular a través de libros, películas y otros medios. Descubriremos cómo las enseñanzas de figuras estoicas como Séneca, Epicteto y Marco Aurelio han influido en personajes y tramas en la literatura y el cine contemporáneos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <description><![CDATA[<p>En este episodio, exploramos el impacto duradero de la filosofía estoica en la cultura popular a través de libros, películas y otros medios. Descubriremos cómo las enseñanzas de figuras estoicas como Séneca, Epicteto y Marco Aurelio han influido en personajes y tramas en la literatura y el cine contemporáneos.</p>]]></description>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-84-estoicos-en-la-cultura-popular.mp3" length="12626528" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-84-estoicos-en-la-cultura-popular.mp3" length="12626528" type="audio/mpeg" />
     <video>https://youtu.be/hjegypwwiFM</video>
     <videoId>hjegypwwiFM</videoId>
     <videoVisible>false</videoVisible>
@@ -594,7 +594,7 @@
     <content:encoded><![CDATA[<p>En este episodio regresamos a algunos de los temas más destacados de episodios anteriores y respondo a las preguntas y comentarios de los oyentes.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio regresamos a algunos de los temas más destacados de episodios anteriores y respondo a las preguntas y comentarios de los oyentes.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-83-callback.mp3" length="12983212" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-83-callback.mp3" length="12983212" type="audio/mpeg" />
     <video>https://youtu.be/24Ca4n0B1tQ</video>
     <videoId>24Ca4n0B1tQ</videoId>
     <videoVisible>false</videoVisible>
@@ -614,7 +614,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te llevaré a través de una emocionante exploración de cómo funciona GitHub Copilot, una innovadora herramienta desarrollada en colaboración entre GitHub y OpenAI. Aprenderemos cómo esta herramienta de inteligencia artificial puede revolucionar la forma en que escribimos código.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te llevaré a través de una emocionante exploración de cómo funciona GitHub Copilot, una innovadora herramienta desarrollada en colaboración entre GitHub y OpenAI. Aprenderemos cómo esta herramienta de inteligencia artificial puede revolucionar la forma en que escribimos código.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-82-probando-github-copilot.mp3" length="12152549" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-82-probando-github-copilot.mp3" length="12152549" type="audio/mpeg" />
     <video>https://youtu.be/i-MNdhEyBtE</video>
     <videoId>i-MNdhEyBtE</videoId>
     <videoVisible>true</videoVisible>
@@ -632,7 +632,7 @@
     <content:encoded><![CDATA[<p>Existe una comunidad de programadores, pequeña pero muy activa, que se dedica a crear lenguajes de programacion esotericos. En este episodio exploro algunos de ellos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Existe una comunidad de programadores, pequeña pero muy activa, que se dedica a crear lenguajes de programacion esotericos. En este episodio exploro algunos de ellos.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-81-lenguajes-esotericos.mp3" length="17512869" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-81-lenguajes-esotericos.mp3" length="17512869" type="audio/mpeg" />
     <video>https://youtu.be/pUphGrocuCE</video>
     <videoId>pUphGrocuCE</videoId>
     <videoVisible>true</videoVisible>
@@ -652,7 +652,7 @@
     <content:encoded><![CDATA[<p>Sesion de preguntas y respuestas: Aclaracion sobre los algoritmos con O(n^2) / Recursividad en problemas sencillos / Mi lugar de trabajo / Casos de uso de un arbol binario / Prioridades al buscar trabajo o proyecto</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Sesion de preguntas y respuestas: Aclaracion sobre los algoritmos con O(n^2) / Recursividad en problemas sencillos / Mi lugar de trabajo / Casos de uso de un arbol binario / Prioridades al buscar trabajo o proyecto</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-80-q-a.mp3" length="10343790" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-80-q-a.mp3" length="10343790" type="audio/mpeg" />
     <video>https://youtu.be/Hubr5awygnM</video>
     <videoId>Hubr5awygnM</videoId>
     <videoVisible>false</videoVisible>
@@ -672,7 +672,7 @@
     <content:encoded><![CDATA[<p>¿Puedes acabar en la cárcel por programar algo incorrecto? Eso le ocurrió a un ingeniero de Volkswagen.<br/><br/>Articulo New York Times: https://www.nytimes.com/2017/08/25/business/volkswagen-engineer-prison-diesel-cheating.html<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.nadanuevobajoelsol.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>¿Puedes acabar en la cárcel por programar algo incorrecto? Eso le ocurrió a un ingeniero de Volkswagen.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-79-a-la-carcel-por-programar.mp3" length="12073872" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-79-a-la-carcel-por-programar.mp3" length="12073872" type="audio/mpeg" />
     <video>https://youtu.be/UQG0DaTQkB0</video>
     <videoId>UQG0DaTQkB0</videoId>
     <videoVisible>false</videoVisible>
@@ -692,7 +692,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te guiaré a través del proceso de invertir un árbol binario en el lenguaje de programación Java. La inversión de un árbol binario implica cambiar las relaciones entre los nodos de manera que el nodo raíz se convierta en la hoja más a la izquierda, y viceversa.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te guiaré a través del proceso de invertir un árbol binario en el lenguaje de programación Java. La inversión de un árbol binario implica cambiar las relaciones entre los nodos de manera que el nodo raíz se convierta en la hoja más a la izquierda, y viceversa.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-78-invertir-un-arbol-binario-en-java.mp3" length="19478662" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-78-invertir-un-arbol-binario-en-java.mp3" length="19478662" type="audio/mpeg" />
     <video>https://youtu.be/iV8TGVY3kN4</video>
     <videoId>iV8TGVY3kN4</videoId>
     <videoVisible>true</videoVisible>
@@ -712,7 +712,7 @@
     <content:encoded><![CDATA[<p>Una exploración sobre los posibles efectos negativos derivados del uso en exceso de las redes sociales.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Una exploración sobre los posibles efectos negativos derivados del uso en exceso de las redes sociales.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-77-adiccion-a-redes-sociales.mp3" length="15372824" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-77-adiccion-a-redes-sociales.mp3" length="15372824" type="audio/mpeg" />
     <video>https://youtu.be/-YKaZFDhr3A</video>
     <videoId>-YKaZFDhr3A</videoId>
     <videoVisible>false</videoVisible>
@@ -732,7 +732,7 @@
     <content:encoded><![CDATA[<p>En este episodio práctico de nuestro podcast, te llevaré a través de la resolución de la popular kata FizzBuzz utilizando JavaScript. La kata FizzBuzz es un ejercicio clásico de programación que te desafía a imprimir una serie de números, pero con un giro: cuando un número es divisible por 3, debes imprimir "Fizz"; cuando es divisible por 5, debes imprimir "Buzz"; y cuando es divisible por ambos, debes imprimir "FizzBuzz".</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio práctico de nuestro podcast, te llevaré a través de la resolución de la popular kata FizzBuzz utilizando JavaScript. La kata FizzBuzz es un ejercicio clásico de programación que te desafía a imprimir una serie de números, pero con un giro: cuando un número es divisible por 3, debes imprimir "Fizz"; cuando es divisible por 5, debes imprimir "Buzz"; y cuando es divisible por ambos, debes imprimir "FizzBuzz".</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-76-fizzbuzz-en-javascript-con-tdd.mp3" length="32260683" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-76-fizzbuzz-en-javascript-con-tdd.mp3" length="32260683" type="audio/mpeg" />
     <video>https://youtu.be/n19U4akk380</video>
     <videoId>n19U4akk380</videoId>
     <videoVisible>true</videoVisible>
@@ -751,7 +751,7 @@
     <description><![CDATA[<p>Un resumen del año desde el punto de vista de los temas tratados en el podcast.<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.nadanuevobajoelsol.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></description>
     <content:encoded><![CDATA[<p>Un resumen del año desde el punto de vista de los temas tratados en el podcast.<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.nadanuevobajoelsol.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></content:encoded>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-75-resumen-2021.mp3" length="16460536" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-75-resumen-2021.mp3" length="16460536" type="audio/mpeg" />
     <video>https://youtu.be/pj29oxpvy20</video>
     <videoId>pj29oxpvy20</videoId>
     <videoVisible>false</videoVisible>
@@ -771,7 +771,7 @@
     <content:encoded><![CDATA[<p>He recibido lo que creo que sera mi última carta de correo postal genuina. Vale la pena compartirlo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>He recibido lo que creo que sera mi última carta de correo postal genuina. Vale la pena compartirlo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-74-mi-ultima-carta.mp3" length="9505910" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-74-mi-ultima-carta.mp3" length="9505910" type="audio/mpeg" />
     <video>https://youtu.be/pj29oxpvy20</video>
     <videoId>pj29oxpvy20</videoId>
     <videoVisible>false</videoVisible>
@@ -791,7 +791,7 @@
     <content:encoded><![CDATA[<p>Exploro los problemas que se han dado los último días debido a la explotación de una vulnerabilidad en la famosa libreria de Java: Log4j.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Exploro los problemas que se han dado los último días debido a la explotación de una vulnerabilidad en la famosa libreria de Java: Log4j.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-73-vulnerabilidad-en-log4j.mp3" length="12287654" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-73-vulnerabilidad-en-log4j.mp3" length="12287654" type="audio/mpeg" />
     <video>https://youtu.be/UD5zjh22XuA</video>
     <videoId>UD5zjh22XuA</videoId>
     <videoVisible>true</videoVisible>
@@ -811,7 +811,7 @@
     <content:encoded><![CDATA[<p>5 errores y 5 aciertos en la carrera profesional explicados en detalle.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>5 errores y 5 aciertos en la carrera profesional explicados en detalle.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-72-5-errores-y-5-aciertos.mp3" length="14552468" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-72-5-errores-y-5-aciertos.mp3" length="14552468" type="audio/mpeg" />
     <video>https://youtu.be/VkSvXlpKpXM</video>
     <videoId>VkSvXlpKpXM</videoId>
     <videoVisible>false</videoVisible>
@@ -831,7 +831,7 @@
     <content:encoded><![CDATA[<p>Uno de los errores mas comunes en equipos cuando empiezan, es crear silos de conocimiento y de "propiedad" del código. En este episodio exploro esa posibilidad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Uno de los errores mas comunes en equipos cuando empiezan, es crear silos de conocimiento y de "propiedad" del código. En este episodio exploro esa posibilidad.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-71-code-ownership.mp3" length="11467286" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-71-code-ownership.mp3" length="11467286" type="audio/mpeg" />
     <video>https://youtu.be/gtbCzDNB8EA</video>
     <videoId>gtbCzDNB8EA</videoId>
     <videoVisible>false</videoVisible>
@@ -851,7 +851,7 @@
     <content:encoded><![CDATA[<p>En este episodio, vamos a adentrarnos en el concepto fundamental de un "Database Connection Pool" (Grupo de Conexiones a la Base de Datos) y cómo esta práctica técnica se utiliza para optimizar y gestionar eficientemente las conexiones a las bases de datos en aplicaciones y sistemas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, vamos a adentrarnos en el concepto fundamental de un "Database Connection Pool" (Grupo de Conexiones a la Base de Datos) y cómo esta práctica técnica se utiliza para optimizar y gestionar eficientemente las conexiones a las bases de datos en aplicaciones y sistemas..</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-70-database-connection-pool.mp3" length="9969550" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-70-database-connection-pool.mp3" length="9969550" type="audio/mpeg" />
     <video>https://youtu.be/8bVAGhF2Uxw</video>
     <videoId>8bVAGhF2Uxw</videoId>
     <videoVisible>true</videoVisible>
@@ -871,7 +871,7 @@
     <content:encoded><![CDATA[<p>Algunos ejemplos históricos donde se quiso poner freno al progreso... sin demasiado éxito. Intento extraer conocimiento útil de estos errores para nuestra profesión.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Algunos ejemplos históricos donde se quiso poner freno al progreso... sin demasiado éxito. Intento extraer conocimiento útil de estos errores para nuestra profesión.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-69-en-contra-del-progreso.mp3" length="10094307" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-69-en-contra-del-progreso.mp3" length="10094307" type="audio/mpeg" />
     <video>https://youtu.be/t_Pwl2f-0Vc</video>
     <videoId>t_Pwl2f-0Vc</videoId>
     <videoVisible>false</videoVisible>
@@ -891,7 +891,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploraremos la importancia de tener conocimientos básicos de física y cómo estos se aplican en el campo de la ingeniería. Discutiremos cómo la física proporciona los fundamentos teóricos esenciales para comprender y resolver problemas en una amplia gama de disciplinas de ingeniería.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploraremos la importancia de tener conocimientos básicos de física y cómo estos se aplican en el campo de la ingeniería. Discutiremos cómo la física proporciona los fundamentos teóricos esenciales para comprender y resolver problemas en una amplia gama de disciplinas de ingeniería.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-68-la-fisica-de-las-cosas.mp3" length="18065520" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-68-la-fisica-de-las-cosas.mp3" length="18065520" type="audio/mpeg" />
     <video>https://youtu.be/6lZ9ccq0j8g</video>
     <videoId>6lZ9ccq0j8g</videoId>
     <videoVisible>false</videoVisible>
@@ -911,7 +911,7 @@
     <content:encoded><![CDATA[<p>Conoces el concepto de 10x Programmer? En este episodio explico de que se trata.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Conoces el concepto de 10x Programmer? En este episodio explico de que se trata.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-67-el-mito-de-10x-programmer.mp3" length="10559568" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-67-el-mito-de-10x-programmer.mp3" length="10559568" type="audio/mpeg" />
     <video>https://youtu.be/cXaOmpfBics</video>
     <videoId>cXaOmpfBics</videoId>
     <videoVisible>false</videoVisible>
@@ -931,7 +931,7 @@
     <content:encoded><![CDATA[<p>En este episodio, vamos a adentrarnos en el fascinante mundo de los procesos de selección utilizados por las Big Four tecnológicas: Google, Apple, Amazon y Facebook (también conocidas como GAFA). Exploraremos cómo estas empresas altamente competitivas atraen y evalúan a talentos en todo el mundo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, vamos a adentrarnos en el fascinante mundo de los procesos de selección utilizados por las Big Four tecnológicas: Google, Apple, Amazon y Facebook (también conocidas como GAFA). Exploraremos cómo estas empresas altamente competitivas atraen y evalúan a talentos en todo el mundo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-66-entrevistas-atacando-a-las-big-four.mp3" length="14066059" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-66-entrevistas-atacando-a-las-big-four.mp3" length="14066059" type="audio/mpeg" />
     <video>https://youtu.be/tSTMDoRtL3A</video>
     <videoId>tSTMDoRtL3A</videoId>
     <videoVisible>false</videoVisible>
@@ -951,7 +951,7 @@
     <content:encoded><![CDATA[<p>Una aproximación a alto nivel de cuales son los componentes básicos de una CPU, a nivel teórico, y como funcionan entre ellos para procesar tu programa.<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.joantolos.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, vamos a sumergirnos en las entrañas de la informática y explorar cómo se procesa un programa a nivel de hardware. Desmitificaremos el funcionamiento de una Unidad Aritmético-Lógica (ALU) y una Unidad Central de Procesamiento (CPU) para comprender cómo los componentes esenciales de una computadora trabajan juntos para ejecutar instrucciones y realizar cálculos.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-65-como-se-procesa-un-programa.mp3" length="18680314" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-65-como-se-procesa-un-programa.mp3" length="18680314" type="audio/mpeg" />
     <video>https://youtu.be/6zY6h6HXlgA</video>
     <videoId>6zY6h6HXlgA</videoId>
     <videoVisible>true</videoVisible>
@@ -971,7 +971,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploraremos el concepto de felicidad desde la perspectiva de la filosofía estoica, una antigua corriente filosófica que ha brindado valiosas lecciones sobre la búsqueda de la satisfacción y la tranquilidad en la vida. Profundizaremos en los principios estoicos, como el control de lo que podemos cambiar y la aceptación de lo que no podemos. Discutiremos cómo los estoicos, como Epicteto, Séneca y Marco Aurelio, enseñaron que la felicidad no se encuentra en la búsqueda de placeres externos o la acumulación de bienes materiales, sino en el cultivo de la virtud, la autodisciplina y la paz interior.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploraremos el concepto de felicidad desde la perspectiva de la filosofía estoica, una antigua corriente filosófica que ha brindado valiosas lecciones sobre la búsqueda de la satisfacción y la tranquilidad en la vida. Profundizaremos en los principios estoicos, como el control de lo que podemos cambiar y la aceptación de lo que no podemos. Discutiremos cómo los estoicos, como Epicteto, Séneca y Marco Aurelio, enseñaron que la felicidad no se encuentra en la búsqueda de placeres externos o la acumulación de bienes materiales, sino en el cultivo de la virtud, la autodisciplina y la paz interior.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-64-estoicismo-sobre-la-felicidad.mp3" length="12406853" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-64-estoicismo-sobre-la-felicidad.mp3" length="12406853" type="audio/mpeg" />
     <video>https://youtu.be/j3bg9aFSCyQ</video>
     <videoId>j3bg9aFSCyQ</videoId>
     <videoVisible>false</videoVisible>
@@ -989,7 +989,7 @@
     <content:encoded><![CDATA[<p>En este episodio vamos a llevar el concepto de la notación Big O a la práctica. A lo largo de este episodio, vamos a analizar un ejemplo concreto para ilustrar cómo la notación Big O se aplica en la vida real.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio vamos a llevar el concepto de la notación Big O a la práctica. A lo largo de este episodio, vamos a analizar un ejemplo concreto para ilustrar cómo la notación Big O se aplica en la vida real.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-63-big-o-notation-ejemplo.mp3" length="21079216" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-63-big-o-notation-ejemplo.mp3" length="21079216" type="audio/mpeg" />
     <video>https://youtu.be/7_eBiCKqtNE</video>
     <videoId>7_eBiCKqtNE</videoId>
     <videoVisible>true</videoVisible>
@@ -1009,7 +1009,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te adentrarás en el mundo de la notación Big O y cómo esta herramienta puede ayudarte a analizar y comparar el rendimiento de algoritmos en el mundo de la programación. Te explicaré de manera clara y accesible qué es la notación Big O y por qué es fundamental para los desarrolladores. Descubrirás cómo esta notación se utiliza para medir la eficiencia y el tiempo de ejecución de algoritmos en función del tamaño de la entrada. Utilizaremos ejemplos prácticos y analogías para ilustrar cómo Big O nos permite clasificar algoritmos en términos de su complejidad y eficiencia.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te adentrarás en el mundo de la notación Big O y cómo esta herramienta puede ayudarte a analizar y comparar el rendimiento de algoritmos en el mundo de la programación. Te explicaré de manera clara y accesible qué es la notación Big O y por qué es fundamental para los desarrolladores. Descubrirás cómo esta notación se utiliza para medir la eficiencia y el tiempo de ejecución de algoritmos en función del tamaño de la entrada. Utilizaremos ejemplos prácticos y analogías para ilustrar cómo Big O nos permite clasificar algoritmos en términos de su complejidad y eficiencia.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-62-big-o-notation.mp3" length="22332202" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-62-big-o-notation.mp3" length="22332202" type="audio/mpeg" />
     <video>https://youtu.be/OwzgX0sZOfI</video>
     <videoId>OwzgX0sZOfI</videoId>
     <videoVisible>true</videoVisible>
@@ -1029,7 +1029,7 @@
     <content:encoded><![CDATA[<p>Revisión de unos cuantos libros de "filosofía involuntaria". Si no conoceis el genero distopico, os presento unos cuantos ejemplos para empezar a explorar.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Revisión de unos cuantos libros de "filosofía involuntaria". Si no conoceis el genero distopico, os presento unos cuantos ejemplos para empezar a explorar.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-61-distopias-y-filosofia-involuntaria.mp3" length="14302657" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-61-distopias-y-filosofia-involuntaria.mp3" length="14302657" type="audio/mpeg" />
     <video>https://youtu.be/KMxwiLBNLfY</video>
     <videoId>KMxwiLBNLfY</videoId>
     <videoVisible>false</videoVisible>
@@ -1049,7 +1049,7 @@
     <content:encoded><![CDATA[<p>Explico uno de los motivos por los que los negocios en Internet pueden llegar a ser tan lucrativos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Explico uno de los motivos por los que los negocios en Internet pueden llegar a ser tan lucrativos.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-60-la-clave-del-negocio-en-internet.mp3" length="10932544" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-60-la-clave-del-negocio-en-internet.mp3" length="10932544" type="audio/mpeg" />
     <video>https://youtu.be/5hv3n_YmLEk</video>
     <videoId>5hv3n_YmLEk</videoId>
     <videoVisible>false</videoVisible>
@@ -1069,7 +1069,7 @@
     <content:encoded><![CDATA[<p>En este episodio, vamos a sumergirnos en el mundo de las excepciones en la programación y explorar las diferencias cruciales entre las "checked" (excepciones comprobadas) y las "unchecked" (excepciones no comprobadas). Te explicaré cómo estas dos categorías de excepciones funcionan en un lenguaje de programación y cuáles son sus propósitos principales. Las excepciones "checked" son aquellas que el compilador requiere que manejes explícitamente en tu código, lo que significa que debes usar bloques try-catch o declararlas en la firma del método. Por otro lado, las excepciones "unchecked" son aquellas que el compilador no exige que manejes de manera explícita.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, vamos a sumergirnos en el mundo de las excepciones en la programación y explorar las diferencias cruciales entre las "checked" (excepciones comprobadas) y las "unchecked" (excepciones no comprobadas). Te explicaré cómo estas dos categorías de excepciones funcionan en un lenguaje de programación y cuáles son sus propósitos principales. Las excepciones "checked" son aquellas que el compilador requiere que manejes explícitamente en tu código, lo que significa que debes usar bloques try-catch o declararlas en la firma del método. Por otro lado, las excepciones "unchecked" son aquellas que el compilador no exige que manejes de manera explícita.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-59-checked-vs-unchecked-exceptions.mp3" length="7920101" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-59-checked-vs-unchecked-exceptions.mp3" length="7920101" type="audio/mpeg" />
     <video>https://youtu.be/pPRtuvUDv-g</video>
     <videoId>pPRtuvUDv-g</videoId>
     <videoVisible>true</videoVisible>
@@ -1089,7 +1089,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploraremos cómo la escritura, sin importar el tipo de texto que elijas, puede potenciar tus habilidades como programador y enriquecer tu carrera en el mundo de la tecnología. Descubrirás cómo la práctica regular de la escritura fomenta la claridad de pensamiento y la comunicación efectiva, habilidades esenciales para cualquier programador. Exploraremos cómo la creación de ficción puede estimular la creatividad y la resolución de problemas, permitiéndote abordar desafíos de programación desde nuevas perspectivas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploraremos cómo la escritura, sin importar el tipo de texto que elijas, puede potenciar tus habilidades como programador y enriquecer tu carrera en el mundo de la tecnología. Descubrirás cómo la práctica regular de la escritura fomenta la claridad de pensamiento y la comunicación efectiva, habilidades esenciales para cualquier programador. Exploraremos cómo la creación de ficción puede estimular la creatividad y la resolución de problemas, permitiéndote abordar desafíos de programación desde nuevas perspectivas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-58-escribir-te-hara-mejor-programador.mp3" length="15786935" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-58-escribir-te-hara-mejor-programador.mp3" length="15786935" type="audio/mpeg" />
     <video>https://youtu.be/AGMkThTanhw</video>
     <videoId>AGMkThTanhw</videoId>
     <videoVisible>true</videoVisible>
@@ -1109,7 +1109,7 @@
     <content:encoded><![CDATA[<p>De nuevo hablando sobre entrevistas de trabajo, en este caso, tanto desde el punto de vista del entrevistador, como del candidato. ¿Cúando es conveniente abandonar y terminar abruptamente la entrevista?</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>De nuevo hablando sobre entrevistas de trabajo, en este caso, tanto desde el punto de vista del entrevistador, como del candidato. ¿Cúando es conveniente abandonar y terminar abruptamente la entrevista?</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-57-cuando-irte-de-una-entrevista.mp3" length="12396753" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-57-cuando-irte-de-una-entrevista.mp3" length="12396753" type="audio/mpeg" />
     <video>https://youtu.be/mvCsSKLZk-o</video>
     <videoId>mvCsSKLZk-o</videoId>
     <videoVisible>false</videoVisible>
@@ -1129,7 +1129,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te invito a dar un vistazo al día a día de un programador, donde a menudo no suceden eventos extraordinarios ni situaciones particularmente destacadas. Exploraremos la rutina, los desafíos comunes y las tareas diarias que caracterizan la vida de un desarrollador de software.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te invito a dar un vistazo al día a día de un programador, donde a menudo no suceden eventos extraordinarios ni situaciones particularmente destacadas. Exploraremos la rutina, los desafíos comunes y las tareas diarias que caracterizan la vida de un desarrollador de software.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-56-un-dia-cualquiera.mp3" length="8204076" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-56-un-dia-cualquiera.mp3" length="8204076" type="audio/mpeg" />
     <video>https://youtu.be/XaTbxQsdOZQ</video>
     <videoId>XaTbxQsdOZQ</videoId>
     <videoVisible>false</videoVisible>
@@ -1149,7 +1149,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te sumergirás en el apasionante mundo de la gestión de código heredado, basado en los valiosos consejos extraídos del libro "Working Effectively with Legacy Code" de Michael C. Feathers. Exploraremos cómo abordar con éxito la tarea de trabajar con código legado, que a menudo es complejo, poco documentado y difícil de entender.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te sumergirás en el apasionante mundo de la gestión de código heredado, basado en los valiosos consejos extraídos del libro "Working Effectively with Legacy Code" de Michael C. Feathers. Exploraremos cómo abordar con éxito la tarea de trabajar con código legado, que a menudo es complejo, poco documentado y difícil de entender.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-55-como-lidiar-con-legacy-code.mp3" length="11504302" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-55-como-lidiar-con-legacy-code.mp3" length="11504302" type="audio/mpeg" />
     <video>https://youtu.be/eRoMGTUCZ14</video>
     <videoId>eRoMGTUCZ14</videoId>
     <videoVisible>true</videoVisible>
@@ -1169,7 +1169,7 @@
     <content:encoded><![CDATA[<p>En este episodio comparto unas cuantas recomendaciones de autores para leer cuando tienes poco tiempo, o pasas una época en la que te cuesta concentrarte en algo mas profundo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio comparto unas cuantas recomendaciones de autores para leer cuando tienes poco tiempo, o pasas una época en la que te cuesta concentrarte en algo mas profundo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-54-lectura-ligera.mp3" length="10147894" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-54-lectura-ligera.mp3" length="10147894" type="audio/mpeg" />
     <video>https://youtu.be/7T8d9rXVzO8</video>
     <videoId>7T8d9rXVzO8</videoId>
     <videoVisible>false</videoVisible>
@@ -1189,7 +1189,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos adentraremos en el controvertido debate sobre la idoneidad de las pruebas técnicas en el proceso de selección de candidatos para puestos de ingeniería. Examinaremos a fondo los argumentos a favor y en contra de este enfoque comúnmente utilizado en la industria de la tecnología.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos adentraremos en el controvertido debate sobre la idoneidad de las pruebas técnicas en el proceso de selección de candidatos para puestos de ingeniería. Examinaremos a fondo los argumentos a favor y en contra de este enfoque comúnmente utilizado en la industria de la tecnología.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-53-pruebas-tecnicas-en-entrevistas-si-o-no.mp3" length="14106755" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-53-pruebas-tecnicas-en-entrevistas-si-o-no.mp3" length="14106755" type="audio/mpeg" />
     <video>https://youtu.be/oCWsPnjbXKY</video>
     <videoId>oCWsPnjbXKY</videoId>
     <videoVisible>false</videoVisible>
@@ -1209,7 +1209,7 @@
     <content:encoded><![CDATA[<p>Una explicación sobre el origen del concepto meme y como evolucionó su versión en Internet hasta convertirse en una de las herramientas mas usadas para compartir ideas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Una explicación sobre el origen del concepto meme y como evolucionó su versión en Internet hasta convertirse en una de las herramientas mas usadas para compartir ideas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-52-el-origen-de-los-memes.mp3" length="12822744" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-52-el-origen-de-los-memes.mp3" length="12822744" type="audio/mpeg" />
     <video>https://youtu.be/4EcPFpnJQWg</video>
     <videoId>4EcPFpnJQWg</videoId>
     <videoVisible>false</videoVisible>
@@ -1229,7 +1229,7 @@
     <content:encoded><![CDATA[<p>Vuelta a la rutina del día a día con los niños empezando el cole.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Vuelta a la rutina del día a día con los niños empezando el cole.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-51-la-vuelta-al-cole.mp3" length="9202476" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-51-la-vuelta-al-cole.mp3" length="9202476" type="audio/mpeg" />
     <video>https://youtu.be/wISoS1h8tqY</video>
     <videoId>wISoS1h8tqY</videoId>
     <videoVisible>false</videoVisible>
@@ -1247,7 +1247,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te sumergirás en el fascinante mundo de las REST APIs. Exploraremos qué es exactamente una API REST (Representational State Transfer), cómo funciona y por qué se ha convertido en un pilar fundamental en el desarrollo de aplicaciones web y móviles en la actualidad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te sumergirás en el fascinante mundo de las REST APIs. Exploraremos qué es exactamente una API REST (Representational State Transfer), cómo funciona y por qué se ha convertido en un pilar fundamental en el desarrollo de aplicaciones web y móviles en la actualidad.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-50-que-es-una-rest-api.mp3" length="13946212" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-50-que-es-una-rest-api.mp3" length="13946212" type="audio/mpeg" />
     <video>https://youtu.be/LtCvTvA28gE</video>
     <videoId>LtCvTvA28gE</videoId>
     <videoVisible>true</videoVisible>
@@ -1267,7 +1267,7 @@
     <content:encoded><![CDATA[<p>Una pequeña exploració de la disciplina del deseo estoica, centrándome para este episodio en la dicotomía del control.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Una pequeña exploració de la disciplina del deseo estoica, centrándome para este episodio en la dicotomía del control.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-49-estoicismo-la-dicotomia-del-control.mp3" length="16710419" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-49-estoicismo-la-dicotomia-del-control.mp3" length="16710419" type="audio/mpeg" />
     <video>https://youtu.be/kfYSlD5OEfg</video>
     <videoId>kfYSlD5OEfg</videoId>
     <videoVisible>false</videoVisible>
@@ -1287,7 +1287,7 @@
     <content:encoded><![CDATA[<p>Descripción de un día común como programador.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Descripción de un día común como programador.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-48-pull-requests-vacaciones-musica.mp3" length="11452587" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-48-pull-requests-vacaciones-musica.mp3" length="11452587" type="audio/mpeg" />
     <video>https://youtu.be/xGduWlLWnec</video>
     <videoId>xGduWlLWnec</videoId>
     <videoVisible>false</videoVisible>
@@ -1305,7 +1305,7 @@
     <content:encoded><![CDATA[<p>Un ejemplo de aplicación sencilla creada siguiendo el tutorial de Angular sobre Routes. Cualquier excusa es buena para practicar un poco y en este caso hago una aplicación web para que no se te queme la comida en el horno!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Un ejemplo de aplicación sencilla creada siguiendo el tutorial de Angular sobre Routes. Cualquier excusa es buena para practicar un poco y en este caso hago una aplicación web para que no se te queme la comida en el horno!</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-47-angular-routes-y-pizzas.mp3" length="10361698" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-47-angular-routes-y-pizzas.mp3" length="10361698" type="audio/mpeg" />
     <video>https://youtu.be/btffV5F7aoA</video>
     <videoId>btffV5F7aoA</videoId>
     <videoVisible>true</videoVisible>
@@ -1325,7 +1325,7 @@
     <content:encoded><![CDATA[<p>Solo leo cosas buenas sobre Kotlin, todo el mundo me lo recomienda. En este episodio exploro algunas diferencias básicas entre Kotlin y Java y expongo un ejemplo sencillo de web service API con Kotlin, Spring y Postgres.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Solo leo cosas buenas sobre Kotlin, todo el mundo me lo recomienda. En este episodio exploro algunas diferencias básicas entre Kotlin y Java y expongo un ejemplo sencillo de web service API con Kotlin, Spring y Postgres.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-46-probando-kotlin.mp3" length="11984513" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-46-probando-kotlin.mp3" length="11984513" type="audio/mpeg" />
     <video>https://youtu.be/CR7wDsoJuAU</video>
     <videoId>CR7wDsoJuAU</videoId>
     <videoVisible>true</videoVisible>
@@ -1345,7 +1345,7 @@
     <content:encoded><![CDATA[<p>En el episodio 39 exploro como se monta una teoría de la conspiración y explico algunas opciones para detectar estos intentos de manipulación. Este episodio, que sirve como ampliación, explico uno de los trucos fundamentales para profundizar en tu pensamiento crítico.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En el episodio 39 exploro como se monta una teoría de la conspiración y explico algunas opciones para detectar estos intentos de manipulación. Este episodio, que sirve como ampliación, explico uno de los trucos fundamentales para profundizar en tu pensamiento crítico.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-45-conspiraciones-conspiraciones-everywhere.mp3" length="15301387" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-45-conspiraciones-conspiraciones-everywhere.mp3" length="15301387" type="audio/mpeg" />
     <video>https://youtu.be/eOCJt4bYt6M</video>
     <videoId>eOCJt4bYt6M</videoId>
     <videoVisible>false</videoVisible>
@@ -1365,7 +1365,7 @@
     <content:encoded><![CDATA[<p>Mis inicios en el mundo de la programación explicados (más o menos) cronológicamente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Mis inicios en el mundo de la programación explicados (más o menos) cronológicamente.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-44-mis-comienzos.mp3" length="15372800" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-44-mis-comienzos.mp3" length="15372800" type="audio/mpeg" />
     <video>https://youtu.be/m7mLpy4k5G4</video>
     <videoId>m7mLpy4k5G4</videoId>
     <videoVisible>false</videoVisible>
@@ -1385,7 +1385,7 @@
     <content:encoded><![CDATA[<p>Hay ciertas maneras de afrontar un reto o un problema. Con el foco adecuado, es más probable que lo consigas mas rápidamente o de manera más satisfactoria.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Hay ciertas maneras de afrontar un reto o un problema. Con el foco adecuado, es más probable que lo consigas mas rápidamente o de manera más satisfactoria.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-43-dirigete-a-lo-inevitable.mp3" length="16532031" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-43-dirigete-a-lo-inevitable.mp3" length="16532031" type="audio/mpeg" />
     <video>https://youtu.be/UGN02Z28hhg</video>
     <videoId>UGN02Z28hhg</videoId>
     <videoVisible>false</videoVisible>
@@ -1403,7 +1403,7 @@
     <content:encoded><![CDATA[<p>En este episodio, abordaremos el sesgo cognitivo de acción, también conocido como "action bias," y su impacto potencialmente perjudicial en tu trabajo y toma de decisiones. Exploraremos cómo, en situaciones de presión o incertidumbre, es común que las personas sientan la urgencia de tomar medidas inmediatas, a menudo sin una evaluación adecuada de la situación.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, abordaremos el sesgo cognitivo de acción, también conocido como "action bias," y su impacto potencialmente perjudicial en tu trabajo y toma de decisiones. Exploraremos cómo, en situaciones de presión o incertidumbre, es común que las personas sientan la urgencia de tomar medidas inmediatas, a menudo sin una evaluación adecuada de la situación.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-42-estar-ocupado-puede-alejarte-de-tu-objetivo.mp3" length="11306848" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-42-estar-ocupado-puede-alejarte-de-tu-objetivo.mp3" length="11306848" type="audio/mpeg" />
     <video>https://youtu.be/09aQSq7FDzM</video>
     <videoId>09aQSq7FDzM</videoId>
     <videoVisible>false</videoVisible>
@@ -1423,7 +1423,7 @@
     <content:encoded><![CDATA[<p>Existen maneras sencillas para introducirse en el mundo DevOps como desarrollador. Es conveniente tocar un poco el tema y obtener un conocimiento mínimo de como se desplega el código que estas creando. Un par de consejos para introducirse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Existen maneras sencillas para introducirse en el mundo DevOps como desarrollador. Es conveniente tocar un poco el tema y obtener un conocimiento mínimo de como se desplega el código que estas creando. Un par de consejos para introducirse.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-41-expande-tu-conocimiento-metete-en-el-mundo-devops.mp3" length="16835208" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-41-expande-tu-conocimiento-metete-en-el-mundo-devops.mp3" length="16835208" type="audio/mpeg" />
     <video>https://youtu.be/Nv7XX-6i65E</video>
     <videoId>Nv7XX-6i65E</videoId>
     <videoVisible>true</videoVisible>
@@ -1443,7 +1443,7 @@
     <content:encoded><![CDATA[<p>En este episodio, desentrañaremos los secretos del patrón Factory Building y la técnica de override polymorphism en el mundo de la programación. Exploraremos cómo funciona este patrón de diseño, que se utiliza para crear objetos de diferentes tipos de manera eficiente y flexible. Aprenderás cómo Factory Building simplifica la creación de objetos al centralizar la lógica de creación y permitirte adaptar fácilmente tu código a cambios futuros.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, desentrañaremos los secretos del patrón Factory Building y la técnica de override polymorphism en el mundo de la programación. Exploraremos cómo funciona este patrón de diseño, que se utiliza para crear objetos de diferentes tipos de manera eficiente y flexible. Aprenderás cómo Factory Building simplifica la creación de objetos al centralizar la lógica de creación y permitirte adaptar fácilmente tu código a cambios futuros.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-40-override-polymorphism-factory-builder-pattern.mp3" length="7544283" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-40-override-polymorphism-factory-builder-pattern.mp3" length="7544283" type="audio/mpeg" />
     <video>https://youtu.be/T7SaJdUBpko</video>
     <videoId>T7SaJdUBpko</videoId>
     <videoVisible>true</videoVisible>
@@ -1463,7 +1463,7 @@
     <content:encoded><![CDATA[<p>En este episodio, profundizaremos en el mundo de las teorías conspiratorias y exploraremos los puntos comunes que comparten muchas de ellas. A medida que el acceso a la información se ha vuelto más amplio que nunca, también lo han hecho las teorías que desafían la narrativa oficial. Analizaremos cómo estas teorías a menudo se basan en la desconfianza hacia las instituciones, la falta de evidencia sólida, la creencia en un grupo selecto que controla todo y la tendencia a interpretar los eventos de manera sesgada para encajar en la teoría. Además, te proporcionaremos herramientas y consejos para reconocer y evaluar críticamente las teorías conspiratorias, ayudándote a protegerte a ti mismo y a los demás de caer en el abismo de la desinformación.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, profundizaremos en el mundo de las teorías conspiratorias y exploraremos los puntos comunes que comparten muchas de ellas. A medida que el acceso a la información se ha vuelto más amplio que nunca, también lo han hecho las teorías que desafían la narrativa oficial. Analizaremos cómo estas teorías a menudo se basan en la desconfianza hacia las instituciones, la falta de evidencia sólida, la creencia en un grupo selecto que controla todo y la tendencia a interpretar los eventos de manera sesgada para encajar en la teoría. Además, te proporcionaremos herramientas y consejos para reconocer y evaluar críticamente las teorías conspiratorias, ayudándote a protegerte a ti mismo y a los demás de caer en el abismo de la desinformación.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-39-como-se-monta-una-teoria-conspiratoria.mp3" length="15782867" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-39-como-se-monta-una-teoria-conspiratoria.mp3" length="15782867" type="audio/mpeg" />
     <video>https://youtu.be/2GHSLFoiCmw</video>
     <videoId>2GHSLFoiCmw</videoId>
     <videoVisible>false</videoVisible>
@@ -1483,7 +1483,7 @@
     <content:encoded><![CDATA[<p>Nueva sesión de preguntas y respuestas</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Nueva sesión de preguntas y respuestas</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-38-q-a-preguntas-aleatorias.mp3" length="11592071" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-38-q-a-preguntas-aleatorias.mp3" length="11592071" type="audio/mpeg" />
     <video>https://youtu.be/_8SA914cE94</video>
     <videoId>_8SA914cE94</videoId>
     <videoVisible>false</videoVisible>
@@ -1503,7 +1503,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploraremos a fondo los desafíos fundamentales que surgen al adoptar la técnica de Test Driven Development (TDD) en el mundo del desarrollo de software. A medida que las organizaciones buscan mejorar la calidad de su código y acelerar sus ciclos de desarrollo, TDD se ha convertido en una herramienta esencial. Sin embargo, no todo es color de rosa en el mundo de TDD. Descubriremos los problemas comunes que enfrentan los desarrolladores, desde la creación inicial de pruebas hasta la dificultad de mantenerlas a medida que el código evoluciona.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploraremos a fondo los desafíos fundamentales que surgen al adoptar la técnica de Test Driven Development (TDD) en el mundo del desarrollo de software. A medida que las organizaciones buscan mejorar la calidad de su código y acelerar sus ciclos de desarrollo, TDD se ha convertido en una herramienta esencial. Sin embargo, no todo es color de rosa en el mundo de TDD. Descubriremos los problemas comunes que enfrentan los desarrolladores, desde la creación inicial de pruebas hasta la dificultad de mantenerlas a medida que el código evoluciona.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-37-la-trampa-de-tdd.mp3" length="14480985" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-37-la-trampa-de-tdd.mp3" length="14480985" type="audio/mpeg" />
     <video>https://youtu.be/4upYjnMkMP8</video>
     <videoId>4upYjnMkMP8</videoId>
     <videoVisible>true</videoVisible>
@@ -1521,7 +1521,7 @@
     <content:encoded><![CDATA[<p>Somos primates con la capacidad de contar historias. Las historias que nos contamos a nosotros mismos influyen nuestra toma de decisiones de manera diaria.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Somos primates con la capacidad de contar historias. Las historias que nos contamos a nosotros mismos influyen nuestra toma de decisiones de manera diaria.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-36-somos-cuenta-cuentos.mp3" length="14838348" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-36-somos-cuenta-cuentos.mp3" length="14838348" type="audio/mpeg" />
     <video>https://youtu.be/DtxTJF1TjMY</video>
     <videoId>DtxTJF1TjMY</videoId>
     <videoVisible>false</videoVisible>
@@ -1539,7 +1539,7 @@
     <content:encoded><![CDATA[<p>Aprende a diferenciar cuando intentan venderte una solución rápida y fácil. Los éxitos de calidad cuestan trabajo y difícilmente llegaran rápidamente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Aprende a diferenciar cuando intentan venderte una solución rápida y fácil. Los éxitos de calidad cuestan trabajo y difícilmente llegaran rápidamente.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-35-no-hay-atajos-para-el-exito.mp3" length="7383747" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-35-no-hay-atajos-para-el-exito.mp3" length="7383747" type="audio/mpeg" />
     <video>https://youtu.be/J7G7S2jPiZM</video>
     <videoId>J7G7S2jPiZM</videoId>
     <videoVisible>false</videoVisible>
@@ -1559,7 +1559,7 @@
     <content:encoded><![CDATA[<p>Diferentes puntos de vista que se pueden extraer comparando las dos peliculas de Disney: Frozen y Vaiana. Cómo estos puntos de vista pueden aplicarse en el día a día de un programador... o no.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Diferentes puntos de vista que se pueden extraer comparando las dos peliculas de Disney: Frozen y Vaiana. Cómo estos puntos de vista pueden aplicarse en el día a día de un programador... o no.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-34-frozen-vs-vaiana.mp3" length="6582183" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-34-frozen-vs-vaiana.mp3" length="6582183" type="audio/mpeg" />
     <video>https://youtu.be/0hJyjjUXrGE</video>
     <videoId>0hJyjjUXrGE</videoId>
     <videoVisible>false</videoVisible>
@@ -1579,7 +1579,7 @@
     <content:encoded><![CDATA[<p>En algunas ocasiones conviene entrar en el conflicto en lugar de evitarlo. Evitar el conflicto a toda costa, a veces nos hace caer en situaciones de apatía, que son muy nocivas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En algunas ocasiones conviene entrar en el conflicto en lugar de evitarlo. Evitar el conflicto a toda costa, a veces nos hace caer en situaciones de apatía, que son muy nocivas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-33-retrospectivas-abraza-el-conflicto.mp3" length="12519645" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-33-retrospectivas-abraza-el-conflicto.mp3" length="12519645" type="audio/mpeg" />
     <video>https://youtu.be/bLDyE2IAYNU</video>
     <videoId>bLDyE2IAYNU</videoId>
     <videoVisible>true</videoVisible>
@@ -1599,7 +1599,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos sumergiremos en el mundo del estoicismo, una filosofía antigua que sigue siendo relevante en la vida moderna. Acompáñame mientras exploramos las bases fundamentales de esta disciplina filosófica que promueve la virtud, la sabiduría y la serenidad en medio del caos de la vida cotidiana.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos sumergiremos en el mundo del estoicismo, una filosofía antigua que sigue siendo relevante en la vida moderna. Acompáñame mientras exploramos las bases fundamentales de esta disciplina filosófica que promueve la virtud, la sabiduría y la serenidad en medio del caos de la vida cotidiana.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-32-como-introducirse-al-estoicismo.mp3" length="17031089" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-32-como-introducirse-al-estoicismo.mp3" length="17031089" type="audio/mpeg" />
     <video>https://youtu.be/YI9U8otsEPw</video>
     <videoId>YI9U8otsEPw</videoId>
     <videoVisible>false</videoVisible>
@@ -1619,7 +1619,7 @@
     <content:encoded><![CDATA[<p>Tuve la ocasión hace tiempo de ejercer como team lead durante un período limitado. Pude aprender mucho de esa experiencia y he recopilado un conjunto de errores cometidos y sus correcciones.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Tuve la ocasión hace tiempo de ejercer como team lead durante un período limitado. Pude aprender mucho de esa experiencia y he recopilado un conjunto de errores cometidos y sus correcciones.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-31-mi-breve-experiencia-como-team-lead.mp3" length="13072292" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-31-mi-breve-experiencia-como-team-lead.mp3" length="13072292" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/YkamEpoCFbU</video>
     <videoId>YkamEpoCFbU</videoId>
@@ -1637,7 +1637,7 @@
     <content:encoded><![CDATA[<p>Planteo la posibilidad de hacer una serie de videos programando en vivo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Planteo la posibilidad de hacer una serie de videos programando en vivo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-30-live-coding-objetivo-del-podcast.mp3" length="7677740" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-30-live-coding-objetivo-del-podcast.mp3" length="7677740" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/CsuD1Fgj47k</video>
     <videoId>CsuD1Fgj47k</videoId>
@@ -1655,7 +1655,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos el impacto revolucionario de GitHub Copilot y cómo la inteligencia artificial está transformando el trabajo de los programadores. Desentrañaremos las capacidades innovadoras de esta herramienta impulsada por IA, que combina el poder del código autogenerado con la asistencia contextual en tiempo real. Analizaremos cómo GitHub Copilot puede aumentar la productividad, reducir errores y acelerar el proceso de desarrollo de software.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos el impacto revolucionario de GitHub Copilot y cómo la inteligencia artificial está transformando el trabajo de los programadores. Desentrañaremos las capacidades innovadoras de esta herramienta impulsada por IA, que combina el poder del código autogenerado con la asistencia contextual en tiempo real. Analizaremos cómo GitHub Copilot puede aumentar la productividad, reducir errores y acelerar el proceso de desarrollo de software.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-29-github-copilot-y-el-fin-de-la-programacion.mp3" length="19282761" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-29-github-copilot-y-el-fin-de-la-programacion.mp3" length="19282761" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/mVfwZTnl9c0</video>
     <videoId>mVfwZTnl9c0</videoId>
@@ -1675,7 +1675,7 @@
     <content:encoded><![CDATA[<p>Se puede aprender mucho sobre grandes líderes militares. Las situaciones extremas a las que se enfrentan son las más desafiantes que pueden existir. Como aplicar su manera de pensar en nuestro trabajo.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Se puede aprender mucho sobre grandes líderes militares. Las situaciones extremas a las que se enfrentan son las más desafiantes que pueden existir. Como aplicar su manera de pensar en nuestro trabajo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-28-lideres-en-la-cuerda-floja.mp3" length="18438243" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-28-lideres-en-la-cuerda-floja.mp3" length="18438243" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/dFL-23r3Fmo</video>
     <videoId>dFL-23r3Fmo</videoId>
@@ -1695,7 +1695,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploraremos las posibilidades de convertirse en un programador exitoso sin la necesidad de pasar por la universidad o tener estudios formales en informática.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploraremos las posibilidades de convertirse en un programador exitoso sin la necesidad de pasar por la universidad o tener estudios formales en informática.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-27-universidad-o-autodidacta.mp3" length="11912121" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-27-universidad-o-autodidacta.mp3" length="11912121" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/Y6VTj-l7sXs</video>
     <videoId>Y6VTj-l7sXs</videoId>
@@ -1715,7 +1715,7 @@
     <content:encoded><![CDATA[<p>En este revelador episodio, exploramos las razones detrás de la crítica constante que la mayoría de las personas dirigen hacia su trabajo y, lo que es aún más importante, cómo romper el ciclo vicioso de la insatisfacción laboral. Analizaremos las principales razones por las que las críticas surgen con frecuencia en el entorno profesional, desde la falta de conexión con la misión de la empresa hasta la ausencia de reconocimiento y desarrollo personal.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este revelador episodio, exploramos las razones detrás de la crítica constante que la mayoría de las personas dirigen hacia su trabajo y, lo que es aún más importante, cómo romper el ciclo vicioso de la insatisfacción laboral. Analizaremos las principales razones por las que las críticas surgen con frecuencia en el entorno profesional, desde la falta de conexión con la misión de la empresa hasta la ausencia de reconocimiento y desarrollo personal.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-26-por-que-odias-tu-trabajo.mp3" length="17869292" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-26-por-que-odias-tu-trabajo.mp3" length="17869292" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/_1B5aa-UTuY</video>
     <videoId>_1B5aa-UTuY</videoId>
@@ -1735,7 +1735,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos adentramos en el delicado equilibrio entre la ofensiva y la paciencia en el entorno laboral. Exploraremos situaciones clave en las que es fundamental determinar cuándo tomar la iniciativa y cuándo adoptar una actitud más pasiva. </p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos adentramos en el delicado equilibrio entre la ofensiva y la paciencia en el entorno laboral. Exploraremos situaciones clave en las que es fundamental determinar cuándo tomar la iniciativa y cuándo adoptar una actitud más pasiva. </p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-25-pulpo-o-tiburon.mp3" length="9611863" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-25-pulpo-o-tiburon.mp3" length="9611863" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/kIPvb-gBuSw</video>
     <videoId>kIPvb-gBuSw</videoId>
@@ -1755,7 +1755,7 @@
     <content:encoded><![CDATA[<p>Sesión de preguntas y respuestas donde hablo sobre los beneficios de trabajar en el extranjero y el stack que uso para crear mi blog.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Sesión de preguntas y respuestas donde hablo sobre los beneficios de trabajar en el extranjero y el stack que uso para crear mi blog.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-24-q-a-trabajar-en-el-extranjero-blog-stack.mp3" length="10842286" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-24-q-a-trabajar-en-el-extranjero-blog-stack.mp3" length="10842286" type="audio/mpeg" />
     <videoVisible>false</videoVisible>
     <video>https://youtu.be/sHwOQA4d9dc</video>
     <videoId>sHwOQA4d9dc</videoId>
@@ -1775,7 +1775,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos el peso de las cargas que arrastramos en el ámbito laboral y cómo estas pueden alejarnos de nuestros objetivos profesionales. A través de historias personales y consejos prácticos, analizaremos las diversas formas en que las preocupaciones, el estrés, la falta de motivación y otros obstáculos pueden convertirse en cargas que nos impiden avanzar hacia nuestros objetivos profesionales.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos el peso de las cargas que arrastramos en el ámbito laboral y cómo estas pueden alejarnos de nuestros objetivos profesionales. A través de historias personales y consejos prácticos, analizaremos las diversas formas en que las preocupaciones, el estrés, la falta de motivación y otros obstáculos pueden convertirse en cargas que nos impiden avanzar hacia nuestros objetivos profesionales.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-23-piedras-en-la-maleta.mp3" length="9023491" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-23-piedras-en-la-maleta.mp3" length="9023491" type="audio/mpeg" />
     <video>https://youtu.be/sHwOQA4d9dc</video>
     <videoId>sHwOQA4d9dc</videoId>
     <videoVisible>false</videoVisible>
@@ -1795,7 +1795,7 @@
     <content:encoded><![CDATA[<p>En este episodio, sumérgete en el apasionante mundo de SCRUM, uno de los frameworks de trabajo más influyentes en el desarrollo de proyectos ágiles. Exploraremos las bases fundamentales de SCRUM, desde su estructura básica de roles, eventos y artefactos, hasta su enfoque en la colaboración, la adaptabilidad y la entrega incremental.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, sumérgete en el apasionante mundo de SCRUM, uno de los frameworks de trabajo más influyentes en el desarrollo de proyectos ágiles. Exploraremos las bases fundamentales de SCRUM, desde su estructura básica de roles, eventos y artefactos, hasta su enfoque en la colaboración, la adaptabilidad y la entrega incremental.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-22-las-bases-de-scrum.mp3" length="18421299" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-22-las-bases-de-scrum.mp3" length="18421299" type="audio/mpeg" />
     <video>https://youtu.be/PX0w-kqmDGc</video>
     <videoId>PX0w-kqmDGc</videoId>
     <videoVisible>true</videoVisible>
@@ -1815,7 +1815,7 @@
     <content:encoded><![CDATA[<p>En este episodio, adentrémonos en el mundo de la recopilación de requisitos de negocio en el desarrollo de aplicaciones. Exploraremos las complejidades que enfrentan los profesionales de la tecnología al intentar comprender las necesidades cambiantes de los usuarios y las empresas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, adentrémonos en el mundo de la recopilación de requisitos de negocio en el desarrollo de aplicaciones. Exploraremos las complejidades que enfrentan los profesionales de la tecnología al intentar comprender las necesidades cambiantes de los usuarios y las empresas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-21-la-pelea-de-los-requisitos.mp3" length="10788649" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-21-la-pelea-de-los-requisitos.mp3" length="10788649" type="audio/mpeg" />
     <video>https://youtu.be/wYtyBPDolOc</video>
     <videoId>wYtyBPDolOc</videoId>
     <videoVisible>true</videoVisible>
@@ -1835,7 +1835,7 @@
     <content:encoded><![CDATA[<p>Reacción a un episodio anterior... del propio podcast.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Reacción a un episodio anterior... del propio podcast.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-20-inception-1.mp3" length="20989609" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-20-inception-1.mp3" length="20989609" type="audio/mpeg" />
     <video>https://youtu.be/3d99H_JdTug</video>
     <videoVisible>true</videoVisible>
     <videoId>3d99H_JdTug</videoId>
@@ -1853,7 +1853,7 @@
     <content:encoded><![CDATA[<p>Introducción a Test Driven Development. Historia, orígenes, explicación del concepto y consejos para iniciarse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Introducción a Test Driven Development. Historia, orígenes, explicación del concepto y consejos para iniciarse.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-19-atrevete-con-tdd.mp3" length="11983575" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-19-atrevete-con-tdd.mp3" length="11983575" type="audio/mpeg" />
     <video>https://youtu.be/nF48gkEtBvU</video>
     <videoId>nF48gkEtBvU</videoId>
     <videoVisible>true</videoVisible>
@@ -1873,7 +1873,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos adentramos en un tema importante pero a menudo subestimado en el entorno de desarrollo de software: el impulso de querer ser el héroe en situaciones difíciles dentro de un equipo de programación. A lo largo de nuestra conversación, exploraremos cómo este hábito, aunque motivado por el deseo de ayudar, puede tener consecuencias destructivas en la dinámica del equipo y en la calidad del trabajo. Analizaremos cómo el heroísmo puede llevar a la sobrecarga de trabajo, la falta de colaboración y la pérdida de resiliencia en el equipo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos adentramos en un tema importante pero a menudo subestimado en el entorno de desarrollo de software: el impulso de querer ser el héroe en situaciones difíciles dentro de un equipo de programación. A lo largo de nuestra conversación, exploraremos cómo este hábito, aunque motivado por el deseo de ayudar, puede tener consecuencias destructivas en la dinámica del equipo y en la calidad del trabajo. Analizaremos cómo el heroísmo puede llevar a la sobrecarga de trabajo, la falta de colaboración y la pérdida de resiliencia en el equipo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-18-el-complejo-de-heroe.mp3" length="7489685" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-18-el-complejo-de-heroe.mp3" length="7489685" type="audio/mpeg" />
     <video>https://youtu.be/3HuFr8FBl-0</video>
     <videoId>3HuFr8FBl-0</videoId>
     <videoVisible>false</videoVisible>
@@ -1893,7 +1893,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos un aspecto esencial pero a menudo pasado por alto en el mundo de la programación: la paciencia. Te sumergirás en un viaje introspectivo para descubrir cómo cultivar la paciencia puede convertirse en un activo invaluable en tu carrera como programador.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos un aspecto esencial pero a menudo pasado por alto en el mundo de la programación: la paciencia. Te sumergirás en un viaje introspectivo para descubrir cómo cultivar la paciencia puede convertirse en un activo invaluable en tu carrera como programador.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-17-la-virtud-de-la-paciencia.mp3" length="10842564" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-17-la-virtud-de-la-paciencia.mp3" length="10842564" type="audio/mpeg" />
     <video>https://youtu.be/263KD2t7bxM</video>
     <videoId>263KD2t7bxM</videoId>
     <videoVisible>false</videoVisible>
@@ -1913,7 +1913,7 @@
     <content:encoded><![CDATA[<p>En este episodio, diferenciamos entre dos elementos fundamentales en el proceso de ejecución de código: los compiladores y los intérpretes. A lo largo de la conversación, comprenderemos cómo funciona cada uno de estos sistemas y cómo influyen en la ejecución de tu código. Desde la compilación estática que optimiza el rendimiento hasta la interpretación dinámica que permite una mayor flexibilidad, exploraremos los pros y contras de ambos enfoques.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, diferenciamos entre dos elementos fundamentales en el proceso de ejecución de código: los compiladores y los intérpretes. A lo largo de la conversación, comprenderemos cómo funciona cada uno de estos sistemas y cómo influyen en la ejecución de tu código. Desde la compilación estática que optimiza el rendimiento hasta la interpretación dinámica que permite una mayor flexibilidad, exploraremos los pros y contras de ambos enfoques.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-16-interpretes-vs-compiladores.mp3" length="12946574" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-16-interpretes-vs-compiladores.mp3" length="12946574" type="audio/mpeg" />
     <video>https://youtu.be/-Wo_acfzoiU</video>
     <videoId>-Wo_acfzoiU</videoId>
     <videoVisible>true</videoVisible>
@@ -1933,7 +1933,7 @@
     <content:encoded><![CDATA[<p>Muchos me preguntáis como tengo tiempo de hacer tantas cosas, por eso en este episodio he querido hablar de juego de tronos y cous cous. A parte, tambien explico un poco la manera de organizarse para poder llegar a tus objetivos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Muchos me preguntáis como tengo tiempo de hacer tantas cosas, por eso en este episodio he querido hablar de juego de tronos y cous cous. A parte, tambien explico un poco la manera de organizarse para poder llegar a tus objetivos.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-15-el-tiempo-se-hace-no-se-tiene.mp3" length="13517095" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-15-el-tiempo-se-hace-no-se-tiene.mp3" length="13517095" type="audio/mpeg" />
     <video>https://youtu.be/5IthIDSiqFA</video>
     <videoId>5IthIDSiqFA</videoId>
     <videoVisible>false</videoVisible>
@@ -1953,7 +1953,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos las diferencias fundamentales entre dos enfoques de programación apasionantes: la programación orientada a objetos y la programación funcional. A través de ejemplos prácticos y explicaciones claras, te guiaré a través de los conceptos clave de estos paradigmas, desde la encapsulación y herencia en la programación orientada a objetos hasta la inmutabilidad y las funciones de orden superior en la programación funcional.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos las diferencias fundamentales entre dos enfoques de programación apasionantes: la programación orientada a objetos y la programación funcional. A través de ejemplos prácticos y explicaciones claras, te guiaré a través de los conceptos clave de estos paradigmas, desde la encapsulación y herencia en la programación orientada a objetos hasta la inmutabilidad y las funciones de orden superior en la programación funcional.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-14-programacion-funcional-vs-orientada-a-objetos.mp3" length="20384299" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-14-programacion-funcional-vs-orientada-a-objetos.mp3" length="20384299" type="audio/mpeg" />
     <video>https://youtu.be/K2aKK5LaR2Y</video>
     <videoId>K2aKK5LaR2Y</videoId>
     <videoVisible>true</videoVisible>
@@ -1973,7 +1973,7 @@
     <content:encoded><![CDATA[<p>Actividades sociales para causas solidarias organizadas entre los compañeros. No dejéis de visitar la web de Marco Moreira: https://marcomoreiraenlaguitarra.wordpress.com y también la asociación solidaria que lleva música a los hospitales: http://musicaenvena.com. Como afectan los días en los que parece que tengas menor productividad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Actividades sociales para causas solidarias organizadas entre los compañeros. No dejéis de visitar la web de Marco Moreira: https://marcomoreiraenlaguitarra.wordpress.com y también la asociación solidaria que lleva música a los hospitales: http://musicaenvena.com. Como afectan los días en los que parece que tengas menor productividad.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-13-actividades-sociales-solidaridad-productividad.mp3" length="7775629" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-13-actividades-sociales-solidaridad-productividad.mp3" length="7775629" type="audio/mpeg" />
     <video>https://youtu.be/kLg_FLsS_qo</video>
     <videoId>kLg_FLsS_qo</videoId>
     <videoVisible>false</videoVisible>
@@ -1993,7 +1993,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos un aspecto esencial pero a menudo subestimado en la carrera de un profesional de la programación: las "soft skills" o habilidades blandas. Analizaremos por qué estas habilidades son tan cruciales en el entorno de la programación y cómo pueden marcar la diferencia en tu éxito y tu satisfacción en el trabajo.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos un aspecto esencial pero a menudo subestimado en la carrera de un profesional de la programación: las "soft skills" o habilidades blandas. Analizaremos por qué estas habilidades son tan cruciales en el entorno de la programación y cómo pueden marcar la diferencia en tu éxito y tu satisfacción en el trabajo.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-12-soft-skills.mp3" length="8292149" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-12-soft-skills.mp3" length="8292149" type="audio/mpeg" />
     <video>https://youtu.be/O-SmMxtkz9M</video>
     <videoVisible>false</videoVisible>
     <videoId>O-SmMxtkz9M</videoId>
@@ -2013,7 +2013,7 @@
     <content:encoded><![CDATA[<p>En este episodio, profundizamos en un aspecto fundamental de la programación: la importancia de las pruebas (tests) y por qué son innegociables en el desarrollo de software.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, profundizamos en un aspecto fundamental de la programación: la importancia de las pruebas (tests) y por qué son innegociables en el desarrollo de software.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-11-el-testing-no-es-negociable.mp3" length="14926134" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-11-el-testing-no-es-negociable.mp3" length="14926134" type="audio/mpeg" />
     <video>https://youtu.be/-0nRMDdAsF4</video>
     <videoId>-0nRMDdAsF4</videoId>
     <videoVisible>true</videoVisible>
@@ -2033,7 +2033,7 @@
     <content:encoded><![CDATA[<p>Diferencia entre iteración y repetición, como identificar cada caso y sacar provecho a cada una de las dos herramientas. Como aplicar lo aprendido a tu carrera profesional.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Diferencia entre iteración y repetición, como identificar cada caso y sacar provecho a cada una de las dos herramientas. Como aplicar lo aprendido a tu carrera profesional.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-10-iteracion-vs-repeticion.mp3" length="10998354" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-10-iteracion-vs-repeticion.mp3" length="10998354" type="audio/mpeg" />
     <video>https://youtu.be/tD7iUSmrLbg</video>
     <videoId>tD7iUSmrLbg</videoId>
     <videoVisible>true</videoVisible>
@@ -2053,7 +2053,7 @@
     <content:encoded><![CDATA[<p>Sesión de preguntas y respuestas. Hablando de ropa, tratando de balancear un árbol binario y explicando por encima la arquitectura de micro servicios.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Sesión de preguntas y respuestas. Hablando de ropa, tratando de balancear un árbol binario y explicando por encima la arquitectura de micro servicios.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-9-q-a-camisas-arboles-binarios-micro-servicios.mp3" length="7935495" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-9-q-a-camisas-arboles-binarios-micro-servicios.mp3" length="7935495" type="audio/mpeg" />
     <video>https://youtu.be/vf6jRACalFo</video>
     <videoId>vf6jRACalFo</videoId>
     <videoVisible>false</videoVisible>
@@ -2071,7 +2071,7 @@
     <content:encoded><![CDATA[<p>En este episodio, te llevaré detrás de escena en un viaje de descubrimiento y creatividad. Exploraremos cómo diseñé y desarrollé un programa personalizado para modificar los metadatos de fotos y videos en la aplicación Fotos de Apple.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, te llevaré detrás de escena en un viaje de descubrimiento y creatividad. Exploraremos cómo diseñé y desarrollé un programa personalizado para modificar los metadatos de fotos y videos en la aplicación Fotos de Apple.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-8-corre-conejo-apple-photos-metadata.mp3" length="14533688" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-8-corre-conejo-apple-photos-metadata.mp3" length="14533688" type="audio/mpeg" />
     <video>https://youtu.be/wIn0e0JGgCM</video>
     <videoId>wIn0e0JGgCM</videoId>
     <videoVisible>false</videoVisible>
@@ -2091,7 +2091,7 @@
     <content:encoded><![CDATA[<p>Breve comentario sobre el libro "Pranksters vs autocrats" https://amzn.to/3a7LSQ0 de Srdja Popovic. Os animo a hacer cosas.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Breve comentario sobre el libro "Pranksters vs autocrats" https://amzn.to/3a7LSQ0 de Srdja Popovic. Os animo a hacer cosas.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-7-bromas-vs-autocracias-haced-cosas.mp3" length="16994732" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-7-bromas-vs-autocracias-haced-cosas.mp3" length="16994732" type="audio/mpeg" />
     <video>https://youtu.be/GsuVbt4rJrE</video>
     <videoId>GsuVbt4rJrE</videoId>
     <videoVisible>false</videoVisible>
@@ -2111,7 +2111,7 @@
     <content:encoded><![CDATA[<p>Visita a la oficina para recoger trastos, Richard Feynman y sus seis piezas fáciles. El bug se resiste a desaparecer.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Visita a la oficina para recoger trastos, Richard Feynman y sus seis piezas fáciles. El bug se resiste a desaparecer.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-6-oficina-richard-feynman-bugs.mp3" length="14070057" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-6-oficina-richard-feynman-bugs.mp3" length="14070057" type="audio/mpeg" />
     <video>https://youtu.be/D4ZetPdmI7I</video>
     <videoId>D4ZetPdmI7I</videoId>
     <videoVisible>false</videoVisible>
@@ -2129,7 +2129,7 @@
     <content:encoded><![CDATA[<p>El dia se complica de golpe y las tareas se acumulan!</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>El dia se complica de golpe y las tareas se acumulan!</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-5-salting-greedy-algorithms-bugs-everywhere.mp3" length="11680506" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-5-salting-greedy-algorithms-bugs-everywhere.mp3" length="11680506" type="audio/mpeg" />
     <video>https://youtu.be/hUHAJfiwkJU</video>
     <videoId>hUHAJfiwkJU</videoId>
     <videoVisible>false</videoVisible>
@@ -2149,7 +2149,7 @@
     <content:encoded><![CDATA[<p>En este episodio, exploramos una perspectiva única y valiosa en el mundo de la programación: la visión de "aficionado". A menudo, los programadores experimentados pueden beneficiarse enormemente al abordar problemas con la mente de un principiante o aficionado.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, exploramos una perspectiva única y valiosa en el mundo de la programación: la visión de "aficionado". A menudo, los programadores experimentados pueden beneficiarse enormemente al abordar problemas con la mente de un principiante o aficionado.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-4-amateurs-english.mp3" length="14034295" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-4-amateurs-english.mp3" length="14034295" type="audio/mpeg" />
     <video>https://youtu.be/eZqXZrA_AZo</video>
     <videoId>eZqXZrA_AZo</videoId>
     <videoVisible>false</videoVisible>
@@ -2169,7 +2169,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos adentramos en el mundo de la resolución de bugs en el código y exploramos cómo tomar una perspectiva efectiva puede ser la clave para resolver esos misteriosos errores que acechan a los desarrolladores.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos adentramos en el mundo de la resolución de bugs en el código y exploramos cómo tomar una perspectiva efectiva puede ser la clave para resolver esos misteriosos errores que acechan a los desarrolladores.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-3-bugs-covid19.mp3" length="9201530" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-3-bugs-covid19.mp3" length="9201530" type="audio/mpeg" />
     <video>https://youtu.be/ZnJi0Ptw6dQ</video>
     <videoId>ZnJi0Ptw6dQ</videoId>
     <videoVisible>false</videoVisible>
@@ -2189,7 +2189,7 @@
     <content:encoded><![CDATA[<p>En este episodio, nos a sumergirnos en el mundo de las estructuras de datos y exploramos las diferencias clave entre tres de las más utilizadas: listas, arrays y hash tables.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>En este episodio, nos a sumergirnos en el mundo de las estructuras de datos y exploramos las diferencias clave entre tres de las más utilizadas: listas, arrays y hash tables.</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-2-arrays-listas-hash-tables.mp3" length="10586781" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-2-arrays-listas-hash-tables.mp3" length="10586781" type="audio/mpeg" />
     <video>https://youtu.be/E1vTYHhr-Xk</video>
     <videoId>E1vTYHhr-Xk</videoId>
     <videoVisible>true</videoVisible>
@@ -2209,7 +2209,7 @@
     <content:encoded><![CDATA[<p>Saludando al mundo, descubriendo las bananas y animando a escribir blogs y hacer charlas</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
     <descriptionWeb><![CDATA[<p>Saludando al mundo, descubriendo las bananas y animando a escribir blogs y hacer charlas.<br/><br/>http://www.joantolos.com</p>]]></descriptionWeb>
     <itunes:author>Joan Tolós López</itunes:author>
-    <enclosure url="https://www.joantolos.com/assets/episodes/ep-1-hello-world-blog-charlas.mp3" length="22471567" type="audio/mpeg" />
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-1-hello-world-blog-charlas.mp3" length="22471567" type="audio/mpeg" />
     <video>https://youtu.be/SYpV4wfXxHQ</video>
     <videoId>SYpV4wfXxHQ</videoId>
     <videoVisible>false</videoVisible>
