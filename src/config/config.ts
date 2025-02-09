@@ -44,6 +44,17 @@ export const BLOG : Blog =
           "active": false
         },
         {
+          "id": "overcoming-fomo",
+          "date": "February 5, 2025",
+          "title": "Overcoming FOMO",
+          "subtitle": "Letting go the fear of missing out and embracing the JOY of missing out",
+          "summary": "FOMO stems from a scarcity mindset, causing stress and comparison in life, work, and business. Shifting to an abundance mindset, focusing on values, and embracing JOMO can help overcome it.",
+          "featuredImage": "./assets/images/overcomingFomo/featuredImage.png",
+          "thumb": "./assets/images/overcomingFomo/thumb.png",
+          "tags": ["life, business"],
+          "active": true
+        },
+        {
           "id": "when-even-data-lies",
           "date": "July 12, 2024",
           "title": "When even data lies",
