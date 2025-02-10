@@ -51,7 +51,7 @@ export const BLOG : Blog =
           "summary": "FOMO stems from a scarcity mindset, causing stress and comparison in life, work, and business. Shifting to an abundance mindset, focusing on values, and embracing JOMO can help overcome it.",
           "featuredImage": "./assets/images/overcomingFomo/featuredImage.png",
           "thumb": "./assets/images/overcomingFomo/thumb.png",
-          "tags": ["life, business"],
+          "tags": ["life","business"],
           "active": true
         },
         {
