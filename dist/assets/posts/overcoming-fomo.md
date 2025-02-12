@@ -1,64 +1,81 @@
 # What is FOMO?
 
-FOMO (Fear of Missing Out) is the anxiety that others might be having rewarding experiences that you're not a part of. It often comes with a sense of comparison, regret, or urgency to participate, even if the activity doesn't align with your true interests or values.
+FOMO (**Fear of Missing Out**) is the anxiety that others might be having rewarding experiences that you're not a part of. It often comes with a sense of comparison, regret, or urgency to participate, even if the activity doesn't align with your true interests or values.
 
-# Scarcity mindset
+You may experience FOMO at work when you're not included in major projects or strategic decisions that could impact your future. It is also typically associated with significant life changes, where the fear of being left behind intensifies.
 
-A scarcity mindset is the belief that there’s never enough—whether it’s money, time, opportunities, love, or success—which leads to fear, stress, and a focus on what’s lacking rather than what’s possible.
+# Scarcity Mindset
+
+A scarcity mindset is the belief that there's never enough—whether it's money, time, opportunities, love, or success—which leads to fear, stress, and a focus on what's lacking rather than whats possible.
 
 It often results in:
 
-Comparison & Competition – Feeling like others’ gains mean your loss (e.g., seeing your ex-wife thriving and feeling like you're "losing").
-Short-Term Thinking – Making impulsive choices out of fear of missing out (e.g., overspending due to financial anxiety).
-Fear of Change – Avoiding risks because failure seems more costly than growth.
-The opposite is an abundance mindset—believing that there are enough opportunities, success, and happiness for everyone, including yourself. This shift helps with FOMO, financial stress, and emotional healing after life changes.
+- **Comparison & Competition:** Feeling like others' gains mean your loss.
+- **Short-Term Thinking:** Making impulsive choices out of fear of missing out.
+- **Fear of Change:** Avoiding risks because failure seems more costly than growth.
 
-Would you say your scarcity mindset is strongest around finances, relationships, or personal growth?
+The opposite is an **abundance mindset** —the belief that there are enough opportunities, success, and happiness for everyone, including yourself. This shift helps with FOMO, financial stress, and emotional healing after life changes.
+
+If you believe that there are enough resources and opportunities for everyone, then missing out on a particular experience doesn't feel like a loss because more opportunities will come.
+
+This aligns with the idea that life is not a zero-sum game: **one person's win is not another persons loss.** Success is not finite, and adopting this perspective helps reduce FOMO.
+
+# FOMO in personal life
+
+At its core, FOMO stems from a scarcity mindset and is heavily amplified by:
+
+- Social Media, where people showcase only their best moments.
+- Life Transitions, where you compare your journey to others.
+- Financial Pressure, feeling like others have more freedom or luxury than you do.
+
+In reality, no one experiences everything, and fulfillment comes from being present and intentional with your choices rather than chasing what others appear to be doing.
+
+# FOMO in business
+
+Just like in personal life, FOMO in business and the workplace comes from the fear of missing out on opportunities, trends, or success that others are achieving. It can lead to stress, overcommitment, and **poor decision-making.**
+
+Sometimes, entire businesses react to business FOMO, chasing trends out of fear rather than strategy. The signs of this include:
+
+- Jumping on trends (AI, blockchain, etc.) without considering alignment with business values.
+- Comparing to competitors instead of focusing on unique strengths.
+- Overexpanding too quickly out of fear of "falling behind."
+
+# FOMO in you career
+
+Similarly, you might experience career FOMO if you feel pressured to always do more, earn more, or advance faster. Common symptoms include:
+
+- **Job-hopping** out of fear that better opportunities exist elsewhere.
+- **Burnout** from saying "yes" to everything (extra projects, networking, side hustles).
+- **Comparing salaries, promotions, or career paths** to colleagues and feeling inadequate.
 
 # Overcoming the fear of missing out
 
-At its core, FOMO stems from a scarcity mindset—the fear that opportunities are slipping away, and that by not joining in, you’re falling behind in some way (socially, financially, or emotionally).
+Overcoming FOMO requires a mindset shift from scarcity to abundance, focusing on what you have rather than what you're missing. Here's how:
 
-It’s amplified by:
+1. **Reframe Your Perspective:** Instead of thinking, "I'm missing out," try "I'm choosing what matters to me." You don't need to be part of everything to be fulfilled.
 
-Social media, where people showcase only their best moments.
-Life transitions, like post-divorce, where you compare your journey to others.
-Financial pressure, feeling like others have more freedom or luxury than you do.
-In reality, no one experiences everything, and fulfillment comes from being present and intentional with your own choices, rather than chasing what others appear to be doing.
+2. **Focus on What You Value:** Your time, energy, and resources are limited. Ask yourself: Would this actually bring me joy, or is it just a reaction to what others are doing? Instead of trying to 'keep up,' build a career and life that genuinely excites you.
 
-Would you say your FOMO is more about missing social experiences, financial opportunities, or something else?
+3. **Control Your Exposure:** Social media fuels FOMO because it only shows highlights. Be mindful of how much time you spend consuming curated versions of other people's lives.
 
-Overcoming FOMO (Fear of Missing Out) requires a mindset shift from scarcity to abundance, focusing on what you have rather than what you're missing. Given your recent challenges with comparison and post-divorce emotions, FOMO might hit harder when it comes to your ex-wife’s life, social events, or even financial situations. Here’s how you can tackle it effectively:
+4. **Find Joy in the Present:** Instead of worrying about what you're missing, immerse yourself in what you're doing right now.
 
-1. Reframe Your Perspective
-Instead of thinking "I'm missing out", try "I'm choosing what matters to me."
-Recognize that you don’t need to be part of everything to be fulfilled.
-If you feel FOMO about your ex-wife’s potential new relationship or her lifestyle, remind yourself that your happiness is independent of hers.
-2. Focus on What You Value
-Your time, energy, and resources are limited. Ask:
-Would this actually bring me joy?
-Or is it just a reaction to what others are doing?
-You don’t have to “keep up.” Instead, build a life that genuinely excites you.
-3. Control Your Exposure (Especially on Social Media)
-Social media fuels FOMO because it only shows highlights.
-If certain posts (or interactions with your ex) trigger negative emotions, consider:
-Reducing screen time.
-Unfollowing or muting accounts that make you feel inadequate.
-4. Find Joy in the Present
-Instead of worrying about what you’re missing, immerse yourself in what you’re doing right now.
-If you’re home alone, instead of thinking "I wish I were out," enjoy a movie, a workout, or a hobby.
-5. Practice Gratitude
-Each day, list three things you're grateful for.
-It shifts your focus from what’s lacking to what’s abundant.
-6. Build Your Own Experiences
-If FOMO hits when your kids are at your ex’s, plan activities for yourself:
-Try a new hobby, go dancing, or connect with friends.
-If it's financial FOMO, focus on small wins, like treating yourself within your budget.
-7. Embrace JOMO (Joy of Missing Out)
-Realize that you don’t have to do everything to be happy.
-Enjoy the peace and freedom of not being tied to every event or trend.
-Would you say FOMO is hitting hardest in social situations, finances, or comparisons with your ex-wife?
+5. **Practice Gratitude:** Shifting your focus from what's lacking to what's abundant helps combat scarcity thinking.
+
+6. **Embrace JOMO (Joy of Missing Out)** Realize that you don't have to do everything to be happy. Enjoy the peace and freedom of not being tied to every event or trend.
+
+# Pause and reflect
+
+Is what you are doing something you want or just something you feel pressured to do?. Playing the long game is usually the best strategy because success is not about winning every moment but about sustained, incremental progress.
+
+Limit comparisons! Other people's wins don't mean you're losing, it is always better to focus on your own lane. Remember: **Comparison is the thief of joy.**
+
+Ask yourself: _Is this something I truly want, or just something I feel pressured to do?_
+
+Playing the **long game** is usually the best strategy because success **isn't about winning every moment** it's about sustained, incremental progress.
+
+**Limit comparisons!** Other people's wins don't mean you're losing. **_Comparison is the thief of joy._** Focus on your own lane and what genuinely matters to you.
 
 ## References:
 
-* _Photo <a href="https://www.dreamstime.com/stock-photo-rear-view-thoughtful-woman-who-tries-to-solve-math-problems-calculations-black-chalk-board-image56838612" target="_blank">56838612</a> © <a href="https://www.dreamstime.com/denisismagilov_info" target="_blank">Denisismagilov</a> | <a href="https://www.dreamstime.com/" target="_blank">Dreamstime.com</a>_
+* _Photo <a href="https://www.dreamstime.com/fomo-word-written-wood-block-text-table-concept-image345645011" target="_blank">345645011</a> © <a href="https://www.dreamstime.com/snegok1967_info" target="_blank">Mykola Sosiukin</a> | <a href="https://www.dreamstime.com/" target="_blank">Dreamstime.com</a>_

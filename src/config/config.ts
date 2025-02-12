@@ -44,6 +44,17 @@ export const BLOG : Blog =
           "active": false
         },
         {
+          "id": "competence-vs-obedience",
+          "date": "February 12, 2025",
+          "title": "Competence VS Obedience",
+          "subtitle": "Why Great Teams Thrive on Trust",
+          "summary": "Many leaders feel the need to control every detail, while some employees rely on being told what to do. But true success comes from trust, autonomy, and initiative. The best teams aren’t built on obedience; they’re driven by competence, collaboration, and a shared vision.",
+          "featuredImage": "./assets/images/competenceVsObedience/featuredImage.png",
+          "thumb": "./assets/images/competenceVsObedience/thumb.png",
+          "tags": ["life","business"],
+          "active": true
+        },
+        {
           "id": "overcoming-fomo",
           "date": "February 5, 2025",
           "title": "Overcoming FOMO",
