@@ -69,7 +69,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.109: Todos somos C</itunes:title>
     <title>Ep.109: Todos somos C</title>
     <description><![CDATA[<p>En este episodio del podcast, exploro el mundo de los conflictos artificiales y los lobbies que se dedican a mantener un discurso crispado y un ambiente de enfrentamiento. Descubriremos cómo ciertos grupos de poder manipulan las narrativas para fomentar la división y obstaculizar el progreso social. A través de análisis de estrategias de desinformación, podemos entrever las tácticas utilizadas para perpetuar los conflictos artificiales y cómo esto afecta a nuestras sociedades.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -108,7 +108,7 @@
     <itunes:episode>108</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.107: ChatGPT resuelve pruebas técnicas</itunes:title>
     <title>Ep.107: ChatGPT resuelve pruebas técnicas</title>
@@ -129,7 +129,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.106: Tu presencia en Internet</itunes:title>
     <title>Ep.106: Tu presencia en Internet</title>
     <description><![CDATA[<p>En este episodio, exploro la creciente importancia de mantenerse relevante en el mundo digital y las redes sociales. En un panorama en constante evolución, donde la presencia en línea puede ser determinante para el éxito personal y profesional, exploramos esta supuesta necesidad y planteo si realmente es tan relevante como podemos pensar en una primera instancia.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -148,7 +148,7 @@
     <itunes:episode>106</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.105: Que es un ETL</itunes:title>
     <title>Ep.105: Que es un ETL</title>
@@ -169,7 +169,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.104: Errores en producción</itunes:title>
     <title>Ep.104: Errores en producción</title>
     <description><![CDATA[<p>En este episodio especial del podcast, te sumerjo en el fascinante mundo de los desafíos en el trabajo. Compartiré contigo un par de anécdotas personales en las que cometí errores graves en un entorno de producción, revelando los obstáculos que enfrenté y las lecciones valiosas que extraje de estas experiencias.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -228,7 +228,7 @@
     <itunes:episode>102</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.101: El caso de Twitter</itunes:title>
     <title>Ep.101: El caso de Twitter</title>
@@ -329,7 +329,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.96: Mentiras por clics: consequencias del titular incendiario</itunes:title>
     <title>Ep.96: Mentiras por clics: consequencias del titular incendiario</title>
     <description><![CDATA[<p>En este episodio del podcast, adentrémonos en la profunda problemática de los titulares incendiarios y el impacto que tienen en nuestras vidas digitales y la sociedad en general. Exploraremos cómo el auge del "clic bait" ha llevado a consecuencias preocupantes, donde la búsqueda desesperada por obtener clics y atención ha impulsado la propagación de titulares engañosos y, en algunos casos, incluso mentiras deliberadas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -348,7 +348,7 @@
     <itunes:episode>96</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.95: Éxito sin pasar por la universidad: La historia de Paul Lutus</itunes:title>
     <title>Ep.95: Éxito sin pasar por la universidad: La historia de Paul Lutus</title>
@@ -389,7 +389,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.93: Preguntas y respuestas</itunes:title>
     <title>Ep.93: Preguntas y respuestas</title>
     <description><![CDATA[<p>Sesión de preguntas y respuestas!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -406,8 +406,8 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.92: Trabajo con impacto</itunes:title>
     <title>Ep.92: Trabajo con impacto</title>
     <description><![CDATA[<p>En este episodio, exploro a fondo la importancia de tener un trabajo con impacto y cómo esta elección influye directamente en la calidad de tu desempeño laboral. Aprenderemos cómo el sentido de propósito no solo impulsa la productividad y la satisfacción en el trabajo, sino que también contribuye a tu bienestar general.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -426,8 +426,8 @@
     <itunes:episode>92</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.91: Programación para niños</itunes:title>
     <title>Ep.91: Programación para niños</title>
     <description><![CDATA[<p>En este episodio, nos adentramos en el emocionante mundo de la programación y los algoritmos desde una perspectiva fresca y divertida: ¡enseñarle a los niños desde temprana edad! Descubriremos por qué aprender a programar a una edad temprana puede ser un verdadero superpoder para nuestros pequeños, potenciando su pensamiento lógico, creatividad y resolución de problemas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -446,7 +446,7 @@
     <itunes:episode>91</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.90: Entendiendo los frameworks</itunes:title>
     <title>Ep.90: Entendiendo los frameworks</title>
@@ -467,7 +467,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.89: Beneficios e inconvenientes de trabajar desde casa</itunes:title>
     <title>Ep.89: Beneficios e inconvenientes de trabajar desde casa</title>
     <description><![CDATA[<p>En este episodio, te invito a explorar el mundo del trabajo desde casa, donde veremos algunos de los beneficios y los inconvenientes de esta modalidad laboral en constante crecimiento. Descubre cómo la flexibilidad y la comodidad pueden aumentar la productividad y mejorar el equilibrio entre la vida laboral y personal. Sin embargo, también exploraremos los desafíos, como el aislamiento y las distracciones en el hogar, que a menudo se asocian con el teletrabajo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -486,7 +486,7 @@
     <itunes:episode>89</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.88: Las mejores películas y series sobre programación</itunes:title>
     <title>Ep.88: Las mejores películas y series sobre programación</title>
@@ -507,7 +507,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.87: Start ups VS Consultoras VS Grandes Multinacionales</itunes:title>
     <title>Ep.87: Start ups VS Consultoras VS Grandes Multinacionales</title>
     <description><![CDATA[<p>En este episodio, desentrañamos el emocionante mundo laboral y exploramos las diferencias fundamentales entre trabajar en una startup, en una consultora y en una gran multinacional.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -526,7 +526,7 @@
     <itunes:episode>87</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep. 86: Java Records</itunes:title>
     <title>Ep. 86: Java Records</title>
@@ -567,7 +567,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.84: Estoicos en la cultura popular</itunes:title>
     <title>Ep.84: Estoicos en la cultura popular</title>
     <description><![CDATA[<p>En este episodio, exploramos el impacto duradero de la filosofía estoica en la cultura popular a través de libros, películas y otros medios. Descubriremos cómo las enseñanzas de figuras estoicas como Séneca, Epicteto y Marco Aurelio han influido en personajes y tramas en la literatura y el cine contemporáneos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -586,8 +586,8 @@
     <itunes:episode>84</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.83: Callback</itunes:title>
     <title>Ep.83: Callback</title>
     <description><![CDATA[<p>En este episodio regresamos a algunos de los temas más destacados de episodios anteriores y respondo a las preguntas y comentarios de los oyentes.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -606,7 +606,7 @@
     <itunes:episode>83</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.82: Probando GitHub Copilot</itunes:title>
     <title>Ep.82: Probando GitHub Copilot</title>
@@ -645,7 +645,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.80: Q&amp;A</itunes:title>
     <title>Ep.80: Q&amp;A</title>
     <description><![CDATA[<p>Sesion de preguntas y respuestas: Aclaracion sobre los algoritmos con O(n^2) / Recursividad en problemas sencillos / Mi lugar de trabajo / Casos de uso de un arbol binario / Prioridades al buscar trabajo o proyecto</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -664,8 +664,8 @@
     <itunes:episode>80</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.79: A la cárcel por programar</itunes:title>
     <title>Ep.79: A la cárcel por programar</title>
     <description><![CDATA[<p>¿Puedes acabar en la cárcel por programar algo incorrecto? Eso le ocurrió a un ingeniero de Volkswagen.<br/><br/>Articulo New York Times: https://www.nytimes.com/2017/08/25/business/volkswagen-engineer-prison-diesel-cheating.html<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.nadanuevobajoelsol.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></description>
@@ -684,7 +684,7 @@
     <itunes:episode>79</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.78: Invertir un arbol binario en Java</itunes:title>
     <title>Ep.78: Invertir un arbol binario en Java</title>
@@ -705,7 +705,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.77: Adicción a redes sociales</itunes:title>
     <title>Ep.77: Adicción a redes sociales</title>
     <description><![CDATA[<p>Una exploración sobre los posibles efectos negativos derivados del uso en exceso de las redes sociales.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -724,7 +724,7 @@
     <itunes:episode>77</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.76: FizzBuzz en JavaScript con TDD</itunes:title>
     <title>Ep.76: FizzBuzz en JavaScript con TDD</title>
@@ -745,7 +745,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.75: Resumen 2021</itunes:title>
     <title>Ep.75: Resumen 2021</title>
     <description><![CDATA[<p>Un resumen del año desde el punto de vista de los temas tratados en el podcast.<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.nadanuevobajoelsol.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></description>
@@ -763,8 +763,8 @@
     <itunes:episode>75</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.74: Mi última carta</itunes:title>
     <title>Ep.74: Mi última carta</title>
     <description><![CDATA[<p>He recibido lo que creo que sera mi última carta de correo postal genuina. Vale la pena compartirlo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -783,7 +783,7 @@
     <itunes:episode>74</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.73: Vulnerabilidad en Log4j</itunes:title>
     <title>Ep.73: Vulnerabilidad en Log4j</title>
@@ -804,7 +804,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.72: 5 errores y 5 aciertos</itunes:title>
     <title>Ep.72: 5 errores y 5 aciertos</title>
     <description><![CDATA[<p>5 errores y 5 aciertos en la carrera profesional explicados en detalle.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -823,8 +823,8 @@
     <itunes:episode>72</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.71: Code ownership</itunes:title>
     <title>Ep.71: Code ownership</title>
     <description><![CDATA[<p>Uno de los errores mas comunes en equipos cuando empiezan, es crear silos de conocimiento y de "propiedad" del código. En este episodio exploro esa posibilidad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -843,7 +843,7 @@
     <itunes:episode>71</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.70: Database connection pool</itunes:title>
     <title>Ep.70: Database connection pool</title>
@@ -864,7 +864,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.69: En contra del progreso</itunes:title>
     <title>Ep.69: En contra del progreso</title>
     <description><![CDATA[<p>Algunos ejemplos históricos donde se quiso poner freno al progreso... sin demasiado éxito. Intento extraer conocimiento útil de estos errores para nuestra profesión.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -883,8 +883,8 @@
     <itunes:episode>69</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.68: La física de las cosas</itunes:title>
     <title>Ep.68: La física de las cosas</title>
     <description><![CDATA[<p>En este episodio, exploraremos la importancia de tener conocimientos básicos de física y cómo estos se aplican en el campo de la ingeniería. Discutiremos cómo la física proporciona los fundamentos teóricos esenciales para comprender y resolver problemas en una amplia gama de disciplinas de ingeniería.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -903,8 +903,8 @@
     <itunes:episode>68</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.67: El mito de 10x Programmer</itunes:title>
     <title>Ep.67: El mito de 10x Programmer</title>
     <description><![CDATA[<p>Conoces el concepto de 10x Programmer? En este episodio explico de que se trata.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -923,8 +923,8 @@
     <itunes:episode>67</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.66: Entrevistas: Atacando a las Big Four</itunes:title>
     <title>Ep.66: Entrevistas: Atacando a las Big Four</title>
     <description><![CDATA[<p>En este episodio, vamos a adentrarnos en el fascinante mundo de los procesos de selección utilizados por las Big Four tecnológicas: Google, Apple, Amazon y Facebook (también conocidas como GAFA). Exploraremos cómo estas empresas altamente competitivas atraen y evalúan a talentos en todo el mundo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -943,7 +943,7 @@
     <itunes:episode>66</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.65: ¿Cómo se procesa un programa?</itunes:title>
     <title>Ep.65: ¿Cómo se procesa un programa?</title>
@@ -964,7 +964,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.64: Estoicismo: Sobre la felicidad</itunes:title>
     <title>Ep.64: Estoicismo: Sobre la felicidad</title>
     <description><![CDATA[<p>En este episodio, exploraremos el concepto de felicidad desde la perspectiva de la filosofía estoica, una antigua corriente filosófica que ha brindado valiosas lecciones sobre la búsqueda de la satisfacción y la tranquilidad en la vida. Profundizaremos en los principios estoicos, como el control de lo que podemos cambiar y la aceptación de lo que no podemos. Discutiremos cómo los estoicos, como Epicteto, Séneca y Marco Aurelio, enseñaron que la felicidad no se encuentra en la búsqueda de placeres externos o la acumulación de bienes materiales, sino en el cultivo de la virtud, la autodisciplina y la paz interior.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -981,7 +981,7 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.63: Big O Notation: Ejemplo</itunes:title>
     <title>Ep.63: Big O Notation: Ejemplo</title>
@@ -1022,7 +1022,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.61: Distopías y filosofía involuntaria</itunes:title>
     <title>Ep.61: Distopías y filosofía involuntaria</title>
     <description><![CDATA[<p>Revisión de unos cuantos libros de "filosofía involuntaria". Si no conoceis el genero distopico, os presento unos cuantos ejemplos para empezar a explorar.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1041,8 +1041,8 @@
     <itunes:episode>61</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.60: La clave del negocio en Internet</itunes:title>
     <title>Ep.60: La clave del negocio en Internet</title>
     <description><![CDATA[<p>Explico uno de los motivos por los que los negocios en Internet pueden llegar a ser tan lucrativos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1061,7 +1061,7 @@
     <itunes:episode>60</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.59: Checked vs Unchecked exceptions</itunes:title>
     <title>Ep.59: Checked vs Unchecked exceptions</title>
@@ -1102,7 +1102,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.57: Cuando irte de una entrevista</itunes:title>
     <title>Ep.57: Cuando irte de una entrevista</title>
     <description><![CDATA[<p>De nuevo hablando sobre entrevistas de trabajo, en este caso, tanto desde el punto de vista del entrevistador, como del candidato. ¿Cúando es conveniente abandonar y terminar abruptamente la entrevista?</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1121,8 +1121,8 @@
     <itunes:episode>57</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.56: Un día cualquiera</itunes:title>
     <title>Ep.56: Un día cualquiera</title>
     <description><![CDATA[<p>En este episodio, te invito a dar un vistazo al día a día de un programador, donde a menudo no suceden eventos extraordinarios ni situaciones particularmente destacadas. Exploraremos la rutina, los desafíos comunes y las tareas diarias que caracterizan la vida de un desarrollador de software.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1141,7 +1141,7 @@
     <itunes:episode>56</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.55: Como lidiar con Legacy Code</itunes:title>
     <title>Ep.55: Como lidiar con Legacy Code</title>
@@ -1162,7 +1162,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.54: Lectura ligera</itunes:title>
     <title>Ep.54: Lectura ligera</title>
     <description><![CDATA[<p>En este episodio comparto unas cuantas recomendaciones de autores para leer cuando tienes poco tiempo, o pasas una época en la que te cuesta concentrarte en algo mas profundo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1181,8 +1181,8 @@
     <itunes:episode>54</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.53: Pruebas técnicas en entrevistas, ¿sí o no?</itunes:title>
     <title>Ep.53: Pruebas técnicas en entrevistas, ¿sí o no?</title>
     <description><![CDATA[<p>En este episodio, nos adentraremos en el controvertido debate sobre la idoneidad de las pruebas técnicas en el proceso de selección de candidatos para puestos de ingeniería. Examinaremos a fondo los argumentos a favor y en contra de este enfoque comúnmente utilizado en la industria de la tecnología.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1201,8 +1201,8 @@
     <itunes:episode>53</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.52: El origen de los memes</itunes:title>
     <title>Ep.52: El origen de los memes</title>
     <description><![CDATA[<p>Una explicación sobre el origen del concepto meme y como evolucionó su versión en Internet hasta convertirse en una de las herramientas mas usadas para compartir ideas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1221,8 +1221,8 @@
     <itunes:episode>52</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.51: La vuelta al cole</itunes:title>
     <title>Ep.51: La vuelta al cole</title>
     <description><![CDATA[<p>Vuelta a la rutina del día a día con los niños empezando el cole.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1239,7 +1239,7 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.50: Qué es una REST API</itunes:title>
     <title>Ep.50: Qué es una REST API</title>
@@ -1260,7 +1260,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.49: Estoicismo: La dicotomía del control</itunes:title>
     <title>Ep.49: Estoicismo: La dicotomía del control</title>
     <description><![CDATA[<p>Una pequeña exploració de la disciplina del deseo estoica, centrándome para este episodio en la dicotomía del control.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1279,8 +1279,8 @@
     <itunes:episode>49</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.48: Pull requests/vacaciones/música</itunes:title>
     <title>Ep.48: Pull requests/vacaciones/música</title>
     <description><![CDATA[<p>Descripción de un día común como programador.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1297,7 +1297,7 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.47: Angular routes y pizzas</itunes:title>
     <title>Ep.47: Angular routes y pizzas</title>
@@ -1338,7 +1338,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.45: Conspiraciones, conspiraciones everywhere!</itunes:title>
     <title>Ep.45: Conspiraciones, conspiraciones everywhere!</title>
     <description><![CDATA[<p>En el episodio 39 exploro como se monta una teoría de la conspiración y explico algunas opciones para detectar estos intentos de manipulación. Este episodio, que sirve como ampliación, explico uno de los trucos fundamentales para profundizar en tu pensamiento crítico.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1357,8 +1357,8 @@
     <itunes:episode>45</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.44: Mis comienzos</itunes:title>
     <title>Ep.44: Mis comienzos</title>
     <description><![CDATA[<p>Mis inicios en el mundo de la programación explicados (más o menos) cronológicamente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1377,8 +1377,8 @@
     <itunes:episode>44</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.43: Dirigete a lo inevitable</itunes:title>
     <title>Ep.43: Dirigete a lo inevitable</title>
     <description><![CDATA[<p>Hay ciertas maneras de afrontar un reto o un problema. Con el foco adecuado, es más probable que lo consigas mas rápidamente o de manera más satisfactoria.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1395,8 +1395,8 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.42: Estar ocupado puede alejarte de tu objetivo</itunes:title>
     <title>Ep.42: Estar ocupado puede alejarte de tu objetivo</title>
     <description><![CDATA[<p>En este episodio, abordaremos el sesgo cognitivo de acción, también conocido como "action bias," y su impacto potencialmente perjudicial en tu trabajo y toma de decisiones. Exploraremos cómo, en situaciones de presión o incertidumbre, es común que las personas sientan la urgencia de tomar medidas inmediatas, a menudo sin una evaluación adecuada de la situación.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1415,7 +1415,7 @@
     <itunes:episode>42</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.41: Expande tu conocimiento, métete en el mundo DevOps</itunes:title>
     <title>Ep.41: Expande tu conocimiento, métete en el mundo DevOps</title>
@@ -1456,7 +1456,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.39: ¿Cómo se monta una teoría conspiratoria?</itunes:title>
     <title>Ep.39: ¿Cómo se monta una teoría conspiratoria?</title>
     <description><![CDATA[<p>En este episodio, profundizaremos en el mundo de las teorías conspiratorias y exploraremos los puntos comunes que comparten muchas de ellas. A medida que el acceso a la información se ha vuelto más amplio que nunca, también lo han hecho las teorías que desafían la narrativa oficial. Analizaremos cómo estas teorías a menudo se basan en la desconfianza hacia las instituciones, la falta de evidencia sólida, la creencia en un grupo selecto que controla todo y la tendencia a interpretar los eventos de manera sesgada para encajar en la teoría. Además, te proporcionaremos herramientas y consejos para reconocer y evaluar críticamente las teorías conspiratorias, ayudándote a protegerte a ti mismo y a los demás de caer en el abismo de la desinformación.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1475,8 +1475,8 @@
     <itunes:episode>39</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.38: Q&amp;A: Preguntas aleatorias!</itunes:title>
     <title>Ep.38: Q&amp;A: Preguntas aleatorias!</title>
     <description><![CDATA[<p>Nueva sesión de preguntas y respuestas</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1495,7 +1495,7 @@
     <itunes:episode>38</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.37: La trampa de TDD</itunes:title>
     <title>Ep.37: La trampa de TDD</title>
@@ -1514,7 +1514,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.36: Somos cuenta cuentos</itunes:title>
     <title>Ep.36: Somos cuenta cuentos</title>
     <description><![CDATA[<p>Somos primates con la capacidad de contar historias. Las historias que nos contamos a nosotros mismos influyen nuestra toma de decisiones de manera diaria.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1531,8 +1531,8 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.35: No hay atajos para el éxito</itunes:title>
     <title>Ep.35: No hay atajos para el éxito</title>
     <description><![CDATA[<p>Aprende a diferenciar cuando intentan venderte una solución rápida y fácil. Los éxitos de calidad cuestan trabajo y difícilmente llegaran rápidamente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1551,8 +1551,8 @@
     <itunes:episode>35</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.34: Frozen VS Vaiana</itunes:title>
     <title>Ep.34: Frozen VS Vaiana</title>
     <description><![CDATA[<p>Diferentes puntos de vista que se pueden extraer comparando las dos peliculas de Disney: Frozen y Vaiana. Cómo estos puntos de vista pueden aplicarse en el día a día de un programador... o no.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1571,7 +1571,7 @@
     <itunes:episode>34</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.33: Retrospectivas: Abraza el conflicto</itunes:title>
     <title>Ep.33: Retrospectivas: Abraza el conflicto</title>
@@ -1592,7 +1592,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.32: Cómo introducirse al estoicismo</itunes:title>
     <title>Ep.32: Cómo introducirse al estoicismo</title>
     <description><![CDATA[<p>En este episodio, nos sumergiremos en el mundo del estoicismo, una filosofía antigua que sigue siendo relevante en la vida moderna. Acompáñame mientras exploramos las bases fundamentales de esta disciplina filosófica que promueve la virtud, la sabiduría y la serenidad en medio del caos de la vida cotidiana.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1611,8 +1611,8 @@
     <itunes:episode>32</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.31: Mi breve experiencia como team lead</itunes:title>
     <title>Ep.31: Mi breve experiencia como team lead</title>
     <description><![CDATA[<p>Tuve la ocasión hace tiempo de ejercer como team lead durante un período limitado. Pude aprender mucho de esa experiencia y he recopilado un conjunto de errores cometidos y sus correcciones.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1629,8 +1629,8 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.30: Live coding / Objetivo del podcast</itunes:title>
     <title>Ep.30: Live coding / Objetivo del podcast</title>
     <description><![CDATA[<p>Planteo la posibilidad de hacer una serie de videos programando en vivo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1647,8 +1647,8 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.29: GitHub copilot y el fin de la programación</itunes:title>
     <title>Ep.29: GitHub copilot y el fin de la programación</title>
     <description><![CDATA[<p>En este episodio, exploramos el impacto revolucionario de GitHub Copilot y cómo la inteligencia artificial está transformando el trabajo de los programadores. Desentrañaremos las capacidades innovadoras de esta herramienta impulsada por IA, que combina el poder del código autogenerado con la asistencia contextual en tiempo real. Analizaremos cómo GitHub Copilot puede aumentar la productividad, reducir errores y acelerar el proceso de desarrollo de software.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1667,8 +1667,8 @@
     <itunes:episode>29</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.28: Líderes en la cuerda floja</itunes:title>
     <title>Ep.28: Líderes en la cuerda floja</title>
     <description><![CDATA[<p>Se puede aprender mucho sobre grandes líderes militares. Las situaciones extremas a las que se enfrentan son las más desafiantes que pueden existir. Como aplicar su manera de pensar en nuestro trabajo.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1687,8 +1687,8 @@
     <itunes:episode>28</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.27: Universidad o autodidacta</itunes:title>
     <title>Ep.27: Universidad o autodidacta</title>
     <description><![CDATA[<p>En este episodio, exploraremos las posibilidades de convertirse en un programador exitoso sin la necesidad de pasar por la universidad o tener estudios formales en informática.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1707,8 +1707,8 @@
     <itunes:episode>27</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.26: Por qué odias tu trabajo</itunes:title>
     <title>Ep.26: Por qué odias tu trabajo</title>
     <description><![CDATA[<p>En este revelador episodio, exploramos las razones detrás de la crítica constante que la mayoría de las personas dirigen hacia su trabajo y, lo que es aún más importante, cómo romper el ciclo vicioso de la insatisfacción laboral. Analizaremos las principales razones por las que las críticas surgen con frecuencia en el entorno profesional, desde la falta de conexión con la misión de la empresa hasta la ausencia de reconocimiento y desarrollo personal.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1727,8 +1727,8 @@
     <itunes:episode>26</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.25: Pulpo o tiburón</itunes:title>
     <title>Ep.25: Pulpo o tiburón</title>
     <description><![CDATA[<p>En este episodio, nos adentramos en el delicado equilibrio entre la ofensiva y la paciencia en el entorno laboral. Exploraremos situaciones clave en las que es fundamental determinar cuándo tomar la iniciativa y cuándo adoptar una actitud más pasiva. </p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1747,8 +1747,8 @@
     <itunes:episode>25</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.24: Q&amp;A: Trabajar en el extranjero / Blog stack</itunes:title>
     <title>Ep.24: Q&amp;A: Trabajar en el extranjero / Blog stack</title>
     <description><![CDATA[<p>Sesión de preguntas y respuestas donde hablo sobre los beneficios de trabajar en el extranjero y el stack que uso para crear mi blog.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1767,8 +1767,8 @@
     <itunes:episode>24</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.23: Piedras en la maleta</itunes:title>
     <title>Ep.23: Piedras en la maleta</title>
     <description><![CDATA[<p>En este episodio, exploramos el peso de las cargas que arrastramos en el ámbito laboral y cómo estas pueden alejarnos de nuestros objetivos profesionales. A través de historias personales y consejos prácticos, analizaremos las diversas formas en que las preocupaciones, el estrés, la falta de motivación y otros obstáculos pueden convertirse en cargas que nos impiden avanzar hacia nuestros objetivos profesionales.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1787,7 +1787,7 @@
     <itunes:episode>23</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.22: Las bases de Scrum</itunes:title>
     <title>Ep.22: Las bases de Scrum</title>
@@ -1828,7 +1828,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.20: Inception #1</itunes:title>
     <title>Ep.20: Inception #1</title>
     <description><![CDATA[<p>Reacción a un episodio anterior... del propio podcast.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1845,7 +1845,7 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.19: Atrévete con TDD</itunes:title>
     <title>Ep.19: Atrévete con TDD</title>
@@ -1866,7 +1866,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.18: El complejo de héroe</itunes:title>
     <title>Ep.18: El complejo de héroe</title>
     <description><![CDATA[<p>En este episodio, nos adentramos en un tema importante pero a menudo subestimado en el entorno de desarrollo de software: el impulso de querer ser el héroe en situaciones difíciles dentro de un equipo de programación. A lo largo de nuestra conversación, exploraremos cómo este hábito, aunque motivado por el deseo de ayudar, puede tener consecuencias destructivas en la dinámica del equipo y en la calidad del trabajo. Analizaremos cómo el heroísmo puede llevar a la sobrecarga de trabajo, la falta de colaboración y la pérdida de resiliencia en el equipo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1885,8 +1885,8 @@
     <itunes:episode>18</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.17: La virtud de la paciencia</itunes:title>
     <title>Ep.17: La virtud de la paciencia</title>
     <description><![CDATA[<p>En este episodio, exploramos un aspecto esencial pero a menudo pasado por alto en el mundo de la programación: la paciencia. Te sumergirás en un viaje introspectivo para descubrir cómo cultivar la paciencia puede convertirse en un activo invaluable en tu carrera como programador.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1905,7 +1905,7 @@
     <itunes:episode>17</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.16: Intérpretes vs compiladores</itunes:title>
     <title>Ep.16: Intérpretes vs compiladores</title>
@@ -1926,7 +1926,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.15: El tiempo se hace, no se tiene</itunes:title>
     <title>Ep.15: El tiempo se hace, no se tiene</title>
     <description><![CDATA[<p>Muchos me preguntáis como tengo tiempo de hacer tantas cosas, por eso en este episodio he querido hablar de juego de tronos y cous cous. A parte, tambien explico un poco la manera de organizarse para poder llegar a tus objetivos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1945,7 +1945,7 @@
     <itunes:episode>15</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.14: Programación funcional vs Orientada a Objetos</itunes:title>
     <title>Ep.14: Programación funcional vs Orientada a Objetos</title>
@@ -1966,7 +1966,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.13: Actividades Sociales / Solidaridad / Productividad</itunes:title>
     <title>Ep.13: Actividades Sociales / Solidaridad / Productividad</title>
     <description><![CDATA[<p>Actividades sociales para causas solidarias organizadas entre los compañeros. No dejéis de visitar la web de Marco Moreira: https://marcomoreiraenlaguitarra.wordpress.com y también la asociación solidaria que lleva música a los hospitales: http://musicaenvena.com. Como afectan los días en los que parece que tengas menor productividad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -1985,8 +1985,8 @@
     <itunes:episode>13</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.12: Soft skills</itunes:title>
     <title>Ep.12: Soft skills</title>
     <description><![CDATA[<p>En este episodio, exploramos un aspecto esencial pero a menudo subestimado en la carrera de un profesional de la programación: las "soft skills" o habilidades blandas. Analizaremos por qué estas habilidades son tan cruciales en el entorno de la programación y cómo pueden marcar la diferencia en tu éxito y tu satisfacción en el trabajo.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2005,7 +2005,7 @@
     <itunes:episode>12</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep.11: El testing no es negociable</itunes:title>
     <title>Ep.11: El testing no es negociable</title>
@@ -2046,7 +2046,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep.9: Q&amp;A: Camisas / Arboles binarios / Micro servicios</itunes:title>
     <title>Ep.9: Q&amp;A: Camisas / Arboles binarios / Micro servicios</title>
     <description><![CDATA[<p>Sesión de preguntas y respuestas. Hablando de ropa, tratando de balancear un árbol binario y explicando por encima la arquitectura de micro servicios.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2063,8 +2063,8 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.8: Corre, conejo / Apple Photos metadata</itunes:title>
     <title>Ep.8: Corre, conejo / Apple Photos metadata</title>
     <description><![CDATA[<p>En este episodio, te llevaré detrás de escena en un viaje de descubrimiento y creatividad. Exploraremos cómo diseñé y desarrollé un programa personalizado para modificar los metadatos de fotos y videos en la aplicación Fotos de Apple.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2083,8 +2083,8 @@
     <itunes:episode>8</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.7: Bromas vs Autocracias / Haced cosas</itunes:title>
     <title>Ep.7: Bromas vs Autocracias / Haced cosas</title>
     <description><![CDATA[<p>Breve comentario sobre el libro "Pranksters vs autocrats" https://amzn.to/3a7LSQ0 de Srdja Popovic. Os animo a hacer cosas.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2103,8 +2103,8 @@
     <itunes:episode>7</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.6: Oficina / Richard Feynman / Bugs</itunes:title>
     <title>Ep.6: Oficina / Richard Feynman / Bugs</title>
     <description><![CDATA[<p>Visita a la oficina para recoger trastos, Richard Feynman y sus seis piezas fáciles. El bug se resiste a desaparecer.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2121,8 +2121,8 @@
     <itunes:keywords></itunes:keywords>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep.5: Salting / Greedy Algorithms / Bugs everywhere</itunes:title>
     <title>Ep.5: Salting / Greedy Algorithms / Bugs everywhere</title>
     <description><![CDATA[<p>El dia se complica de golpe y las tareas se acumulan!</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2141,8 +2141,8 @@
     <itunes:episode>5</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep. 4: Amateurs / English</itunes:title>
     <title>Ep. 4: Amateurs / English</title>
     <description><![CDATA[<p>En este episodio, exploramos una perspectiva única y valiosa en el mundo de la programación: la visión de "aficionado". A menudo, los programadores experimentados pueden beneficiarse enormemente al abordar problemas con la mente de un principiante o aficionado.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2161,8 +2161,8 @@
     <itunes:episode>4</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
+  </item> -->
+  <!-- <item>
     <itunes:title>Ep. 3: Bugs / COVID19</itunes:title>
     <title>Ep. 3: Bugs / COVID19</title>
     <description><![CDATA[<p>En este episodio, nos adentramos en el mundo de la resolución de bugs en el código y exploramos cómo tomar una perspectiva efectiva puede ser la clave para resolver esos misteriosos errores que acechan a los desarrolladores.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2181,7 +2181,7 @@
     <itunes:episode>3</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
   <item>
     <itunes:title>Ep. 2: Arrays / Listas / Hash Tables</itunes:title>
     <title>Ep. 2: Arrays / Listas / Hash Tables</title>
@@ -2202,7 +2202,7 @@
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
-  <item>
+  <!-- <item>
     <itunes:title>Ep. 1: Hello World / Blog / Charlas</itunes:title>
     <title>Ep. 1: Hello World / Blog / Charlas</title>
     <description><![CDATA[<p>Saludando al mundo, descubriendo las bananas y animando a escribir blogs y hacer charlas</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
@@ -2221,6 +2221,6 @@
     <itunes:episode>1</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
-  </item>
+  </item> -->
 </channel>
 </rss>
