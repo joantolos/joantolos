@@ -10,6 +10,14 @@ This post is based basically on three books:
 
 # Architecture Characteristics or "the ilities"
 
+When designing software, it's not enough to think only in terms of features, **what** the system does. We also need to think about the **how**: how well the system performs, how easily it can be maintained, how it will scale when usage grows, or how safe it is when things go wrong. These qualities are often called **architecture characteristics** (sometimes nicknamed "the _-ilities_" because many of them end in -ility).
+
+Architecture characteristics define the critical qualities of a system that influence its structure and design decisions. They are the **non-functional requirements** that shape the architecture, often cutting across features and modules. For example, two systems might implement the same functionality, but one may prioritize security and reliability while the other emphasizes speed and scalability, leading to very different architectural choices.
+
+In short, architecture characteristics are the guiding qualities that ensure a system isn't just working, but working in the right way for its business and operational context. 
+
+Let's consider some of them:
+
 - **Operational Characteristics:**
     - **Availability:** How long the system will need to be available (if 24/7, steps need to be in place to allow the system to be up and running quickly in case of any failure).
     - **Continuity:** Disaster recovery capability.
@@ -42,22 +50,22 @@ This post is based basically on three books:
 
 # I want it all
 
-We all want everything, of course. But this is impossible—no single architectural style can achieve all of these capabilities at once. Moreover, some are mutually exclusive.
+We all want everything, of course. But this is impossible. No single architectural style can achieve all of these capabilities at once. Moreover, some are mutually exclusive.
 
 Applications can only support a few architectural characteristics for various reasons. First, each supported characteristic requires design effort and possibly structural support. Second, the larger issue is that each architectural characteristic often impacts others. For example, if you want to improve security, it will almost certainly negatively impact performance: the application will need to perform additional on-the-fly encryption, add layers of indirection for secrets hiding, and other activities that may degrade performance.
 
-The good news is that we don’t need all of them. In fact, you likely need just a few key characteristics for your application to thrive. Focus on those. It’s important to differentiate between what we want and what we truly need.
+The good news is that we don't need all of them. In fact, you likely need just a few key characteristics for your application to thrive. Focus on those. It's important to <a href="https://youtu.be/krxU5Y9lCS8?si=lbbwSBIKh0hGB-sM" target="_blank">differentiate between what we want and what we truly need.</a>
 
-Let’s consider an example. **Scalability** is always desirable —everyone wants scalability, right? But do you need it enough to justify the trade-offs? Does your application rely on constant growth to succeed? Does your business model require exponential user growth? Apps like Twitter or Instagram, which base their models on having a huge, constantly growing user base, obviously need that level of hard-core scalability. But... are you building Twitter? Let’s be realistic and carefully measure the number of users we expect.
+Let's consider an example. **Scalability** is always desirable. Everyone wants scalability, right? But do you need it enough to justify the trade-offs? Does your application rely on constant growth to succeed? Does your business model require exponential user growth? Apps like Twitter or Instagram, which base their models on having a huge, constantly growing user base, obviously need that level of hard-core scalability. But... are you building Twitter? Let's be realistic and carefully measure the number of users we expect.
 
-Scalability is very costly, and we lose many other useful characteristics if we prioritize it too heavily—simplicity being one of the most obvious.
+Scalability is very costly, and we lose many other useful characteristics if we prioritize it too heavily, **simplicity** being one of the most obvious. Scalable applications are often not simple.
 
 # The laws of architecture
 
 We can distile the above explanation into two laws:
 
 - **Everything in software architecture is a trade-off:** Every decision you make in software architecture comes with both benefits and drawbacks. In other words, there is no perfect solution that satisfies all requirements without some compromises.
-- **Why is more important than how:** Focusing on "why" helps ensure that architecture aligns with long-term goals and solves real problems, rather than just adding complexity for complexity’s sake. By understanding the underlying purpose, architects can make informed decisions that adapt to future changes in technology and requirements.
+- **Why is more important than how:** Focusing on "why" helps ensure that architecture aligns with long-term goals and solves real problems, rather than just adding complexity for complexity's sake. By understanding the underlying purpose, architects can make informed decisions that adapt to future changes in technology and requirements.
 
 
 
