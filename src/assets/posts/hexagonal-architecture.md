@@ -91,6 +91,21 @@ Each of these architectures helps achieve the goals of DDD but offers different 
 
 # Hexagonal architecture
 
+Hexagonal Architecture, also known as the **Ports and Adapters pattern**, was introduced by Alistair Cockburn in the early 2000s. Its goal is simple yet powerful: **separate the business logic** (the core domain) **from the external world** (databases, user interfaces, messaging systems, APIs, etc.).
+
+In traditional layered architectures, the domain model often ends up depending directly on external concerns: databases, frameworks, or web controllers. Over time, this makes systems brittle: changing the database, introducing a new API, or adding an integration can require deep changes to the core logic. Hexagonal Architecture flips this dependency around. The domain is placed at the center, fully isolated, and everything else connects to it through well-defined boundaries.
+
+The metaphor of a hexagon comes from the idea that the system can have multiple “sides” (ports), each connected to the outside world by adapters. These adapters handle the details of communication, persistence, or presentation, while the core logic remains untouched. By the way, it doesn't have to be **six** sides... the "hexagon" is just an image to remember.
+
+![Mascot](/assets/images/hexagonalArchitecture/hexagon.webp#postImageBig)
+
+## Key Concepts
+
+- **Domain Core:** The heart of the application containing business rules, entities, and value objects. It has no knowledge of databases, frameworks, or user interfaces.
+- **Ports:** Interfaces that define the entry points (driving ports) and exit points (driven ports) of the application. Examples include use cases exposed to the outside world, or repository interfaces that define how data should be retrieved.
+- **Adapters:** Implementations of those ports, connecting the domain to external systems. For example, a REST controller can be an adapter for a driving port, and a JPA repository an adapter for a driven port.
+- **Aggregates:** A cluster of related entities and value objects treated as a single unit of consistency. An aggregate defines a clear boundary for business rules and ensures invariants are enforced. Each aggregate has a root (the aggregate root) that acts as the only entry point for interacting with the group, guaranteeing that changes respect the business constraints.
+
 # Beyond DDD
 
 It may sound obvious that designing software around the business domain is the best choice and DDD certainly makes a strong case for it. But the **domain is not the only possible driver for design.** Depending on the context, priorities, or team culture, you might choose to organize your system around different concerns such as data, behavior, models, users, or components. Each perspective brings its own strengths and trade-offs.
@@ -117,5 +132,6 @@ In practice, many real-world systems combine these approaches. What matters is c
 * _<a href="https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543" target="_blank">Microservices Patterns: With examples in Java</a>_
 * _<a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Domain-Driven Design: Tackling Complexity in the Heart of Software</a>_
 * _<a href="https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html" target="_blank">Isn't hexagonal architecture just 3 tier in a new dress?</a>_
+* _<a href="https://hemanthhari2000.medium.com/the-ports-and-adapters-pattern-unraveling-the-mystery-2efbf678ab9b" target="_blank">The Ports and Adapters Pattern: Unraveling the Mystery</a>_
 * _<a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank">Wikipedia: Domain Driven Design</a>_
 * _<a href="https://www.linkedin.com/pulse/stop-using-domain-driven-design-šimon-rácz" target="_blank">Stop using Domain-Driven Design</a>_

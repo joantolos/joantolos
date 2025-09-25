@@ -41,7 +41,7 @@ export const BLOG : Blog =
           "featuredImage": "./assets/images/hexagonalArchitecture/featuredImage.png",
           "thumb": "./assets/images/hexagonalArchitecture/thumb.png",
           "tags": ["code"],
-          "active": false
+          "active": true
         },
         {
           "id": "competence-vs-obedience",
