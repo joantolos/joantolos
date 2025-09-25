@@ -31,7 +31,7 @@ Let's consider some of them:
     - **Configurability:** Ability for the end users to easily change aspects of the software's behaviour and configuration through usable interfaces.
     - **Extensibility:** How important it is to plug new pieces of functionality in.
     - **Installability:** Ease of system installation on all necessary platforms.
-    - **Leverageabiliy/reuse:** Ability to leverage common components across multiple products.
+    - **Leverageability/reuse:** Ability to leverage common components across multiple products.
     - **Localization:** Support for multiple languages on enty/query screens in data fields; on reports, multiple character requirements and units of measure or currencies.
     - **Maintainability:** How easy it is to apply changes and enhance the system?
     - **Portability:** Does the system need to run on more than one platform?
@@ -67,24 +67,20 @@ We can distile the above explanation into two laws:
 - **Everything in software architecture is a trade-off:** Every decision you make in software architecture comes with both benefits and drawbacks. In other words, there is no perfect solution that satisfies all requirements without some compromises.
 - **Why is more important than how:** Focusing on "why" helps ensure that architecture aligns with long-term goals and solves real problems, rather than just adding complexity for complexity's sake. By understanding the underlying purpose, architects can make informed decisions that adapt to future changes in technology and requirements.
 
+# Domain-Driven Design (DDD): Building Software Around the Business
 
+Before diving into Hexagonal Architecture, it helps to understand the idea of Domain-Driven Design (DDD), since Hexagonal is one of the ways to put DDD principles into practice.
 
-# (Some of) The main available architectures
+At its core, DDD is about aligning software with the business domain it serves. Instead of starting with databases, frameworks, or technical layers, DDD begins with the domain—the real-world problem space your application is meant to solve. The goal is to capture the knowledge of domain experts (people who understand the business) and reflect it directly in the software's structure and language.
 
-# Microservices
+DDD emphasizes concepts like a **ubiquitous language** (a shared vocabulary between developers and business experts), **entities** and **value objects** that model the business, and **bounded contexts** that define clear boundaries between different parts of the domain. This approach keeps the core of the system focused on business logic, while technical concerns like databases, APIs, or user interfaces are treated as secondary details that can change over time.
 
-# Domain Driven Design (DDD)
-
- (why domain centric)
-
-# Hexagonal architecture
-
- "However, we do follow and recommend the advice from domain-driven design to establish and use a ubiquitous language amongst fellow employees to help ensure fewer term-based misunderstandings"
+DDD helps us design systems where the software naturally expresses the business rules.
 
  # The relationship between DDD and Hexagonal Architecture
 
 - DDD is a philosophy for designing software that reflects complex business domains.
-- Hexagonal Architecture is one way to implement DDD by ensuring the core domain logic is decoupled from external systems.
+- Hexagonal Architecture is **one way** to implement DDD by ensuring the core domain logic is decoupled from external systems.
 - Other architectural styles that can be used to implement DDD include:
     - Layered Architecture (traditional approach)
     - Clean Architecture (concentric rings, similar to Hexagonal)
@@ -93,13 +89,19 @@ We can distile the above explanation into two laws:
 
 Each of these architectures helps achieve the goals of DDD but offers different ways to structure the application based on your specific needs (e.g., scalability, modularity, testing).
 
+# Hexagonal architecture
+
 # Beyond DDD
 
-Data driven design
-Behaviour driven development (BDD)
-Model driven engineering (MDE)
-User-centered design (UCD)
-Component-based desing
+It may sound obvious that designing software around the business domain is the best choice and DDD certainly makes a strong case for it. But the **domain is not the only possible driver for design.** Depending on the context, priorities, or team culture, you might choose to organize your system around different concerns such as data, behavior, models, users, or components. Each perspective brings its own strengths and trade-offs.
+
+- **Data-Driven Design:** The structure of the system is guided primarily by the shape of the data and its storage. Databases and schemas tend to be the starting point.
+- **Behavior-Driven Development (BDD):** Focuses on system behavior through examples and scenarios written in natural language, bridging the gap between business and developers.
+- **Model-Driven Engineering (MDE):** Uses abstract models (often diagrams or DSLs) as the primary artifacts, from which code and other deliverables can be generated.
+- **User-Centered Design (UCD):** Puts end users at the center, prioritizing usability and user experience. The design evolves around user needs, goals, and feedback.
+- **Component-Based Design:** Breaks systems into reusable, independent components that can be composed together, improving modularity and maintainability.
+
+In practice, many real-world systems combine these approaches. What matters is choosing the perspective that best serves your project's goals and context.
 
 # Conclusion
 
@@ -115,4 +117,5 @@ Component-based desing
 * _<a href="https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543" target="_blank">Microservices Patterns: With examples in Java</a>_
 * _<a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Domain-Driven Design: Tackling Complexity in the Heart of Software</a>_
 * _<a href="https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html" target="_blank">Isn't hexagonal architecture just 3 tier in a new dress?</a>_
+* _<a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank">Wikipedia: Domain Driven Design</a>_
 * _<a href="https://www.linkedin.com/pulse/stop-using-domain-driven-design-šimon-rácz" target="_blank">Stop using Domain-Driven Design</a>_
