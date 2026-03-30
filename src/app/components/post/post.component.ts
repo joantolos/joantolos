@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
 import {Post} from "../../model/blog";
 import {BLOG} from "../../../config/config";
@@ -13,7 +12,6 @@ export class PostComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
-  blogPost$: Observable<any> | undefined;
   post: Post | undefined;
 
   ngOnInit(): void {

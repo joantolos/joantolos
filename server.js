@@ -14,15 +14,22 @@ app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
 
-app.get('/ping', cors(), function(req, res) {
+app.get('/ping', function(req, res) {
   res.json({ site: 'Alive!' });
 });
 
-app.post('/submit-contact-form', cors(), function(req, res) {
+app.post('/submit-contact-form', function(req, res) {
   getTransporter().sendMail(getMailData(req.body), (error, info) => {
-    if (error) console.log(error);
+    if (error) {
+      console.error(error);
+      return res.status(500).send({ message: "Mail failed" });
+    }
     res.status(200).send({ message: "Mail send", message_id: info.messageId });
   });
+});
+
+app.get('/cv', function(req, res) {
+  res.redirect('/assets/cv.pdf');
 });
 
 app.get('/*', function(req, res) {

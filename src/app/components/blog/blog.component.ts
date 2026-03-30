@@ -36,7 +36,7 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.page = params['page'];
+      this.page = +params['page'];
     });
 
     this.route.queryParams.subscribe(queryParams => {

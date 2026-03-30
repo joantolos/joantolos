@@ -39,7 +39,7 @@ export class PodcastComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.page = params['page'];
+      this.page = +params['page'];
     });
 
     this.fetchPodcastFeed().subscribe((podcastItems) => {

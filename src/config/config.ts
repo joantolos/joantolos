@@ -1,9 +1,13 @@
 import {Blog} from "../app/model/blog";
 
-export const backend : string = "https://www.joantolos.com";
-
-export const thumbWidth : number = 870; 
-export const podcastEpisodesMax : number = 5; 
+export const thumbWidth : number = 870;
+export const podcastEpisodesMax : number = 5;
+export const shopConfig = {
+  shopName: 'nadanuevobajoelsol',
+  locale: 'es_ES',
+  prefix: 'https://nadanuevobajoelsol.myspreadshop.es',
+  baseId: 'myShop'
+};
 export const BLOG : Blog =
   {
     "pageSize": 4,

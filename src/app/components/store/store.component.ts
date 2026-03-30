@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface ShopConfig {
-  shopName: string;
-  locale: string;
-  prefix: string;
-  baseId: string;
-}
+import { shopConfig } from '../../../config/config';
 
 @Component({
   selector: 'app-store',
@@ -14,17 +8,10 @@ interface ShopConfig {
 })
 export class StoreComponent implements OnInit {
 
-  spread_shop_config: ShopConfig | undefined;
+  spread_shop_config = shopConfig;
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.spread_shop_config = {
-      shopName: 'nadanuevobajoelsol',
-      locale: 'es_ES',
-      prefix: 'https://nadanuevobajoelsol.myspreadshop.es',
-      baseId: 'myShop'
-    };
-  }
+  ngOnInit(): void { }
 
 }

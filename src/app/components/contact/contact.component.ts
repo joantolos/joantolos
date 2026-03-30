@@ -3,8 +3,8 @@ import { HttpClient } from "@angular/common/http";
 import { MatDialog } from "@angular/material/dialog";
 import { FormControl, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
-import {backend} from "../../../config/config";
-import {catchError, of} from "rxjs";
+import { environment } from '../../../environments/environment';
+import { catchError, EMPTY } from "rxjs";
 
 @Component({
   selector: 'app-contact',
@@ -22,12 +22,11 @@ export class ContactComponent implements OnInit {
   name = new FormControl('', [Validators.required]);
   subject = new FormControl('', [Validators.required]);
   message = new FormControl('', [Validators.required]);
-  email = new FormControl('', [Validators.required, Validators.email, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]);
+  email = new FormControl('', [Validators.required, Validators.email]);
   isLoading = false;
 
   getErrorMessage() {
     if (this.email.hasError('required')) return 'You must enter a value';
-    else if (this.email.hasError('pattern')) return 'Not a valid email';
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 
@@ -36,23 +35,26 @@ export class ContactComponent implements OnInit {
   }
 
   sendForm() {
-    this.isLoading = true; // Show the loading spinner
-  
-    this.http.post<any>(backend + '/submit-contact-form', {
+    this.isLoading = true;
+
+    this.http.post<any>(environment.backendUrl + '/submit-contact-form', {
       name: this.name.value,
       email: this.email.value,
       subject: this.subject.value,
       message: this.message.value
     }).pipe(
-      catchError(() => of([]))
+      catchError(() => {
+        this.isLoading = false;
+        this.dialog.open(SubmitFailure);
+        return EMPTY;
+      })
     ).subscribe(contactResponse => {
-      this.isLoading = false; // Hide the loading spinner
-  
+      this.isLoading = false;
+
       if (contactResponse && contactResponse.message === "Mail send") {
         const dialogRef = this.dialog.open(SubmitSuccess);
-  
         dialogRef.afterClosed().subscribe(() => {
-          this.router.navigate(['/home']); // Navigate to the home route after dialog is closed
+          this.router.navigate(['/home']);
         });
       } else {
         this.dialog.open(SubmitFailure);

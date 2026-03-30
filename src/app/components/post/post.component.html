@@ -1,4 +1,4 @@
-<main *ngIf="post">
+<main *ngIf="post; else notFound">
   <mat-card class="post-card">
 
     <mat-card-header class="post-header">
@@ -13,3 +13,10 @@
     </div>
   </mat-card>
 </main>
+<ng-template #notFound>
+  <mat-card class="post-card">
+    <mat-card-header>
+      <mat-card-title>Post not found</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</ng-template>

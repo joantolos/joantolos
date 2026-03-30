@@ -33,12 +33,21 @@ const getTransporter = () => {
   });
 }
 
+const escapeHtml = (text) => {
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+};
+
 const getMailData = (body) => {
   return {
     from: getUser(),
     to: getSiteEmail(),
-    subject: body.subject,
-    html: '<br><b>Message from: ' + body.name + ' </b></br><br><b>With email: ' + body.email + ' </b></br><br>' + body.message + '<br/>',
+    subject: escapeHtml(body.subject),
+    html: '<br><b>Message from: ' + escapeHtml(body.name) + ' </b></br><br><b>With email: ' + escapeHtml(body.email) + ' </b></br><br>' + escapeHtml(body.message) + '<br/>',
   };
 }
 
