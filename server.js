@@ -5,6 +5,7 @@ const app = express();
 const bp = require('body-parser')
 const cors = require('cors')
 const {getTransporter, getMailData} = require("./mail-service");
+const {createFinanceStore} = require("./finance-store");
 
 const CONTACT_FORM_WINDOW_MS = 10 * 60 * 1000;
 const CONTACT_FORM_MAX_SUBMISSIONS = 5;
@@ -34,29 +35,7 @@ const getAuthPassword = () => getRequiredEnv('AUTH_PASSWORD');
 const getAuthSessionSecret = () => getRequiredEnv('AUTH_SESSION_SECRET');
 const isProduction = () => process.env.NODE_ENV === 'production';
 
-const getFinanceDashboard = () => {
-  const rawData = process.env.FINANCE_DASHBOARD_JSON;
-  if (!rawData) {
-    return {
-      updatedAt: null,
-      totals: [],
-      accounts: [],
-      notes: []
-    };
-  }
-
-  try {
-    return JSON.parse(rawData);
-  } catch (error) {
-    console.error('Invalid FINANCE_DASHBOARD_JSON value', error);
-    return {
-      updatedAt: null,
-      totals: [],
-      accounts: [],
-      notes: ['Finance dashboard data is temporarily unavailable.']
-    };
-  }
-};
+const financeStore = createFinanceStore();
 
 const getClientIp = (req) => {
   const forwardedFor = req.headers['x-forwarded-for'];
@@ -270,12 +249,30 @@ app.get('/auth/session', function(req, res) {
   return res.status(200).send({ authenticated: isAuthenticated(req) });
 });
 
-app.get('/api/finance', function(req, res) {
+app.get('/api/finance', async function(req, res) {
   if (!isAuthenticated(req)) {
     return res.status(401).send({ message: 'Unauthorized' });
   }
 
-  return res.status(200).send(getFinanceDashboard());
+  try {
+    return res.status(200).send(await financeStore.getDashboard());
+  } catch (error) {
+    console.error('Failed to load finance dashboard', error);
+    return res.status(500).send({ message: 'Finance dashboard unavailable' });
+  }
+});
+
+app.put('/api/finance', async function(req, res) {
+  if (!isAuthenticated(req)) {
+    return res.status(401).send({ message: 'Unauthorized' });
+  }
+
+  try {
+    return res.status(200).send(await financeStore.saveDashboard(req.body || {}));
+  } catch (error) {
+    console.error('Failed to save finance dashboard', error);
+    return res.status(500).send({ message: 'Finance dashboard could not be saved' });
+  }
 });
 
 app.post('/submit-contact-form', function(req, res) {
@@ -305,4 +302,11 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
-app.listen(process.env.PORT || 4200);
+financeStore.init()
+  .then(() => {
+    app.listen(process.env.PORT || 4200);
+  })
+  .catch((error) => {
+    console.error('Failed to initialize finance store', error);
+    process.exit(1);
+  });

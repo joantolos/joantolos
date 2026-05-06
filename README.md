@@ -61,6 +61,25 @@ Example `FINANCE_DASHBOARD_JSON` value:
 }
 ```
 
+### Persistence on Heroku
+
+The simplest durable storage on Heroku for this feature is Heroku Postgres.
+
+Provision it:
+
+```bash
+heroku addons:create heroku-postgresql:essential-0 -a <your-heroku-app-name>
+```
+
+When `DATABASE_URL` is present, the app stores the finance dashboard in Postgres table `finance_dashboard` instead of relying on `FINANCE_DASHBOARD_JSON`.
+
+The current code keeps `FINANCE_DASHBOARD_JSON` as a fallback and bootstrap source:
+
+- If the table is empty, `GET /api/finance` returns the JSON env var content.
+- `PUT /api/finance` upserts the dashboard into Postgres row `id = 1`.
+
+After the first successful save into Postgres, you can remove `FINANCE_DASHBOARD_JSON`.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
