@@ -2,8 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { catchError, of } from 'rxjs';
+import { Chart, registerables, ChartData, ChartOptions } from 'chart.js';
 import { environment } from '../../../environments/environment';
 import { AuthService } from '../../services/auth.service';
+
+Chart.register(...registerables);
 
 interface FinanceGoal {
   name: string;
@@ -33,18 +36,6 @@ interface GoalViewModel extends FinanceGoal {
   progressPercent: number;
 }
 
-interface DashboardSettings {
-  totalSaved: number;
-  pomGoal: number;
-  carFundGoal: number;
-}
-
-interface FinanceDraft {
-  title: string;
-  settings: DashboardSettings;
-  monthlySavings: SavingsPoint[];
-}
-
 @Component({
   selector: 'app-finance',
   templateUrl: './finance.component.html',
@@ -60,12 +51,63 @@ export class FinanceComponent implements OnInit {
     monthlySavings: [],
     notes: []
   };
-  draft: FinanceDraft = this.createDraft(this.dashboard);
+
   isLoading = true;
   hasError = false;
-  isEditing = false;
   isSaving = false;
-  saveFailed = false;
+  saveError = false;
+
+  editingField: 'totalSaved' | 'pomGoal' | 'carFundGoal' | null = null;
+  fieldDraft = '';
+
+  editingRowDate: string | null = null;
+  rowDraft = { date: '', amount: '' };
+
+  isAddingRow = false;
+  newRowDraft = { date: '', amount: '' };
+
+  lineChartData: ChartData<'line'> = {
+    labels: [],
+    datasets: [{
+      data: [],
+      label: 'Monthly savings',
+      fill: true,
+      tension: 0.4,
+      borderColor: '#1d7ea0',
+      backgroundColor: 'rgba(29, 126, 160, 0.08)',
+      pointBackgroundColor: '#ffffff',
+      pointBorderColor: '#1d7ea0',
+      pointBorderWidth: 2.5,
+      pointRadius: 5,
+      pointHoverRadius: 7
+    }]
+  };
+
+  lineChartOptions: ChartOptions<'line'> = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => this.formatCurrency(ctx.parsed.y ?? 0)
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: false,
+        ticks: {
+          callback: (value) => `€${Number(value).toLocaleString()}`
+        },
+        grid: { color: 'rgba(0,0,0,0.04)' }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { maxRotation: 45 }
+      }
+    }
+  };
 
   constructor(
     private http: HttpClient,
@@ -94,129 +136,136 @@ export class FinanceComponent implements OnInit {
         } else {
           this.hasError = true;
         }
-
         this.isLoading = false;
         return of(null);
       })
     ).subscribe((dashboard) => {
-      if (!dashboard) {
-        return;
-      }
-
+      if (!dashboard) return;
       this.dashboard = this.normalizeDashboard(dashboard);
-      this.draft = this.createDraft(this.dashboard);
+      this.refreshChartData();
       this.isLoading = false;
-      this.hasError = false;
     });
   }
 
-  startEditing(): void {
-    this.draft = this.createDraft(this.dashboard);
-    this.isEditing = true;
-    this.saveFailed = false;
+  // ─── Settings inline editing ──────────────────────────────────────────────
+
+  startEditingField(field: 'totalSaved' | 'pomGoal' | 'carFundGoal'): void {
+    this.editingField = field;
+    if (field === 'totalSaved') this.fieldDraft = String(this.dashboard.totalSaved);
+    else if (field === 'pomGoal') this.fieldDraft = String(this.getPomGoal());
+    else this.fieldDraft = String(this.getCarFundGoal());
   }
 
-  cancelEditing(): void {
-    this.isEditing = false;
-    this.saveFailed = false;
-    this.draft = this.createDraft(this.dashboard);
+  cancelEditingField(): void {
+    this.editingField = null;
+    this.fieldDraft = '';
   }
 
-  addMonthlyContribution(): void {
-    this.draft.monthlySavings.push({
-      date: this.getNextContributionMonth(),
-      amount: 0
+  saveField(): void {
+    if (!this.editingField || this.isSaving) return;
+    const value = this.normalizeNumber(this.fieldDraft);
+    this.persist(this.buildPayload({
+      totalSaved: this.editingField === 'totalSaved' ? value : this.dashboard.totalSaved,
+      pomGoal: this.editingField === 'pomGoal' ? value : this.getPomGoal(),
+      carFundGoal: this.editingField === 'carFundGoal' ? value : this.getCarFundGoal()
+    }), () => {
+      this.editingField = null;
+      this.fieldDraft = '';
     });
-    this.sortDraftMonthlySavings();
   }
 
-  removeMonthlyContribution(index: number): void {
-    this.draft.monthlySavings.splice(index, 1);
+  // ─── Contribution row inline editing ─────────────────────────────────────
+
+  startEditingRow(date: string): void {
+    const row = this.dashboard.monthlySavings.find((r) => r.date === date)!;
+    this.editingRowDate = date;
+    this.rowDraft = { date: date.slice(0, 7), amount: String(row.amount) };
   }
 
-  saveDashboard(): void {
-    if (this.isSaving) {
-      return;
-    }
+  cancelEditingRow(): void {
+    this.editingRowDate = null;
+    this.rowDraft = { date: '', amount: '' };
+  }
 
-    const payload = this.buildPayloadFromDraft();
-    this.isSaving = true;
-    this.saveFailed = false;
-
-    this.http.put<FinanceDashboard>(
-      `${environment.backendUrl}/api/finance`,
-      payload,
-      { withCredentials: true }
-    ).pipe(
-      catchError(() => {
-        this.isSaving = false;
-        this.saveFailed = true;
-        return of(null);
-      })
-    ).subscribe((dashboard) => {
-      if (!dashboard) {
-        return;
+  saveRow(): void {
+    if (this.isSaving) return;
+    const updated = this.dashboard.monthlySavings.map((item) =>
+      item.date !== this.editingRowDate ? item : {
+        date: this.rowDraft.date ? `${this.rowDraft.date}-01` : item.date,
+        amount: this.normalizeNumber(this.rowDraft.amount)
       }
-
-      this.dashboard = this.normalizeDashboard(dashboard);
-      this.draft = this.createDraft(this.dashboard);
-      this.isSaving = false;
-      this.isEditing = false;
+    );
+    this.persist(this.buildPayload({ monthlySavings: updated }), () => {
+      this.editingRowDate = null;
+      this.rowDraft = { date: '', amount: '' };
     });
   }
+
+  deleteRow(date: string): void {
+    if (this.isSaving) return;
+    this.persist(this.buildPayload({
+      monthlySavings: this.dashboard.monthlySavings.filter((item) => item.date !== date)
+    }), () => {});
+  }
+
+  // ─── Adding a new row ─────────────────────────────────────────────────────
+
+  startAddingRow(): void {
+    this.isAddingRow = true;
+    this.newRowDraft = { date: this.getNextMonth(), amount: '' };
+  }
+
+  cancelAddingRow(): void {
+    this.isAddingRow = false;
+    this.newRowDraft = { date: '', amount: '' };
+  }
+
+  saveNewRow(): void {
+    if (this.isSaving || !this.newRowDraft.date) return;
+    const updated = [...this.dashboard.monthlySavings, {
+      date: `${this.newRowDraft.date}-01`,
+      amount: this.normalizeNumber(this.newRowDraft.amount)
+    }];
+    this.persist(this.buildPayload({ monthlySavings: updated }), () => {
+      this.isAddingRow = false;
+      this.newRowDraft = { date: '', amount: '' };
+    });
+  }
+
+  // ─── Getters ─────────────────────────────────────────────────────────────
 
   get goalCards(): GoalViewModel[] {
-    return this.dashboard.goals.map((goal) => {
-      const remaining = Math.max(goal.target - goal.current, 0);
-      const progressPercent = goal.target > 0 ? Math.min((goal.current / goal.target) * 100, 100) : 0;
-      return { ...goal, remaining, progressPercent };
-    });
+    return this.dashboard.goals.map((goal) => ({
+      ...goal,
+      remaining: Math.max(goal.target - goal.current, 0),
+      progressPercent: goal.target > 0 ? Math.min((goal.current / goal.target) * 100, 100) : 0
+    }));
   }
 
   get monthlyAverage(): number {
     return this.dashboard.averageMonthlyQuota || 0;
   }
 
-  get draftMonthlyAverage(): number {
-    if (this.draft.monthlySavings.length === 0) {
-      return 0;
-    }
-
-    return this.draft.monthlySavings.reduce((total, item) => total + this.normalizeNumber(item.amount), 0) / this.draft.monthlySavings.length;
-  }
-
   get bestMonth(): SavingsPoint | null {
-    if (this.dashboard.monthlySavings.length === 0) {
-      return null;
-    }
-
+    if (!this.dashboard.monthlySavings.length) return null;
     return this.dashboard.monthlySavings.reduce((best, item) => item.amount > best.amount ? item : best);
   }
 
   get latestMonth(): SavingsPoint | null {
-    if (this.dashboard.monthlySavings.length === 0) {
-      return null;
-    }
-
+    if (!this.dashboard.monthlySavings.length) return null;
     return this.dashboard.monthlySavings[this.dashboard.monthlySavings.length - 1];
   }
 
-  get chartPoints(): string {
-    if (this.dashboard.monthlySavings.length === 0) {
-      return '';
-    }
+  get displayedContributions(): SavingsPoint[] {
+    return [...this.dashboard.monthlySavings].reverse();
+  }
 
-    const width = 640;
-    const height = 220;
-    const padding = 24;
-    const maxAmount = Math.max(...this.dashboard.monthlySavings.map((item) => item.amount), 1);
-    const step = this.dashboard.monthlySavings.length === 1 ? 0 : (width - (padding * 2)) / (this.dashboard.monthlySavings.length - 1);
+  getPomGoal(): number {
+    return this.dashboard.goals.find((g) => g.name === 'POM')?.target ?? 0;
+  }
 
-    return this.dashboard.monthlySavings.map((item, index) => {
-      const x = padding + (index * step);
-      const y = height - padding - ((item.amount / maxAmount) * (height - (padding * 2)));
-      return `${x},${y}`;
-    }).join(' ');
+  getCarFundGoal(): number {
+    return this.dashboard.goals.find((g) => g.name === 'Car Fund')?.target ?? 0;
   }
 
   formatCurrency(value: number): string {
@@ -234,164 +283,141 @@ export class FinanceComponent implements OnInit {
     }).format(new Date(date));
   }
 
-  formatMonthInput(date: string): string {
-    return date.slice(0, 7);
+  // ─── Private helpers ──────────────────────────────────────────────────────
+
+  private persist(payload: FinanceDashboard, onSuccess: () => void): void {
+    this.isSaving = true;
+    this.saveError = false;
+    this.http.put<FinanceDashboard>(
+      `${environment.backendUrl}/api/finance`,
+      payload,
+      { withCredentials: true }
+    ).pipe(
+      catchError(() => {
+        this.isSaving = false;
+        this.saveError = true;
+        return of(null);
+      })
+    ).subscribe((dashboard) => {
+      if (!dashboard) return;
+      this.dashboard = this.normalizeDashboard(dashboard);
+      this.refreshChartData();
+      this.isSaving = false;
+      onSuccess();
+    });
   }
 
-  onMonthChanged(index: number, monthValue: string): void {
-    this.draft.monthlySavings[index].date = monthValue ? `${monthValue}-01` : '';
-    this.sortDraftMonthlySavings();
-  }
-
-  private buildPayloadFromDraft(): FinanceDashboard {
-    const monthlySavings = this.draft.monthlySavings
-      .map((item) => ({
-        date: item.date,
-        amount: this.normalizeNumber(item.amount)
-      }))
+  private buildPayload(overrides: {
+    totalSaved?: number;
+    pomGoal?: number;
+    carFundGoal?: number;
+    monthlySavings?: SavingsPoint[];
+  } = {}): FinanceDashboard {
+    const totalSaved = overrides.totalSaved ?? this.dashboard.totalSaved;
+    const pomGoal = overrides.pomGoal ?? this.getPomGoal();
+    const carFundGoal = overrides.carFundGoal ?? this.getCarFundGoal();
+    const monthlySavings = (overrides.monthlySavings ?? this.dashboard.monthlySavings)
       .filter((item) => item.date)
-      .sort((left, right) => left.date.localeCompare(right.date));
-
-    const averageMonthlyQuota = monthlySavings.length === 0
-      ? 0
-      : monthlySavings.reduce((total, item) => total + item.amount, 0) / monthlySavings.length;
+      .slice()
+      .sort((a, b) => a.date.localeCompare(b.date));
+    const averageMonthlyQuota = monthlySavings.length
+      ? monthlySavings.reduce((sum, item) => sum + item.amount, 0) / monthlySavings.length
+      : 0;
+    const pomCurrent = Math.min(totalSaved, pomGoal);
+    const carFundCurrent = Math.max(totalSaved - pomGoal, 0);
 
     return {
-      title: this.draft.title || 'Savings Dashboard',
+      title: this.dashboard.title || 'Savings Dashboard',
       updatedAt: new Date().toISOString().slice(0, 10),
-      totalSaved: this.normalizeNumber(this.draft.settings.totalSaved),
+      totalSaved,
       averageMonthlyQuota,
-      goals: this.buildGoalsFromSettings(
-        this.normalizeNumber(this.draft.settings.totalSaved),
-        this.normalizeNumber(this.draft.settings.pomGoal),
-        this.normalizeNumber(this.draft.settings.carFundGoal),
-        averageMonthlyQuota
-      ),
+      goals: [
+        {
+          name: 'POM',
+          current: pomCurrent,
+          target: pomGoal,
+          etaMonths: this.calculateEtaMonths(pomGoal - pomCurrent, averageMonthlyQuota),
+          etaLabel: this.formatEtaLabel(this.calculateEtaMonths(pomGoal - pomCurrent, averageMonthlyQuota))
+        },
+        {
+          name: 'Car Fund',
+          current: carFundCurrent,
+          target: carFundGoal,
+          etaMonths: this.calculateEtaMonths(carFundGoal - carFundCurrent, averageMonthlyQuota),
+          etaLabel: this.formatEtaLabel(this.calculateEtaMonths(carFundGoal - carFundCurrent, averageMonthlyQuota))
+        }
+      ],
       monthlySavings,
-      notes: []
+      notes: this.dashboard.notes || []
     };
   }
 
   private normalizeDashboard(dashboard: FinanceDashboard): FinanceDashboard {
-    const settings = this.extractSettings(dashboard);
-
     return {
       title: dashboard.title || 'Savings Dashboard',
       updatedAt: dashboard.updatedAt,
       totalSaved: this.normalizeNumber(dashboard.totalSaved),
       averageMonthlyQuota: this.normalizeNumber(dashboard.averageMonthlyQuota),
-      goals: this.buildGoalsFromSettings(
-        settings.totalSaved,
-        settings.pomGoal,
-        settings.carFundGoal,
-        this.normalizeNumber(dashboard.averageMonthlyQuota)
-      ),
-      monthlySavings: (dashboard.monthlySavings || []).slice().sort((left, right) => left.date.localeCompare(right.date)),
+      goals: (dashboard.goals || []).map((goal) => ({
+        name: goal.name,
+        current: this.normalizeNumber(goal.current),
+        target: this.normalizeNumber(goal.target),
+        etaMonths: goal.etaMonths != null ? this.normalizeNumber(goal.etaMonths) : undefined,
+        etaLabel: goal.etaLabel
+      })),
+      monthlySavings: (dashboard.monthlySavings || [])
+        .filter((item) => item.date)
+        .slice()
+        .sort((a, b) => a.date.localeCompare(b.date)),
       notes: dashboard.notes || []
     };
   }
 
-  private createDraft(dashboard: FinanceDashboard): FinanceDraft {
-    const settings = this.extractSettings(dashboard);
-
-    return {
-      title: dashboard.title || 'Savings Dashboard',
-      settings,
-      monthlySavings: dashboard.monthlySavings.map((item) => ({ ...item }))
+  private refreshChartData(): void {
+    const savings = this.dashboard.monthlySavings;
+    this.lineChartData = {
+      labels: savings.map((item) => this.formatMonth(item.date)),
+      datasets: [{
+        data: savings.map((item) => item.amount),
+        label: 'Monthly savings',
+        fill: true,
+        tension: 0.4,
+        borderColor: '#1d7ea0',
+        backgroundColor: 'rgba(29, 126, 160, 0.08)',
+        pointBackgroundColor: '#ffffff',
+        pointBorderColor: '#1d7ea0',
+        pointBorderWidth: 2.5,
+        pointRadius: 5,
+        pointHoverRadius: 7
+      }]
     };
   }
 
-  private extractSettings(dashboard: FinanceDashboard): DashboardSettings {
-    const pomGoal = dashboard.goals.find((goal) => goal.name === 'POM')?.target ?? 0;
-    const carFundGoal = dashboard.goals.find((goal) => goal.name === 'Car Fund')?.target ?? 0;
-
-    return {
-      totalSaved: this.normalizeNumber(dashboard.totalSaved),
-      pomGoal: this.normalizeNumber(pomGoal),
-      carFundGoal: this.normalizeNumber(carFundGoal)
-    };
-  }
-
-  private buildGoalsFromSettings(totalSaved: number, pomGoal: number, carFundGoal: number, averageMonthlyQuota: number): FinanceGoal[] {
-    const pomCurrent = Math.min(totalSaved, pomGoal);
-    const carFundCurrent = Math.max(totalSaved - pomGoal, 0);
-
-    return [
-      {
-        name: 'POM',
-        current: pomCurrent,
-        target: pomGoal,
-        etaMonths: this.calculateEtaMonths(pomGoal - pomCurrent, averageMonthlyQuota),
-        etaLabel: this.formatEtaLabel(this.calculateEtaMonths(pomGoal - pomCurrent, averageMonthlyQuota))
-      },
-      {
-        name: 'Car Fund',
-        current: carFundCurrent,
-        target: carFundGoal,
-        etaMonths: this.calculateEtaMonths(carFundGoal - carFundCurrent, averageMonthlyQuota),
-        etaLabel: this.formatEtaLabel(this.calculateEtaMonths(carFundGoal - carFundCurrent, averageMonthlyQuota))
-      }
-    ];
+  private getNextMonth(): string {
+    if (!this.dashboard.monthlySavings.length) {
+      const now = new Date();
+      return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+    }
+    const latest = [...this.dashboard.monthlySavings].sort((a, b) => b.date.localeCompare(a.date))[0];
+    const next = new Date(`${latest.date}T00:00:00`);
+    next.setMonth(next.getMonth() + 1);
+    return `${next.getFullYear()}-${String(next.getMonth() + 1).padStart(2, '0')}`;
   }
 
   private calculateEtaMonths(remaining: number, averageMonthlyQuota: number): number | undefined {
-    if (remaining <= 0) {
-      return 0;
-    }
-
-    if (averageMonthlyQuota <= 0) {
-      return undefined;
-    }
-
+    if (remaining <= 0) return 0;
+    if (averageMonthlyQuota <= 0) return undefined;
     return Math.ceil(remaining / averageMonthlyQuota);
   }
 
   private formatEtaLabel(months: number | undefined): string | undefined {
-    if (months == null) {
-      return 'No estimate available';
-    }
-
-    if (months === 0) {
-      return 'Goal reached';
-    }
-
+    if (months == null) return 'No estimate available';
+    if (months === 0) return 'Goal reached';
     const years = Math.floor(months / 12);
     const remainingMonths = months % 12;
-
-    if (years === 0) {
-      return `Estimated in ${months} month${months === 1 ? '' : 's'}`;
-    }
-
-    if (remainingMonths === 0) {
-      return `Estimated in ${years} year${years === 1 ? '' : 's'}`;
-    }
-
+    if (years === 0) return `Estimated in ${months} month${months === 1 ? '' : 's'}`;
+    if (remainingMonths === 0) return `Estimated in ${years} year${years === 1 ? '' : 's'}`;
     return `Estimated in ${years} year${years === 1 ? '' : 's'} and ${remainingMonths} month${remainingMonths === 1 ? '' : 's'}`;
-  }
-
-  private getNextContributionMonth(): string {
-    if (this.draft.monthlySavings.length === 0) {
-      const now = new Date();
-      return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-01`;
-    }
-
-    const latest = this.draft.monthlySavings
-      .map((item) => item.date)
-      .filter(Boolean)
-      .sort()
-      .pop();
-
-    if (!latest) {
-      return new Date().toISOString().slice(0, 7) + '-01';
-    }
-
-    const nextMonth = new Date(`${latest}T00:00:00`);
-    nextMonth.setMonth(nextMonth.getMonth() + 1);
-    return `${nextMonth.getFullYear()}-${String(nextMonth.getMonth() + 1).padStart(2, '0')}-01`;
-  }
-
-  private sortDraftMonthlySavings(): void {
-    this.draft.monthlySavings.sort((left, right) => left.date.localeCompare(right.date));
   }
 
   private normalizeNumber(value: number | string | null | undefined): number {

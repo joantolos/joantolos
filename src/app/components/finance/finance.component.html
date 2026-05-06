@@ -2,30 +2,24 @@
   <mat-card class="finance-card">
     <mat-card-header class="finance-header">
       <div>
-        <mat-card-title class="finance-title">{{ dashboard.title || 'Savings Dashboard' }}</mat-card-title>
+        <mat-card-title class="finance-title">{{ dashboard.title }}</mat-card-title>
         <mat-card-subtitle class="finance-subtitle" *ngIf="dashboard.updatedAt">
-          Snapshot updated {{ dashboard.updatedAt }}
+          Updated {{ dashboard.updatedAt }}
         </mat-card-subtitle>
       </div>
-
-      <div class="finance-actions">
-        <button class="app-button" *ngIf="!isEditing" (click)="startEditing()">EDIT</button>
-        <button class="app-button secondary-button" *ngIf="isEditing" (click)="cancelEditing()">CANCEL</button>
-        <button class="app-button" *ngIf="isEditing" [disabled]="isSaving" (click)="saveDashboard()">
-          {{ isSaving ? 'SAVING...' : 'SAVE' }}
-        </button>
-        <button class="app-button finance-logout" (click)="logout()">LOGOUT</button>
-      </div>
+      <button class="logout-btn" (click)="logout()">LOGOUT</button>
     </mat-card-header>
 
-    <mat-card-content *ngIf="!isLoading && !hasError && !isEditing">
+    <mat-card-content *ngIf="!isLoading && !hasError">
+
+      <!-- KPI strip -->
       <section class="kpi-grid">
         <article class="kpi-card">
           <p class="kpi-label">Total saved</p>
           <p class="kpi-value">{{ formatCurrency(dashboard.totalSaved) }}</p>
         </article>
         <article class="kpi-card">
-          <p class="kpi-label">Average monthly quota</p>
+          <p class="kpi-label">Monthly average</p>
           <p class="kpi-value">{{ formatCurrency(monthlyAverage) }}</p>
         </article>
         <article class="kpi-card" *ngIf="latestMonth">
@@ -40,20 +34,113 @@
         </article>
       </section>
 
+      <!-- Settings -->
+      <section class="settings-section">
+        <div class="section-heading"><h2>Settings</h2></div>
+        <div class="settings-grid">
+
+          <article class="setting-card">
+            <ng-container *ngIf="editingField !== 'totalSaved'; else editTotalSaved">
+              <div class="setting-row">
+                <div>
+                  <p class="setting-label">Total saved</p>
+                  <p class="setting-value">{{ formatCurrency(dashboard.totalSaved) }}</p>
+                </div>
+                <button class="icon-btn" (click)="startEditingField('totalSaved')" title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </div>
+            </ng-container>
+            <ng-template #editTotalSaved>
+              <p class="setting-label">Total saved</p>
+              <div class="inline-editor">
+                <mat-form-field class="inline-field">
+                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
+                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
+                </mat-form-field>
+                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
+                  <mat-icon>check</mat-icon>
+                </button>
+                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </div>
+            </ng-template>
+          </article>
+
+          <article class="setting-card">
+            <ng-container *ngIf="editingField !== 'pomGoal'; else editPomGoal">
+              <div class="setting-row">
+                <div>
+                  <p class="setting-label">POM goal</p>
+                  <p class="setting-value">{{ formatCurrency(getPomGoal()) }}</p>
+                </div>
+                <button class="icon-btn" (click)="startEditingField('pomGoal')" title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </div>
+            </ng-container>
+            <ng-template #editPomGoal>
+              <p class="setting-label">POM goal</p>
+              <div class="inline-editor">
+                <mat-form-field class="inline-field">
+                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
+                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
+                </mat-form-field>
+                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
+                  <mat-icon>check</mat-icon>
+                </button>
+                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </div>
+            </ng-template>
+          </article>
+
+          <article class="setting-card">
+            <ng-container *ngIf="editingField !== 'carFundGoal'; else editCarFundGoal">
+              <div class="setting-row">
+                <div>
+                  <p class="setting-label">Car Fund goal</p>
+                  <p class="setting-value">{{ formatCurrency(getCarFundGoal()) }}</p>
+                </div>
+                <button class="icon-btn" (click)="startEditingField('carFundGoal')" title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </div>
+            </ng-container>
+            <ng-template #editCarFundGoal>
+              <p class="setting-label">Car Fund goal</p>
+              <div class="inline-editor">
+                <mat-form-field class="inline-field">
+                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
+                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
+                </mat-form-field>
+                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
+                  <mat-icon>check</mat-icon>
+                </button>
+                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </div>
+            </ng-template>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Goals -->
       <section class="goal-section" *ngIf="goalCards.length > 0">
         <div class="section-heading">
           <h2>Goals</h2>
           <p>Where each fund stands right now</p>
         </div>
-
         <div class="goal-grid">
           <article class="goal-card" *ngFor="let goal of goalCards">
             <div class="goal-topline">
               <div>
                 <p class="goal-name">{{ goal.name }}</p>
-                <p class="goal-progress">
-                  {{ formatCurrency(goal.current) }} of {{ formatCurrency(goal.target) }}
-                </p>
+                <p class="goal-progress">{{ formatCurrency(goal.current) }} of {{ formatCurrency(goal.target) }}</p>
               </div>
               <p class="goal-percent">{{ goal.progressPercent | number:'1.0-0' }}%</p>
             </div>
@@ -68,138 +155,109 @@
         </div>
       </section>
 
-      <section class="trend-layout" *ngIf="dashboard.monthlySavings.length > 0">
-        <div class="trend-panel">
-          <div class="section-heading">
-            <h2>Monthly savings trend</h2>
-            <p>How your contributions have evolved over time</p>
-          </div>
-
-          <div class="chart-shell">
-            <svg viewBox="0 0 640 220" class="chart-svg" preserveAspectRatio="none" aria-label="Monthly savings chart">
-              <line x1="24" y1="196" x2="616" y2="196" class="axis-line"></line>
-              <line x1="24" y1="24" x2="24" y2="196" class="axis-line"></line>
-              <polyline [attr.points]="chartPoints" class="trend-line"></polyline>
-              <circle
-                *ngFor="let item of dashboard.monthlySavings; let i = index"
-                [attr.cx]="24 + (dashboard.monthlySavings.length === 1 ? 0 : (i * ((640 - 48) / (dashboard.monthlySavings.length - 1))))"
-                [attr.cy]="196 - ((item.amount / (bestMonth?.amount || 1)) * (220 - 48))"
-                r="4"
-                class="trend-point">
-              </circle>
-            </svg>
-          </div>
-
-          <div class="chart-labels">
-            <span>{{ formatMonth(dashboard.monthlySavings[0].date) }}</span>
-            <span>{{ formatMonth(dashboard.monthlySavings[dashboard.monthlySavings.length - 1].date) }}</span>
-          </div>
+      <!-- Chart -->
+      <section class="chart-section" *ngIf="dashboard.monthlySavings.length > 0">
+        <div class="section-heading">
+          <h2>Monthly savings trend</h2>
+          <p>How your contributions have evolved over time</p>
         </div>
-
-        <div class="table-panel">
-          <div class="section-heading">
-            <h2>Recent entries</h2>
-            <p>Month by month contributions</p>
-          </div>
-
-          <div class="entry-table">
-            <div class="entry-row entry-row-header">
-              <span>Month</span>
-              <span>Amount</span>
-            </div>
-            <div class="entry-row" *ngFor="let item of dashboard.monthlySavings">
-              <span>{{ formatMonth(item.date) }}</span>
-              <span>{{ formatCurrency(item.amount) }}</span>
-            </div>
-          </div>
+        <div class="chart-shell">
+          <canvas baseChart
+            [data]="lineChartData"
+            [options]="lineChartOptions"
+            type="line">
+          </canvas>
         </div>
       </section>
 
-      <section class="notes" *ngIf="dashboard.notes.length > 0">
-        <div class="section-heading">
-          <h2>Notes</h2>
+      <!-- Monthly contributions -->
+      <section class="contributions-section">
+        <div class="section-heading contributions-heading">
+          <div>
+            <h2>Monthly contributions</h2>
+            <p>Month by month entries</p>
+          </div>
+          <button class="icon-btn add-btn" *ngIf="!isAddingRow" (click)="startAddingRow()" title="Add month">
+            <mat-icon>add</mat-icon>
+          </button>
         </div>
+
+        <div class="new-row-form" *ngIf="isAddingRow">
+          <mat-form-field class="row-field">
+            <mat-label>Month</mat-label>
+            <input matInput type="month" [(ngModel)]="newRowDraft.date">
+          </mat-form-field>
+          <mat-form-field class="row-field">
+            <mat-label>Amount</mat-label>
+            <input matInput type="number" step="0.01" [(ngModel)]="newRowDraft.amount"
+              (keyup.enter)="saveNewRow()" (keyup.escape)="cancelAddingRow()">
+          </mat-form-field>
+          <div class="row-actions">
+            <button class="icon-btn confirm-btn" (click)="saveNewRow()" [disabled]="isSaving" title="Save">
+              <mat-icon>check</mat-icon>
+            </button>
+            <button class="icon-btn cancel-btn" (click)="cancelAddingRow()" title="Cancel">
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="contributions-table" *ngIf="dashboard.monthlySavings.length > 0">
+          <div class="table-header">
+            <span>Month</span>
+            <span>Amount</span>
+            <span></span>
+          </div>
+          <div class="table-body">
+            <ng-container *ngFor="let item of displayedContributions">
+
+              <div class="table-row" *ngIf="editingRowDate !== item.date">
+                <span>{{ formatMonth(item.date) }}</span>
+                <span>{{ formatCurrency(item.amount) }}</span>
+                <div class="row-actions">
+                  <button class="icon-btn" (click)="startEditingRow(item.date)" title="Edit">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button class="icon-btn delete-btn" (click)="deleteRow(item.date)" [disabled]="isSaving" title="Remove">
+                    <mat-icon>delete_outline</mat-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="table-row edit-row" *ngIf="editingRowDate === item.date">
+                <mat-form-field class="row-field">
+                  <input matInput type="month" [(ngModel)]="rowDraft.date">
+                </mat-form-field>
+                <mat-form-field class="row-field">
+                  <input matInput type="number" step="0.01" [(ngModel)]="rowDraft.amount"
+                    (keyup.enter)="saveRow()" (keyup.escape)="cancelEditingRow()">
+                </mat-form-field>
+                <div class="row-actions">
+                  <button class="icon-btn confirm-btn" (click)="saveRow()" [disabled]="isSaving" title="Save">
+                    <mat-icon>check</mat-icon>
+                  </button>
+                  <button class="icon-btn cancel-btn" (click)="cancelEditingRow()" title="Cancel">
+                    <mat-icon>close</mat-icon>
+                  </button>
+                </div>
+              </div>
+
+            </ng-container>
+          </div>
+        </div>
+
+        <p class="empty-state" *ngIf="dashboard.monthlySavings.length === 0 && !isAddingRow">
+          No contributions yet — press + to add the first one.
+        </p>
+        <p class="save-error" *ngIf="saveError">Could not save. Please try again.</p>
+      </section>
+
+      <!-- Notes -->
+      <section class="notes-section" *ngIf="dashboard.notes.length > 0">
+        <div class="section-heading"><h2>Notes</h2></div>
         <p class="note-line" *ngFor="let note of dashboard.notes">{{ note }}</p>
       </section>
 
-      <p class="empty-state" *ngIf="goalCards.length === 0 && dashboard.monthlySavings.length === 0">
-        Add savings entries or start editing to populate this dashboard.
-      </p>
-    </mat-card-content>
-
-    <mat-card-content *ngIf="!isLoading && !hasError && isEditing">
-      <section class="editor-layout">
-        <div class="editor-panel">
-          <div class="section-heading">
-            <h2>Settings</h2>
-            <p>Define the totals and goals that drive the dashboard</p>
-          </div>
-
-          <div class="editor-grid">
-            <mat-form-field>
-              <mat-label>Dashboard title</mat-label>
-              <input matInput [(ngModel)]="draft.title">
-            </mat-form-field>
-
-            <mat-form-field>
-              <mat-label>Total saved</mat-label>
-              <input matInput type="number" step="0.01" [(ngModel)]="draft.settings.totalSaved">
-            </mat-form-field>
-
-            <mat-form-field>
-              <mat-label>POM goal</mat-label>
-              <input matInput type="number" step="0.01" [(ngModel)]="draft.settings.pomGoal">
-            </mat-form-field>
-
-            <mat-form-field>
-              <mat-label>Car Fund goal</mat-label>
-              <input matInput type="number" step="0.01" [(ngModel)]="draft.settings.carFundGoal">
-            </mat-form-field>
-          </div>
-
-          <p class="editor-hint">POM current and Car Fund current are derived automatically from Total saved and the goal thresholds.</p>
-        </div>
-
-        <div class="editor-panel">
-          <div class="section-heading editor-heading-row">
-            <div>
-              <h2>Monthly contributions</h2>
-              <p>Edit existing entries or add a new month</p>
-            </div>
-            <button class="app-button" (click)="addMonthlyContribution()">ADD MONTH</button>
-          </div>
-
-          <div class="entry-table editor-table">
-            <div class="entry-row entry-row-header">
-              <span>Month</span>
-              <span>Amount</span>
-              <span>Actions</span>
-            </div>
-
-            <div class="entry-row editor-entry-row" *ngFor="let item of draft.monthlySavings; let i = index">
-              <mat-form-field>
-                <mat-label>Month</mat-label>
-                <input
-                  matInput
-                  type="month"
-                  [ngModel]="formatMonthInput(item.date)"
-                  (ngModelChange)="onMonthChanged(i, $event)">
-              </mat-form-field>
-
-              <mat-form-field>
-                <mat-label>Amount</mat-label>
-                <input matInput type="number" step="0.01" [(ngModel)]="item.amount">
-              </mat-form-field>
-
-              <button class="app-button secondary-button destructive-button" (click)="removeMonthlyContribution(i)">REMOVE</button>
-            </div>
-          </div>
-
-          <p class="editor-hint">Preview average monthly quota: {{ formatCurrency(draftMonthlyAverage) }}</p>
-        </div>
-
-        <p class="save-error" *ngIf="saveFailed">The dashboard could not be saved. Try again.</p>
-      </section>
     </mat-card-content>
 
     <mat-card-content *ngIf="hasError && !isLoading">

@@ -32,6 +32,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { NgChartsModule } from 'ng2-charts';
 import { StoreComponent } from './components/store/store.component';
 import { FinanceLoginComponent } from './components/finance-login/finance-login.component';
 import { FinanceComponent } from './components/finance/finance.component';
@@ -79,7 +80,8 @@ import { FinanceComponent } from './components/finance/finance.component';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
