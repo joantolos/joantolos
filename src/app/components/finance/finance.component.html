@@ -15,8 +15,30 @@
       <!-- KPI strip -->
       <section class="kpi-grid">
         <article class="kpi-card">
-          <p class="kpi-label">Total saved</p>
-          <p class="kpi-value">{{ formatCurrency(dashboard.totalSaved) }}</p>
+          <ng-container *ngIf="editingField !== 'totalSaved'; else editTotalSavedKpi">
+            <div class="kpi-header-row">
+              <p class="kpi-label">Total saved</p>
+              <button class="icon-btn kpi-edit-btn" (click)="startEditingField('totalSaved')" title="Edit">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+            <p class="kpi-value">{{ formatCurrency(dashboard.totalSaved) }}</p>
+          </ng-container>
+          <ng-template #editTotalSavedKpi>
+            <p class="kpi-label">Total saved</p>
+            <div class="inline-editor">
+              <mat-form-field class="inline-field">
+                <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
+                  (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
+              </mat-form-field>
+              <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
+                <mat-icon>check</mat-icon>
+              </button>
+              <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+          </ng-template>
         </article>
         <article class="kpi-card">
           <p class="kpi-label">Monthly average</p>
@@ -32,101 +54,6 @@
           <p class="kpi-value">{{ formatCurrency(bestMonth.amount) }}</p>
           <p class="kpi-caption">{{ formatMonth(bestMonth.date) }}</p>
         </article>
-      </section>
-
-      <!-- Settings -->
-      <section class="settings-section">
-        <div class="section-heading"><h2>Settings</h2></div>
-        <div class="settings-grid">
-
-          <article class="setting-card">
-            <ng-container *ngIf="editingField !== 'totalSaved'; else editTotalSaved">
-              <div class="setting-row">
-                <div>
-                  <p class="setting-label">Total saved</p>
-                  <p class="setting-value">{{ formatCurrency(dashboard.totalSaved) }}</p>
-                </div>
-                <button class="icon-btn" (click)="startEditingField('totalSaved')" title="Edit">
-                  <mat-icon>edit</mat-icon>
-                </button>
-              </div>
-            </ng-container>
-            <ng-template #editTotalSaved>
-              <p class="setting-label">Total saved</p>
-              <div class="inline-editor">
-                <mat-form-field class="inline-field">
-                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
-                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
-                </mat-form-field>
-                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
-                  <mat-icon>check</mat-icon>
-                </button>
-                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
-                  <mat-icon>close</mat-icon>
-                </button>
-              </div>
-            </ng-template>
-          </article>
-
-          <article class="setting-card">
-            <ng-container *ngIf="editingField !== 'pomGoal'; else editPomGoal">
-              <div class="setting-row">
-                <div>
-                  <p class="setting-label">POM goal</p>
-                  <p class="setting-value">{{ formatCurrency(getPomGoal()) }}</p>
-                </div>
-                <button class="icon-btn" (click)="startEditingField('pomGoal')" title="Edit">
-                  <mat-icon>edit</mat-icon>
-                </button>
-              </div>
-            </ng-container>
-            <ng-template #editPomGoal>
-              <p class="setting-label">POM goal</p>
-              <div class="inline-editor">
-                <mat-form-field class="inline-field">
-                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
-                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
-                </mat-form-field>
-                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
-                  <mat-icon>check</mat-icon>
-                </button>
-                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
-                  <mat-icon>close</mat-icon>
-                </button>
-              </div>
-            </ng-template>
-          </article>
-
-          <article class="setting-card">
-            <ng-container *ngIf="editingField !== 'carFundGoal'; else editCarFundGoal">
-              <div class="setting-row">
-                <div>
-                  <p class="setting-label">Car Fund goal</p>
-                  <p class="setting-value">{{ formatCurrency(getCarFundGoal()) }}</p>
-                </div>
-                <button class="icon-btn" (click)="startEditingField('carFundGoal')" title="Edit">
-                  <mat-icon>edit</mat-icon>
-                </button>
-              </div>
-            </ng-container>
-            <ng-template #editCarFundGoal>
-              <p class="setting-label">Car Fund goal</p>
-              <div class="inline-editor">
-                <mat-form-field class="inline-field">
-                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
-                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
-                </mat-form-field>
-                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
-                  <mat-icon>check</mat-icon>
-                </button>
-                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
-                  <mat-icon>close</mat-icon>
-                </button>
-              </div>
-            </ng-template>
-          </article>
-
-        </div>
       </section>
 
       <!-- Goals -->
@@ -250,6 +177,72 @@
           No contributions yet — press + to add the first one.
         </p>
         <p class="save-error" *ngIf="saveError">Could not save. Please try again.</p>
+      </section>
+
+      <!-- Settings -->
+      <section class="settings-section">
+        <div class="section-heading"><h2>Settings</h2></div>
+        <div class="settings-grid">
+
+          <article class="setting-card">
+            <ng-container *ngIf="editingField !== 'pomGoal'; else editPomGoal">
+              <div class="setting-row">
+                <div>
+                  <p class="setting-label">POM goal</p>
+                  <p class="setting-value">{{ formatCurrency(getPomGoal()) }}</p>
+                </div>
+                <button class="icon-btn" (click)="startEditingField('pomGoal')" title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </div>
+            </ng-container>
+            <ng-template #editPomGoal>
+              <p class="setting-label">POM goal</p>
+              <div class="inline-editor">
+                <mat-form-field class="inline-field">
+                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
+                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
+                </mat-form-field>
+                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
+                  <mat-icon>check</mat-icon>
+                </button>
+                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </div>
+            </ng-template>
+          </article>
+
+          <article class="setting-card">
+            <ng-container *ngIf="editingField !== 'carFundGoal'; else editCarFundGoal">
+              <div class="setting-row">
+                <div>
+                  <p class="setting-label">Car Fund goal</p>
+                  <p class="setting-value">{{ formatCurrency(getCarFundGoal()) }}</p>
+                </div>
+                <button class="icon-btn" (click)="startEditingField('carFundGoal')" title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </div>
+            </ng-container>
+            <ng-template #editCarFundGoal>
+              <p class="setting-label">Car Fund goal</p>
+              <div class="inline-editor">
+                <mat-form-field class="inline-field">
+                  <input matInput type="number" step="0.01" [(ngModel)]="fieldDraft"
+                    (keyup.enter)="saveField()" (keyup.escape)="cancelEditingField()">
+                </mat-form-field>
+                <button class="icon-btn confirm-btn" (click)="saveField()" [disabled]="isSaving" title="Save">
+                  <mat-icon>check</mat-icon>
+                </button>
+                <button class="icon-btn cancel-btn" (click)="cancelEditingField()" title="Cancel">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </div>
+            </ng-template>
+          </article>
+
+        </div>
       </section>
 
       <!-- Notes -->

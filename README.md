@@ -2,9 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
-## Development server
+## Local development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**One-time setup:**
+
+```bash
+cp .env.example .env
+```
+
+The `.env` file is gitignored. It sets the credentials and sample dashboard data needed to run locally.
+
+**Start the app:**
+
+```bash
+# Terminal 1 — builds Angular and rebuilds on file save
+npx ng build --watch
+
+# Terminal 2 — start the Express server (after the first build finishes)
+node server.js
+```
+
+Open **http://localhost:4200**. Log in at `/finance/login` with `local` / `local123`.
+
+Since there is no local database, the dashboard loads from `FINANCE_DASHBOARD_JSON` in `.env`. Saves work for the session but are not persisted — fine for design iteration.
 
 ## Mail configuration
 

@@ -85,6 +85,26 @@
   padding: 22px;
 }
 
+.kpi-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kpi-edit-btn {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  margin-top: -2px;
+}
+
+.kpi-edit-btn mat-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+
 .kpi-label,
 .kpi-caption {
   margin: 0;
