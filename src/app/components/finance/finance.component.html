@@ -7,14 +7,22 @@
           Snapshot updated {{ dashboard.updatedAt }}
         </mat-card-subtitle>
       </div>
-      <button class="app-button finance-logout" (click)="logout()">LOGOUT</button>
+
+      <div class="finance-actions">
+        <button class="app-button" *ngIf="!isEditing" (click)="startEditing()">EDIT</button>
+        <button class="app-button secondary-button" *ngIf="isEditing" (click)="cancelEditing()">CANCEL</button>
+        <button class="app-button" *ngIf="isEditing" [disabled]="isSaving" (click)="saveDashboard()">
+          {{ isSaving ? 'SAVING...' : 'SAVE' }}
+        </button>
+        <button class="app-button finance-logout" (click)="logout()">LOGOUT</button>
+      </div>
     </mat-card-header>
 
-    <mat-card-content *ngIf="!isLoading && !hasError">
+    <mat-card-content *ngIf="!isLoading && !hasError && !isEditing">
       <section class="kpi-grid">
         <article class="kpi-card">
           <p class="kpi-label">Total saved</p>
-          <p class="kpi-value">{{ formatCurrency(totalSaved) }}</p>
+          <p class="kpi-value">{{ formatCurrency(dashboard.totalSaved) }}</p>
         </article>
         <article class="kpi-card">
           <p class="kpi-label">Average monthly quota</p>
@@ -115,8 +123,83 @@
       </section>
 
       <p class="empty-state" *ngIf="goalCards.length === 0 && dashboard.monthlySavings.length === 0">
-        Add `FINANCE_DASHBOARD_JSON` on the server to populate this dashboard.
+        Add savings entries or start editing to populate this dashboard.
       </p>
+    </mat-card-content>
+
+    <mat-card-content *ngIf="!isLoading && !hasError && isEditing">
+      <section class="editor-layout">
+        <div class="editor-panel">
+          <div class="section-heading">
+            <h2>Settings</h2>
+            <p>Define the totals and goals that drive the dashboard</p>
+          </div>
+
+          <div class="editor-grid">
+            <mat-form-field>
+              <mat-label>Dashboard title</mat-label>
+              <input matInput [(ngModel)]="draft.title">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Total saved</mat-label>
+              <input matInput type="number" step="0.01" [(ngModel)]="draft.settings.totalSaved">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>POM goal</mat-label>
+              <input matInput type="number" step="0.01" [(ngModel)]="draft.settings.pomGoal">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Car Fund goal</mat-label>
+              <input matInput type="number" step="0.01" [(ngModel)]="draft.settings.carFundGoal">
+            </mat-form-field>
+          </div>
+
+          <p class="editor-hint">POM current and Car Fund current are derived automatically from Total saved and the goal thresholds.</p>
+        </div>
+
+        <div class="editor-panel">
+          <div class="section-heading editor-heading-row">
+            <div>
+              <h2>Monthly contributions</h2>
+              <p>Edit existing entries or add a new month</p>
+            </div>
+            <button class="app-button" (click)="addMonthlyContribution()">ADD MONTH</button>
+          </div>
+
+          <div class="entry-table editor-table">
+            <div class="entry-row entry-row-header">
+              <span>Month</span>
+              <span>Amount</span>
+              <span>Actions</span>
+            </div>
+
+            <div class="entry-row editor-entry-row" *ngFor="let item of draft.monthlySavings; let i = index">
+              <mat-form-field>
+                <mat-label>Month</mat-label>
+                <input
+                  matInput
+                  type="month"
+                  [ngModel]="formatMonthInput(item.date)"
+                  (ngModelChange)="onMonthChanged(i, $event)">
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Amount</mat-label>
+                <input matInput type="number" step="0.01" [(ngModel)]="item.amount">
+              </mat-form-field>
+
+              <button class="app-button secondary-button destructive-button" (click)="removeMonthlyContribution(i)">REMOVE</button>
+            </div>
+          </div>
+
+          <p class="editor-hint">Preview average monthly quota: {{ formatCurrency(draftMonthlyAverage) }}</p>
+        </div>
+
+        <p class="save-error" *ngIf="saveFailed">The dashboard could not be saved. Try again.</p>
+      </section>
     </mat-card-content>
 
     <mat-card-content *ngIf="hasError && !isLoading">

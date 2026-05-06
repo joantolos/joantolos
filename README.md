@@ -33,6 +33,7 @@ Example `FINANCE_DASHBOARD_JSON` value:
 {
   "title": "Savings Dashboard",
   "updatedAt": "2026-05-06",
+  "totalSaved": 4638,
   "averageMonthlyQuota": 174.22,
   "goals": [
     {

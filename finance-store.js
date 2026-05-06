@@ -3,6 +3,7 @@ const { Pool } = require('pg');
 const DEFAULT_DASHBOARD = {
   title: 'Savings Dashboard',
   updatedAt: null,
+  totalSaved: 0,
   averageMonthlyQuota: 0,
   goals: [],
   monthlySavings: [],
@@ -41,6 +42,7 @@ const normalizeDashboard = (payload) => {
   return {
     title: typeof dashboard.title === 'string' && dashboard.title.trim() ? dashboard.title.trim() : DEFAULT_DASHBOARD.title,
     updatedAt: typeof dashboard.updatedAt === 'string' ? dashboard.updatedAt : null,
+    totalSaved: normalizeNumber(dashboard.totalSaved, 0),
     averageMonthlyQuota: normalizeNumber(dashboard.averageMonthlyQuota, 0),
     goals: Array.isArray(dashboard.goals) ? dashboard.goals.map((goal) => ({
       name: typeof goal?.name === 'string' ? goal.name : 'Untitled goal',
@@ -52,7 +54,7 @@ const normalizeDashboard = (payload) => {
     monthlySavings: Array.isArray(dashboard.monthlySavings) ? dashboard.monthlySavings.map((item) => ({
       date: typeof item?.date === 'string' ? item.date : '',
       amount: normalizeNumber(item?.amount, 0)
-    })).filter((item) => item.date) : [],
+    })).filter((item) => item.date).sort((left, right) => left.date.localeCompare(right.date)) : [],
     notes: Array.isArray(dashboard.notes) ? dashboard.notes.filter((note) => typeof note === 'string') : []
   };
 };
