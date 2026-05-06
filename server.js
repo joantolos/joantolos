@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const crypto = require('crypto');
 const app = express();
 const bp = require('body-parser')
 const cors = require('cors')
@@ -9,12 +10,53 @@ const CONTACT_FORM_WINDOW_MS = 10 * 60 * 1000;
 const CONTACT_FORM_MAX_SUBMISSIONS = 5;
 const CONTACT_FORM_MAX_FIELD_LENGTH = 5000;
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const AUTH_COOKIE_NAME = 'jt_auth';
+const AUTH_TOKEN_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const contactFormAttempts = new Map();
 
 const allowedOrigins = [
+  'https://joantolos.com',
   'https://www.joantolos.com',
   'http://localhost:4200'
 ];
+
+const getRequiredEnv = (name) => {
+  const value = process.env[name];
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`);
+  }
+
+  return value;
+};
+
+const getAuthUsername = () => getRequiredEnv('AUTH_USERNAME');
+const getAuthPassword = () => getRequiredEnv('AUTH_PASSWORD');
+const getAuthSessionSecret = () => getRequiredEnv('AUTH_SESSION_SECRET');
+const isProduction = () => process.env.NODE_ENV === 'production';
+
+const getFinanceDashboard = () => {
+  const rawData = process.env.FINANCE_DASHBOARD_JSON;
+  if (!rawData) {
+    return {
+      updatedAt: null,
+      totals: [],
+      accounts: [],
+      notes: []
+    };
+  }
+
+  try {
+    return JSON.parse(rawData);
+  } catch (error) {
+    console.error('Invalid FINANCE_DASHBOARD_JSON value', error);
+    return {
+      updatedAt: null,
+      totals: [],
+      accounts: [],
+      notes: ['Finance dashboard data is temporarily unavailable.']
+    };
+  }
+};
 
 const getClientIp = (req) => {
   const forwardedFor = req.headers['x-forwarded-for'];
@@ -91,8 +133,98 @@ const validateContactForm = (body) => {
   };
 };
 
+const base64UrlEncode = (value) => Buffer.from(value).toString('base64url');
+const base64UrlDecode = (value) => Buffer.from(value, 'base64url').toString('utf8');
+
+const getCookieValue = (req, cookieName) => {
+  const cookieHeader = req.headers.cookie;
+  if (!cookieHeader) {
+    return null;
+  }
+
+  const cookies = cookieHeader.split(';').map((cookie) => cookie.trim());
+  const matchingCookie = cookies.find((cookie) => cookie.startsWith(`${cookieName}=`));
+  return matchingCookie ? decodeURIComponent(matchingCookie.split('=').slice(1).join('=')) : null;
+};
+
+const signToken = (value) => crypto.createHmac('sha256', getAuthSessionSecret()).update(value).digest('hex');
+
+const createAuthToken = () => {
+  const payload = JSON.stringify({
+    username: getAuthUsername(),
+    issuedAt: Date.now()
+  });
+  const encodedPayload = base64UrlEncode(payload);
+  const signature = signToken(encodedPayload);
+  return `${encodedPayload}.${signature}`;
+};
+
+const readAuthToken = (token) => {
+  if (!token || !token.includes('.')) {
+    return null;
+  }
+
+  const [encodedPayload, signature] = token.split('.');
+  if (!encodedPayload || !signature || signToken(encodedPayload) !== signature) {
+    return null;
+  }
+
+  try {
+    const payload = JSON.parse(base64UrlDecode(encodedPayload));
+    if (payload.username !== getAuthUsername()) {
+      return null;
+    }
+
+    if (Date.now() - payload.issuedAt > AUTH_TOKEN_MAX_AGE_MS) {
+      return null;
+    }
+
+    return payload;
+  } catch (_error) {
+    return null;
+  }
+};
+
+const setAuthCookie = (res) => {
+  const cookieParts = [
+    `${AUTH_COOKIE_NAME}=${encodeURIComponent(createAuthToken())}`,
+    'Path=/',
+    'HttpOnly',
+    'SameSite=Strict',
+    `Max-Age=${Math.floor(AUTH_TOKEN_MAX_AGE_MS / 1000)}`
+  ];
+
+  if (isProduction()) {
+    cookieParts.push('Secure');
+  }
+
+  res.setHeader('Set-Cookie', cookieParts.join('; '));
+};
+
+const clearAuthCookie = (res) => {
+  const cookieParts = [
+    `${AUTH_COOKIE_NAME}=`,
+    'Path=/',
+    'HttpOnly',
+    'SameSite=Strict',
+    'Max-Age=0'
+  ];
+
+  if (isProduction()) {
+    cookieParts.push('Secure');
+  }
+
+  res.setHeader('Set-Cookie', cookieParts.join('; '));
+};
+
+const isAuthenticated = (req) => {
+  const token = getCookieValue(req, AUTH_COOKIE_NAME);
+  return !!readAuthToken(token);
+};
+
 app.use(express.static(__dirname + '/dist'));
 app.use(cors({
+  credentials: true,
   origin(origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
       return callback(null, true);
@@ -110,6 +242,40 @@ app.get('/health', (req, res) => {
 
 app.get('/ping', function(req, res) {
   res.json({ site: 'Alive!' });
+});
+
+app.post('/auth/login', function(req, res) {
+  const username = normalizeField(req.body?.username);
+  const password = normalizeField(req.body?.password);
+
+  if (!username || !password) {
+    return res.status(400).send({ message: 'Missing credentials' });
+  }
+
+  if (username !== getAuthUsername() || password !== getAuthPassword()) {
+    clearAuthCookie(res);
+    return res.status(401).send({ message: 'Invalid credentials' });
+  }
+
+  setAuthCookie(res);
+  return res.status(200).send({ authenticated: true });
+});
+
+app.post('/auth/logout', function(_req, res) {
+  clearAuthCookie(res);
+  return res.status(200).send({ authenticated: false });
+});
+
+app.get('/auth/session', function(req, res) {
+  return res.status(200).send({ authenticated: isAuthenticated(req) });
+});
+
+app.get('/api/finance', function(req, res) {
+  if (!isAuthenticated(req)) {
+    return res.status(401).send({ message: 'Unauthorized' });
+  }
+
+  return res.status(200).send(getFinanceDashboard());
 });
 
 app.post('/submit-contact-form', function(req, res) {

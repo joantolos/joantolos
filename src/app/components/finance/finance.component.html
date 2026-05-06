@@ -1,0 +1,49 @@
+<main>
+  <mat-card class="finance-card">
+    <mat-card-header class="finance-header">
+      <div>
+        <mat-card-title class="finance-title">FINANCE DASHBOARD</mat-card-title>
+        <mat-card-subtitle class="finance-subtitle" *ngIf="dashboard.updatedAt">
+          Last updated: {{ dashboard.updatedAt }}
+        </mat-card-subtitle>
+      </div>
+      <button class="app-button finance-logout" (click)="logout()">LOGOUT</button>
+    </mat-card-header>
+
+    <mat-card-content *ngIf="!isLoading && !hasError">
+      <div class="metric-grid" *ngIf="dashboard.totals.length > 0">
+        <div class="metric-card" *ngFor="let metric of dashboard.totals">
+          <p class="metric-label">{{ metric.label }}</p>
+          <p class="metric-value">{{ metric.value }}</p>
+        </div>
+      </div>
+
+      <div class="account-list" *ngIf="dashboard.accounts.length > 0">
+        <div class="account-row" *ngFor="let account of dashboard.accounts">
+          <div>
+            <p class="account-name">{{ account.name }}</p>
+            <p class="account-note" *ngIf="account.note">{{ account.note }}</p>
+          </div>
+          <p class="account-amount">{{ account.amount }}</p>
+        </div>
+      </div>
+
+      <div class="notes" *ngIf="dashboard.notes.length > 0">
+        <p class="notes-title">Notes</p>
+        <p class="note-line" *ngFor="let note of dashboard.notes">{{ note }}</p>
+      </div>
+
+      <p class="empty-state" *ngIf="dashboard.totals.length === 0 && dashboard.accounts.length === 0 && dashboard.notes.length === 0">
+        Add `FINANCE_DASHBOARD_JSON` on the server to populate this dashboard.
+      </p>
+    </mat-card-content>
+
+    <mat-card-content *ngIf="hasError && !isLoading">
+      <p class="empty-state">The dashboard could not be loaded.</p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="loading-spinner" *ngIf="isLoading">
+    <mat-spinner diameter="50"></mat-spinner>
+  </div>
+</main>

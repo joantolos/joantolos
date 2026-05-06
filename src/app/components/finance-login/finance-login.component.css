@@ -1,0 +1,31 @@
+.auth-card {
+  margin-top: 40px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-header {
+  margin-bottom: 15px;
+}
+
+.auth-title {
+  font-size: 28px;
+}
+
+.auth-subtitle {
+  margin-top: 8px;
+}
+
+.auth-error {
+  color: #9f2d2d;
+  margin-top: 5px;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 40px;
+}

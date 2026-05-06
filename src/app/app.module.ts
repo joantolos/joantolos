@@ -33,6 +33,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { StoreComponent } from './components/store/store.component';
+import { FinanceLoginComponent } from './components/finance-login/finance-login.component';
+import { FinanceComponent } from './components/finance/finance.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { StoreComponent } from './components/store/store.component';
     SubscribedDialog,
     SubmitSuccess,
     SubmitFailure,
-    StoreComponent
+    StoreComponent,
+    FinanceLoginComponent,
+    FinanceComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,9 @@ import {PrivacyPolicyComponent} from "./components/privacy-policy/privacy-policy
 import {TermsAndConditionsComponent} from "./components/terms-and-conditions/terms-and-conditions.component";
 import {CookiePolicyComponent} from "./components/cookie-policy/cookie-policy.component";
 import { StoreComponent } from './components/store/store.component';
+import { FinanceLoginComponent } from './components/finance-login/finance-login.component';
+import { FinanceComponent } from './components/finance/finance.component';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   imports: [RouterModule.forRoot([
@@ -47,6 +50,15 @@ import { StoreComponent } from './components/store/store.component';
     {
       path: 'store',
       component: StoreComponent
+    },
+    {
+      path: 'finance/login',
+      component: FinanceLoginComponent
+    },
+    {
+      path: 'finance',
+      component: FinanceComponent,
+      canActivate: [AuthGuard]
     },
     {
       path: 'about',

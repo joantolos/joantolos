@@ -17,6 +17,35 @@ The contact form backend now requires these environment variables:
 - `SMTP_PORT` (optional, defaults to `465`)
 - `SMTP_SECURE` (optional, defaults to `true`)
 
+## Private finance dashboard
+
+The private finance area requires these environment variables:
+
+- `AUTH_USERNAME`
+- `AUTH_PASSWORD`
+- `AUTH_SESSION_SECRET`
+- `FINANCE_DASHBOARD_JSON` (optional)
+
+Example `FINANCE_DASHBOARD_JSON` value:
+
+```json
+{
+  "updatedAt": "2026-05-06",
+  "totals": [
+    { "label": "Net worth", "value": "EUR 123,456" },
+    { "label": "Cash", "value": "EUR 12,345" }
+  ],
+  "accounts": [
+    { "name": "Checking", "amount": "EUR 4,500", "note": "Main account" },
+    { "name": "Brokerage", "amount": "EUR 65,000", "note": "Long-term investing" }
+  ],
+  "notes": [
+    "Update values monthly.",
+    "Keep sensitive details out of the client bundle."
+  ]
+}
+```
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
