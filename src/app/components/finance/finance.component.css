@@ -26,30 +26,6 @@
   color: #5d6a74;
 }
 
-/* ─── Logout button ─────────────────────────────────────────────────────── */
-
-.logout-btn {
-  width: auto;
-  min-width: 100px;
-  margin: 0;
-  padding: 7px 18px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  background: transparent;
-  color: #5d6a74;
-  border: 1px solid #aebbc4;
-  border-radius: 6px;
-  flex-shrink: 0;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
-}
-
-.logout-btn:hover {
-  background: #f0f4f7;
-  color: #13212d;
-  border-color: #7a909c;
-}
 
 /* ─── Section headings ──────────────────────────────────────────────────── */
 

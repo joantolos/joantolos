@@ -353,22 +353,37 @@ export class FinanceComponent implements OnInit {
   }
 
   private normalizeDashboard(dashboard: FinanceDashboard): FinanceDashboard {
+    const totalSaved = this.normalizeNumber(dashboard.totalSaved);
+    const pomGoal = this.normalizeNumber((dashboard.goals || []).find((g) => g.name === 'POM')?.target ?? 0);
+    const monthlySavings = (dashboard.monthlySavings || [])
+      .filter((item) => item.date)
+      .slice()
+      .sort((a, b) => a.date.localeCompare(b.date));
+    const averageMonthlyQuota = monthlySavings.length
+      ? monthlySavings.reduce((sum, item) => sum + item.amount, 0) / monthlySavings.length
+      : 0;
+
     return {
       title: dashboard.title || 'Savings Dashboard',
       updatedAt: dashboard.updatedAt,
-      totalSaved: this.normalizeNumber(dashboard.totalSaved),
-      averageMonthlyQuota: this.normalizeNumber(dashboard.averageMonthlyQuota),
-      goals: (dashboard.goals || []).map((goal) => ({
-        name: goal.name,
-        current: this.normalizeNumber(goal.current),
-        target: this.normalizeNumber(goal.target),
-        etaMonths: goal.etaMonths != null ? this.normalizeNumber(goal.etaMonths) : undefined,
-        etaLabel: goal.etaLabel
-      })),
-      monthlySavings: (dashboard.monthlySavings || [])
-        .filter((item) => item.date)
-        .slice()
-        .sort((a, b) => a.date.localeCompare(b.date)),
+      totalSaved,
+      averageMonthlyQuota,
+      goals: (dashboard.goals || []).map((goal) => {
+        const target = this.normalizeNumber(goal.target);
+        const current = goal.name === 'POM'
+          ? Math.min(totalSaved, pomGoal)
+          : goal.name === 'Car Fund'
+            ? Math.max(totalSaved - pomGoal, 0)
+            : this.normalizeNumber(goal.current);
+        return {
+          name: goal.name,
+          current,
+          target,
+          etaMonths: goal.etaMonths != null ? this.normalizeNumber(goal.etaMonths) : undefined,
+          etaLabel: goal.etaLabel
+        };
+      }),
+      monthlySavings,
       notes: dashboard.notes || []
     };
   }
