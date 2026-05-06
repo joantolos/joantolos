@@ -23,6 +23,7 @@ export class ContactComponent implements OnInit {
   subject = new FormControl('', [Validators.required]);
   message = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
+  website = new FormControl('');
   isLoading = false;
 
   getErrorMessage() {
@@ -35,13 +36,18 @@ export class ContactComponent implements OnInit {
   }
 
   sendForm() {
+    if (this.isLoading || this.isFormInvalid()) {
+      return;
+    }
+
     this.isLoading = true;
 
     this.http.post<any>(environment.backendUrl + '/submit-contact-form', {
       name: this.name.value,
       email: this.email.value,
       subject: this.subject.value,
-      message: this.message.value
+      message: this.message.value,
+      website: this.website.value
     }).pipe(
       catchError(() => {
         this.isLoading = false;

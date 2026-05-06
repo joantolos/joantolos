@@ -6,6 +6,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## Mail configuration
+
+The contact form backend now requires these environment variables:
+
+- `MAIL_USER`
+- `MAIL_PASS`
+- `SITE_EMAIL` (optional, defaults to `MAIL_USER`)
+- `SMTP_HOST` (optional, defaults to `smtp.gmail.com`)
+- `SMTP_PORT` (optional, defaults to `465`)
+- `SMTP_SECURE` (optional, defaults to `true`)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

@@ -1,35 +1,29 @@
 const crypto = require('crypto')
 const nodemailer = require("nodemailer");
 const algorithm = 'aes-256-ctr'
-const secretKey = process.env.SITE_SECRET
 
-const getUser = () => {
-  return decrypt({
-    "iv": "ebb43f53b8e918d52e327ea67cfec376",
-    "content": "147f3b2ceb4a17993338178e5d49b72c994d8ff5832df14d37053ca4f9bc64bb76"
-  });
+const getRequiredEnv = (name) => {
+  const value = process.env[name];
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`);
+  }
+
+  return value;
 }
 
-const getPass = () => {
-  return decrypt({
-    "iv": "c436a03f84b735a481e959857ffede8b",
-    "content": "d323200777243c7c162ad4cf1cd9f645"
-  });
-}
-
-const getSiteEmail = () => {
-  return decrypt({
-    "iv": "7ac2e1bd6f53d422f995442ebc27c9ef",
-    "content": "27beaa698281b052fc6c47cc3dd4b36ff714"
-  });
-}
+const getUser = () => getRequiredEnv('MAIL_USER');
+const getPass = () => getRequiredEnv('MAIL_PASS');
+const getSiteEmail = () => process.env.SITE_EMAIL || getUser();
+const getSmtpHost = () => process.env.SMTP_HOST || 'smtp.gmail.com';
+const getSmtpPort = () => +(process.env.SMTP_PORT || 465);
+const isSmtpSecure = () => process.env.SMTP_SECURE !== 'false';
 
 const getTransporter = () => {
   return nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
+    port: getSmtpPort(),
+    host: getSmtpHost(),
     auth: {user: getUser(), pass: getPass()},
-    secure: true,
+    secure: isSmtpSecure(),
   });
 }
 
@@ -51,7 +45,7 @@ const getMailData = (body) => {
   };
 }
 
-const encrypt = (text) => {
+const encrypt = (text, secretKey) => {
   const iv = crypto.randomBytes(16);
   const cipher = crypto.createCipheriv(algorithm, secretKey, iv);
   const encrypted = Buffer.concat([cipher.update(text), cipher.final()]);
@@ -61,13 +55,8 @@ const encrypt = (text) => {
   };
 };
 
-const decrypt = (hash) => {
-  const decipher = crypto.createDecipheriv(algorithm, secretKey, Buffer.from(hash.iv, 'hex'));
-  const decrypted = Buffer.concat([decipher.update(Buffer.from(hash.content, 'hex')), decipher.final()]);
-  return decrypted.toString();
-};
-
 module.exports = {
   getTransporter,
-  getMailData
+  getMailData,
+  encrypt
 };

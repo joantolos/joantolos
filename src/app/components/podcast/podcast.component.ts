@@ -22,6 +22,8 @@ interface PodcastItem {
   videoVisible: string;
 }
 
+const YOUTUBE_VIDEO_ID_PATTERN = /^[A-Za-z0-9_-]{11}$/;
+
 @Component({
   selector: 'app-podcast',
   templateUrl: './podcast.component.html',
@@ -68,7 +70,7 @@ export class PodcastComponent implements OnInit {
                 length: enclosureAttributes.length || '',
                 type: enclosureAttributes.type || ''
               },
-              video: "https://www.youtube.com/embed/" + (item.videoId || '')._text,
+              video: "https://www.youtube.com/embed/" + ((item.videoId || '')._text || ''),
               videoVisible: (item.videoVisible || '')._text
             };
           });
@@ -120,7 +122,21 @@ export class PodcastComponent implements OnInit {
   }
 
   getVideoUrl(videoUrl: string): SafeResourceUrl {
+    const videoId = videoUrl.replace('https://www.youtube.com/embed/', '');
+    if (!YOUTUBE_VIDEO_ID_PATTERN.test(videoId)) {
+      throw new Error('Invalid YouTube video identifier');
+    }
+
     return this.sanitizer.bypassSecurityTrustResourceUrl(videoUrl);
+  }
+
+  hasEmbeddableVideo(podcast: PodcastItem): boolean {
+    if (podcast.videoVisible !== 'true') {
+      return false;
+    }
+
+    const videoId = podcast.video.replace('https://www.youtube.com/embed/', '');
+    return YOUTUBE_VIDEO_ID_PATTERN.test(videoId);
   }
 
   showPodcastTitle() {
