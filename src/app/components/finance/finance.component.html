@@ -2,38 +2,119 @@
   <mat-card class="finance-card">
     <mat-card-header class="finance-header">
       <div>
-        <mat-card-title class="finance-title">FINANCE DASHBOARD</mat-card-title>
+        <mat-card-title class="finance-title">{{ dashboard.title || 'Savings Dashboard' }}</mat-card-title>
         <mat-card-subtitle class="finance-subtitle" *ngIf="dashboard.updatedAt">
-          Last updated: {{ dashboard.updatedAt }}
+          Snapshot updated {{ dashboard.updatedAt }}
         </mat-card-subtitle>
       </div>
       <button class="app-button finance-logout" (click)="logout()">LOGOUT</button>
     </mat-card-header>
 
     <mat-card-content *ngIf="!isLoading && !hasError">
-      <div class="metric-grid" *ngIf="dashboard.totals.length > 0">
-        <div class="metric-card" *ngFor="let metric of dashboard.totals">
-          <p class="metric-label">{{ metric.label }}</p>
-          <p class="metric-value">{{ metric.value }}</p>
-        </div>
-      </div>
+      <section class="kpi-grid">
+        <article class="kpi-card">
+          <p class="kpi-label">Total saved</p>
+          <p class="kpi-value">{{ formatCurrency(totalSaved) }}</p>
+        </article>
+        <article class="kpi-card">
+          <p class="kpi-label">Average monthly quota</p>
+          <p class="kpi-value">{{ formatCurrency(monthlyAverage) }}</p>
+        </article>
+        <article class="kpi-card" *ngIf="latestMonth">
+          <p class="kpi-label">Latest month</p>
+          <p class="kpi-value">{{ formatCurrency(latestMonth.amount) }}</p>
+          <p class="kpi-caption">{{ formatMonth(latestMonth.date) }}</p>
+        </article>
+        <article class="kpi-card" *ngIf="bestMonth">
+          <p class="kpi-label">Best month</p>
+          <p class="kpi-value">{{ formatCurrency(bestMonth.amount) }}</p>
+          <p class="kpi-caption">{{ formatMonth(bestMonth.date) }}</p>
+        </article>
+      </section>
 
-      <div class="account-list" *ngIf="dashboard.accounts.length > 0">
-        <div class="account-row" *ngFor="let account of dashboard.accounts">
-          <div>
-            <p class="account-name">{{ account.name }}</p>
-            <p class="account-note" *ngIf="account.note">{{ account.note }}</p>
+      <section class="goal-section" *ngIf="goalCards.length > 0">
+        <div class="section-heading">
+          <h2>Goals</h2>
+          <p>Where each fund stands right now</p>
+        </div>
+
+        <div class="goal-grid">
+          <article class="goal-card" *ngFor="let goal of goalCards">
+            <div class="goal-topline">
+              <div>
+                <p class="goal-name">{{ goal.name }}</p>
+                <p class="goal-progress">
+                  {{ formatCurrency(goal.current) }} of {{ formatCurrency(goal.target) }}
+                </p>
+              </div>
+              <p class="goal-percent">{{ goal.progressPercent | number:'1.0-0' }}%</p>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" [style.width.%]="goal.progressPercent"></div>
+            </div>
+            <div class="goal-meta">
+              <p>{{ formatCurrency(goal.remaining) }} remaining</p>
+              <p *ngIf="goal.etaLabel">{{ goal.etaLabel }}</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="trend-layout" *ngIf="dashboard.monthlySavings.length > 0">
+        <div class="trend-panel">
+          <div class="section-heading">
+            <h2>Monthly savings trend</h2>
+            <p>How your contributions have evolved over time</p>
           </div>
-          <p class="account-amount">{{ account.amount }}</p>
+
+          <div class="chart-shell">
+            <svg viewBox="0 0 640 220" class="chart-svg" preserveAspectRatio="none" aria-label="Monthly savings chart">
+              <line x1="24" y1="196" x2="616" y2="196" class="axis-line"></line>
+              <line x1="24" y1="24" x2="24" y2="196" class="axis-line"></line>
+              <polyline [attr.points]="chartPoints" class="trend-line"></polyline>
+              <circle
+                *ngFor="let item of dashboard.monthlySavings; let i = index"
+                [attr.cx]="24 + (dashboard.monthlySavings.length === 1 ? 0 : (i * ((640 - 48) / (dashboard.monthlySavings.length - 1))))"
+                [attr.cy]="196 - ((item.amount / (bestMonth?.amount || 1)) * (220 - 48))"
+                r="4"
+                class="trend-point">
+              </circle>
+            </svg>
+          </div>
+
+          <div class="chart-labels">
+            <span>{{ formatMonth(dashboard.monthlySavings[0].date) }}</span>
+            <span>{{ formatMonth(dashboard.monthlySavings[dashboard.monthlySavings.length - 1].date) }}</span>
+          </div>
         </div>
-      </div>
 
-      <div class="notes" *ngIf="dashboard.notes.length > 0">
-        <p class="notes-title">Notes</p>
+        <div class="table-panel">
+          <div class="section-heading">
+            <h2>Recent entries</h2>
+            <p>Month by month contributions</p>
+          </div>
+
+          <div class="entry-table">
+            <div class="entry-row entry-row-header">
+              <span>Month</span>
+              <span>Amount</span>
+            </div>
+            <div class="entry-row" *ngFor="let item of dashboard.monthlySavings">
+              <span>{{ formatMonth(item.date) }}</span>
+              <span>{{ formatCurrency(item.amount) }}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes" *ngIf="dashboard.notes.length > 0">
+        <div class="section-heading">
+          <h2>Notes</h2>
+        </div>
         <p class="note-line" *ngFor="let note of dashboard.notes">{{ note }}</p>
-      </div>
+      </section>
 
-      <p class="empty-state" *ngIf="dashboard.totals.length === 0 && dashboard.accounts.length === 0 && dashboard.notes.length === 0">
+      <p class="empty-state" *ngIf="goalCards.length === 0 && dashboard.monthlySavings.length === 0">
         Add `FINANCE_DASHBOARD_JSON` on the server to populate this dashboard.
       </p>
     </mat-card-content>

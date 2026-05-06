@@ -30,18 +30,32 @@ Example `FINANCE_DASHBOARD_JSON` value:
 
 ```json
 {
+  "title": "Savings Dashboard",
   "updatedAt": "2026-05-06",
-  "totals": [
-    { "label": "Net worth", "value": "EUR 123,456" },
-    { "label": "Cash", "value": "EUR 12,345" }
+  "averageMonthlyQuota": 174.22,
+  "goals": [
+    {
+      "name": "POM",
+      "current": 4638,
+      "target": 6000,
+      "etaMonths": 8,
+      "etaLabel": "Estimated in 8 months"
+    },
+    {
+      "name": "Car Fund",
+      "current": 0,
+      "target": 7000,
+      "etaMonths": 41,
+      "etaLabel": "Estimated in 3 years and 5 months"
+    }
   ],
-  "accounts": [
-    { "name": "Checking", "amount": "EUR 4,500", "note": "Main account" },
-    { "name": "Brokerage", "amount": "EUR 65,000", "note": "Long-term investing" }
+  "monthlySavings": [
+    { "date": "2026-03-01", "amount": 247.33 },
+    { "date": "2026-04-01", "amount": 54 },
+    { "date": "2026-05-01", "amount": 744 }
   ],
   "notes": [
-    "Update values monthly.",
-    "Keep sensitive details out of the client bundle."
+    "Update values monthly."
   ]
 }
 ```
