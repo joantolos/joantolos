@@ -45,61 +45,33 @@ The private finance area requires these environment variables:
 - `AUTH_USERNAME`
 - `AUTH_PASSWORD`
 - `AUTH_SESSION_SECRET`
-- `FINANCE_DASHBOARD_JSON` (optional)
+- `JSONBIN_API_KEY` — master key from jsonbin.io
+- `JSONBIN_BIN_ID` — ID of the bin that holds the dashboard JSON
+- `FINANCE_DASHBOARD_JSON` (optional, used locally as read-only sample data when the above are not set)
 
-Example `FINANCE_DASHBOARD_JSON` value:
+### JSONBin.io setup (one time)
 
-```json
-{
-  "title": "Savings Dashboard",
-  "updatedAt": "2026-05-06",
-  "totalSaved": 4638,
-  "averageMonthlyQuota": 174.22,
-  "goals": [
-    {
-      "name": "POM",
-      "current": 4638,
-      "target": 6000,
-      "etaMonths": 8,
-      "etaLabel": "Estimated in 8 months"
-    },
-    {
-      "name": "Car Fund",
-      "current": 0,
-      "target": 7000,
-      "etaMonths": 41,
-      "etaLabel": "Estimated in 3 years and 5 months"
-    }
-  ],
-  "monthlySavings": [
-    { "date": "2026-03-01", "amount": 247.33 },
-    { "date": "2026-04-01", "amount": 54 },
-    { "date": "2026-05-01", "amount": 744 }
-  ],
-  "notes": [
-    "Update values monthly."
-  ]
-}
-```
-
-### Persistence on Heroku
-
-The simplest durable storage on Heroku for this feature is Heroku Postgres.
-
-Provision it:
+1. Create a free account at [jsonbin.io](https://jsonbin.io).
+2. Go to **API Keys** and copy your **Master Key**.
+3. Create the bin with an empty dashboard:
 
 ```bash
-heroku addons:create heroku-postgresql:essential-0 -a <your-heroku-app-name>
+curl -X POST https://api.jsonbin.io/v3/b \
+  -H "Content-Type: application/json" \
+  -H "X-Master-Key: YOUR_MASTER_KEY" \
+  -H "X-Bin-Name: finance-dashboard" \
+  -H "X-Bin-Private: true" \
+  -d '{"title":"Savings Dashboard","updatedAt":null,"totalSaved":0,"averageMonthlyQuota":0,"goals":[],"monthlySavings":[],"notes":[]}'
 ```
 
-When `DATABASE_URL` is present, the app stores the finance dashboard in Postgres table `finance_dashboard` instead of relying on `FINANCE_DASHBOARD_JSON`.
+4. Copy the `id` from the response — that is your `JSONBIN_BIN_ID`.
+5. Set both values as Heroku config vars:
 
-The current code keeps `FINANCE_DASHBOARD_JSON` as a fallback and bootstrap source:
+```bash
+heroku config:set JSONBIN_API_KEY=your_master_key JSONBIN_BIN_ID=your_bin_id -a <your-heroku-app-name>
+```
 
-- If the table is empty, `GET /api/finance` returns the JSON env var content.
-- `PUT /api/finance` upserts the dashboard into Postgres row `id = 1`.
-
-After the first successful save into Postgres, you can remove `FINANCE_DASHBOARD_JSON`.
+Once set, all saves from the dashboard are persisted to the bin. If neither variable is present the app falls back to `FINANCE_DASHBOARD_JSON` (read-only).
 
 ## Code scaffolding
 
