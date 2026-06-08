@@ -14,6 +14,7 @@ import { StoreComponent } from './components/store/store.component';
 import { FinanceLoginComponent } from './components/finance-login/finance-login.component';
 import { FinanceComponent } from './components/finance/finance.component';
 import { AuthGuard } from './guards/auth.guard';
+import { ExtrasComponent } from './components/extras/extras.component';
 
 @NgModule({
   imports: [RouterModule.forRoot([
@@ -59,6 +60,10 @@ import { AuthGuard } from './guards/auth.guard';
       path: 'finance',
       component: FinanceComponent,
       canActivate: [AuthGuard]
+    },
+    {
+      path: 'extras',
+      component: ExtrasComponent
     },
     {
       path: 'about',

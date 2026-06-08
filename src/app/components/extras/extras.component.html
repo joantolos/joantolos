@@ -1,0 +1,112 @@
+<main class="extras-page">
+  <section class="extras-header">
+    <p class="eyebrow">Extraescolares</p>
+    <h1>Opciones curso 26-27</h1>
+  </section>
+
+  <section class="activities-grid" aria-label="Extraescolares disponibles">
+    <details class="activity-card" [ngClass]="'theme-' + activity.theme" *ngFor="let activity of activities">
+      <summary class="activity-header">
+        <div class="activity-title">
+          <input class="activity-selector" type="checkbox" [checked]="isSelected(activity)" [attr.aria-label]="'Seleccionar ' + activity.title" (change)="toggleSelection(activity, $event)" (click)="$event.stopPropagation()">
+          <h2>{{ activity.title }}</h2>
+        </div>
+        <span class="header-actions">
+          <span class="activity-emoji" aria-hidden="true">{{ activity.emoji }}</span>
+        </span>
+      </summary>
+
+      <div class="activity-details">
+        <div class="section-block" *ngIf="activity.testSlots">
+          <h3>Prueba</h3>
+          <p *ngFor="let slot of activity.testSlots">{{ slot }}</p>
+        </div>
+
+        <div class="section-block">
+          <h3>{{ activity.scheduleTitle }}</h3>
+          <p *ngFor="let schedule of activity.schedules">{{ schedule }}</p>
+        </div>
+
+        <div class="section-block price-block">
+          <h3>Precio</h3>
+          <p *ngFor="let price of activity.price" [class.total-price]="price.total">
+            <span>{{ price.label }}</span>
+            <span *ngIf="price.amount !== undefined">: {{ formatAmount(price.amount) }}</span>
+          </p>
+        </div>
+
+        <div class="section-block">
+          <h3>Otros datos</h3>
+          <ul>
+            <li *ngFor="let detail of activity.details">{{ detail }}</li>
+          </ul>
+        </div>
+
+        <div class="section-block" *ngIf="activity.organization">
+          <h3>Club</h3>
+          <p>{{ activity.organization }}</p>
+        </div>
+
+        <div class="section-block">
+          <h3>Contacto</h3>
+          <p *ngFor="let contact of activity.contact">{{ contact }}</p>
+        </div>
+
+        <div class="section-block" *ngIf="activity.location">
+          <h3>Lugar</h3>
+          <p *ngFor="let place of activity.location">{{ place }}</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section class="calendar-section" aria-label="Calendario semanal">
+    <h2 class="calendar-title">Calendario</h2>
+    <div class="calendar-scroll">
+      <table class="week-calendar">
+        <thead>
+          <tr>
+            <th scope="col">Hora</th>
+            <th scope="col" *ngFor="let day of weekDays">
+              <span class="day-short" aria-hidden="true">{{ day.short }}</span>
+              <span class="day-name">{{ day.name }}</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let time of timeSlots">
+            <th scope="row">{{ time }}</th>
+            <td *ngFor="let day of weekDays">
+              <ng-container *ngFor="let calendarActivity of getCalendarCells(day.key, time)">
+                <div class="calendar-event" [ngClass]="'event-' + calendarActivity.theme">
+                  <span *ngIf="isSlotStart(calendarActivity, day.key, time)">{{ calendarActivity.emoji }}</span>
+                </div>
+              </ng-container>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="prices-section" aria-label="Precios">
+    <h2 class="calendar-title">PRECIOS</h2>
+    <div class="price-columns">
+      <div class="price-summary">
+        <h3>Cuota anterior</h3>
+        <p class="total-price">Cuota mensual: 335</p>
+        <p>50-50: Joan 167 - Nuria 167</p>
+        <p>70-30: Joan 235 - Nuria 101</p>
+      </div>
+      <div class="price-summary">
+        <h3>Cuota nueva</h3>
+        <p>Base: {{ formatAmount(baseAnnualQuota) }}</p>
+        <p>Extraescolares: {{ formatAmount(getSelectedActivitiesTotal()) }}</p>
+        <p>Cuota total: {{ formatAmount(getNewAnnualQuota()) }}</p>
+        <p class="total-price">Cuota mensual: {{ formatAmount(getNewMonthlyQuota()) }}</p>
+        <p>50-50: Joan {{ formatAmount(getHalfMonthlyQuota()) }} - Nuria {{ formatAmount(getHalfMonthlyQuota()) }}</p>
+        <p>70-30: Joan {{ formatAmount(getMonthlyQuotaShare(70)) }} - Nuria {{ formatAmount(getMonthlyQuotaShare(30)) }}</p>
+      </div>
+    </div>
+  </section>
+</main>

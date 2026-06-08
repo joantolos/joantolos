@@ -36,6 +36,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { StoreComponent } from './components/store/store.component';
 import { FinanceLoginComponent } from './components/finance-login/finance-login.component';
 import { FinanceComponent } from './components/finance/finance.component';
+import { ExtrasComponent } from './components/extras/extras.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { FinanceComponent } from './components/finance/finance.component';
     SubmitFailure,
     StoreComponent,
     FinanceLoginComponent,
-    FinanceComponent
+    FinanceComponent,
+    ExtrasComponent
   ],
   imports: [
     BrowserModule,
