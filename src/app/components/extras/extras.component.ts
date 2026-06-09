@@ -2,11 +2,18 @@ import { Component } from '@angular/core';
 
 type ActivityTheme = 'adria' | 'olivia';
 type WeekDay = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday';
+type CalendarEventKind = 'activity' | 'commute';
 
 interface CalendarSlot {
   day: WeekDay;
   start: string;
   end: string;
+}
+
+interface CalendarEvent {
+  activity: ExtraActivity;
+  slot: CalendarSlot;
+  kind: CalendarEventKind;
 }
 
 interface PriceLine {
@@ -45,7 +52,7 @@ export class ExtrasComponent {
     { key: 'thursday' as WeekDay, short: 'J', name: 'Jueves' },
     { key: 'friday' as WeekDay, short: 'V', name: 'Viernes' }
   ];
-  timeSlots = ['16:30', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00'];
+  timeSlots = ['16:00', '17:00', '18:00', '19:00', '20:00', '21:00'];
   selectedActivityIds: Partial<Record<ActivityTheme, string>> = {};
   footballFixedPrices: PriceLine[] = [
     { label: 'Mutua de fútbol', amount: 55.18 },
@@ -58,7 +65,7 @@ export class ExtrasComponent {
   activities: ExtraActivity[] = [
     {
       id: 'adria-penya-blaugrana',
-      title: 'Adria Futbol Penya Blaugrana',
+      title: 'Futbol Penya Blaugrana',
       emoji: '⚽️',
       theme: 'adria',
       testSlots: [
@@ -85,7 +92,7 @@ export class ExtrasComponent {
     },
     {
       id: 'adria-torreta',
-      title: 'Adria Futbol Torreta',
+      title: 'Futbol Torreta',
       emoji: '⚽️',
       theme: 'adria',
       testSlots: [
@@ -108,7 +115,7 @@ export class ExtrasComponent {
     },
     {
       id: 'olivia-patinaje',
-      title: 'Olivia Patinaje',
+      title: 'Patinaje',
       emoji: '🛼',
       theme: 'olivia',
       testSlots: [
@@ -144,7 +151,7 @@ export class ExtrasComponent {
     },
     {
       id: 'olivia-gimnasia-artistica',
-      title: 'Olivia Gimnasia Artística',
+      title: 'Gimnasia Artística',
       emoji: '🤸🏼',
       theme: 'olivia',
       scheduleTitle: 'Horarios curso que viene',
@@ -169,7 +176,8 @@ export class ExtrasComponent {
       contact: [
         'Club Natacio Granollers Secció Gimnastica Artistica',
         'Carrer de Lluís Companys, 8',
-        'Elisabet Valle'
+        'Elisabet Valle',
+        'Teléfono: 938704599'
       ]
     }
   ];
@@ -205,25 +213,57 @@ export class ExtrasComponent {
     this.selectedActivityIds[activity.theme] = checked ? activity.id : undefined;
   }
 
-  getCalendarCells(day: WeekDay, time: string): ExtraActivity[] {
+  getCalendarEvents(day: WeekDay, time: string): CalendarEvent[] {
     return this.activities
       .filter((activity) => this.isSelected(activity))
-      .filter((activity) => activity.calendarSlots.some((slot) => this.isSlotVisible(slot, day, time)));
+      .flatMap((activity) => activity.calendarSlots
+        .flatMap((slot) => this.withCommuteEvents(activity, slot))
+        .filter((calendarEvent) => this.isSlotStart(calendarEvent.slot, day, time)));
   }
 
-  isSlotStart(activity: ExtraActivity, day: WeekDay, time: string): boolean {
-    return activity.calendarSlots.some((slot) => slot.day === day && this.toMinutes(time) <= this.toMinutes(slot.start) && this.toMinutes(slot.start) < this.toMinutes(time) + 30);
+  getCalendarEventStyle(slot: CalendarSlot, time: string): Record<string, string> {
+    const hourStart = this.toMinutes(time);
+    const top = (this.toMinutes(slot.start) - hourStart) / 60 * 100;
+    const height = (this.toMinutes(slot.end) - this.toMinutes(slot.start)) / 60 * 100;
+
+    return {
+      top: `${top}%`,
+      height: `${height}%`
+    };
   }
 
-  private isSlotVisible(slot: CalendarSlot, day: WeekDay, time: string): boolean {
-    const slotStart = this.toMinutes(time);
-    const slotEnd = slotStart + 30;
-    return slot.day === day && slotStart < this.toMinutes(slot.end) && slotEnd > this.toMinutes(slot.start);
+  private isSlotStart(slot: CalendarSlot, day: WeekDay, time: string): boolean {
+    return slot.day === day && this.toMinutes(time) <= this.toMinutes(slot.start) && this.toMinutes(slot.start) < this.toMinutes(time) + 60;
+  }
+
+  private withCommuteEvents(activity: ExtraActivity, slot: CalendarSlot): CalendarEvent[] {
+    const start = this.toMinutes(slot.start);
+    const end = this.toMinutes(slot.end);
+
+    return [
+      { activity, slot: this.withTimeRange(slot, start - 15, start), kind: 'commute' },
+      { activity, slot, kind: 'activity' },
+      { activity, slot: this.withTimeRange(slot, end, end + 15), kind: 'commute' }
+    ];
+  }
+
+  private withTimeRange(slot: CalendarSlot, start: number, end: number): CalendarSlot {
+    return {
+      day: slot.day,
+      start: this.toTime(start),
+      end: this.toTime(end)
+    };
   }
 
   private toMinutes(time: string): number {
     const [hours, minutes] = time.split(':').map(Number);
     return hours * 60 + minutes;
+  }
+
+  private toTime(minutes: number): string {
+    const hours = Math.floor(minutes / 60);
+    const remainder = minutes % 60;
+    return `${hours}:${remainder.toString().padStart(2, '0')}`;
   }
 
   formatAmount(amount: number): string {

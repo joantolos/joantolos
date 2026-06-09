@@ -77,9 +77,9 @@
           <tr *ngFor="let time of timeSlots">
             <th scope="row">{{ time }}</th>
             <td *ngFor="let day of weekDays">
-              <ng-container *ngFor="let calendarActivity of getCalendarCells(day.key, time)">
-                <div class="calendar-event" [ngClass]="'event-' + calendarActivity.theme">
-                  <span *ngIf="isSlotStart(calendarActivity, day.key, time)">{{ calendarActivity.emoji }}</span>
+              <ng-container *ngFor="let calendarEvent of getCalendarEvents(day.key, time)">
+                <div class="calendar-event" [ngClass]="calendarEvent.kind === 'commute' ? 'event-commute' : 'event-' + calendarEvent.activity.theme" [ngStyle]="getCalendarEventStyle(calendarEvent.slot, time)">
+                  <span *ngIf="calendarEvent.kind === 'activity'">{{ calendarEvent.activity.emoji }}</span>
                 </div>
               </ng-container>
             </td>
