@@ -59,8 +59,8 @@ export class ExtrasComponent {
     { label: 'Federación de fútbol', amount: 24.5 },
     { label: 'Revisión médica de fútbol', amount: 30 }
   ];
-  penyaBlaugranaPrice: PriceLine[] = this.withFootballTotal(585);
-  torretaPrice: PriceLine[] = this.withFootballTotal(470);
+  penyaBlaugranaPrice: PriceLine[] = this.withFootballTotal(585, 240);
+  torretaPrice: PriceLine[] = this.withFootballTotal(470, 80);
 
   activities: ExtraActivity[] = [
     {
@@ -86,7 +86,7 @@ export class ExtrasComponent {
       details: [
         'Categoria: 2a',
         'Hay equipación',
-        'Precio equipación: consultar'
+        'Precio equipación: 240'
       ],
       contact: ['Contacto Edgar: 690 04 13 40']
     },
@@ -279,11 +279,11 @@ export class ExtrasComponent {
     return [...lines, { label: 'Total', amount: total, total: true }];
   }
 
-  private withFootballTotal(cuota: number): PriceLine[] {
+  private withFootballTotal(cuota: number, equipacion: number): PriceLine[] {
     return this.withTotal([
       ...this.footballFixedPrices,
       { label: 'Cuota de fútbol', amount: cuota },
-      { label: 'Equipación de fútbol', amount: 80 }
+      { label: 'Equipación de fútbol', amount: equipacion }
     ]);
   }
 }
