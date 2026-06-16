@@ -151,7 +151,7 @@ export class ExtrasComponent {
     },
     {
       id: 'olivia-gimnasia-artistica',
-      title: 'Gimnasia Club Natació Granollers',
+      title: 'Gimnasia Club Natació',
       emoji: '🤸🏼',
       theme: 'olivia',
       scheduleTitle: 'Horarios curso que viene',
@@ -183,7 +183,7 @@ export class ExtrasComponent {
     },
     {
       id: 'olivia-gimnastica-dynasty-union',
-      title: 'Gimnastica Dynasty Union',
+      title: 'Gimnasia Dynasty Union',
       emoji: '🤸🏼',
       theme: 'olivia',
       scheduleTitle: 'Horarios curso que viene',
