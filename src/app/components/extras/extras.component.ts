@@ -28,13 +28,15 @@ interface ExtraActivity {
   emoji: string;
   theme: ActivityTheme;
   testSlots?: string[];
+  testSlotsTitle?: string;
   scheduleTitle?: string;
   schedules: string[];
   calendarSlots: CalendarSlot[];
   price: PriceLine[];
   details: string[];
   organization?: string;
-  contact: string[];
+  club?: string[];
+  contact?: string[];
   location?: string[];
 }
 
@@ -186,19 +188,33 @@ export class ExtrasComponent {
       title: 'Gimnasia Dynasty Union',
       emoji: '🤸🏼',
       theme: 'olivia',
-      scheduleTitle: 'Horarios curso que viene',
-      schedules: ['Por confirmar'],
-      calendarSlots: [],
+      testSlotsTitle: 'Días de puertas abiertas',
+      testSlots: [
+        '20 de Junio 17:30 a 20:00',
+        '2 de Julio 17:30 a 20:00'
+      ],
+      scheduleTitle: 'Horarios curso 26-27',
+      schedules: ['Lunes y Miércoles: 17:30-18:30'],
+      calendarSlots: [
+        { day: 'monday', start: '17:30', end: '18:30' },
+        { day: 'wednesday', start: '17:30', end: '18:30' }
+      ],
       price: [
-        { label: 'Total', amount: 0, total: true }
+        { label: 'Cuota mensual', amount: 65 },
+        { label: 'Cuota', amount: 715 },
+        { label: 'Matrícula', amount: 65 },
+        { label: 'Seguro: 35 + 35' },
+        { label: 'Equipación', amount: 165 },
+        { label: 'Total', amount: 1015, total: true }
       ],
       details: [
-        'Por confirmar'
+        'Findes libres',
+        'Uniforme: Top, Short, Coletero, Sudadera personalizada, Pantalón chándal, Mochila'
       ],
-      contact: [
+      club: [
         'Dinasty Union ESCOLA DE CAMPIONS',
         'Carrer Gran Bretanya, 13, 08520 Barcelona',
-        'Telefono: 656 94 18 77',
+        'Telefono: 656941877',
         'Abre: 17:30'
       ]
     }

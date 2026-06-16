@@ -18,7 +18,7 @@
 
       <div class="activity-details">
         <div class="section-block" *ngIf="activity.testSlots">
-          <h3>Prueba</h3>
+          <h3>{{ activity.testSlotsTitle || 'Prueba' }}</h3>
           <p *ngFor="let slot of activity.testSlots">{{ slot }}</p>
         </div>
 
@@ -47,7 +47,12 @@
           <p>{{ activity.organization }}</p>
         </div>
 
-        <div class="section-block">
+        <div class="section-block" *ngIf="activity.club">
+          <h3>Club</h3>
+          <p *ngFor="let clubLine of activity.club">{{ clubLine }}</p>
+        </div>
+
+        <div class="section-block" *ngIf="activity.contact">
           <h3>Contacto</h3>
           <p *ngFor="let contact of activity.contact">{{ contact }}</p>
         </div>
