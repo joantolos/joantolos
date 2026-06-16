@@ -151,7 +151,7 @@ export class ExtrasComponent {
     },
     {
       id: 'olivia-gimnasia-artistica',
-      title: 'Gimnasia Artística',
+      title: 'Gimnasia Club Natació Granollers',
       emoji: '🤸🏼',
       theme: 'olivia',
       scheduleTitle: 'Horarios curso que viene',
