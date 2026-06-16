@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="https://feeds.buzzsprout.com/styles.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<!-- length = bitrate x seconds -->
+<!-- default bitrate: 12110 -->
+<channel>
+  <!--<atom:link href="https://feeds.buzzsprout.com/1758642.rss" rel="self" type="application/rss+xml" />-->
+  <atom:link href="https://www.joantolos.com/podcast-feed" rel="self" type="application/rss+xml" />
+  <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" xmlns="http://www.w3.org/2005/Atom" />
+  <title>Nada nuevo bajo el sol</title>
+  <lastBuildDate>Tue, 11 Jul 2023 01:09:56 -0400</lastBuildDate>
+  <link>http://www.nadanuevobajoelsol.com</link>
+  <language>es</language>
+  <copyright>© 2023 Joan Tolós</copyright>
+  <podcast:locked>yes</podcast:locked>
+    <podcast:guid>88cb8c27-8560-58d3-a495-3d149aac9f32</podcast:guid>
+    <itunes:author>Joan Tolós López</itunes:author>
+  <itunes:type>episodic</itunes:type>
+  <itunes:explicit>false</itunes:explicit>
+  <description><![CDATA[Programación, tecnología, libros... Participa en el día a día de un desarrollador de software.]]></description>
+  <itunes:owner>
+    <itunes:name>Joan Tolós López</itunes:name>
+    <itunes:email>joan.tolos@gmail.com</itunes:email>
+  </itunes:owner>
+  <image>
+     <url>https://www.joantolos.com/assets/podcast/cover.jpg</url>
+     <title>Nada nuevo bajo el sol</title>
+     <link>http://www.nadanuevobajoelsol.com</link>
+  </image>
+  <itunes:image href="https://www.joantolos.com/assets/podcast/cover.jpg" />
+  <itunes:category text="Technology" />
+  <item>
+    <itunes:title>Ep.111: Fundamentos de programación orientada a objetos</itunes:title>
+    <title>Ep.111: Fundamentos de programación orientada a objetos</title>
+    <description><![CDATA[<p>En este episodio, exploramos a fondo el concepto fundamental de "Encapsulación" dentro del paradigma de programación orientada a objetos. Intentaremos desentrañar las capas de este principio clave, que implica encapsular datos y métodos en un solo componente, proporcionando así una interfaz clara y protegiendo la integridad de la información. A través de un ejemplo práctico y analogías sencillas, desmitificamos la encapsulación y destacamos su importancia en la creación de código modular, mantenible y eficiente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, exploramos a fondo el concepto fundamental de "Encapsulación" dentro del paradigma de programación orientada a objetos. Intentaremos desentrañar las capas de este principio clave, que implica encapsular datos y métodos en un solo componente, proporcionando así una interfaz clara y protegiendo la integridad de la información. A través de un ejemplo práctico y analogías sencillas, desmitificamos la encapsulación y destacamos su importancia en la creación de código modular, mantenible y eficiente.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, exploramos a fondo el concepto fundamental de "Encapsulación" dentro del paradigma de programación orientada a objetos. Intentaremos desentrañar las capas de este principio clave, que implica encapsular datos y métodos en un solo componente, proporcionando así una interfaz clara y protegiendo la integridad de la información. A través de un ejemplo práctico y analogías sencillas, desmitificamos la encapsulación y destacamos su importancia en la creación de código modular, mantenible y eficiente.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-111-fundamentos-de-programacion-orientada-a-objetos.mp3" length="12182660" type="audio/mpeg" />
+    <video>https://youtu.be/aGiRtxOmScE</video>
+    <videoId>aGiRtxOmScE</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-111-fundamentos-de-programacion-orientada-a-objetos</guid>
+    <pubDate>Wed, 31 Jan 2024 08:00:00 +0200</pubDate>
+    <itunes:duration>1006</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>111</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.110: Simulador luces de tráfico</itunes:title>
+    <title>Ep.110: Simulador luces de tráfico</title>
+    <description><![CDATA[<p>En este episodio, te voy a mostrar cómo he implementado el comportamiento de las luces de dos semáforos usando HTML, CSS y Javascript. Verás cómo he creado el código HTML para definir la estructura de los semáforos, el código CSS para darles estilo y color, y el código Javascript para controlar el cambio de luces y la sincronización entre los semáforos. También te explicaré los conceptos básicos de HTML, CSS y Javascript, y cómo se pueden usar para crear animaciones interactivas en la web. Si quieres aprender más sobre este proyecto, puedes ver el código fuente y el resultado final en los siguientes enlaces: https://github.com/joantolos/traffic-lights y https://joantolos.github.io/traffic-lights/. Espero que te guste este episodio y que te sirva de inspiración para tus propios proyectos de programación web. ¡Hasta la próxima!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, te voy a mostrar cómo he implementado el comportamiento de las luces de dos semáforos usando HTML, CSS y Javascript. Verás cómo he creado el código HTML para definir la estructura de los semáforos, el código CSS para darles estilo y color, y el código Javascript para controlar el cambio de luces y la sincronización entre los semáforos. También te explicaré los conceptos básicos de HTML, CSS y Javascript, y cómo se pueden usar para crear animaciones interactivas en la web. Si quieres aprender más sobre este proyecto, puedes ver el código fuente y el resultado final en los siguientes enlaces: https://github.com/joantolos/traffic-lights y https://joantolos.github.io/traffic-lights/. Espero que te guste este episodio y que te sirva de inspiración para tus propios proyectos de programación web. ¡Hasta la próxima!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, te voy a mostrar cómo he implementado el comportamiento de las luces de dos semáforos usando HTML, CSS y Javascript. Verás cómo he creado el código HTML para definir la estructura de los semáforos, el código CSS para darles estilo y color, y el código Javascript para controlar el cambio de luces y la sincronización entre los semáforos. También te explicaré los conceptos básicos de HTML, CSS y Javascript, y cómo se pueden usar para crear animaciones interactivas en la web. Si quieres aprender más sobre este proyecto, puedes ver el código fuente y el resultado final en los siguientes enlaces: https://github.com/joantolos/traffic-lights y https://joantolos.github.io/traffic-lights/. Espero que te guste este episodio y que te sirva de inspiración para tus propios proyectos de programación web. ¡Hasta la próxima!</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-110-simulador-luces-de-trafico.mp3" length="22100750" type="audio/mpeg" />
+    <video>https://youtu.be/oibjxrfRiNg</video>
+    <videoId>oibjxrfRiNg</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-110-simulador-luces-de-trafico</guid>
+    <pubDate>Wed, 6 Dec 2023 08:00:00 +0200</pubDate>
+    <itunes:duration>1825</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>110</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.107: ChatGPT resuelve pruebas técnicas</itunes:title>
+    <title>Ep.107: ChatGPT resuelve pruebas técnicas</title>
+    <description><![CDATA[<p>En este nuevo episodio, utilizo la asombrosa capacidad de ChatGPT para resolver pruebas técnicas. En esta ocasión, me enfrento nuevamente a dos desafíos clásicos: FizzBuzz en Javascript y el balanceo de un árbol binario en Java. A medida que navegamos por los detalles de cada problema, exploramos diferentes enfoques y estrategias para abordarlos. A través de la inteligencia artificial de ChatGPT, logro resolverlos de manera eficiente y efectiva.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este nuevo episodio, utilizo la asombrosa capacidad de ChatGPT para resolver pruebas técnicas. En esta ocasión, me enfrento nuevamente a dos desafíos clásicos: FizzBuzz en Javascript y el balanceo de un árbol binario en Java. A medida que navegamos por los detalles de cada problema, exploramos diferentes enfoques y estrategias para abordarlos. A través de la inteligencia artificial de ChatGPT, logro resolverlos de manera eficiente y efectiva.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>CaCAEn este nuevo episodio, utilizo la asombrosa capacidad de ChatGPT para resolver pruebas técnicas. En esta ocasión, me enfrento nuevamente a dos desafíos clásicos: FizzBuzz en Javascript y el balanceo de un árbol binario en Java. A medida que navegamos por los detalles de cada problema, exploramos diferentes enfoques y estrategias para abordarlos. A través de la inteligencia artificial de ChatGPT, logro resolverlos de manera eficiente y efectiva.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-107-chatgpt-resuelve-pruebas-tecnicas.mp3" length="12338771" type="audio/mpeg" />
+    <video>https://youtu.be/4nMWG83TsMA</video>
+    <videoId>4nMWG83TsMA</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-107-chatgpt-resuelve-pruebas-tecnicas</guid>
+    <pubDate>Wed, 22 Feb 2023 08:00:00 +0100</pubDate>
+    <itunes:duration>1023</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>107</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.105: Que es un ETL</itunes:title>
+    <title>Ep.105: Que es un ETL</title>
+    <description><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo del ETL (Extract, Transform, Load), un proceso fundamental en el ámbito de la gestión de datos. A medida que exploramos cada una de las fases del ETL, desde la extracción de datos de diversas fuentes hasta su transformación y finalmente su carga en un datawarehouse, desglosamos de manera clara y concisa los conceptos clave y las mejores prácticas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo del ETL (Extract, Transform, Load), un proceso fundamental en el ámbito de la gestión de datos. A medida que exploramos cada una de las fases del ETL, desde la extracción de datos de diversas fuentes hasta su transformación y finalmente su carga en un datawarehouse, desglosamos de manera clara y concisa los conceptos clave y las mejores prácticas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo del ETL (Extract, Transform, Load), un proceso fundamental en el ámbito de la gestión de datos. A medida que exploramos cada una de las fases del ETL, desde la extracción de datos de diversas fuentes hasta su transformación y finalmente su carga en un datawarehouse, desglosamos de manera clara y concisa los conceptos clave y las mejores prácticas.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-105-que-es-un-etl.mp3" length="8887110" type="audio/mpeg" />
+    <video>https://youtu.be/iWtzMpqnrFM</video>
+    <videoId>iWtzMpqnrFM</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-105-que-es-un-etl</guid>
+    <pubDate>Wed, 01 Feb 2023 08:00:00 +0100</pubDate>
+    <itunes:duration>736</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>105</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.101: El caso de Twitter</itunes:title>
+    <title>Ep.101: El caso de Twitter</title>
+    <description><![CDATA[<p>En este episodio del podcast, nos adentramos en el apasionante debate que ha surgido en torno al reciente cambio de dirección de Twitter. Exploramos en detalle las decisiones y políticas implementadas por la plataforma de redes sociales y su impacto en los usuarios, después que Elon Musk tomara las riendas de la compañía.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio del podcast, nos adentramos en el apasionante debate que ha surgido en torno al reciente cambio de dirección de Twitter. Exploramos en detalle las decisiones y políticas implementadas por la plataforma de redes sociales y su impacto en los usuarios, después que Elon Musk tomara las riendas de la compañía.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio del podcast, nos adentramos en el apasionante debate que ha surgido en torno al reciente cambio de dirección de Twitter. Exploramos en detalle las decisiones y políticas implementadas por la plataforma de redes sociales y su impacto en los usuarios, después que Elon Musk tomara las riendas de la compañía.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-101-el-caso-de-twitter.mp3" length="20840011" type="audio/mpeg" />
+    <video>https://youtu.be/J-6mB4tozk4</video>
+    <videoId>J-6mB4tozk4</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-101-el-caso-de-twitter</guid>
+    <pubDate>Wed, 30 Nov 2022 08:00:00 +0100</pubDate>
+    <itunes:duration>1732</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>101</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.100: Hazte contratable</itunes:title>
+    <title>Ep.100: Hazte contratable</title>
+    <description><![CDATA[<p>En este episodio del podcast, desbloqueamos los secretos para destacar y aumentar tus posibilidades de conseguir ese trabajo deseado. A través de una serie de consejos prácticos y estrategias efectivas, exploro cómo maximizar tu atractivo como candidato durante el proceso de entrevistas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio del podcast, desbloqueamos los secretos para destacar y aumentar tus posibilidades de conseguir ese trabajo deseado. A través de una serie de consejos prácticos y estrategias efectivas, exploro cómo maximizar tu atractivo como candidato durante el proceso de entrevistas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio del podcast, desbloqueamos los secretos para destacar y aumentar tus posibilidades de conseguir ese trabajo deseado. A través de una serie de consejos prácticos y estrategias efectivas, exploro cómo maximizar tu atractivo como candidato durante el proceso de entrevistas.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-100-hazte-contratable.mp3" length="14585061" type="audio/mpeg" />
+    <video>https://youtu.be/hSeIaaBEvwQ</video>
+    <videoId>hSeIaaBEvwQ</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-100-hazte-contratable</guid>
+    <pubDate>Wed, 23 Nov 2022 08:00:00 +0100</pubDate>
+    <itunes:duration>1210</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>100</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.99: Diseño de circuito digital online</itunes:title>
+    <title>Ep.99: Diseño de circuito digital online</title>
+    <description><![CDATA[<p>En este episodio de nuestro podcast, te adentrarás en el apasionante mundo de los circuitos digitales y descubrirás cómo diseñarlos de manera sencilla y efectiva utilizando la herramienta CircuitVerse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio de nuestro podcast, te adentrarás en el apasionante mundo de los circuitos digitales y descubrirás cómo diseñarlos de manera sencilla y efectiva utilizando la herramienta CircuitVerse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio de nuestro podcast, te adentrarás en el apasionante mundo de los circuitos digitales y descubrirás cómo diseñarlos de manera sencilla y efectiva utilizando la herramienta CircuitVerse.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-99-diseno-de-circuito-digital-online.mp3" length="11605899" type="audio/mpeg" />
+    <video>https://youtu.be/E48z0j9zrG4</video>
+    <videoId>E48z0j9zrG4</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-99-diseno-de-circuito-digital-online</guid>
+    <pubDate>Tue, 15 Nov 2022 17:00:00 +0100</pubDate>
+    <itunes:duration>962</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>99</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.98: De JSON a Gráfico</itunes:title>
+    <title>Ep.98: De JSON a Gráfico</title>
+    <description><![CDATA[<p>En este episodio, exploramos un mundo de posibilidades a través de diversas APIs gratuitas que están a disposición de desarrolladores y entusiastas. Descubrimos cómo estas interfaces permiten acceder a una gran cantidad de datos y funcionalidades para potenciar nuestras aplicaciones. Además, te presentaré en detalle la herramienta JSON Crack, una poderosa opción para representar de manera gráfica los datos en formato JSON. Como ejemplo práctico, te mostraré cómo utilizar una de las APIs para obtener información climática en tiempo real y, a través de JSON Crack, visualizarla de forma amigable. Prepárate para sumergirte en el fascinante mundo de las APIs y cómo aprovecharlas para llevar tus proyectos al siguiente nivel.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, exploramos un mundo de posibilidades a través de diversas APIs gratuitas que están a disposición de desarrolladores y entusiastas. Descubrimos cómo estas interfaces permiten acceder a una gran cantidad de datos y funcionalidades para potenciar nuestras aplicaciones. Además, te presentaré en detalle la herramienta JSON Crack, una poderosa opción para representar de manera gráfica los datos en formato JSON. Como ejemplo práctico, te mostraré cómo utilizar una de las APIs para obtener información climática en tiempo real y, a través de JSON Crack, visualizarla de forma amigable. Prepárate para sumergirte en el fascinante mundo de las APIs y cómo aprovecharlas para llevar tus proyectos al siguiente nivel.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, exploramos un mundo de posibilidades a través de diversas APIs gratuitas que están a disposición de desarrolladores y entusiastas. Descubrimos cómo estas interfaces permiten acceder a una gran cantidad de datos y funcionalidades para potenciar nuestras aplicaciones. Además, te presentaré en detalle la herramienta JSON Crack, una poderosa opción para representar de manera gráfica los datos en formato JSON. Como ejemplo práctico, te mostraré cómo utilizar una de las APIs para obtener información climática en tiempo real y, a través de JSON Crack, visualizarla de forma amigable. Prepárate para sumergirte en el fascinante mundo de las APIs y cómo aprovecharlas para llevar tus proyectos al siguiente nivel.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-98-de-json-a-grafico.mp3" length="14225823" type="audio/mpeg" />
+    <video>https://youtu.be/UGLeBsfOTEo</video>
+    <videoId>UGLeBsfOTEo</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-98-de-json-a-grafico</guid>
+    <pubDate>Tue, 20 Sep 2022 08:00:00 +0200</pubDate>
+    <itunes:duration>1181</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>98</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.97: Tail recursion</itunes:title>
+    <title>Ep.97: Tail recursion</title>
+    <description><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo de la "tail recursion". Exploraremos a fondo qué es la tail recursion y cómo se diferencia de la recursión tradicional. Para ilustrar su funcionamiento, presento un ejemplo práctico en JavaScript. A través de este ejemplo, podemos entender cómo la tail recursion optimiza el uso de la pila de llamadas, evitando desbordamientos en problemas con grandes conjuntos de datos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo de la "tail recursion". Exploraremos a fondo qué es la tail recursion y cómo se diferencia de la recursión tradicional. Para ilustrar su funcionamiento, presento un ejemplo práctico en JavaScript. A través de este ejemplo, podemos entender cómo la tail recursion optimiza el uso de la pila de llamadas, evitando desbordamientos en problemas con grandes conjuntos de datos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio nos adentramos en el fascinante mundo de la "tail recursion". Exploraremos a fondo qué es la tail recursion y cómo se diferencia de la recursión tradicional. Para ilustrar su funcionamiento, presento un ejemplo práctico en JavaScript. A través de este ejemplo, podemos entender cómo la tail recursion optimiza el uso de la pila de llamadas, evitando desbordamientos en problemas con grandes conjuntos de datos.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-97-tail-recursion.mp3" length="17227286" type="audio/mpeg" />
+    <video>https://youtu.be/RM5E4IhrWWc</video>
+    <videoId>RM5E4IhrWWc</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-97-tail-recursion</guid>
+    <pubDate>Wed, 24 Aug 2022 08:00:00 +0200</pubDate>
+    <itunes:duration>1431</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>97</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.95: Éxito sin pasar por la universidad: La historia de Paul Lutus</itunes:title>
+    <title>Ep.95: Éxito sin pasar por la universidad: La historia de Paul Lutus</title>
+    <description><![CDATA[<p>En este episodio del podcast, nos sumergimos en la fascinante vida profesional de Paul Lutus, un verdadero pionero e innovador en el mundo del software. Acompáñame mientras trazo el increíble viaje de este visionario por accidente, desde sus humildes comienzos hasta convertirse en una figura influyente en la industria tecnológica. Todo ello sin pasar por la universidad ni tener ningún tipo de formación reglada.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio del podcast, nos sumergimos en la fascinante vida profesional de Paul Lutus, un verdadero pionero e innovador en el mundo del software. Acompáñame mientras trazo el increíble viaje de este visionario por accidente, desde sus humildes comienzos hasta convertirse en una figura influyente en la industria tecnológica. Todo ello sin pasar por la universidad ni tener ningún tipo de formación reglada.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio del podcast, nos sumergimos en la fascinante vida profesional de Paul Lutus, un verdadero pionero e innovador en el mundo del software. Acompáñame mientras trazo el increíble viaje de este visionario por accidente, desde sus humildes comienzos hasta convertirse en una figura influyente en la industria tecnológica. Todo ello sin pasar por la universidad ni tener ningún tipo de formación reglada.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-95-exito-sin-pasar-por-la-universidad-la-historia-de-paul-lutus.mp3" length="22113743" type="audio/mpeg" />
+    <video>https://youtu.be/mEtlWkI7pPE</video>
+    <videoVisible>true</videoVisible>
+    <videoId>mEtlWkI7pPE</videoId>
+    <guid isPermaLink="false">ep-95-exito-sin-pasar-por-la-universidad-la-historia-de-paul-lutus</guid>
+    <pubDate>Wed, 10 Aug 2022 00:00:00 +0200</pubDate>
+    <itunes:duration>1838</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>95</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.94: Binary Search</itunes:title>
+    <title>Ep.94: Binary Search</title>
+    <description><![CDATA[<p>Descubre el funcionamiento del algoritmo de "Binary Search". Exploro paso a paso cómo esta técnica de búsqueda permite encontrar un elemento en una lista ordenada de manera eficiente. No solo hablo de teoría, sino que también te guiaré a través de una implementación práctica utilizando el lenguaje de programación Java. Aprenderás cómo este algoritmo puede marcar la diferencia en la optimización de búsquedas en tus propios proyectos de desarrollo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Descubre el funcionamiento del algoritmo de "Binary Search". Exploro paso a paso cómo esta técnica de búsqueda permite encontrar un elemento en una lista ordenada de manera eficiente. No solo hablo de teoría, sino que también te guiaré a través de una implementación práctica utilizando el lenguaje de programación Java. Aprenderás cómo este algoritmo puede marcar la diferencia en la optimización de búsquedas en tus propios proyectos de desarrollo.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Descubre el funcionamiento del algoritmo de "Binary Search". Exploro paso a paso cómo esta técnica de búsqueda permite encontrar un elemento en una lista ordenada de manera eficiente. No solo hablo de teoría, sino que también te guiaré a través de una implementación práctica utilizando el lenguaje de programación Java. Aprenderás cómo este algoritmo puede marcar la diferencia en la optimización de búsquedas en tus propios proyectos de desarrollo.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-94-binary-search.mp3" length="18059859" type="audio/mpeg" />
+    <video>https://youtu.be/gFKuSMQZNcM</video>
+    <videoId>gFKuSMQZNcM</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-94-binary-search</guid>
+    <pubDate>Wed, 03 Aug 2022 08:00:00 +0200</pubDate>
+    <itunes:duration>1500</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>94</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.90: Entendiendo los frameworks</itunes:title>
+    <title>Ep.90: Entendiendo los frameworks</title>
+    <description><![CDATA[<p>En este episodio nos adentramos en el mundo de los frameworks de programación y las motivaciones detrás de su existencia. ¿Por qué tantos programadores y desarrolladores recurren a estos conjuntos de herramientas predefinidas? ¿Qué problemas intentan resolver?</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio nos adentramos en el mundo de los frameworks de programación y las motivaciones detrás de su existencia. ¿Por qué tantos programadores y desarrolladores recurren a estos conjuntos de herramientas predefinidas? ¿Qué problemas intentan resolver?</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio nos adentramos en el mundo de los frameworks de programación y las motivaciones detrás de su existencia. ¿Por qué tantos programadores y desarrolladores recurren a estos conjuntos de herramientas predefinidas? ¿Qué problemas intentan resolver?.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-90-entendiendo-los-frameworks.mp3" length="11913586" type="audio/mpeg" />
+    <video>https://youtu.be/wA_XHuKepao</video>
+    <videoId>wA_XHuKepao</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-90-entendiendo-los-frameworks</guid>
+    <pubDate>Wed, 01 Jun 2022 08:00:00 +0200</pubDate>
+    <itunes:duration>988</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>90</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.88: Las mejores películas y series sobre programación</itunes:title>
+    <title>Ep.88: Las mejores películas y series sobre programación</title>
+    <description><![CDATA[<p>En este episodio nos vamos al apasionante mundo de la programación a través del cine y la televisión. Vamos a sumergirnos en las mejores películas y series que han abordado el tema de la programación y la tecnología.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio nos vamos al apasionante mundo de la programación a través del cine y la televisión. Vamos a sumergirnos en las mejores películas y series que han abordado el tema de la programación y la tecnología.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio nos vamos al apasionante mundo de la programación a través del cine y la televisión. Vamos a sumergirnos en las mejores películas y series que han abordado el tema de la programación y la tecnología.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-88-las-mejores-peliculas-y-series-sobre-programacion.mp3" length="9453002" type="audio/mpeg" />
+    <video>https://youtu.be/TiTmFUs5VzI</video>
+    <videoId>TiTmFUs5VzI</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-88-las-mejores-peliculas-y-series-sobre-programacion</guid>
+    <pubDate>Wed, 04 May 2022 00:00:00 +0200</pubDate>
+    <itunes:duration>783</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>88</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep. 86: Java Records</itunes:title>
+    <title>Ep. 86: Java Records</title>
+    <description><![CDATA[<p>En este episodio nos sumergimos en el mundo de la programación en Java y exploramos una estructura de datos interesante: los "records" introducidos en Java 14. Vamos a adentrarnos en qué son los records, cómo funcionan y por qué son tan útiles en el desarrollo de software.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio nos sumergimos en el mundo de la programación en Java y exploramos una estructura de datos interesante: los "records" introducidos en Java 14. Vamos a adentrarnos en qué son los records, cómo funcionan y por qué son tan útiles en el desarrollo de software.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio nos sumergimos en el mundo de la programación en Java y exploramos una estructura de datos interesante: los "records" introducidos en Java 14. Vamos a adentrarnos en qué son los records, cómo funcionan y por qué son tan útiles en el desarrollo de software.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-86-java-records.mp3" length="13535869" type="audio/mpeg" />
+    <video>https://youtu.be/ZLp5C4i9qr0</video>
+    <videoId>ZLp5C4i9qr0</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-86-java-records</guid>
+    <pubDate>Wed, 13 Apr 2022 00:00:00 +0200</pubDate>
+    <itunes:duration>1123</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>86</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.85: SCRUM: Estimaciones (o la bola de cristal)</itunes:title>
+    <title>Ep.85: SCRUM: Estimaciones (o la bola de cristal)</title>
+    <description><![CDATA[<p>En este episodio, nos sumergimos en el mundo de Scrum y exploramos uno de los aspectos más cruciales a la vez que polémicos: las estimaciones. Descubriremos cómo el framework Scrum utiliza técnicas de estimación para planificar y ejecutar proyectos de manera eficiente. También como pueden llegar entorpecer el buen funcionamento del proyecto.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, nos sumergimos en el mundo de Scrum y exploramos uno de los aspectos más cruciales a la vez que polémicos: las estimaciones. Descubriremos cómo el framework Scrum utiliza técnicas de estimación para planificar y ejecutar proyectos de manera eficiente. También como pueden llegar entorpecer el buen funcionamento del proyecto.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, nos sumergimos en el mundo de Scrum y exploramos uno de los aspectos más cruciales a la vez que polémicos: las estimaciones. Descubriremos cómo el framework Scrum utiliza técnicas de estimación para planificar y ejecutar proyectos de manera eficiente. También como pueden llegar entorpecer el buen funcionamento del proyecto.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-85-scrum-estimaciones-o-la-bola-de-cristal.mp3" length="7508605" type="audio/mpeg" />
+    <video>https://youtu.be/VxlKdpeWoI0</video>
+    <videoId>VxlKdpeWoI0</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-85-scrum-estimaciones-o-la-bola-de-cristal</guid>
+    <pubDate>Thu, 17 Mar 2022 11:00:00 +0100</pubDate>
+    <itunes:duration>621</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>85</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.82: Probando GitHub Copilot</itunes:title>
+    <title>Ep.82: Probando GitHub Copilot</title>
+    <description><![CDATA[<p>En este episodio, te llevaré a través de una emocionante exploración de cómo funciona GitHub Copilot, una innovadora herramienta desarrollada en colaboración entre GitHub y OpenAI. Aprenderemos cómo esta herramienta de inteligencia artificial puede revolucionar la forma en que escribimos código.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, te llevaré a través de una emocionante exploración de cómo funciona GitHub Copilot, una innovadora herramienta desarrollada en colaboración entre GitHub y OpenAI. Aprenderemos cómo esta herramienta de inteligencia artificial puede revolucionar la forma en que escribimos código.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, te llevaré a través de una emocionante exploración de cómo funciona GitHub Copilot, una innovadora herramienta desarrollada en colaboración entre GitHub y OpenAI. Aprenderemos cómo esta herramienta de inteligencia artificial puede revolucionar la forma en que escribimos código.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-82-probando-github-copilot.mp3" length="12152549" type="audio/mpeg" />
+    <video>https://youtu.be/i-MNdhEyBtE</video>
+    <videoId>i-MNdhEyBtE</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-82-probando-github-copilot</guid>
+    <pubDate>Wed, 16 Feb 2022 00:00:00 +0100</pubDate>
+    <itunes:duration>1008</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.81: Lenguajes esotéricos</itunes:title>
+    <title>Ep.81: Lenguajes esotéricos</title>
+    <description><![CDATA[<p>Existe una comunidad de programadores, pequeña pero muy activa, que se dedica a crear lenguajes de programacion esotericos. En este episodio exploro algunos de ellos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Existe una comunidad de programadores, pequeña pero muy activa, que se dedica a crear lenguajes de programacion esotericos. En este episodio exploro algunos de ellos.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Existe una comunidad de programadores, pequeña pero muy activa, que se dedica a crear lenguajes de programacion esotericos. En este episodio exploro algunos de ellos.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-81-lenguajes-esotericos.mp3" length="17512869" type="audio/mpeg" />
+    <video>https://youtu.be/pUphGrocuCE</video>
+    <videoId>pUphGrocuCE</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-81-lenguajes-esotericos</guid>
+    <pubDate>Wed, 09 Feb 2022 08:00:00 +0100</pubDate>
+    <itunes:duration>1454</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>81</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.78: Invertir un arbol binario en Java</itunes:title>
+    <title>Ep.78: Invertir un arbol binario en Java</title>
+    <description><![CDATA[<p>En este episodio, te guiaré a través del proceso de invertir un árbol binario en el lenguaje de programación Java. La inversión de un árbol binario implica cambiar las relaciones entre los nodos de manera que el nodo raíz se convierta en la hoja más a la izquierda, y viceversa.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, te guiaré a través del proceso de invertir un árbol binario en el lenguaje de programación Java. La inversión de un árbol binario implica cambiar las relaciones entre los nodos de manera que el nodo raíz se convierta en la hoja más a la izquierda, y viceversa.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, te guiaré a través del proceso de invertir un árbol binario en el lenguaje de programación Java. La inversión de un árbol binario implica cambiar las relaciones entre los nodos de manera que el nodo raíz se convierta en la hoja más a la izquierda, y viceversa.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-78-invertir-un-arbol-binario-en-java.mp3" length="19478662" type="audio/mpeg" />
+    <video>https://youtu.be/iV8TGVY3kN4</video>
+    <videoId>iV8TGVY3kN4</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-78-invertir-un-arbol-binario-en-java</guid>
+    <pubDate>Wed, 19 Jan 2022 08:00:00 +0100</pubDate>
+    <itunes:duration>1618</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>78</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.76: FizzBuzz en JavaScript con TDD</itunes:title>
+    <title>Ep.76: FizzBuzz en JavaScript con TDD</title>
+    <description><![CDATA[<p>En este episodio práctico de nuestro podcast, te llevaré a través de la resolución de la popular kata FizzBuzz utilizando JavaScript. La kata FizzBuzz es un ejercicio clásico de programación que te desafía a imprimir una serie de números, pero con un giro: cuando un número es divisible por 3, debes imprimir "Fizz"; cuando es divisible por 5, debes imprimir "Buzz"; y cuando es divisible por ambos, debes imprimir "FizzBuzz".</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio práctico de nuestro podcast, te llevaré a través de la resolución de la popular kata FizzBuzz utilizando JavaScript. La kata FizzBuzz es un ejercicio clásico de programación que te desafía a imprimir una serie de números, pero con un giro: cuando un número es divisible por 3, debes imprimir "Fizz"; cuando es divisible por 5, debes imprimir "Buzz"; y cuando es divisible por ambos, debes imprimir "FizzBuzz".</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio práctico de nuestro podcast, te llevaré a través de la resolución de la popular kata FizzBuzz utilizando JavaScript. La kata FizzBuzz es un ejercicio clásico de programación que te desafía a imprimir una serie de números, pero con un giro: cuando un número es divisible por 3, debes imprimir "Fizz"; cuando es divisible por 5, debes imprimir "Buzz"; y cuando es divisible por ambos, debes imprimir "FizzBuzz".</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-76-fizzbuzz-en-javascript-con-tdd.mp3" length="32260683" type="audio/mpeg" />
+    <video>https://youtu.be/n19U4akk380</video>
+    <videoId>n19U4akk380</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-76-fizzbuzz-en-javascript-con-tdd</guid>
+    <pubDate>Wed, 05 Jan 2022 08:00:00 +0100</pubDate>
+    <itunes:duration>2683</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>76</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.73: Vulnerabilidad en Log4j</itunes:title>
+    <title>Ep.73: Vulnerabilidad en Log4j</title>
+    <description><![CDATA[<p>Exploro los problemas que se han dado los último días debido a la explotación de una vulnerabilidad en la famosa libreria de Java: Log4j.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Exploro los problemas que se han dado los último días debido a la explotación de una vulnerabilidad en la famosa libreria de Java: Log4j.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Exploro los problemas que se han dado los último días debido a la explotación de una vulnerabilidad en la famosa libreria de Java: Log4j.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-73-vulnerabilidad-en-log4j.mp3" length="12287654" type="audio/mpeg" />
+    <video>https://youtu.be/UD5zjh22XuA</video>
+    <videoId>UD5zjh22XuA</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-73-vulnerabilidad-en-log4j</guid>
+    <pubDate>Wed, 15 Dec 2021 08:00:00 +0100</pubDate>
+    <itunes:duration>1019</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>73</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.70: Database connection pool</itunes:title>
+    <title>Ep.70: Database connection pool</title>
+    <description><![CDATA[<p>En este episodio, vamos a adentrarnos en el concepto fundamental de un "Database Connection Pool" (Grupo de Conexiones a la Base de Datos) y cómo esta práctica técnica se utiliza para optimizar y gestionar eficientemente las conexiones a las bases de datos en aplicaciones y sistemas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, vamos a adentrarnos en el concepto fundamental de un "Database Connection Pool" (Grupo de Conexiones a la Base de Datos) y cómo esta práctica técnica se utiliza para optimizar y gestionar eficientemente las conexiones a las bases de datos en aplicaciones y sistemas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, vamos a adentrarnos en el concepto fundamental de un "Database Connection Pool" (Grupo de Conexiones a la Base de Datos) y cómo esta práctica técnica se utiliza para optimizar y gestionar eficientemente las conexiones a las bases de datos en aplicaciones y sistemas..</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-70-database-connection-pool.mp3" length="9969550" type="audio/mpeg" />
+    <video>https://youtu.be/8bVAGhF2Uxw</video>
+    <videoId>8bVAGhF2Uxw</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-70-database-connection-pool</guid>
+    <pubDate>Fri, 26 Nov 2021 08:00:00 +0100</pubDate>
+    <itunes:duration>826</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>70</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.65: ¿Cómo se procesa un programa?</itunes:title>
+    <title>Ep.65: ¿Cómo se procesa un programa?</title>
+    <description><![CDATA[<p>Una aproximación a alto nivel de cuales son los componentes básicos de una CPU, a nivel teórico, y como funcionan entre ellos para procesar tu programa.<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.joantolos.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></description>
+    <content:encoded><![CDATA[<p>Una aproximación a alto nivel de cuales son los componentes básicos de una CPU, a nivel teórico, y como funcionan entre ellos para procesar tu programa.<br/><br/>mail: info@joantolos.com<br/>Swag: http://store.joantolos.com<br/>Official web: http://www.joantolos.com<br/><br/>Apple podcast: https://podcasts.apple.com/es/podcast/nada-nuevo-bajo-el-sol/id1563220961<br/>Spotify: https://open.spotify.com/show/6BcHhm3wO3cvSIMZL6ssG8</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, vamos a sumergirnos en las entrañas de la informática y explorar cómo se procesa un programa a nivel de hardware. Desmitificaremos el funcionamiento de una Unidad Aritmético-Lógica (ALU) y una Unidad Central de Procesamiento (CPU) para comprender cómo los componentes esenciales de una computadora trabajan juntos para ejecutar instrucciones y realizar cálculos.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-65-como-se-procesa-un-programa.mp3" length="18680314" type="audio/mpeg" />
+    <video>https://youtu.be/6zY6h6HXlgA</video>
+    <videoId>6zY6h6HXlgA</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-65-como-se-procesa-un-programa</guid>
+    <pubDate>Wed, 10 Nov 2021 00:00:00 +0100</pubDate>
+    <itunes:duration>1552</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>65</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.63: Big O Notation: Ejemplo</itunes:title>
+    <title>Ep.63: Big O Notation: Ejemplo</title>
+    <description><![CDATA[<p>En este episodio vamos a llevar el concepto de la notación Big O a la práctica. A lo largo de este episodio, vamos a analizar un ejemplo concreto para ilustrar cómo la notación Big O se aplica en la vida real.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio vamos a llevar el concepto de la notación Big O a la práctica. A lo largo de este episodio, vamos a analizar un ejemplo concreto para ilustrar cómo la notación Big O se aplica en la vida real.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio vamos a llevar el concepto de la notación Big O a la práctica. A lo largo de este episodio, vamos a analizar un ejemplo concreto para ilustrar cómo la notación Big O se aplica en la vida real.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-63-big-o-notation-ejemplo.mp3" length="21079216" type="audio/mpeg" />
+    <video>https://youtu.be/7_eBiCKqtNE</video>
+    <videoId>7_eBiCKqtNE</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-63-big-o-notation-ejemplo</guid>
+    <pubDate>Wed, 03 Nov 2021 00:00:00 +0100</pubDate>
+    <itunes:duration>1752</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>63</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.62: Big O notation</itunes:title>
+    <title>Ep.62: Big O notation</title>
+    <description><![CDATA[<p>En este episodio, te adentrarás en el mundo de la notación Big O y cómo esta herramienta puede ayudarte a analizar y comparar el rendimiento de algoritmos en el mundo de la programación. Te explicaré de manera clara y accesible qué es la notación Big O y por qué es fundamental para los desarrolladores. Descubrirás cómo esta notación se utiliza para medir la eficiencia y el tiempo de ejecución de algoritmos en función del tamaño de la entrada. Utilizaremos ejemplos prácticos y analogías para ilustrar cómo Big O nos permite clasificar algoritmos en términos de su complejidad y eficiencia.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, te adentrarás en el mundo de la notación Big O y cómo esta herramienta puede ayudarte a analizar y comparar el rendimiento de algoritmos en el mundo de la programación. Te explicaré de manera clara y accesible qué es la notación Big O y por qué es fundamental para los desarrolladores. Descubrirás cómo esta notación se utiliza para medir la eficiencia y el tiempo de ejecución de algoritmos en función del tamaño de la entrada. Utilizaremos ejemplos prácticos y analogías para ilustrar cómo Big O nos permite clasificar algoritmos en términos de su complejidad y eficiencia.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, te adentrarás en el mundo de la notación Big O y cómo esta herramienta puede ayudarte a analizar y comparar el rendimiento de algoritmos en el mundo de la programación. Te explicaré de manera clara y accesible qué es la notación Big O y por qué es fundamental para los desarrolladores. Descubrirás cómo esta notación se utiliza para medir la eficiencia y el tiempo de ejecución de algoritmos en función del tamaño de la entrada. Utilizaremos ejemplos prácticos y analogías para ilustrar cómo Big O nos permite clasificar algoritmos en términos de su complejidad y eficiencia.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-62-big-o-notation.mp3" length="22332202" type="audio/mpeg" />
+    <video>https://youtu.be/OwzgX0sZOfI</video>
+    <videoId>OwzgX0sZOfI</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-62-big-o-notation</guid>
+    <pubDate>Fri, 29 Oct 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>1856</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>62</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.59: Checked vs Unchecked exceptions</itunes:title>
+    <title>Ep.59: Checked vs Unchecked exceptions</title>
+    <description><![CDATA[<p>En este episodio, vamos a sumergirnos en el mundo de las excepciones en la programación y explorar las diferencias cruciales entre las "checked" (excepciones comprobadas) y las "unchecked" (excepciones no comprobadas). Te explicaré cómo estas dos categorías de excepciones funcionan en un lenguaje de programación y cuáles son sus propósitos principales. Las excepciones "checked" son aquellas que el compilador requiere que manejes explícitamente en tu código, lo que significa que debes usar bloques try-catch o declararlas en la firma del método. Por otro lado, las excepciones "unchecked" son aquellas que el compilador no exige que manejes de manera explícita.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, vamos a sumergirnos en el mundo de las excepciones en la programación y explorar las diferencias cruciales entre las "checked" (excepciones comprobadas) y las "unchecked" (excepciones no comprobadas). Te explicaré cómo estas dos categorías de excepciones funcionan en un lenguaje de programación y cuáles son sus propósitos principales. Las excepciones "checked" son aquellas que el compilador requiere que manejes explícitamente en tu código, lo que significa que debes usar bloques try-catch o declararlas en la firma del método. Por otro lado, las excepciones "unchecked" son aquellas que el compilador no exige que manejes de manera explícita.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, vamos a sumergirnos en el mundo de las excepciones en la programación y explorar las diferencias cruciales entre las "checked" (excepciones comprobadas) y las "unchecked" (excepciones no comprobadas). Te explicaré cómo estas dos categorías de excepciones funcionan en un lenguaje de programación y cuáles son sus propósitos principales. Las excepciones "checked" son aquellas que el compilador requiere que manejes explícitamente en tu código, lo que significa que debes usar bloques try-catch o declararlas en la firma del método. Por otro lado, las excepciones "unchecked" son aquellas que el compilador no exige que manejes de manera explícita.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-59-checked-vs-unchecked-exceptions.mp3" length="7920101" type="audio/mpeg" />
+    <video>https://youtu.be/pPRtuvUDv-g</video>
+    <videoId>pPRtuvUDv-g</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-59-checked-vs-unchecked-exceptions</guid>
+    <pubDate>Wed, 20 Oct 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>655</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>59</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.58: Escribir te hará mejor programador</itunes:title>
+    <title>Ep.58: Escribir te hará mejor programador</title>
+    <description><![CDATA[<p>En este episodio, exploraremos cómo la escritura, sin importar el tipo de texto que elijas, puede potenciar tus habilidades como programador y enriquecer tu carrera en el mundo de la tecnología. Descubrirás cómo la práctica regular de la escritura fomenta la claridad de pensamiento y la comunicación efectiva, habilidades esenciales para cualquier programador. Exploraremos cómo la creación de ficción puede estimular la creatividad y la resolución de problemas, permitiéndote abordar desafíos de programación desde nuevas perspectivas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, exploraremos cómo la escritura, sin importar el tipo de texto que elijas, puede potenciar tus habilidades como programador y enriquecer tu carrera en el mundo de la tecnología. Descubrirás cómo la práctica regular de la escritura fomenta la claridad de pensamiento y la comunicación efectiva, habilidades esenciales para cualquier programador. Exploraremos cómo la creación de ficción puede estimular la creatividad y la resolución de problemas, permitiéndote abordar desafíos de programación desde nuevas perspectivas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, exploraremos cómo la escritura, sin importar el tipo de texto que elijas, puede potenciar tus habilidades como programador y enriquecer tu carrera en el mundo de la tecnología. Descubrirás cómo la práctica regular de la escritura fomenta la claridad de pensamiento y la comunicación efectiva, habilidades esenciales para cualquier programador. Exploraremos cómo la creación de ficción puede estimular la creatividad y la resolución de problemas, permitiéndote abordar desafíos de programación desde nuevas perspectivas.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-58-escribir-te-hara-mejor-programador.mp3" length="15786935" type="audio/mpeg" />
+    <video>https://youtu.be/AGMkThTanhw</video>
+    <videoId>AGMkThTanhw</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-58-escribir-te-hara-mejor-programador</guid>
+    <pubDate>Fri, 15 Oct 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>1311</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>58</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.55: Como lidiar con Legacy Code</itunes:title>
+    <title>Ep.55: Como lidiar con Legacy Code</title>
+    <description><![CDATA[<p>En este episodio, te sumergirás en el apasionante mundo de la gestión de código heredado, basado en los valiosos consejos extraídos del libro "Working Effectively with Legacy Code" de Michael C. Feathers. Exploraremos cómo abordar con éxito la tarea de trabajar con código legado, que a menudo es complejo, poco documentado y difícil de entender.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, te sumergirás en el apasionante mundo de la gestión de código heredado, basado en los valiosos consejos extraídos del libro "Working Effectively with Legacy Code" de Michael C. Feathers. Exploraremos cómo abordar con éxito la tarea de trabajar con código legado, que a menudo es complejo, poco documentado y difícil de entender.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, te sumergirás en el apasionante mundo de la gestión de código heredado, basado en los valiosos consejos extraídos del libro "Working Effectively with Legacy Code" de Michael C. Feathers. Exploraremos cómo abordar con éxito la tarea de trabajar con código legado, que a menudo es complejo, poco documentado y difícil de entender.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-55-como-lidiar-con-legacy-code.mp3" length="11504302" type="audio/mpeg" />
+    <video>https://youtu.be/eRoMGTUCZ14</video>
+    <videoId>eRoMGTUCZ14</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-55-como-lidiar-con-legacy-code</guid>
+    <pubDate>Wed, 06 Oct 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>954</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>55</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.50: Qué es una REST API</itunes:title>
+    <title>Ep.50: Qué es una REST API</title>
+    <description><![CDATA[<p>En este episodio, te sumergirás en el fascinante mundo de las REST APIs. Exploraremos qué es exactamente una API REST (Representational State Transfer), cómo funciona y por qué se ha convertido en un pilar fundamental en el desarrollo de aplicaciones web y móviles en la actualidad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, te sumergirás en el fascinante mundo de las REST APIs. Exploraremos qué es exactamente una API REST (Representational State Transfer), cómo funciona y por qué se ha convertido en un pilar fundamental en el desarrollo de aplicaciones web y móviles en la actualidad.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, te sumergirás en el fascinante mundo de las REST APIs. Exploraremos qué es exactamente una API REST (Representational State Transfer), cómo funciona y por qué se ha convertido en un pilar fundamental en el desarrollo de aplicaciones web y móviles en la actualidad.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-50-que-es-una-rest-api.mp3" length="13946212" type="audio/mpeg" />
+    <video>https://youtu.be/LtCvTvA28gE</video>
+    <videoId>LtCvTvA28gE</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-50-que-es-una-rest-api</guid>
+    <pubDate>Fri, 17 Sep 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>1157</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>50</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.47: Angular routes y pizzas</itunes:title>
+    <title>Ep.47: Angular routes y pizzas</title>
+    <description><![CDATA[<p>Un ejemplo de aplicación sencilla creada siguiendo el tutorial de Angular sobre Routes. Cualquier excusa es buena para practicar un poco y en este caso hago una aplicación web para que no se te queme la comida en el horno!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Un ejemplo de aplicación sencilla creada siguiendo el tutorial de Angular sobre Routes. Cualquier excusa es buena para practicar un poco y en este caso hago una aplicación web para que no se te queme la comida en el horno!</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Un ejemplo de aplicación sencilla creada siguiendo el tutorial de Angular sobre Routes. Cualquier excusa es buena para practicar un poco y en este caso hago una aplicación web para que no se te queme la comida en el horno!</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-47-angular-routes-y-pizzas.mp3" length="10361698" type="audio/mpeg" />
+    <video>https://youtu.be/btffV5F7aoA</video>
+    <videoId>btffV5F7aoA</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-47-angular-routes-y-pizzas</guid>
+    <pubDate>Wed, 08 Sep 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>859</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>47</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.46: Probando Kotlin</itunes:title>
+    <title>Ep.46: Probando Kotlin</title>
+    <description><![CDATA[<p>Solo leo cosas buenas sobre Kotlin, todo el mundo me lo recomienda. En este episodio exploro algunas diferencias básicas entre Kotlin y Java y expongo un ejemplo sencillo de web service API con Kotlin, Spring y Postgres.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Solo leo cosas buenas sobre Kotlin, todo el mundo me lo recomienda. En este episodio exploro algunas diferencias básicas entre Kotlin y Java y expongo un ejemplo sencillo de web service API con Kotlin, Spring y Postgres.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Solo leo cosas buenas sobre Kotlin, todo el mundo me lo recomienda. En este episodio exploro algunas diferencias básicas entre Kotlin y Java y expongo un ejemplo sencillo de web service API con Kotlin, Spring y Postgres.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-46-probando-kotlin.mp3" length="11984513" type="audio/mpeg" />
+    <video>https://youtu.be/CR7wDsoJuAU</video>
+    <videoId>CR7wDsoJuAU</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-46-probando-kotlin</guid>
+    <pubDate>Fri, 03 Sep 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>994</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>46</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.41: Expande tu conocimiento, métete en el mundo DevOps</itunes:title>
+    <title>Ep.41: Expande tu conocimiento, métete en el mundo DevOps</title>
+    <description><![CDATA[<p>Existen maneras sencillas para introducirse en el mundo DevOps como desarrollador. Es conveniente tocar un poco el tema y obtener un conocimiento mínimo de como se desplega el código que estas creando. Un par de consejos para introducirse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Existen maneras sencillas para introducirse en el mundo DevOps como desarrollador. Es conveniente tocar un poco el tema y obtener un conocimiento mínimo de como se desplega el código que estas creando. Un par de consejos para introducirse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Existen maneras sencillas para introducirse en el mundo DevOps como desarrollador. Es conveniente tocar un poco el tema y obtener un conocimiento mínimo de como se desplega el código que estas creando. Un par de consejos para introducirse.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-41-expande-tu-conocimiento-metete-en-el-mundo-devops.mp3" length="16835208" type="audio/mpeg" />
+    <video>https://youtu.be/Nv7XX-6i65E</video>
+    <videoId>Nv7XX-6i65E</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-41-expande-tu-conocimiento-metete-en-el-mundo-devops</guid>
+    <pubDate>Wed, 18 Aug 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>1398</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>41</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.40: Override Polymorphism / Factory Builder Pattern</itunes:title>
+    <title>Ep.40: Override Polymorphism / Factory Builder Pattern</title>
+    <description><![CDATA[<p>En este episodio, desentrañaremos los secretos del patrón Factory Building y la técnica de override polymorphism en el mundo de la programación. Exploraremos cómo funciona este patrón de diseño, que se utiliza para crear objetos de diferentes tipos de manera eficiente y flexible. Aprenderás cómo Factory Building simplifica la creación de objetos al centralizar la lógica de creación y permitirte adaptar fácilmente tu código a cambios futuros.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, desentrañaremos los secretos del patrón Factory Building y la técnica de override polymorphism en el mundo de la programación. Exploraremos cómo funciona este patrón de diseño, que se utiliza para crear objetos de diferentes tipos de manera eficiente y flexible. Aprenderás cómo Factory Building simplifica la creación de objetos al centralizar la lógica de creación y permitirte adaptar fácilmente tu código a cambios futuros.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, desentrañaremos los secretos del patrón Factory Building y la técnica de override polymorphism en el mundo de la programación. Exploraremos cómo funciona este patrón de diseño, que se utiliza para crear objetos de diferentes tipos de manera eficiente y flexible. Aprenderás cómo Factory Building simplifica la creación de objetos al centralizar la lógica de creación y permitirte adaptar fácilmente tu código a cambios futuros.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-40-override-polymorphism-factory-builder-pattern.mp3" length="7544283" type="audio/mpeg" />
+    <video>https://youtu.be/T7SaJdUBpko</video>
+    <videoId>T7SaJdUBpko</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-40-override-polymorphism-factory-builder-pattern</guid>
+    <pubDate>Fri, 13 Aug 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>624</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>40</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.37: La trampa de TDD</itunes:title>
+    <title>Ep.37: La trampa de TDD</title>
+    <description><![CDATA[<p>En este episodio, exploraremos a fondo los desafíos fundamentales que surgen al adoptar la técnica de Test Driven Development (TDD) en el mundo del desarrollo de software. A medida que las organizaciones buscan mejorar la calidad de su código y acelerar sus ciclos de desarrollo, TDD se ha convertido en una herramienta esencial. Sin embargo, no todo es color de rosa en el mundo de TDD. Descubriremos los problemas comunes que enfrentan los desarrolladores, desde la creación inicial de pruebas hasta la dificultad de mantenerlas a medida que el código evoluciona.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, exploraremos a fondo los desafíos fundamentales que surgen al adoptar la técnica de Test Driven Development (TDD) en el mundo del desarrollo de software. A medida que las organizaciones buscan mejorar la calidad de su código y acelerar sus ciclos de desarrollo, TDD se ha convertido en una herramienta esencial. Sin embargo, no todo es color de rosa en el mundo de TDD. Descubriremos los problemas comunes que enfrentan los desarrolladores, desde la creación inicial de pruebas hasta la dificultad de mantenerlas a medida que el código evoluciona.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, exploraremos a fondo los desafíos fundamentales que surgen al adoptar la técnica de Test Driven Development (TDD) en el mundo del desarrollo de software. A medida que las organizaciones buscan mejorar la calidad de su código y acelerar sus ciclos de desarrollo, TDD se ha convertido en una herramienta esencial. Sin embargo, no todo es color de rosa en el mundo de TDD. Descubriremos los problemas comunes que enfrentan los desarrolladores, desde la creación inicial de pruebas hasta la dificultad de mantenerlas a medida que el código evoluciona.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-37-la-trampa-de-tdd.mp3" length="14480985" type="audio/mpeg" />
+    <video>https://youtu.be/4upYjnMkMP8</video>
+    <videoId>4upYjnMkMP8</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-37-la-trampa-de-tdd</guid>
+    <pubDate>Wed, 04 Aug 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>1202</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.33: Retrospectivas: Abraza el conflicto</itunes:title>
+    <title>Ep.33: Retrospectivas: Abraza el conflicto</title>
+    <description><![CDATA[<p>En algunas ocasiones conviene entrar en el conflicto en lugar de evitarlo. Evitar el conflicto a toda costa, a veces nos hace caer en situaciones de apatía, que son muy nocivas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En algunas ocasiones conviene entrar en el conflicto en lugar de evitarlo. Evitar el conflicto a toda costa, a veces nos hace caer en situaciones de apatía, que son muy nocivas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En algunas ocasiones conviene entrar en el conflicto en lugar de evitarlo. Evitar el conflicto a toda costa, a veces nos hace caer en situaciones de apatía, que son muy nocivas.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-33-retrospectivas-abraza-el-conflicto.mp3" length="12519645" type="audio/mpeg" />
+    <video>https://youtu.be/bLDyE2IAYNU</video>
+    <videoId>bLDyE2IAYNU</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-33-retrospectivas-abraza-el-conflicto</guid>
+    <pubDate>Wed, 21 Jul 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>1038</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>33</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.22: Las bases de Scrum</itunes:title>
+    <title>Ep.22: Las bases de Scrum</title>
+    <description><![CDATA[<p>En este episodio, sumérgete en el apasionante mundo de SCRUM, uno de los frameworks de trabajo más influyentes en el desarrollo de proyectos ágiles. Exploraremos las bases fundamentales de SCRUM, desde su estructura básica de roles, eventos y artefactos, hasta su enfoque en la colaboración, la adaptabilidad y la entrega incremental.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, sumérgete en el apasionante mundo de SCRUM, uno de los frameworks de trabajo más influyentes en el desarrollo de proyectos ágiles. Exploraremos las bases fundamentales de SCRUM, desde su estructura básica de roles, eventos y artefactos, hasta su enfoque en la colaboración, la adaptabilidad y la entrega incremental.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, sumérgete en el apasionante mundo de SCRUM, uno de los frameworks de trabajo más influyentes en el desarrollo de proyectos ágiles. Exploraremos las bases fundamentales de SCRUM, desde su estructura básica de roles, eventos y artefactos, hasta su enfoque en la colaboración, la adaptabilidad y la entrega incremental.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-22-las-bases-de-scrum.mp3" length="18421299" type="audio/mpeg" />
+    <video>https://youtu.be/PX0w-kqmDGc</video>
+    <videoId>PX0w-kqmDGc</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-22-las-bases-de-scrum</guid>
+    <pubDate>Fri, 11 Jun 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>1530</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>22</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.21: La pelea de los requisitos</itunes:title>
+    <title>Ep.21: La pelea de los requisitos</title>
+    <description><![CDATA[<p>En este episodio, adentrémonos en el mundo de la recopilación de requisitos de negocio en el desarrollo de aplicaciones. Exploraremos las complejidades que enfrentan los profesionales de la tecnología al intentar comprender las necesidades cambiantes de los usuarios y las empresas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, adentrémonos en el mundo de la recopilación de requisitos de negocio en el desarrollo de aplicaciones. Exploraremos las complejidades que enfrentan los profesionales de la tecnología al intentar comprender las necesidades cambiantes de los usuarios y las empresas.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, adentrémonos en el mundo de la recopilación de requisitos de negocio en el desarrollo de aplicaciones. Exploraremos las complejidades que enfrentan los profesionales de la tecnología al intentar comprender las necesidades cambiantes de los usuarios y las empresas.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-21-la-pelea-de-los-requisitos.mp3" length="10788649" type="audio/mpeg" />
+    <video>https://youtu.be/wYtyBPDolOc</video>
+    <videoId>wYtyBPDolOc</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-21-la-pelea-de-los-requisitos</guid>
+    <pubDate>Wed, 09 Jun 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>894</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>21</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.19: Atrévete con TDD</itunes:title>
+    <title>Ep.19: Atrévete con TDD</title>
+    <description><![CDATA[<p>Introducción a Test Driven Development. Historia, orígenes, explicación del concepto y consejos para iniciarse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Introducción a Test Driven Development. Historia, orígenes, explicación del concepto y consejos para iniciarse.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Introducción a Test Driven Development. Historia, orígenes, explicación del concepto y consejos para iniciarse.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-19-atrevete-con-tdd.mp3" length="11983575" type="audio/mpeg" />
+    <video>https://youtu.be/nF48gkEtBvU</video>
+    <videoId>nF48gkEtBvU</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-19-atrevete-con-tdd</guid>
+    <pubDate>Fri, 04 Jun 2021 08:00:00 +0200</pubDate>
+    <itunes:duration>994</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>19</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.16: Intérpretes vs compiladores</itunes:title>
+    <title>Ep.16: Intérpretes vs compiladores</title>
+    <description><![CDATA[<p>En este episodio, diferenciamos entre dos elementos fundamentales en el proceso de ejecución de código: los compiladores y los intérpretes. A lo largo de la conversación, comprenderemos cómo funciona cada uno de estos sistemas y cómo influyen en la ejecución de tu código. Desde la compilación estática que optimiza el rendimiento hasta la interpretación dinámica que permite una mayor flexibilidad, exploraremos los pros y contras de ambos enfoques.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, diferenciamos entre dos elementos fundamentales en el proceso de ejecución de código: los compiladores y los intérpretes. A lo largo de la conversación, comprenderemos cómo funciona cada uno de estos sistemas y cómo influyen en la ejecución de tu código. Desde la compilación estática que optimiza el rendimiento hasta la interpretación dinámica que permite una mayor flexibilidad, exploraremos los pros y contras de ambos enfoques.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, diferenciamos entre dos elementos fundamentales en el proceso de ejecución de código: los compiladores y los intérpretes. A lo largo de la conversación, comprenderemos cómo funciona cada uno de estos sistemas y cómo influyen en la ejecución de tu código. Desde la compilación estática que optimiza el rendimiento hasta la interpretación dinámica que permite una mayor flexibilidad, exploraremos los pros y contras de ambos enfoques.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-16-interpretes-vs-compiladores.mp3" length="12946574" type="audio/mpeg" />
+    <video>https://youtu.be/-Wo_acfzoiU</video>
+    <videoId>-Wo_acfzoiU</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-16-interpretes-vs-compiladores</guid>
+    <pubDate>Fri, 28 May 2021 09:00:00 +0200</pubDate>
+    <itunes:duration>1074</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>16</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.14: Programación funcional vs Orientada a Objetos</itunes:title>
+    <title>Ep.14: Programación funcional vs Orientada a Objetos</title>
+    <description><![CDATA[<p>En este episodio, exploramos las diferencias fundamentales entre dos enfoques de programación apasionantes: la programación orientada a objetos y la programación funcional. A través de ejemplos prácticos y explicaciones claras, te guiaré a través de los conceptos clave de estos paradigmas, desde la encapsulación y herencia en la programación orientada a objetos hasta la inmutabilidad y las funciones de orden superior en la programación funcional.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, exploramos las diferencias fundamentales entre dos enfoques de programación apasionantes: la programación orientada a objetos y la programación funcional. A través de ejemplos prácticos y explicaciones claras, te guiaré a través de los conceptos clave de estos paradigmas, desde la encapsulación y herencia en la programación orientada a objetos hasta la inmutabilidad y las funciones de orden superior en la programación funcional.</p><p>mail: info@joantolos.com</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, exploramos las diferencias fundamentales entre dos enfoques de programación apasionantes: la programación orientada a objetos y la programación funcional. A través de ejemplos prácticos y explicaciones claras, te guiaré a través de los conceptos clave de estos paradigmas, desde la encapsulación y herencia en la programación orientada a objetos hasta la inmutabilidad y las funciones de orden superior en la programación funcional.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-14-programacion-funcional-vs-orientada-a-objetos.mp3" length="20384299" type="audio/mpeg" />
+    <video>https://youtu.be/K2aKK5LaR2Y</video>
+    <videoId>K2aKK5LaR2Y</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-14-programacion-funcional-vs-orientada-a-objetos</guid>
+    <pubDate>Mon, 24 May 2021 00:00:00 +0200</pubDate>
+    <itunes:duration>1694</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>14</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.11: El testing no es negociable</itunes:title>
+    <title>Ep.11: El testing no es negociable</title>
+    <description><![CDATA[<p>En este episodio, profundizamos en un aspecto fundamental de la programación: la importancia de las pruebas (tests) y por qué son innegociables en el desarrollo de software.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, profundizamos en un aspecto fundamental de la programación: la importancia de las pruebas (tests) y por qué son innegociables en el desarrollo de software.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, profundizamos en un aspecto fundamental de la programación: la importancia de las pruebas (tests) y por qué son innegociables en el desarrollo de software.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-11-el-testing-no-es-negociable.mp3" length="14926134" type="audio/mpeg" />
+    <video>https://youtu.be/-0nRMDdAsF4</video>
+    <videoId>-0nRMDdAsF4</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-11-el-testing-no-es-negociable</guid>
+    <pubDate>Mon, 17 May 2021 09:00:00 +0200</pubDate>
+    <itunes:duration>1239</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>11</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep.10: Iteración vs repetición</itunes:title>
+    <title>Ep.10: Iteración vs repetición</title>
+    <description><![CDATA[<p>Diferencia entre iteración y repetición, como identificar cada caso y sacar provecho a cada una de las dos herramientas. Como aplicar lo aprendido a tu carrera profesional.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>Diferencia entre iteración y repetición, como identificar cada caso y sacar provecho a cada una de las dos herramientas. Como aplicar lo aprendido a tu carrera profesional.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>Diferencia entre iteración y repetición, como identificar cada caso y sacar provecho a cada una de las dos herramientas. Como aplicar lo aprendido a tu carrera profesional.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-10-iteracion-vs-repeticion.mp3" length="10998354" type="audio/mpeg" />
+    <video>https://youtu.be/tD7iUSmrLbg</video>
+    <videoId>tD7iUSmrLbg</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-10-iteracion-vs-repeticion</guid>
+    <pubDate>Fri, 14 May 2021 00:00:00 +0200</pubDate>
+    <itunes:duration>912</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>10</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <itunes:title>Ep. 2: Arrays / Listas / Hash Tables</itunes:title>
+    <title>Ep. 2: Arrays / Listas / Hash Tables</title>
+    <description><![CDATA[<p>En este episodio, nos a sumergirnos en el mundo de las estructuras de datos y exploramos las diferencias clave entre tres de las más utilizadas: listas, arrays y hash tables.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></description>
+    <content:encoded><![CDATA[<p>En este episodio, nos a sumergirnos en el mundo de las estructuras de datos y exploramos las diferencias clave entre tres de las más utilizadas: listas, arrays y hash tables.</p><p>Swag: http://store.joantolos.com</p><p>Official web: http://www.joantolos.com</p>]]></content:encoded>
+    <descriptionWeb><![CDATA[<p>En este episodio, nos a sumergirnos en el mundo de las estructuras de datos y exploramos las diferencias clave entre tres de las más utilizadas: listas, arrays y hash tables.</p>]]></descriptionWeb>
+    <itunes:author>Joan Tolós López</itunes:author>
+    <enclosure url="https://joantolos.github.io/nada-nuevo-bajo-el-sol/ep-2-arrays-listas-hash-tables.mp3" length="10586781" type="audio/mpeg" />
+    <video>https://youtu.be/E1vTYHhr-Xk</video>
+    <videoId>E1vTYHhr-Xk</videoId>
+    <videoVisible>true</videoVisible>
+    <guid isPermaLink="false">ep-2-arrays-listas-hash-tables</guid>
+    <pubDate>Mon, 26 Apr 2021 09:00:00 +0200</pubDate>
+    <itunes:duration>877</itunes:duration>
+    <itunes:keywords></itunes:keywords>
+    <itunes:season>1</itunes:season>
+    <itunes:episode>2</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+</channel>
+</rss>

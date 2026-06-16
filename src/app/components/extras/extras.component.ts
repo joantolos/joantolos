@@ -164,20 +164,42 @@ export class ExtrasComponent {
         ...this.withTotal([
           { label: 'Cuota', amount: 999.35 },
           { label: 'Matrícula', amount: 50 },
-          { label: 'Matrícula federación', amount: 50 }
+          { label: 'Matrícula federación', amount: 50 },
+          { label: 'Equipación', amount: 60 }
         ])
       ],
       details: [
         'matrícula 50 de federacio i 50 d\'equipacio',
-        'equipación Si, pero no se el precio',
-        'Findes libres - por confirmar',
-        'Competición - por confirmar'
+        'equipación: 60',
+        'Findes libres - No',
+        'Competición - No'
       ],
       contact: [
         'Club Natacio Granollers Secció Gimnastica Artistica',
         'Carrer de Lluís Companys, 8',
         'Elisabet Valle',
         'Teléfono: 938704599'
+      ]
+    },
+    {
+      id: 'olivia-gimnastica-dynasty-union',
+      title: 'Gimnastica Dynasty Union',
+      emoji: '🤸🏼',
+      theme: 'olivia',
+      scheduleTitle: 'Horarios curso que viene',
+      schedules: ['Por confirmar'],
+      calendarSlots: [],
+      price: [
+        { label: 'Total', amount: 0, total: true }
+      ],
+      details: [
+        'Por confirmar'
+      ],
+      contact: [
+        'Dinasty Union ESCOLA DE CAMPIONS',
+        'Carrer Gran Bretanya, 13, 08520 Barcelona',
+        'Telefono: 656 94 18 77',
+        'Abre: 17:30'
       ]
     }
   ];
