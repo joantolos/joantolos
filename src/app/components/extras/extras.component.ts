@@ -61,7 +61,7 @@ export class ExtrasComponent {
     { label: 'Federación de fútbol', amount: 24.5 },
     { label: 'Revisión médica de fútbol', amount: 30 }
   ];
-  penyaBlaugranaPrice: PriceLine[] = this.withFootballTotal(585, 240);
+  penyaBlaugranaPrice: PriceLine[] = this.withFootballTotal(660, 240);
   torretaPrice: PriceLine[] = this.withFootballTotal(470, 80);
 
   activities: ExtraActivity[] = [
