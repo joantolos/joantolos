@@ -46,7 +46,7 @@ interface ExtraActivity {
   styleUrls: ['./extras.component.css']
 })
 export class ExtrasComponent {
-  baseAnnualQuota = 3282;
+  baseAnnualQuota = 3528;
   weekDays = [
     { key: 'monday' as WeekDay, short: 'L', name: 'Lunes' },
     { key: 'tuesday' as WeekDay, short: 'M', name: 'Martes' },
