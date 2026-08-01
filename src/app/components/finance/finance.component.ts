@@ -66,21 +66,22 @@ export class FinanceComponent implements OnInit {
   isAddingRow = false;
   newRowDraft = { date: '', amount: '' };
 
+  private static readonly DATASET_STYLE = {
+    label: 'Monthly savings',
+    fill: true,
+    tension: 0.4,
+    borderColor: '#1d7ea0',
+    backgroundColor: 'rgba(29, 126, 160, 0.08)',
+    pointBackgroundColor: '#ffffff',
+    pointBorderColor: '#1d7ea0',
+    pointBorderWidth: 2.5,
+    pointRadius: 5,
+    pointHoverRadius: 7
+  };
+
   lineChartData: ChartData<'line'> = {
     labels: [],
-    datasets: [{
-      data: [],
-      label: 'Monthly savings',
-      fill: true,
-      tension: 0.4,
-      borderColor: '#1d7ea0',
-      backgroundColor: 'rgba(29, 126, 160, 0.08)',
-      pointBackgroundColor: '#ffffff',
-      pointBorderColor: '#1d7ea0',
-      pointBorderWidth: 2.5,
-      pointRadius: 5,
-      pointHoverRadius: 7
-    }]
+    datasets: [{ data: [], ...FinanceComponent.DATASET_STYLE }]
   };
 
   lineChartOptions: ChartOptions<'line'> = {
@@ -277,10 +278,12 @@ export class FinanceComponent implements OnInit {
   }
 
   formatMonth(date: string): string {
+    // Parse as local time — `new Date('2024-01-01')` would be UTC midnight and
+    // render as the previous month for users west of UTC.
     return new Intl.DateTimeFormat('en-US', {
       month: 'short',
       year: 'numeric'
-    }).format(new Date(date));
+    }).format(new Date(`${date}T00:00:00`));
   }
 
   // ─── Private helpers ──────────────────────────────────────────────────────
@@ -320,11 +323,16 @@ export class FinanceComponent implements OnInit {
       .filter((item) => item.date)
       .slice()
       .sort((a, b) => a.date.localeCompare(b.date));
-    const averageMonthlyQuota = monthlySavings.length
-      ? monthlySavings.reduce((sum, item) => sum + item.amount, 0) / monthlySavings.length
-      : 0;
+    const averageMonthlyQuota = this.calculateMonthlyAverage(monthlySavings);
     const pomCurrent = Math.min(totalSaved, pomGoal);
     const carFundCurrent = Math.max(totalSaved - pomGoal, 0);
+
+    const pomRemaining = Math.max(pomGoal - pomCurrent, 0);
+    const carFundRemaining = Math.max(carFundGoal - carFundCurrent, 0);
+    const pomEtaMonths = this.calculateEtaMonths(pomRemaining, averageMonthlyQuota);
+    // Contributions fill POM first, so the Car Fund only starts growing once POM
+    // is complete — its ETA must include the time still needed to finish POM.
+    const carFundEtaMonths = this.calculateEtaMonths(pomRemaining + carFundRemaining, averageMonthlyQuota);
 
     return {
       title: this.dashboard.title || 'Savings Dashboard',
@@ -336,15 +344,15 @@ export class FinanceComponent implements OnInit {
           name: 'POM',
           current: pomCurrent,
           target: pomGoal,
-          etaMonths: this.calculateEtaMonths(pomGoal - pomCurrent, averageMonthlyQuota),
-          etaLabel: this.formatEtaLabel(this.calculateEtaMonths(pomGoal - pomCurrent, averageMonthlyQuota))
+          etaMonths: pomEtaMonths,
+          etaLabel: this.formatEtaLabel(pomEtaMonths)
         },
         {
           name: 'Car Fund',
           current: carFundCurrent,
           target: carFundGoal,
-          etaMonths: this.calculateEtaMonths(carFundGoal - carFundCurrent, averageMonthlyQuota),
-          etaLabel: this.formatEtaLabel(this.calculateEtaMonths(carFundGoal - carFundCurrent, averageMonthlyQuota))
+          etaMonths: carFundEtaMonths,
+          etaLabel: this.formatEtaLabel(carFundEtaMonths)
         }
       ],
       monthlySavings,
@@ -359,9 +367,7 @@ export class FinanceComponent implements OnInit {
       .filter((item) => item.date)
       .slice()
       .sort((a, b) => a.date.localeCompare(b.date));
-    const averageMonthlyQuota = monthlySavings.length
-      ? monthlySavings.reduce((sum, item) => sum + item.amount, 0) / monthlySavings.length
-      : 0;
+    const averageMonthlyQuota = this.calculateMonthlyAverage(monthlySavings);
 
     return {
       title: dashboard.title || 'Savings Dashboard',
@@ -394,16 +400,7 @@ export class FinanceComponent implements OnInit {
       labels: savings.map((item) => this.formatMonth(item.date)),
       datasets: [{
         data: savings.map((item) => item.amount),
-        label: 'Monthly savings',
-        fill: true,
-        tension: 0.4,
-        borderColor: '#1d7ea0',
-        backgroundColor: 'rgba(29, 126, 160, 0.08)',
-        pointBackgroundColor: '#ffffff',
-        pointBorderColor: '#1d7ea0',
-        pointBorderWidth: 2.5,
-        pointRadius: 5,
-        pointHoverRadius: 7
+        ...FinanceComponent.DATASET_STYLE
       }]
     };
   }
@@ -417,6 +414,24 @@ export class FinanceComponent implements OnInit {
     const next = new Date(`${latest.date}T00:00:00`);
     next.setMonth(next.getMonth() + 1);
     return `${next.getFullYear()}-${String(next.getMonth() + 1).padStart(2, '0')}`;
+  }
+
+  private calculateMonthlyAverage(savings: SavingsPoint[]): number {
+    if (!savings.length) return 0;
+    const total = savings.reduce((sum, item) => sum + item.amount, 0);
+    const months = this.monthsSpanned(savings);
+    return months > 0 ? total / months : 0;
+  }
+
+  // Count calendar months from the first to the last contribution (inclusive),
+  // so months with no contribution count as zero and pull the average down —
+  // that reflects the true rate the ETA relies on. Assumes `savings` is sorted
+  // ascending by date, as both callers guarantee.
+  private monthsSpanned(savings: SavingsPoint[]): number {
+    const first = new Date(`${savings[0].date}T00:00:00`);
+    const last = new Date(`${savings[savings.length - 1].date}T00:00:00`);
+    return (last.getFullYear() - first.getFullYear()) * 12
+      + (last.getMonth() - first.getMonth()) + 1;
   }
 
   private calculateEtaMonths(remaining: number, averageMonthlyQuota: number): number | undefined {
