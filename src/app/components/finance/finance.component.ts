@@ -423,15 +423,20 @@ export class FinanceComponent implements OnInit {
     return months > 0 ? total / months : 0;
   }
 
-  // Count calendar months from the first to the last contribution (inclusive),
-  // so months with no contribution count as zero and pull the average down —
-  // that reflects the true rate the ETA relies on. Assumes `savings` is sorted
+  // Count calendar months from the first contribution up to the current month
+  // (inclusive), so every month you've been saving — including recent ones with
+  // no contribution — counts as zero and pulls the average down. That reflects
+  // the true ongoing rate the ETA relies on. Assumes `savings` is sorted
   // ascending by date, as both callers guarantee.
   private monthsSpanned(savings: SavingsPoint[]): number {
     const first = new Date(`${savings[0].date}T00:00:00`);
-    const last = new Date(`${savings[savings.length - 1].date}T00:00:00`);
-    return (last.getFullYear() - first.getFullYear()) * 12
-      + (last.getMonth() - first.getMonth()) + 1;
+    const lastEntry = new Date(`${savings[savings.length - 1].date}T00:00:00`);
+    const now = new Date();
+    // End at the current month, but never before the latest entry (guards
+    // against future-dated rows counting for fewer months than exist).
+    const end = now > lastEntry ? now : lastEntry;
+    return (end.getFullYear() - first.getFullYear()) * 12
+      + (end.getMonth() - first.getMonth()) + 1;
   }
 
   private calculateEtaMonths(remaining: number, averageMonthlyQuota: number): number | undefined {
