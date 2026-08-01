@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 
@@ -14,7 +14,11 @@ export class FinanceLoginComponent {
   isLoading = false;
   loginFailed = false;
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
   isFormInvalid(): boolean {
     return this.username.invalid || this.password.invalid;
@@ -32,7 +36,8 @@ export class FinanceLoginComponent {
       this.isLoading = false;
 
       if (authenticated) {
-        this.router.navigate(['/finance']);
+        const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/finance';
+        this.router.navigateByUrl(returnUrl);
       } else {
         this.loginFailed = true;
       }

@@ -63,11 +63,13 @@ import { ExtrasComponent } from './components/extras/extras.component';
     },
     {
       path: 'extra',
-      component: ExtrasComponent
+      component: ExtrasComponent,
+      canActivate: [AuthGuard]
     },
     {
       path: 'extras',
-      component: ExtrasComponent
+      component: ExtrasComponent,
+      canActivate: [AuthGuard]
     },
     {
       path: 'about',
