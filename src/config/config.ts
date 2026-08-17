@@ -15,6 +15,17 @@ export const BLOG : Blog =
     "posts":
       [
         {
+          "id": "should-i-keep-writing",
+          "date": "August 17, 2026",
+          "title": "Should I keep writing?",
+          "subtitle": "Are technology blogs relevant in the age of AI?",
+          "summary": "Placeholder",
+          "featuredImage": "./assets/images/shouldIKeppWriting/featuredImage.png",
+          "thumb": "./assets/images/shouldIKeppWriting/thumb.png",
+          "tags": ["life","code"],
+          "active": true
+        },
+        {
           "id": "my-days-of-comedy",
           "date": "August 29, 2024",
           "title": "My days of comedy",
