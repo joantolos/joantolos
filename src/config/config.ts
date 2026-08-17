@@ -19,7 +19,7 @@ export const BLOG : Blog =
           "date": "August 17, 2026",
           "title": "Should I keep writing?",
           "subtitle": "Are technology blogs relevant in the age of AI?",
-          "summary": "Placeholder",
+          "summary": "A reflection on how software development (and technical writing) are changing in the age of AI. After more than a decade of blogging, I’m exploring what is still worth writing about, how AI is reshaping my work, and why I remain optimistic about the future of our craft.",
           "featuredImage": "./assets/images/shouldIKeppWriting/featuredImage.png",
           "thumb": "./assets/images/shouldIKeppWriting/thumb.png",
           "tags": ["life","code"],
