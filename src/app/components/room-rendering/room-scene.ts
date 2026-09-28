@@ -36,7 +36,7 @@ export class RoomScene {
     canvas.style.width = '100%';
     canvas.style.height = '100%';
     canvas.setAttribute('role', 'img');
-    canvas.setAttribute('aria-label', 'Cutaway 3D view of the sample room');
+    canvas.setAttribute('aria-label', 'Cutaway 3D view of the selected room');
     canvas.addEventListener('webglcontextlost', this.contextLost);
     host.appendChild(canvas);
 

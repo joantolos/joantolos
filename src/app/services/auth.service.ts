@@ -48,6 +48,13 @@ export class AuthService {
   }
 
   checkSession(): Observable<boolean> {
+    // The development build is intended to run locally without requiring a
+    // finance login. Production builds always validate the server session.
+    if (!environment.production) {
+      this.authenticatedSubject.next(true);
+      return of(true);
+    }
+
     return this.http.get<SessionResponse>(
       `${environment.backendUrl}/auth/session`,
       { withCredentials: true }

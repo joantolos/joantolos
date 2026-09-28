@@ -10,13 +10,18 @@ import { RoomScene, RoomDimensions } from './room-scene';
 })
 export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
   @ViewChild('viewport', { static: true }) viewport!: ElementRef<HTMLDivElement>;
-  dimensions: RoomDimensions = { width: 4, depth: 4, height: 2.7 };
-  draft: RoomDimensions = { ...this.dimensions };
+  // Placeholder measurements; replace each room's values when available.
+  readonly rooms = [
+    { name: 'Olivia', dimensions: { width: 4, depth: 4, height: 2.7 } },
+    { name: 'Adria', dimensions: { width: 4, depth: 4, height: 2.7 } }
+  ] as const;
+  selectedRoom = this.rooms[0] as typeof this.rooms[number];
+
+  get dimensions(): RoomDimensions { return this.selectedRoom.dimensions; }
   view: 'perspective' | 'top' = 'perspective';
   showGrid = false;
   showWalls = true;
   renderError = false;
-  dimensionError = '';
   private scene?: RoomScene;
 
   constructor(private zone: NgZone, private auth: AuthService, private router: Router) {}
@@ -38,15 +43,8 @@ export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
     });
   }
 
-  applyDimensions(): void {
-    const { width, depth, height } = this.draft;
-    if (![width, depth, height].every(value => typeof value === 'number' && Number.isFinite(value)) ||
-      width < 2 || width > 10 || depth < 2 || depth > 10 || height < 2 || height > 4) {
-      this.dimensionError = 'Use a width and depth of 2–10 m, and a height of 2–4 m.';
-      return;
-    }
-    this.dimensionError = '';
-    this.dimensions = { width, depth, height };
+  selectRoom(room: typeof this.rooms[number]): void {
+    this.selectedRoom = room;
     this.zone.runOutsideAngular(() => {
       this.scene?.setDimensions(this.dimensions);
       this.scene?.setView(this.view);

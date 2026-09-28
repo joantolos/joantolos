@@ -16,25 +16,16 @@ describe('RoomRenderingComponent', () => {
     component = new RoomRenderingComponent(new NgZone({}), auth, router);
   });
 
-  it('updates the room and floor area using valid metre dimensions', () => {
-    component.draft = { width: 5, depth: 3.5, height: 2.4 };
-    component.applyDimensions();
-    expect(component.dimensions).toEqual({ width: 5, depth: 3.5, height: 2.4 });
-    expect(component.area).toBe(17.5);
-    component.draft.width = 7;
-    expect(component.dimensions.width).toBe(5);
-  });
-
-  it('keeps the rendered room intact for empty, non-finite or out-of-range input', () => {
-    for (const width of [null, NaN, Infinity, -1, 0, 11]) {
-      component.draft = { width: width as number, depth: 4, height: 2.7 };
-      component.applyDimensions();
-      expect(component.dimensions.width).toBe(4);
-      expect(component.dimensionError).not.toBe('');
+  it('switches between Olivia and Adria with the fixed example measurements', () => {
+    expect(component.selectedRoom.name).toBe('Olivia');
+    for (const room of component.rooms) {
+      component.selectRoom(room);
+      expect(component.selectedRoom.name).toBe(room.name);
+      expect(component.dimensions).toEqual({ width: 4, depth: 4, height: 2.7 });
+      expect(component.area).toBe(16);
     }
-    component.draft = { width: 4, depth: 4, height: 5 };
-    component.applyDimensions();
-    expect(component.dimensions.height).toBe(2.7);
+    component.selectRoom(component.rooms[0]);
+    expect(component.selectedRoom.name).toBe('Olivia');
   });
 
   it('ends the shared session and preserves the room return URL on logout', () => {
