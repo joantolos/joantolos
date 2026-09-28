@@ -1,0 +1,65 @@
+<main class="room-page">
+  <header class="page-heading">
+    <div>
+      <p class="eyebrow">Private workspace · Room planner</p>
+      <h1>A little room to imagine.</h1>
+      <p class="intro">Start with the space. Make it yours, one detail at a time.</p>
+    </div>
+    <button type="button" class="quiet" (click)="logout()">Log out</button>
+  </header>
+
+  <section class="workspace" aria-label="Room planner">
+    <aside class="settings">
+      <span class="sample-badge">Sample room</span>
+      <h2>Your starting point</h2>
+      <p class="description">A square room with warm oak flooring and soft white walls. These are example dimensions, ready to replace when you have your measurements.</p>
+
+      <form (ngSubmit)="applyDimensions()">
+        <h3>Room dimensions</h3>
+        <label for="room-width">Width <span>metres</span></label>
+        <input id="room-width" name="width" type="number" min="2" max="10" step="0.1" required [(ngModel)]="draft.width" aria-describedby="dimension-help">
+        <label for="room-depth">Depth <span>metres</span></label>
+        <input id="room-depth" name="depth" type="number" min="2" max="10" step="0.1" required [(ngModel)]="draft.depth" aria-describedby="dimension-help">
+        <label for="room-height">Ceiling height <span>metres</span></label>
+        <input id="room-height" name="height" type="number" min="2" max="4" step="0.1" required [(ngModel)]="draft.height" aria-describedby="dimension-help">
+        <p id="dimension-help" class="hint">Width &amp; depth: 2–10 m. Height: 2–4 m.</p>
+        <p *ngIf="dimensionError" class="error" role="alert">{{ dimensionError }}</p>
+        <button type="submit" class="primary">Update room <span aria-hidden="true">↗</span></button>
+      </form>
+
+      <div class="room-summary" aria-live="polite">
+        <span>Floor area</span><strong>{{ area | number:'1.0-2' }} <small>m²</small></strong>
+      </div>
+      <p class="hint">Two walls and the ceiling are cut away so you can see inside. Openings and furniture will come later.</p>
+    </aside>
+
+    <div class="scene-panel">
+      <div class="scene-toolbar">
+        <div class="view-switch" role="group" aria-label="Camera view">
+          <button type="button" [class.active]="view === 'perspective'" [attr.aria-pressed]="view === 'perspective'" (click)="setView('perspective')">3D view</button>
+          <button type="button" [class.active]="view === 'top'" [attr.aria-pressed]="view === 'top'" (click)="setView('top')">Top view</button>
+        </div>
+        <button type="button" class="quiet" (click)="resetCamera()" [disabled]="renderError">Reset view</button>
+      </div>
+      <div class="viewport" #viewport [class.unavailable]="renderError" aria-label="Interactive 3D room" aria-describedby="room-instructions">
+        <div *ngIf="renderError" class="render-error" role="alert">
+          <h2>3D preview unavailable</h2>
+          <p>Enable hardware acceleration or try a browser with WebGL support, then reload this page.</p>
+          <p>The sample room is {{ dimensions.width }} × {{ dimensions.depth }} × {{ dimensions.height }} m.</p>
+        </div>
+      </div>
+      <div class="scene-footer">
+        <p id="room-instructions">Drag to orbit · Scroll or pinch to zoom · Right-drag to pan</p>
+        <div class="scene-options" role="group" aria-label="Room display">
+          <button type="button" class="quiet" [attr.aria-pressed]="showGrid" (click)="toggleGrid()">{{ showGrid ? 'Hide' : 'Show' }} grid</button>
+          <button type="button" class="quiet" [attr.aria-pressed]="showWalls" (click)="toggleWalls()">{{ showWalls ? 'Hide' : 'Show' }} walls</button>
+        </div>
+      </div>
+      <div class="measurements" aria-live="polite">
+        <span>{{ dimensions.width | number:'1.1-1' }} m wide</span>
+        <span>{{ dimensions.depth | number:'1.1-1' }} m deep</span>
+        <span>{{ dimensions.height | number:'1.1-1' }} m high</span>
+      </div>
+    </div>
+  </section>
+</main>

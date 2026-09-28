@@ -26,6 +26,16 @@ Open **http://localhost:4200**. Log in at `/finance/login` with `local` / `local
 
 Since there is no local database, the dashboard loads from `FINANCE_DASHBOARD_JSON` in `.env`. Saves work for the session but are not persisted — fine for design iteration.
 
+## Private room renderer
+
+Open `/room-rendering` to view a sample 4 × 4 × 2.7 m room. It uses the same
+session guard and credentials as `/finance`; signing in returns you to the room.
+Drag to orbit, scroll/pinch to zoom, or use the top-view and reset buttons.
+Dimensions are editable in metres (2–10 m width/depth, 2–4 m height).
+The two-wall cutaway, floor, dimension guides, and optional 0.5 m grid are rendered
+locally with Three.js. Edits last only while the page is open. No IKEA connection,
+furniture, prices, doors, or windows are included in this initial version.
+
 ## Mail configuration
 
 

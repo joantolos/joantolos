@@ -62,6 +62,11 @@ import { ExtrasComponent } from './components/extras/extras.component';
       canActivate: [AuthGuard]
     },
     {
+      path: 'room-rendering',
+      canActivate: [AuthGuard],
+      loadChildren: () => import('./components/room-rendering/room-rendering.module').then(m => m.RoomRenderingModule)
+    },
+    {
       path: 'extra',
       component: ExtrasComponent,
       canActivate: [AuthGuard]
