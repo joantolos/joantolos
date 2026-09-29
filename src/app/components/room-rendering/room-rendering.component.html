@@ -14,19 +14,19 @@
         <button *ngFor="let room of rooms" type="button" [class.active]="selectedRoom === room" [attr.aria-pressed]="selectedRoom === room" (click)="selectRoom(room)">{{ room.name }}</button>
       </div>
       <h2>Your starting point</h2>
-      <p class="description">A square room with warm oak flooring and soft white walls. Both rooms use the same example measurements for now. Final measurements will be added later.</p>
+      <p class="description">{{ selectedRoom.name === 'Olivia' ? 'Olivia’s room, measured from the reference plan, with ceramic tiles, window, outlet, door and radiator.' : 'Adria’s room, measured from the reference plan, with a recessed corner, left-wall window, door and radiator.' }}</p>
 
       <h3>Room dimensions</h3>
       <dl class="dimension-list">
-        <div><dt>Width</dt><dd>{{ dimensions.width | number:'1.1-1' }} m</dd></div>
-        <div><dt>Depth</dt><dd>{{ dimensions.depth | number:'1.1-1' }} m</dd></div>
-        <div><dt>Ceiling height</dt><dd>{{ dimensions.height | number:'1.1-1' }} m</dd></div>
+        <div><dt>Maximum width</dt><dd>{{ dimensions.width | number:'1.2-2' }} m</dd></div>
+        <div><dt>Depth</dt><dd>{{ dimensions.depth | number:'1.2-2' }} m</dd></div>
+        <div><dt>Ceiling height</dt><dd>{{ dimensions.height | number:'1.2-2' }} m</dd></div>
       </dl>
 
       <div class="room-summary" aria-live="polite">
         <span>Floor area</span><strong>{{ area | number:'1.0-2' }} <small>m²</small></strong>
       </div>
-      <p class="hint">Two walls and the ceiling are cut away so you can see inside. Openings and furniture will come later.</p>
+      <p class="hint">{{ selectedRoom.name === 'Olivia' ? 'The front wall and ceiling are cut away. Door height (2.03 m) and radiator depth (0.10 m) are estimated; the plan does not specify them.' : 'The front and right walls and ceiling are cut away. Ceiling height (2.55 m), radiator width (1.08 m), radiator depth (0.10 m), door height (2.03 m) and tile finish are provisional.' }}</p>
     </aside>
 
     <div class="scene-panel">
@@ -52,9 +52,9 @@
         </div>
       </div>
       <div class="measurements" aria-live="polite">
-        <span>{{ dimensions.width | number:'1.1-1' }} m wide</span>
-        <span>{{ dimensions.depth | number:'1.1-1' }} m deep</span>
-        <span>{{ dimensions.height | number:'1.1-1' }} m high</span>
+        <span>{{ dimensions.width | number:'1.2-2' }} m wide</span>
+        <span>{{ dimensions.depth | number:'1.2-2' }} m deep</span>
+        <span>{{ dimensions.height | number:'1.2-2' }} m high</span>
       </div>
     </div>
   </section>
