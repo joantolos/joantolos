@@ -1,3 +1,4 @@
+import { FurniturePlacement, OLIVIA_VITVAL_CANDIDATE, SLATTUM_BED, MICKE_DESK, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -19,6 +20,7 @@ export class RoomScene {
   private readonly resizeObserver: ResizeObserver;
   private readonly room = new THREE.Group();
   private readonly walls = new THREE.Group();
+  private readonly furniture = new THREE.Group();
   private readonly grid = new THREE.Group();
   private dimensions: RoomDimensions = { width: 4, depth: 4, height: 2.7 };
   private disposed = false;
@@ -65,7 +67,7 @@ export class RoomScene {
     sunlight.shadow.camera.bottom = -12;
     sunlight.shadow.normalBias = 0.025;
     this.scene.add(sunlight);
-    this.scene.add(this.room, this.walls, this.grid);
+    this.scene.add(this.room, this.walls, this.grid, this.furniture);
     this.grid.visible = false;
 
     this.resizeObserver = new ResizeObserver(() => this.resize());
@@ -76,7 +78,7 @@ export class RoomScene {
   setDimensions(dimensions: RoomDimensions, fixtures?: RoomFixtures, floor: 'wood' | 'ceramic' = 'wood'): void {
     this.dimensions = { ...dimensions };
     this.hasFixtures = !!fixtures;
-    [this.room, this.walls, this.grid].forEach(group => this.clear(group));
+    [this.room, this.walls, this.grid, this.furniture].forEach(group => this.clear(group));
     const { width, depth, height, notch } = dimensions;
     this.floorBox(width, 0.14, depth, 0, -0.1, 0, 0xc4b49b);
 
@@ -250,6 +252,409 @@ export class RoomScene {
     }
   }
 
+  setFurniture(placements: readonly FurniturePlacement[]): void {
+    this.clear(this.furniture);
+    for (const placement of placements) {
+      const bed = new THREE.Group();
+      bed.name = placement.product.name;
+      bed.position.set(placement.x, 0, placement.z);
+      bed.rotation.y = placement.rotation || 0;
+      this.furniture.add(bed);
+      const { width, depth, height, footboardHeight } = placement.product.dimensions;
+      const upholstery = 0x55565a;
+      // Product dimensions are exact; upholstery details and bedding are illustrative.
+      for (const x of [-width / 2 + 0.05, width / 2 - 0.05]) {
+        for (const z of [-depth / 2 + 0.08, depth / 2 - 0.08]) {
+          this.box(bed, 0.035, 0.2, 0.035, x, 0.1, z, 0x252729);
+        }
+      }
+      this.box(bed, width, height - 0.16, 0.045, 0, (height + 0.16) / 2,
+        -depth / 2 + 0.0225, upholstery);
+      this.box(bed, width, 0.2, 0.035, 0, footboardHeight - 0.1,
+        depth / 2 - 0.0175, upholstery);
+      for (const x of [-width / 2 + 0.01, width / 2 - 0.01]) {
+        this.box(bed, 0.02, 0.2, depth - 0.08, x, 0.3, 0, upholstery);
+      }
+      const mattress = placement.product.mattress;
+      this.box(bed, mattress.width, 0.16, mattress.depth, 0, 0.43, 0.01, 0xf5f2e9);
+      this.box(bed, mattress.width + 0.01, 0.04, 1.35, 0, 0.525, 0.31, 0x8eaaa2);
+      this.box(bed, 0.62, 0.1, 0.38, 0, 0.56, -0.72, 0xfaf8f2);
+    }
+    this.render();
+  }
+
+  setOliviaLayout(product: OliviaProductId, visible: boolean, upperBedVisible: boolean): void {
+    this.clear(this.furniture);
+    if (!visible) { this.render(); return; }
+    if (product === 'slattum-micke') {
+      this.setSlattumMickeLayout();
+      this.render();
+      return;
+    }
+    if (product === 'kura') {
+      this.setKuraLayout(upperBedVisible);
+      this.render();
+      return;
+    }
+    if (product === 'tuffing') {
+      this.setTuffingLayout(upperBedVisible);
+      this.render();
+      return;
+    }
+    if (product === 'vitval') {
+      this.setVitvalLayout(upperBedVisible);
+      this.render();
+      return;
+    }
+    this.setSmastadLayout(upperBedVisible);
+    this.render();
+  }
+
+  /** KURA raised configuration, matched to IKEA's white/pine product photo. */
+  private setKuraLayout(upperBedVisible: boolean): void {
+    const { width, depth, height, underBedHeight } = KURA_BED.dimensions;
+    const wood = 0xd8bb8d;
+    const white = 0xf2f0e8;
+    const x = -0.225;
+    const z = -this.dimensions.depth / 2 + 0.03 + depth / 2;
+    const left = x - width / 2;
+    const right = x + width / 2;
+    const back = z - depth / 2;
+    const front = z + depth / 2;
+    const post = 0.045;
+    const upper = new THREE.Group();
+    upper.name = 'KURA raised bed';
+    upper.visible = upperBedVisible;
+    this.furniture.add(upper);
+    // Corner uprights and floor rails remain visible when looking underneath.
+    for (const px of [left + post / 2, right - post / 2]) {
+      for (const pz of [back + post / 2, front - post / 2]) {
+        this.box(this.furniture, post, underBedHeight, post, px, underBedHeight / 2, pz, wood);
+        this.box(upper, post, height - underBedHeight, post, px, (height + underBedHeight) / 2, pz, wood);
+      }
+      this.box(this.furniture, post, post, depth, px, post / 2, z, wood);
+    }
+    for (const pz of [back + post / 2, front - post / 2]) {
+      this.box(this.furniture, width, post, post, x, post / 2, pz, wood);
+    }
+    // The left end is panelled down to floor level; other lower sides are open.
+    this.box(this.furniture, 0.012, underBedHeight - 2 * post, depth - 2 * post,
+      left + post / 2, underBedHeight / 2, z, white);
+    // Integrated vertical ladder on the front-left, within the bed footprint.
+    const ladderRight = left + 0.4;
+    this.box(this.furniture, post, underBedHeight, post,
+      ladderRight, underBedHeight / 2, front - post / 2, wood);
+    this.box(upper, post, height - underBedHeight, post,
+      ladderRight, (height + underBedHeight) / 2, front - post / 2, wood);
+    for (const y of [0.29, 0.57]) {
+      this.box(this.furniture, 0.4, post, 0.06, left + 0.2, y, front - 0.03, wood);
+    }
+    this.box(upper, width, 0.045, depth, x, underBedHeight + 0.0225, z, wood);
+    // White inset guards framed in pine; leave the ladder entrance open.
+    const guardHeight = height - underBedHeight;
+    for (const [start, end, pz] of [[left, right, back + post / 2], [ladderRight, right, front - post / 2]]) {
+      this.box(upper, end - start, guardHeight - 2 * post, 0.012,
+        (start + end) / 2, (height + underBedHeight) / 2, pz, white);
+      for (const y of [underBedHeight + post / 2, height - post / 2]) {
+        this.box(upper, end - start, post, post, (start + end) / 2, y, pz, wood);
+      }
+    }
+    for (const px of [left + post / 2, right - post / 2]) {
+      this.box(upper, 0.012, guardHeight - 2 * post, depth - 2 * post,
+        px, (height + underBedHeight) / 2, z, white);
+      for (const y of [underBedHeight + post / 2, height - post / 2]) {
+        this.box(upper, post, post, depth, px, y, z, wood);
+      }
+    }
+  }
+
+  private setSlattumMickeLayout(): void {
+    // Bed across the back wall, headboard left: 206 × 94 cm, 3 cm off the back.
+    this.setFurniture([{ product: SLATTUM_BED, x: -0.225, z: -0.53, rotation: Math.PI / 2 }]);
+    // Separate desk against the front wall at the window end, facing the bed.
+    // Leaves 56 cm between bed and desk; the entry door and radiator are on the left.
+    this.addMickeDesk(0.9, 0.75);
+  }
+
+  private addMickeDesk(x: number, z: number, rotation = 0): void {
+    const desk = new THREE.Group();
+    desk.name = 'MICKE';
+    desk.position.set(x, 0, z);
+    desk.rotation.y = rotation;
+    this.furniture.add(desk);
+    const { width, depth, height } = MICKE_DESK.dimensions;
+    const white = 0xf2f0e8;
+    this.box(desk, width, 0.035, depth, 0, height - 0.0175, 0, white);
+    this.box(desk, 0.035, height - 0.035, depth, -width / 2 + 0.0175, (height - 0.035) / 2, 0, white);
+    for (const z of [-depth / 2 + 0.02, depth / 2 - 0.02]) {
+      this.box(desk, 0.025, height - 0.035, 0.025, width / 2 - 0.02, (height - 0.035) / 2, z, white);
+    }
+    this.box(desk, 0.025, 0.025, depth, width / 2 - 0.02, 0.0125, 0, white);
+    this.box(desk, width - 0.07, 0.09, 0.025, 0, 0.675, -depth / 2 + 0.0125, white);
+    this.box(desk, 0.12, 0.012, 0.005, 0, 0.713, -depth / 2 - 0.0025, 0x707570);
+    this.box(desk, width - 0.07, 0.12, 0.025, 0, 0.65, depth / 2 - 0.0125, white);
+  }
+
+  /** Simplified SMÅSTAD candidate; metres. Carcass sits inside the 207 × 104 cm footprint; pulls project 2.5 cm. */
+  private setSmastadLayout(upperBedVisible: boolean): void {
+    const frame = 0xd4bb96;
+    const white = 0xf2f0e8;
+    const bedWidth = 2.07;
+    const bedDepth = 1.04;
+    const bedX = -0.225;
+    const bedZ = -0.48;
+    const bedLeft = bedX - bedWidth / 2;
+    const bedRight = bedX + bedWidth / 2;
+    const bedBack = bedZ - bedDepth / 2;
+    const bedFront = bedZ + bedDepth / 2;
+    const upper = new THREE.Group();
+    upper.visible = upperBedVisible;
+    this.furniture.add(upper);
+    // SMÅSTAD footprint 207 × 104 cm, placed 3 cm from the back wall.
+    for (const x of [bedLeft + 0.035, bedRight - 0.035]) {
+      for (const z of [bedBack + 0.035, bedFront - 0.035]) {
+        this.box(this.furniture, 0.07, 1.42, 0.07, x, 0.71, z, frame);
+        this.box(upper, 0.07, 0.4, 0.07, x, 1.62, z, frame);
+      }
+    }
+    this.box(upper, bedWidth, 0.1, bedDepth, bedX, 1.42, bedZ, frame);
+    this.box(upper, 2, 0.12, 0.9, bedX, 1.53, bedZ, white);
+    this.box(upper, 1.35, 0.025, 0.91, bedX + 0.3, 1.605, bedZ, 0xbba6bf);
+    this.box(upper, 0.38, 0.08, 0.62, bedLeft + 0.3, 1.63, bedZ, white);
+    // Illustrative guardrails; the front rail stops short of the right end to leave the
+    // ladder opening, and the ladder below is aligned to exactly that gap.
+    const railWidth = 1.65;
+    const railX = bedX - 0.225;
+    for (const y of [1.67, 1.79]) {
+      this.box(upper, bedWidth, 0.06, 0.045, bedX, y, bedBack + 0.02, frame);
+      this.box(upper, railWidth, 0.06, 0.045, railX, y, bedFront - 0.02, frame);
+      for (const x of [bedLeft + 0.02, bedRight - 0.02]) this.box(upper, 0.045, 0.06, bedDepth, x, y, bedZ, frame);
+    }
+
+    // Reference arrangement of combination 594.288.73: the desk runs along the back wall
+    // from the left end, its 3-drawer chest underneath at that end, the storage tower fills
+    // the right end behind the ladder, and the ladder is flat on the front face.
+    const deskWidth = 1.48;
+    const deskDepth = 0.6;
+    const deskX = bedLeft + deskWidth / 2;
+    const deskZ = bedBack + deskDepth / 2;
+    const chestWidth = 0.6;
+    const chestDepth = 0.58;
+    const chestX = bedLeft + chestWidth / 2;
+    const chestZ = bedBack + chestDepth / 2;
+    const chestHeight = 0.69;
+    // The 148 × 60 cm desk top is carried by the chest at its left end and legs at its right.
+    this.box(this.furniture, deskWidth, 0.04, deskDepth, deskX, 0.73, deskZ, frame);
+    for (const z of [deskZ - deskDepth / 2 + 0.04, deskZ + deskDepth / 2 - 0.04]) {
+      this.box(this.furniture, 0.04, 0.7, 0.04, bedLeft + deskWidth - 0.04, 0.35, z, white);
+    }
+    // Three drawers; the fronts face the room and their handles are sold separately.
+    this.box(this.furniture, chestWidth, chestHeight, chestDepth, chestX, chestHeight / 2, chestZ, white);
+    for (let i = 0; i < 3; i++) {
+      this.box(this.furniture, chestWidth - 0.03, 0.2, 0.02,
+        chestX, 0.115 + i * 0.23, chestZ + chestDepth / 2 + 0.01, frame);
+    }
+
+    // The storage runs along the entire right-hand bed end. Its door, bottom
+    // drawer and adjacent open shelves all face +X: Olivia's window wall.
+    // Build a hollow carcass so shelves read as openings rather than trim on a block.
+    const towerLeft = bedLeft + deskWidth;
+    const towerWidth = bedRight - towerLeft;
+    const panel = 0.025;
+    const towerBack = bedBack + 0.02;
+    const towerFront = bedFront - 0.075;
+    const towerDepth = towerFront - towerBack;
+    const towerX = towerLeft + towerWidth / 2;
+    const towerZ = (towerBack + towerFront) / 2;
+    const wardrobeDepth = 0.56;
+    const dividerZ = towerBack + wardrobeDepth;
+    const wardrobeZ = (towerBack + dividerZ) / 2;
+    const shelfDepth = towerFront - dividerZ;
+    const shelfZ = (dividerZ + towerFront) / 2;
+    const storage = new THREE.Group();
+    storage.name = 'smastad-window-facing-storage';
+    this.furniture.add(storage);
+    this.box(storage, panel, 1.42, towerDepth,
+      towerLeft + panel / 2, 0.71, towerZ, white);
+    for (const z of [towerBack + panel / 2, dividerZ, towerFront - panel / 2]) {
+      this.box(storage, towerWidth, 1.42, panel, towerX, 0.71, z, white);
+    }
+    for (const y of [0.035, 1.395]) {
+      this.box(storage, towerWidth, panel, towerDepth, towerX, y, towerZ, white);
+    }
+    // Fronts sit outside the carcass on the window-facing end, never on +Z
+    // (the ladder/room face). Leave a visible reveal between the door and drawer.
+    const frontX = bedRight - panel / 2;
+    this.box(storage, panel, 1.02, wardrobeDepth - 0.04,
+      frontX, 0.875, wardrobeZ, white);
+    this.box(storage, panel, 0.29, wardrobeDepth - 0.04,
+      frontX, 0.195, wardrobeZ, white);
+    // Small contrasting pulls make the opening direction unambiguous.
+    this.box(storage, 0.025, 0.09, 0.025,
+      bedRight + 0.0125, 0.87, dividerZ - 0.08, 0x87917e);
+    this.box(storage, 0.025, 0.025, 0.12,
+      bedRight + 0.0125, 0.29, wardrobeZ, 0x87917e);
+    for (const y of [0.38, 0.73, 1.08]) {
+      this.box(storage, towerWidth - panel, panel, shelfDepth - panel,
+        towerX + panel / 2, y, shelfZ, white);
+    }
+
+    // Fixed ladder on the front face, filling the guardrail opening at the right end.
+    const ladderLeft = railX + railWidth / 2;
+    const ladderRight = bedRight - 0.02;
+    const ladderWidth = ladderRight - ladderLeft;
+    const ladderX = (ladderLeft + ladderRight) / 2;
+    const ladderZ = bedFront - 0.04;
+    for (const x of [ladderLeft + 0.03, ladderRight - 0.03]) {
+      this.box(this.furniture, 0.06, 1.48, 0.06, x, 0.74, ladderZ, frame);
+    }
+    for (let y = 0.22; y < 1.42; y += 0.27) {
+      this.box(this.furniture, ladderWidth - 0.1, 0.05, 0.05, ladderX, y, ladderZ, frame);
+    }
+
+    // One chair in the knee space between the chest and the desk's right leg.
+    const chairX = (bedLeft + chestWidth + bedLeft + deskWidth) / 2;
+    const chairZ = deskZ + deskDepth / 2 + 0.25;
+    this.box(this.furniture, 0.4, 0.05, 0.4, chairX, 0.44, chairZ, 0x8eaaa2);
+    this.box(this.furniture, 0.4, 0.35, 0.04, chairX, 0.635, chairZ + 0.2, 0x8eaaa2);
+  }
+
+  /** VITVAL frame only. IKEA footprint: 207 × 97 cm, 135 cm including ladder. */
+  private setVitvalLayout(upperBedVisible: boolean): void {
+    const frame = 0xf2f0e8;
+    const fabric = 0xa9adaa;
+    const dimensions = OLIVIA_VITVAL_CANDIDATE.dimensions;
+    const bedWidth = dimensions.width;
+    const bedDepth = dimensions.depth;
+    const bedX = -0.225;
+    const bedZ = -0.48;
+    const bedLeft = bedX - bedWidth / 2;
+    const bedRight = bedX + bedWidth / 2;
+    const bedBack = bedZ - bedDepth / 2;
+    const bedFront = bedZ + bedDepth / 2;
+    const radius = 0.0225;
+    const upper = new THREE.Group();
+    upper.visible = upperBedVisible;
+    this.furniture.add(upper);
+    const tube = (group: THREE.Group, from: THREE.Vector3, to: THREE.Vector3) => {
+      const direction = to.clone().sub(from);
+      const mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, direction.length(), 12),
+        new THREE.MeshStandardMaterial({ color: frame, roughness: 0.65 }));
+      mesh.position.copy(from).add(to).multiplyScalar(0.5);
+      mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      group.add(mesh);
+    };
+    for (const x of [bedLeft + radius, bedRight - radius]) {
+      for (const z of [bedBack + radius, bedFront - radius]) {
+        tube(this.furniture, new THREE.Vector3(x, 0, z), new THREE.Vector3(x, 1.51, z));
+        tube(upper, new THREE.Vector3(x, 1.51, z), new THREE.Vector3(x, 1.95, z));
+      }
+      for (const y of [0.55, 0.95]) {
+        this.box(this.furniture, 0.035, 0.06, bedDepth - 0.045, x, y, bedZ, frame);
+      }
+    }
+    this.box(upper, bedWidth, 0.06, bedDepth, bedX, 1.54, bedZ, frame);
+    // Front entrance is near the right end, with a short guard beyond it.
+    const ladderRight = bedRight - 0.38;
+    const ladderLeft = ladderRight - 0.4;
+    for (const [left, right] of [[bedLeft, ladderLeft], [ladderRight, bedRight]]) {
+      this.box(upper, right - left, 0.34, 0.025, (left + right) / 2, 1.755, bedFront - radius, fabric);
+    }
+    this.box(upper, bedWidth, 0.34, 0.025, bedX, 1.755, bedBack + radius, fabric);
+    for (const x of [bedLeft + radius, bedRight - radius]) {
+      this.box(upper, 0.025, 0.34, bedDepth - 0.045, x, 1.755, bedZ, fabric);
+    }
+    // Match the published outermost ladder footprint, including tube radius.
+    // The lower rails slope outwards; the handrails rise vertically at the opening.
+    // The exact bend/step positions are illustrative, not dimensioned by IKEA.
+    const topZ = bedFront - radius;
+    const footZ = bedBack + dimensions.depthWithLadder - radius;
+    const footY = radius;
+    const ladderTop = dimensions.underBedHeight;
+    const ladder = new THREE.Group();
+    ladder.name = 'vitval-sloping-ladder';
+    this.furniture.add(ladder);
+    for (const x of [ladderLeft, ladderRight]) {
+      tube(ladder, new THREE.Vector3(x, footY, footZ), new THREE.Vector3(x, ladderTop, topZ));
+      tube(upper, new THREE.Vector3(x, ladderTop, topZ), new THREE.Vector3(x, 1.95, topZ));
+    }
+    for (const y of [0.28, 0.58, 0.88, 1.18, 1.48]) {
+      const z = footZ + (topZ - footZ) * (y - footY) / (ladderTop - footY);
+      tube(ladder, new THREE.Vector3(ladderLeft, y, z), new THREE.Vector3(ladderRight, y, z));
+    }
+  }
+
+  /** TUFFING frame and separate MICKE; ladder footprint from IKEA dimension drawing. */
+  private setTuffingLayout(upperBedVisible: boolean): void {
+    const frame = 0x4b4e50;
+    const fabric = 0x727574;
+    const dimensions = TUFFING_BED.dimensions;
+    const bedWidth = dimensions.width;
+    const bedDepth = dimensions.depth;
+    const bedX = -0.225;
+    const bedZ = -0.48;
+    const bedLeft = bedX - bedWidth / 2;
+    const bedRight = bedX + bedWidth / 2;
+    const bedBack = bedZ - bedDepth / 2;
+    const bedFront = bedZ + bedDepth / 2;
+    const radius = 0.0225;
+    const upper = new THREE.Group();
+    upper.visible = upperBedVisible;
+    this.furniture.add(upper);
+    const tube = (group: THREE.Group, from: THREE.Vector3, to: THREE.Vector3) => {
+      const direction = to.clone().sub(from);
+      const mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, direction.length(), 12),
+        new THREE.MeshStandardMaterial({ color: frame, roughness: 0.65 }));
+      mesh.position.copy(from).add(to).multiplyScalar(0.5);
+      mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      group.add(mesh);
+    };
+    for (const x of [bedLeft + radius, bedRight - radius]) {
+      for (const z of [bedBack + radius, bedFront - radius]) {
+        tube(this.furniture, new THREE.Vector3(x, 0, z), new THREE.Vector3(x, 1.45, z));
+        tube(upper, new THREE.Vector3(x, 1.45, z), new THREE.Vector3(x, 1.79, z));
+      }
+      for (const y of [0.55, 0.95]) {
+        this.box(this.furniture, 0.035, 0.06, bedDepth - 0.045, x, y, bedZ, frame);
+      }
+    }
+    this.box(upper, bedWidth, 0.06, bedDepth, bedX, 1.48, bedZ, frame);
+    // Central entrance, with equal guard panels on either side.
+    const ladderRight = bedX + 0.2;
+    const ladderLeft = ladderRight - 0.4;
+    for (const [left, right] of [[bedLeft, ladderLeft], [ladderRight, bedRight]]) {
+      this.box(upper, right - left, 0.28, 0.025, (left + right) / 2, 1.64, bedFront - radius, fabric);
+    }
+    this.box(upper, bedWidth, 0.28, 0.025, bedX, 1.64, bedBack + radius, fabric);
+    for (const x of [bedLeft + radius, bedRight - radius]) {
+      this.box(upper, 0.025, 0.28, bedDepth - 0.045, x, 1.64, bedZ, fabric);
+    }
+    // Match the published outermost ladder footprint, including tube radius.
+    // Sloping central ladder; guard posts above belong to the upper frame.
+    // The exact bend/step positions are illustrative, not dimensioned by IKEA.
+    const topZ = bedFront - radius;
+    const footZ = bedBack + dimensions.depthWithLadder - radius;
+    const footY = radius;
+    const ladderTop = dimensions.underBedHeight;
+    const ladder = new THREE.Group();
+    ladder.name = 'tuffing-central-ladder';
+    this.furniture.add(ladder);
+    for (const x of [ladderLeft, ladderRight]) {
+      tube(ladder, new THREE.Vector3(x, footY, footZ), new THREE.Vector3(x, ladderTop, topZ));
+      tube(upper, new THREE.Vector3(x, ladderTop, topZ), new THREE.Vector3(x, 1.79, topZ));
+    }
+    for (const y of [0.25, 0.55, 0.85, 1.15]) {
+      const z = footZ + (topZ - footZ) * (y - footY) / (ladderTop - footY);
+      tube(ladder, new THREE.Vector3(ladderLeft, y, z), new THREE.Vector3(ladderRight, y, z));
+    }
+    // Desk faces out into the room; its 73 cm width fits beside the central ladder.
+    this.addMickeDesk(bedRight - 0.43, bedBack + 0.32, Math.PI);
+  }
+
   setView(view: 'perspective' | 'top'): void {
     this.currentView = view;
     const { width, depth, height } = this.dimensions;
@@ -350,7 +755,7 @@ export class RoomScene {
     this.resizeObserver.disconnect();
     this.controls.removeEventListener('change', this.render);
     this.controls.dispose();
-    [this.room, this.walls, this.grid].forEach(group => this.clear(group));
+    [this.room, this.walls, this.grid, this.furniture].forEach(group => this.clear(group));
     this.scene.traverse(object => {
       if (object instanceof THREE.DirectionalLight) object.shadow.dispose();
     });

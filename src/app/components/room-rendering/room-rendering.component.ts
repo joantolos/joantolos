@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, NgZone, OnDestroy, ViewChild } from '@angular/core';
+import { OLIVIA_LOFT_CANDIDATE, OLIVIA_VITVAL_CANDIDATE, SLATTUM_BED, MICKE_DESK, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { RoomScene, RoomDimensions, RoomFixtures } from './room-scene';
@@ -29,6 +30,42 @@ export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
   get fixtures(): RoomFixtures | undefined { return this.selectedRoom.fixtures; }
 
   get dimensions(): RoomDimensions { return this.selectedRoom.dimensions; }
+  readonly loftCandidate = OLIVIA_LOFT_CANDIDATE;
+  readonly vitvalCandidate = OLIVIA_VITVAL_CANDIDATE;
+  readonly slattumBed = SLATTUM_BED;
+  readonly kuraBed = KURA_BED;
+  readonly tuffingBed = TUFFING_BED;
+  readonly mickeDesk = MICKE_DESK;
+  selectedOliviaProduct: OliviaProductId = 'smastad';
+  oliviaLayoutPlaced = true;
+  upperBedVisible = true;
+
+  toggleOliviaLayout(): void {
+    this.oliviaLayoutPlaced = !this.oliviaLayoutPlaced;
+    this.refreshFurniture();
+  }
+
+  toggleUpperBed(): void {
+    this.upperBedVisible = !this.upperBedVisible;
+    this.refreshFurniture();
+  }
+
+  selectOliviaProduct(product: OliviaProductId): void {
+    this.selectedOliviaProduct = product;
+    this.refreshFurniture();
+  }
+
+
+  private refreshFurniture(): void {
+    this.zone.runOutsideAngular(() => {
+      if (this.selectedRoom.name === 'Olivia') {
+        this.scene?.setOliviaLayout(this.selectedOliviaProduct, this.oliviaLayoutPlaced, this.upperBedVisible);
+      } else {
+        this.scene?.setFurniture([]);
+      }
+    });
+  }
+
   view: 'perspective' | 'top' = 'perspective';
   showGrid = false;
   showWalls = true;
@@ -47,6 +84,7 @@ export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
           this.zone.run(() => this.renderError = true);
         });
         this.scene.setDimensions(this.dimensions, this.fixtures, this.selectedRoom.floor);
+        this.refreshFurniture();
         this.scene.setView(this.view);
       } catch {
         this.scene?.dispose();
@@ -59,6 +97,7 @@ export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
     this.selectedRoom = room;
     this.zone.runOutsideAngular(() => {
       this.scene?.setDimensions(this.dimensions, this.fixtures, this.selectedRoom.floor);
+      this.refreshFurniture();
       this.scene?.setView(this.view);
     });
   }

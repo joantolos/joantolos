@@ -13,24 +13,47 @@
       <div class="view-switch room-switch" role="group" aria-label="Choose room">
         <button *ngFor="let room of rooms" type="button" [class.active]="selectedRoom === room" [attr.aria-pressed]="selectedRoom === room" (click)="selectRoom(room)">{{ room.name }}</button>
       </div>
-      <h2>Your starting point</h2>
-      <p class="description">{{ selectedRoom.name === 'Olivia' ? 'Olivia’s room, measured from the reference plan, with ceramic tiles, window, outlet, door and radiator.' : 'Adria’s room, measured from the reference plan, with a recessed corner, left-wall window, door and radiator.' }}</p>
-
-      <h3>Room dimensions</h3>
-      <dl class="dimension-list">
-        <div><dt>Maximum width</dt><dd>{{ dimensions.width | number:'1.2-2' }} m</dd></div>
-        <div><dt>Depth</dt><dd>{{ dimensions.depth | number:'1.2-2' }} m</dd></div>
-        <div><dt>Ceiling height</dt><dd>{{ dimensions.height | number:'1.2-2' }} m</dd></div>
-      </dl>
-
-      <div class="room-summary" aria-live="polite">
-        <span>Floor area</span><strong>{{ area | number:'1.0-2' }} <small>m²</small></strong>
-      </div>
-      <p class="hint">{{ selectedRoom.name === 'Olivia' ? 'The front wall and ceiling are cut away. Door height (2.03 m) and radiator depth (0.10 m) are estimated; the plan does not specify them.' : 'The front and right walls and ceiling are cut away. Ceiling height (2.55 m), radiator width (1.08 m), radiator depth (0.10 m), door height (2.03 m) and tile finish are provisional.' }}</p>
+      <h2 *ngIf="selectedRoom.name === 'Olivia'">Layouts</h2>
+      <section *ngIf="selectedRoom.name === 'Olivia'" class="furniture-menu" aria-label="Olivia layouts">
+        <div class="view-switch furniture-switch" role="group" aria-label="Choose Olivia furniture">
+          <button type="button" [class.active]="selectedOliviaProduct === 'smastad'" [attr.aria-pressed]="selectedOliviaProduct === 'smastad'" (click)="selectOliviaProduct('smastad')">SMÅSTAD</button>
+          <button type="button" [class.active]="selectedOliviaProduct === 'vitval'" [attr.aria-pressed]="selectedOliviaProduct === 'vitval'" (click)="selectOliviaProduct('vitval')">VITVAL</button>
+          <button type="button" [class.active]="selectedOliviaProduct === 'slattum-micke'" [attr.aria-pressed]="selectedOliviaProduct === 'slattum-micke'" (click)="selectOliviaProduct('slattum-micke')">SLATTUM + MICKE</button>
+          <button type="button" [class.active]="selectedOliviaProduct === 'tuffing'" [attr.aria-pressed]="selectedOliviaProduct === 'tuffing'" (click)="selectOliviaProduct('tuffing')">TUFFING + MICKE</button>
+          <button type="button" [class.active]="selectedOliviaProduct === 'kura'" [attr.aria-pressed]="selectedOliviaProduct === 'kura'" (click)="selectOliviaProduct('kura')">KURA</button>
+        </div>
+        <article *ngIf="selectedOliviaProduct === 'smastad'" class="product-card">
+          <div class="product-heading"><strong>{{ loftCandidate.name }}</strong><span>{{ loftCandidate.price | currency:loftCandidate.currency:'symbol':'1.0-0' }}</span></div>
+          <a [href]="loftCandidate.url" target="_blank" rel="noopener noreferrer">Bed, desk &amp; wardrobe ↗</a>
+          <a [href]="loftCandidate.frameUrl" target="_blank" rel="noopener noreferrer">Base frame &amp; desk · €399 ↗</a>
+        </article>
+        <article *ngIf="selectedOliviaProduct === 'vitval'" class="product-card">
+          <div class="product-heading"><strong>{{ vitvalCandidate.name }}</strong><span>{{ vitvalCandidate.price | currency:vitvalCandidate.currency:'symbol':'1.0-0' }}</span></div>
+          <a [href]="vitvalCandidate.frameUrl" target="_blank" rel="noopener noreferrer">Bed frame ↗</a>
+        </article>
+        <article *ngIf="selectedOliviaProduct === 'slattum-micke'" class="product-card">
+          <div class="product-heading"><strong>SLATTUM + MICKE</strong><span>{{ slattumBed.price + mickeDesk.price | currency:'EUR':'symbol':'1.2-2' }}</span></div>
+          <a [href]="slattumBed.url" target="_blank" rel="noopener noreferrer">SLATTUM bed · {{ slattumBed.price | currency:'EUR':'symbol':'1.2-2' }} ↗</a>
+          <a [href]="mickeDesk.url" target="_blank" rel="noopener noreferrer">MICKE desk · {{ mickeDesk.price | currency:'EUR':'symbol':'1.2-2' }} ↗</a>
+        </article>
+        <article *ngIf="selectedOliviaProduct === 'tuffing'" class="product-card">
+          <div class="product-heading"><strong>TUFFING + MICKE</strong><span>{{ tuffingBed.price + mickeDesk.price | currency:'EUR':'symbol':'1.2-2' }}</span></div>
+          <a [href]="tuffingBed.url" target="_blank" rel="noopener noreferrer">TUFFING bed · {{ tuffingBed.price | currency:'EUR':'symbol':'1.2-2' }} ↗</a>
+          <a [href]="mickeDesk.url" target="_blank" rel="noopener noreferrer">MICKE desk · {{ mickeDesk.price | currency:'EUR':'symbol':'1.2-2' }} ↗</a>
+        </article>
+        <article *ngIf="selectedOliviaProduct === 'kura'" class="product-card">
+          <div class="product-heading"><strong>KURA</strong><span>{{ kuraBed.price | currency:'EUR':'symbol':'1.0-0' }}</span></div>
+          <a [href]="kuraBed.url" target="_blank" rel="noopener noreferrer">Raised bed frame ↗</a>
+        </article>
+      </section>
     </aside>
 
     <div class="scene-panel">
       <div class="scene-toolbar">
+        <div *ngIf="selectedRoom.name === 'Olivia'" class="scene-options" role="group" aria-label="Furniture display">
+            <button type="button" [attr.aria-pressed]="oliviaLayoutPlaced" (click)="toggleOliviaLayout()">{{ oliviaLayoutPlaced ? 'Remove layout' : 'Show layout' }}</button>
+            <button *ngIf="selectedOliviaProduct !== 'slattum-micke'" type="button" [disabled]="!oliviaLayoutPlaced" [attr.aria-pressed]="!upperBedVisible" (click)="toggleUpperBed()">{{ upperBedVisible ? 'Look underneath the bed' : 'Show upper bed' }}</button>
+        </div>
         <div class="view-switch" role="group" aria-label="Camera view">
           <button type="button" [class.active]="view === 'perspective'" [attr.aria-pressed]="view === 'perspective'" (click)="setView('perspective')">3D view</button>
           <button type="button" [class.active]="view === 'top'" [attr.aria-pressed]="view === 'top'" (click)="setView('top')">Top view</button>
