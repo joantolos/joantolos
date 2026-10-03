@@ -18,7 +18,7 @@
         <div class="view-switch furniture-switch" role="group" aria-label="Choose Olivia furniture">
           <button type="button" [class.active]="selectedOliviaProduct === 'smastad'" [attr.aria-pressed]="selectedOliviaProduct === 'smastad'" (click)="selectOliviaProduct('smastad')">SMÅSTAD</button>
           <button type="button" [class.active]="selectedOliviaProduct === 'vitval'" [attr.aria-pressed]="selectedOliviaProduct === 'vitval'" (click)="selectOliviaProduct('vitval')">VITVAL</button>
-          <button type="button" [class.active]="selectedOliviaProduct === 'slattum-micke'" [attr.aria-pressed]="selectedOliviaProduct === 'slattum-micke'" (click)="selectOliviaProduct('slattum-micke')">SLATTUM + MICKE</button>
+          <button type="button" [class.active]="selectedOliviaProduct === 'beds-micke'" [attr.aria-pressed]="selectedOliviaProduct === 'beds-micke'" (click)="selectOliviaProduct('beds-micke')">Beds + MICKE</button>
           <button type="button" [class.active]="selectedOliviaProduct === 'tuffing'" [attr.aria-pressed]="selectedOliviaProduct === 'tuffing'" (click)="selectOliviaProduct('tuffing')">TUFFING + MICKE</button>
           <button type="button" [class.active]="selectedOliviaProduct === 'kura'" [attr.aria-pressed]="selectedOliviaProduct === 'kura'" (click)="selectOliviaProduct('kura')">KURA</button>
         </div>
@@ -31,10 +31,19 @@
           <div class="product-heading"><strong>{{ vitvalCandidate.name }}</strong><span>{{ vitvalCandidate.price | currency:vitvalCandidate.currency:'symbol':'1.0-0' }}</span></div>
           <a [href]="vitvalCandidate.frameUrl" target="_blank" rel="noopener noreferrer">Bed frame ↗</a>
         </article>
-        <article *ngIf="selectedOliviaProduct === 'slattum-micke'" class="product-card">
-          <div class="product-heading"><strong>SLATTUM + MICKE</strong><span>{{ slattumBed.price + mickeDesk.price | currency:'EUR':'symbol':'1.2-2' }}</span></div>
-          <a [href]="slattumBed.url" target="_blank" rel="noopener noreferrer">SLATTUM bed · {{ slattumBed.price | currency:'EUR':'symbol':'1.2-2' }} ↗</a>
-          <a [href]="mickeDesk.url" target="_blank" rel="noopener noreferrer">MICKE desk · {{ mickeDesk.price | currency:'EUR':'symbol':'1.2-2' }} ↗</a>
+        <article *ngIf="selectedOliviaProduct === 'beds-micke'" class="product-card">
+          <div class="product-heading"><strong>Beds + MICKE</strong></div>
+          <p class="furniture-subtotal">Visible furniture · {{ furnitureSubtotal | currency:'EUR':'symbol':'1.2-2' }}</p>
+          <p class="product-detail">Check items to show them. Choose one bed, one wardrobe and one storage set, or hide any of them. Mattresses are not included.</p>
+          <div class="furniture-item" *ngFor="let item of bedroomItems">
+            <label class="item-selection">
+              <input type="checkbox" [checked]="bedroomSelection[item.id]" [disabled]="!oliviaLayoutPlaced || (isStorageItem(item.id) && !bedroomSelection.vevelstad && !bedroomSelection.storklinta)"
+                (change)="toggleBedroomItem(item.id)">
+              <span>{{ item.name }}<span *ngIf="item.price !== undefined"> · {{ item.price | currency:'EUR':'symbol':'1.2-2' }}</span></span>
+            </label>
+            <p class="product-detail">{{ item.detail }}</p>
+            <a *ngIf="item.url" [href]="item.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="item.name + ' on IKEA'">View on IKEA ↗</a>
+          </div>
         </article>
         <article *ngIf="selectedOliviaProduct === 'tuffing'" class="product-card">
           <div class="product-heading"><strong>TUFFING + MICKE</strong><span>{{ tuffingBed.price + mickeDesk.price | currency:'EUR':'symbol':'1.2-2' }}</span></div>
@@ -52,7 +61,7 @@
       <div class="scene-toolbar">
         <div *ngIf="selectedRoom.name === 'Olivia'" class="scene-options" role="group" aria-label="Furniture display">
             <button type="button" [attr.aria-pressed]="oliviaLayoutPlaced" (click)="toggleOliviaLayout()">{{ oliviaLayoutPlaced ? 'Remove layout' : 'Show layout' }}</button>
-            <button *ngIf="selectedOliviaProduct !== 'slattum-micke'" type="button" [disabled]="!oliviaLayoutPlaced" [attr.aria-pressed]="!upperBedVisible" (click)="toggleUpperBed()">{{ upperBedVisible ? 'Look underneath the bed' : 'Show upper bed' }}</button>
+            <button *ngIf="selectedOliviaProduct !== 'beds-micke'" type="button" [disabled]="!oliviaLayoutPlaced" [attr.aria-pressed]="!upperBedVisible" (click)="toggleUpperBed()">{{ upperBedVisible ? 'Look underneath the bed' : 'Show upper bed' }}</button>
         </div>
         <div class="view-switch" role="group" aria-label="Camera view">
           <button type="button" [class.active]="view === 'perspective'" [attr.aria-pressed]="view === 'perspective'" (click)="setView('perspective')">3D view</button>

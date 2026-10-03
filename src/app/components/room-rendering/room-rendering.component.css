@@ -9,3 +9,5 @@
 .layout-switch{margin-top:10px;overflow-x:auto}.layout-switch button{white-space:nowrap}.layout-description{margin-top:8px!important}
 
 .scene-toolbar,.scene-toolbar .scene-options{flex-wrap:wrap}.product-heading{flex-wrap:wrap}.product-card a{display:block}.furniture-menu{margin-top:12px}
+
+.furniture-item{padding:10px 0;border-top:1px solid #dce2d6}.item-selection{display:flex;align-items:flex-start;gap:8px;font-size:12px;line-height:1.5;cursor:pointer}.item-selection input{width:16px;height:16px;flex:0 0 16px;margin:1px 0 0;accent-color:#354f3f}.item-selection input:focus-visible{outline:3px solid #7c9d84;outline-offset:3px}.furniture-item .product-detail,.furniture-item a{margin:5px 0 0 24px}.furniture-subtotal{font-weight:600}

@@ -12,8 +12,10 @@ export interface RoomProduct {
   mattress: { width: number; depth: number };
 }
 
+export type BedModel = Pick<RoomProduct, 'name' | 'dimensions' | 'mattress'>;
+
 export interface FurniturePlacement {
-  product: RoomProduct;
+  product: BedModel;
   x: number;
   z: number;
   rotation?: number;
@@ -84,7 +86,47 @@ export const MICKE_DESK = {
   dimensions: { width: 0.73, depth: 0.5, height: 0.75 }
 } as const;
 
-export type OliviaProductId = 'smastad' | 'vitval' | 'slattum-micke' | 'tuffing' | 'kura';
+/** IKEA Spain product dimensions and price checked 2026-10-03. */
+export const MICKE_DRAWERS = {
+  name: 'MICKE', articleNumber: '902.130.78', price: 59, currency: 'EUR',
+  checkedOn: '2026-10-03',
+  url: 'https://www.ikea.com/es/es/p/micke-cajonera-con-ruedas-blanco-90213078/',
+  dimensions: { width: 0.35, depth: 0.5, height: 0.75 }
+} as const;
+
+/** IKEA Spain product dimensions and price checked 2026-10-03. */
+export const ORFJALL_CHAIR = {
+  name: 'ÖRFJÄLL', articleNumber: '395.010.96', price: 79, currency: 'EUR',
+  checkedOn: '2026-10-03',
+  url: 'https://www.ikea.com/es/es/p/orfjall-silla-giratoria-blanco-vissle-azul-oscuro-s39501096/',
+  dimensions: { width: 0.68, depth: 0.68, minHeight: 0.82, maxHeight: 0.93,
+    seatWidth: 0.49, seatDepth: 0.43, minSeatHeight: 0.47, maxSeatHeight: 0.58 }
+} as const;
+
+/** IKEA Spain wardrobe selected for the space beside the bed; checked 2026-10-03. */
+export const SMASTAD_WARDROBE = {
+  name: 'SMÅSTAD', articleNumber: '493.908.75', price: 136, currency: 'EUR',
+  checkedOn: '2026-10-03',
+  url: 'https://www.ikea.com/es/es/p/smastad-armario-blanco-blanco-con-2-barras-armario-s49390875/',
+  dimensions: { width: 0.6, depth: 0.42, height: 1.81 }
+} as const;
+
+/** IKEA Spain 90 × 190 cm mattress options; dimensions describe the full frame. */
+export const VEVELSTAD_BED = {
+  name: 'VEVELSTAD', articleNumber: '605.867.53', price: 69.99, currency: 'EUR',
+  url: 'https://www.ikea.com/es/es/p/vevelstad-estructura-cama-blanco-60586753/',
+  dimensions: { width: 0.96, depth: 1.97, height: 0.27, footboardHeight: 0.27 },
+  mattress: { width: 0.9, depth: 1.9 }
+} as const;
+
+export const STORKLINTA_BED = {
+  name: 'STORKLINTA', articleNumber: '806.182.63', price: 109, slatsPrice: 30, currency: 'EUR',
+  url: 'https://www.ikea.com/es/es/p/storklinta-estructura-cama-blanco-80618263/',
+  dimensions: { width: 0.99, depth: 1.99, height: 1.01, footboardHeight: 0.39 },
+  mattress: { width: 0.9, depth: 1.9 }
+} as const;
+
+export type OliviaProductId = 'smastad' | 'vitval' | 'beds-micke' | 'tuffing' | 'kura';
 
 /** IKEA dimension drawing: 132 cm overall depth including the central ladder. */
 export const TUFFING_BED = {
@@ -99,3 +141,45 @@ export const KURA_BED = {
   url: 'https://www.ikea.com/es/es/p/kura-cama-reversible-blanco-pino-80253809/',
   dimensions: { width: 2.09, depth: 0.99, height: 1.16, underBedHeight: 0.83 }
 } as const;
+
+/** IKEA Spain catalogue checked 2026-10-03. */
+export const GURSKEN_WARDROBE = {
+  name: 'GURSKEN', articleNumber: '204.863.26', price: 69.99, currency: 'EUR',
+  url: 'https://www.ikea.com/es/es/p/gursken-armario-beige-claro-20486326/',
+  dimensions: { width: 0.49, depth: 0.55, height: 1.86 }
+} as const;
+
+export const UNDER_BED_STORAGE = [
+  { id: 'skubb-small', name: 'SKUBB small', price: 5.99, width: 0.43, depth: 0.53, height: 0.19, kind: 'fabric',
+    url: 'https://www.ikea.com/es/es/p/skubb-bolsa-almacenaje-blanco-60591047/' },
+  { id: 'skubb-large', name: 'SKUBB large', price: 7.99, width: 0.53, depth: 0.65, height: 0.19, kind: 'fabric',
+    url: 'https://www.ikea.com/es/es/p/skubb-bolsa-almacenaje-blanco-10591059/' },
+  { id: 'sockerbit', name: 'SOCKERBIT', price: 19.99, width: 0.50, depth: 0.77, height: 0.19, kind: 'plastic',
+    url: 'https://www.ikea.com/es/es/p/sockerbit-caja-con-tapa-blanco-20411524/' },
+  { id: 'vardo', name: 'VARDÖ', price: 29.99, width: 0.65, depth: 0.70, height: 0.18, kind: 'wheels',
+    url: 'https://www.ikea.com/es/es/p/vardo-cajon-cama-blanco-00222671/' }
+] as const;
+export type UnderBedStorage = typeof UNDER_BED_STORAGE[number];
+
+/** One horizontal row, with 1 cm between boxes and clearance from frame ends. */
+export function storageCount(bed: BedModel, storage: UnderBedStorage): number {
+  const availableLength = bed.dimensions.depth - 0.10;
+  return Math.floor((availableLength + 0.01) / (storage.width + 0.01));
+}
+
+export const WALL_STORAGE = [
+  { id: 'enhet-wall', name: 'ENHET wall shelves', price: 40, width: 0.60, depth: 0.15, height: 0.75,
+    url: 'https://www.ikea.com/es/es/p/enhet-estructura-pared-con-baldas-blanco-00448967/', detail: '60 × 15 × 75 cm · three shelves' },
+  { id: 'lack-shelf', name: 'LACK wall shelf', price: 9.99, width: 0.30, depth: 0.26, height: 0.05,
+    url: 'https://www.ikea.com/es/es/p/lack-estante-pared-blanco-50282177/', detail: '30 × 26 cm · one shelf' },
+  { id: 'burhult-shelf', name: 'BURHULT / SIBBHULT shelf', price: 7.99, width: 0.59, depth: 0.20, height: 0.18,
+    url: 'https://www.ikea.com/es/es/p/burhult-sibbhult-estante-blanco-blanco-s89325963/', detail: '59 × 20 cm · shelf with brackets' }
+] as const;
+export type WallStorage = typeof WALL_STORAGE[number];
+export type BedroomItemId = 'vevelstad' | 'storklinta' | 'desk' | 'drawers' | 'chair' | 'smastad' | 'gursken' | UnderBedStorage['id'] | WallStorage['id'];
+export type BedroomSelection = Record<BedroomItemId, boolean>;
+export const DEFAULT_BEDROOM_SELECTION: Readonly<BedroomSelection> = {
+  vevelstad: false, storklinta: true, desk: true, drawers: true, chair: true, smastad: true, gursken: false,
+  'skubb-small': false, 'skubb-large': false, sockerbit: false, vardo: true,
+  'enhet-wall': false, 'lack-shelf': false, 'burhult-shelf': false
+};

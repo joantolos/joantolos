@@ -1,4 +1,4 @@
-import { FurniturePlacement, OLIVIA_VITVAL_CANDIDATE, SLATTUM_BED, MICKE_DESK, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
+import { UNDER_BED_STORAGE, WALL_STORAGE, storageCount, UnderBedStorage, WallStorage, FurniturePlacement, OLIVIA_VITVAL_CANDIDATE, VEVELSTAD_BED, STORKLINTA_BED, MICKE_DESK, MICKE_DRAWERS, ORFJALL_CHAIR, SMASTAD_WARDROBE, GURSKEN_WARDROBE, BedroomSelection, DEFAULT_BEDROOM_SELECTION, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -277,17 +277,19 @@ export class RoomScene {
       }
       const mattress = placement.product.mattress;
       this.box(bed, mattress.width, 0.16, mattress.depth, 0, 0.43, 0.01, 0xf5f2e9);
-      this.box(bed, mattress.width + 0.01, 0.04, 1.35, 0, 0.525, 0.31, 0x8eaaa2);
-      this.box(bed, 0.62, 0.1, 0.38, 0, 0.56, -0.72, 0xfaf8f2);
+      this.box(bed, mattress.width + 0.01, 0.04, mattress.depth * 0.675,
+        0, 0.525, mattress.depth * 0.155, 0x8eaaa2);
+      this.box(bed, 0.62, 0.1, 0.38, 0, 0.56, -mattress.depth / 2 + 0.28, 0xfaf8f2);
     }
     this.render();
   }
 
-  setOliviaLayout(product: OliviaProductId, visible: boolean, upperBedVisible: boolean): void {
+  setOliviaLayout(product: OliviaProductId, visible: boolean, upperBedVisible: boolean,
+    selection: Readonly<BedroomSelection> = DEFAULT_BEDROOM_SELECTION): void {
     this.clear(this.furniture);
     if (!visible) { this.render(); return; }
-    if (product === 'slattum-micke') {
-      this.setSlattumMickeLayout();
+    if (product === 'beds-micke') {
+      this.setBedroomLayout(selection);
       this.render();
       return;
     }
@@ -368,12 +370,280 @@ export class RoomScene {
     }
   }
 
-  private setSlattumMickeLayout(): void {
-    // Bed across the back wall, headboard left: 206 × 94 cm, 3 cm off the back.
-    this.setFurniture([{ product: SLATTUM_BED, x: -0.225, z: -0.53, rotation: Math.PI / 2 }]);
-    // Separate desk against the front wall at the window end, facing the bed.
-    // Leaves 56 cm between bed and desk; the entry door and radiator are on the left.
-    this.addMickeDesk(0.9, 0.75);
+  private setBedroomLayout(selection: Readonly<BedroomSelection>): void {
+    const bed = selection.vevelstad ? VEVELSTAD_BED : selection.storklinta ? STORKLINTA_BED : undefined;
+    if (bed) {
+      this.addSingleBed(bed);
+      const storage = UNDER_BED_STORAGE.find(option => selection[option.id]);
+      if (storage) this.addUnderBedStorage(bed, storage);
+    }
+    const wallStorage = WALL_STORAGE.find(option => selection[option.id]);
+    if (wallStorage) this.addWallStorage(wallStorage);
+    if (selection.desk) this.addMickeDesk(0.9, 0.75);
+    if (selection.drawers) {
+      this.addMickeDrawers(0.9 - MICKE_DESK.dimensions.width / 2 - MICKE_DRAWERS.dimensions.width / 2, 0.75);
+    }
+    if (selection.chair) this.addOrfjallChair(0.91, 0.30);
+    // Alternative wardrobes share the back-right corner and face into the room (+Z).
+    const wardrobe = selection.gursken ? GURSKEN_WARDROBE : selection.smastad ? SMASTAD_WARDROBE : undefined;
+    if (wardrobe) {
+      const x = this.dimensions.width / 2 - 0.03 - wardrobe.dimensions.width / 2;
+      const z = -this.dimensions.depth / 2 + 0.03 + wardrobe.dimensions.depth / 2;
+      if (selection.gursken) this.addGurskenWardrobe(x, z);
+      else this.addSmastadWardrobe(x, z);
+    }
+  }
+
+  private addWallStorage(storage: WallStorage): void {
+    const group = new THREE.Group();
+    group.name = `${storage.name} wall storage`;
+    group.position.set(-this.dimensions.width / 2 + 0.12 + storage.width / 2,
+      1.35, -this.dimensions.depth / 2 + storage.depth / 2 + 0.025);
+    this.furniture.add(group);
+    const white = 0xf2f0e8;
+    const bracket = 0x777b76;
+    if (storage.id === 'enhet-wall') {
+      for (const y of [0, 0.34, 0.68]) this.box(group, storage.width, 0.025, storage.depth, 0, y, 0, white);
+      for (const x of [-storage.width / 2 + 0.04, storage.width / 2 - 0.04]) this.box(group, 0.025, storage.height, 0.025, x, 0.34, 0, bracket);
+    } else {
+      this.box(group, storage.width, 0.035, storage.depth, 0, 0, 0, white);
+      this.box(group, 0.035, 0.12, 0.035, -storage.width / 2 + 0.08, -0.06, 0, bracket);
+      this.box(group, 0.035, 0.12, 0.035, storage.width / 2 - 0.08, -0.06, 0, bracket);
+    }
+  }
+
+  private addUnderBedStorage(bed: typeof VEVELSTAD_BED | typeof STORKLINTA_BED, storage: UnderBedStorage): void {
+    const row = new THREE.Group();
+    row.name = `${storage.name} storage row`;
+    this.furniture.add(row);
+    const count = storageCount(bed, storage);
+    const span = count * storage.width + (count - 1) * 0.01;
+    const bedX = -this.dimensions.width / 2 + 0.01 + bed.dimensions.depth / 2;
+    const front = -this.dimensions.depth / 2 + 0.03 + bed.dimensions.width - 0.05;
+    for (let i = 0; i < count; i++) {
+      const box = new THREE.Group();
+      box.name = `${storage.name} ${i + 1}`;
+      box.position.set(bedX - span / 2 + storage.width / 2 + i * (storage.width + 0.01), 0,
+        front - storage.depth / 2);
+      row.add(box);
+      const { width, depth, height } = storage;
+      const base = storage.kind === 'wheels' ? 0.035 : 0;
+      const white = storage.kind === 'fabric' ? 0xe6e3dc : 0xf2f0e8;
+      if (base) {
+        for (const x of [-width / 2 + 0.04, width / 2 - 0.04]) {
+          for (const z of [-depth / 2 + 0.04, depth / 2 - 0.04]) {
+            const wheel = new THREE.Mesh(new THREE.CylinderGeometry(base / 2, base / 2, 0.022, 12),
+              new THREE.MeshStandardMaterial({ color: 0x454847 }));
+            wheel.rotation.z = Math.PI / 2;
+            wheel.position.set(x, base / 2, z);
+            wheel.castShadow = true;
+            box.add(wheel);
+          }
+        }
+      }
+      this.box(box, width - 0.006, height - base - 0.012, depth - 0.006,
+        0, base + (height - base - 0.012) / 2, 0, white);
+      this.box(box, width, 0.012, depth, 0, height - 0.006, 0,
+        storage.kind === 'wheels' ? 0xc8c5bd : white);
+      // Front-facing fabric pull / recessed grip remains inside the quoted footprint.
+      this.box(box, 0.09, 0.022, 0.002, 0, base + (height - base) * 0.65,
+        depth / 2 - 0.002, storage.kind === 'fabric' ? 0xb0ada5 : 0x777971);
+    }
+  }
+
+  private addSingleBed(product: typeof VEVELSTAD_BED | typeof STORKLINTA_BED): void {
+    const bed = new THREE.Group();
+    bed.name = product.name;
+    const { width, depth, height, footboardHeight } = product.dimensions;
+    // 1 cm at the headboard leaves 2 cm between STORKLINTA and SMÅSTAD
+    // with the wardrobe 3 cm from the opposite wall: 1 + 199 + 2 + 60 + 3 = 265 cm.
+    bed.position.set(-this.dimensions.width / 2 + 0.01 + depth / 2,
+      0, -this.dimensions.depth / 2 + 0.03 + width / 2);
+    bed.rotation.y = Math.PI / 2;
+    this.furniture.add(bed);
+    const white = 0xf2f0e8;
+    const metal = product.name === 'VEVELSTAD';
+    const panel = metal ? 0.035 : 0.04;
+    const baseHeight = metal ? 0.27 : 0.30;
+    for (const px of [-width / 2 + panel / 2, width / 2 - panel / 2]) {
+      for (const pz of [-depth / 2 + panel / 2, depth / 2 - panel / 2]) {
+        this.box(bed, panel, 0.20, panel, px, 0.10, pz, white);
+      }
+      this.box(bed, panel, metal ? 0.07 : 0.19, depth - 2 * panel,
+        px, metal ? 0.235 : 0.295, 0, white);
+    }
+    for (const [pz, top] of [[-depth / 2 + panel / 2, height], [depth / 2 - panel / 2, footboardHeight]]) {
+      this.box(bed, width, top - 0.20, panel, 0, (top + 0.20) / 2, pz, white);
+    }
+    for (let i = 0; i < 15; i++) {
+      this.box(bed, product.mattress.width, 0.015, 0.055,
+        0, baseHeight - 0.0075, -0.90 + i * 1.8 / 14, 0xd8bb8d);
+    }
+    // Illustrative 16 cm mattress and bedding, within the catalogue frame footprint.
+    this.box(bed, 0.9, 0.16, 1.9, 0, baseHeight + 0.08, 0, 0xf5f2e9);
+    this.box(bed, 0.91, 0.04, 1.25, 0, baseHeight + 0.18, 0.30, 0x8eaaa2);
+    this.box(bed, 0.62, 0.10, 0.38, 0, baseHeight + 0.21, -0.65, 0xfaf8f2);
+  }
+
+  private addGurskenWardrobe(x: number, z: number): void {
+    const wardrobe = new THREE.Group();
+    wardrobe.name = 'GURSKEN wardrobe';
+    wardrobe.position.set(x, 0, z);
+    this.furniture.add(wardrobe);
+    const { width, depth, height } = GURSKEN_WARDROBE.dimensions;
+    const beige = 0xd8d1bf;
+    const panel = 0.018;
+    const plinth = 0.07;
+    for (const px of [-width / 2 + panel / 2, width / 2 - panel / 2]) {
+      this.box(wardrobe, panel, height, depth, px, height / 2, 0, beige);
+    }
+    for (const y of [plinth + panel / 2, height - panel / 2]) {
+      this.box(wardrobe, width - 2 * panel, panel, depth, 0, y, 0, beige);
+    }
+    this.box(wardrobe, width - 2 * panel, height, panel, 0, height / 2, -depth / 2 + panel / 2, beige);
+    this.box(wardrobe, width - 2 * panel, plinth, panel, 0, plinth / 2, depth / 2 - 0.04, beige);
+    this.box(wardrobe, width - 2 * panel - 0.003, height - plinth - 2 * panel,
+      panel, 0, (height + plinth) / 2, depth / 2 - panel / 2, beige);
+    // Single door with a small dark pull; details are illustrative.
+    this.box(wardrobe, 0.018, 0.055, 0.018, -width / 2 + 0.06, 0.95, depth / 2 + 0.009, 0x45443f);
+  }
+
+  private addSmastadWardrobe(x: number, z: number): void {
+    const wardrobe = new THREE.Group();
+    wardrobe.name = 'SMÅSTAD wardrobe';
+    wardrobe.position.set(x, 0, z);
+    this.furniture.add(wardrobe);
+    const { width, depth, height } = SMASTAD_WARDROBE.dimensions;
+    const white = 0xf2f0e8;
+    const panel = 0.018;
+    const feetHeight = 0.01;
+    const bodyHeight = height - feetHeight;
+    // Overall dimensions include the doors and adjustable feet.
+    for (const px of [-width / 2 + 0.04, width / 2 - 0.04]) {
+      for (const pz of [-depth / 2 + 0.04, depth / 2 - 0.04]) {
+        this.box(wardrobe, 0.035, feetHeight, 0.035, px, feetHeight / 2, pz, 0x707570);
+      }
+    }
+    for (const px of [-width / 2 + panel / 2, width / 2 - panel / 2]) {
+      this.box(wardrobe, panel, bodyHeight, depth - panel,
+        px, feetHeight + bodyHeight / 2, -panel / 2, white);
+    }
+    for (const y of [feetHeight + panel / 2, height - panel / 2]) {
+      this.box(wardrobe, width - 2 * panel, panel, depth - panel, 0, y, -panel / 2, white);
+    }
+    this.box(wardrobe, width - 2 * panel, bodyHeight - 2 * panel, panel,
+      0, feetHeight + bodyHeight / 2, -depth / 2 + panel / 2, white);
+    // Two pairs of 30 × 90 cm door fronts. Handles are sold separately.
+    for (const px of [-width / 4, width / 4]) {
+      for (const y of [feetHeight + bodyHeight / 4, feetHeight + 3 * bodyHeight / 4]) {
+        this.box(wardrobe, width / 2 - 0.003, bodyHeight / 2 - 0.003, panel,
+          px, y, depth / 2 - panel / 2, white);
+      }
+    }
+  }
+
+  private addOrfjallChair(x: number, z: number): void {
+    const chair = new THREE.Group();
+    chair.name = 'ÖRFJÄLL chair';
+    chair.position.set(x, 0, z);
+    this.furniture.add(chair);
+    const { width, seatWidth, seatDepth, minHeight, minSeatHeight } = ORFJALL_CHAIR.dimensions;
+    const white = 0xf2f0e8;
+    const blue = 0x263d59;
+    // Lowest seat setting. Upholstery and frame details are illustrative.
+    const tube = (from: THREE.Vector3, to: THREE.Vector3, radius: number, color: number): void => {
+      const direction = to.clone().sub(from);
+      const mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, direction.length(), 16),
+        new THREE.MeshStandardMaterial({ color: new THREE.Color(color).convertSRGBToLinear(), roughness: 0.7 }));
+      mesh.position.copy(from).add(to).multiplyScalar(0.5);
+      mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
+      mesh.castShadow = mesh.receiveShadow = true;
+      chair.add(mesh);
+    };
+    tube(new THREE.Vector3(0, 0.09, 0), new THREE.Vector3(0, minSeatHeight - 0.045, 0), 0.026, white);
+    // Five radial legs with paired castors, inside the 68 cm base footprint.
+    const radius = width / 2 - 0.035;
+    for (let i = 0; i < 5; i++) {
+      const angle = i * Math.PI * 2 / 5;
+      const px = Math.sin(angle) * radius;
+      const pz = Math.cos(angle) * radius;
+      tube(new THREE.Vector3(0, 0.12, 0), new THREE.Vector3(px, 0.075, pz), 0.018, white);
+      const axle = new THREE.Vector3(Math.cos(angle), 0, -Math.sin(angle));
+      const center = new THREE.Vector3(px, 0.035, pz);
+      tube(center.clone().addScaledVector(axle, -0.023), center.clone().addScaledVector(axle, 0.023), 0.035, white);
+    }
+    for (const px of [-0.15, 0.15]) {
+      tube(new THREE.Vector3(px, minSeatHeight - 0.04, -0.15),
+        new THREE.Vector3(px, minHeight - 0.10, -seatDepth / 2), 0.012, white);
+    }
+    // Rounded upholstered seat and separate backrest.
+    const cushion = (w: number, h: number, thickness: number): THREE.Mesh => {
+      const shape = new THREE.Shape();
+      const r = 0.035;
+      shape.moveTo(-w / 2 + r, -h / 2);
+      shape.lineTo(w / 2 - r, -h / 2);
+      shape.quadraticCurveTo(w / 2, -h / 2, w / 2, -h / 2 + r);
+      shape.lineTo(w / 2, h / 2 - r);
+      shape.quadraticCurveTo(w / 2, h / 2, w / 2 - r, h / 2);
+      shape.lineTo(-w / 2 + r, h / 2);
+      shape.quadraticCurveTo(-w / 2, h / 2, -w / 2, h / 2 - r);
+      shape.lineTo(-w / 2, -h / 2 + r);
+      shape.quadraticCurveTo(-w / 2, -h / 2, -w / 2 + r, -h / 2);
+      const geometry = new THREE.ExtrudeGeometry(shape, { depth: thickness, bevelEnabled: false, steps: 1, curveSegments: 8 });
+      geometry.translate(0, 0, -thickness / 2);
+      const mesh = new THREE.Mesh(geometry,
+        new THREE.MeshStandardMaterial({ color: new THREE.Color(blue).convertSRGBToLinear(), roughness: 1 }));
+      mesh.castShadow = mesh.receiveShadow = true;
+      chair.add(mesh);
+      return mesh;
+    };
+    const seat = cushion(seatWidth, seatDepth, 0.05);
+    seat.rotation.x = -Math.PI / 2;
+    seat.position.y = minSeatHeight - 0.025;
+    const back = cushion(seatWidth - 0.04, 0.25, 0.045);
+    back.position.set(0, minHeight - 0.125, -seatDepth / 2 + 0.0225);
+  }
+
+  private addMickeDrawers(x: number, z: number): void {
+    const drawers = new THREE.Group();
+    drawers.name = 'MICKE drawers';
+    drawers.position.set(x, 0, z);
+    this.furniture.add(drawers);
+    const { width, depth, height } = MICKE_DRAWERS.dimensions;
+    const white = 0xf2f0e8;
+    const panel = 0.018;
+    const wheelHeight = 0.05;
+    // Overall dimensions include the castors; drawer fronts face the bed (-Z).
+    for (const px of [-width / 2 + 0.045, width / 2 - 0.045]) {
+      for (const pz of [-depth / 2 + 0.055, depth / 2 - 0.055]) {
+        const wheel = new THREE.Mesh(new THREE.CylinderGeometry(0.025, 0.025, 0.025, 16),
+          new THREE.MeshStandardMaterial({ color: 0x363839 }));
+        wheel.rotation.z = Math.PI / 2;
+        wheel.position.set(px, wheelHeight / 2, pz);
+        wheel.castShadow = true;
+        drawers.add(wheel);
+      }
+    }
+    this.box(drawers, width, panel, depth, 0, height - panel / 2, 0, white);
+    this.box(drawers, width, panel, depth, 0, wheelHeight + panel / 2, 0, white);
+    for (const px of [-width / 2 + panel / 2, width / 2 - panel / 2]) {
+      this.box(drawers, panel, height - wheelHeight - 2 * panel, depth,
+        px, (height + wheelHeight) / 2, 0, white);
+    }
+    this.box(drawers, width - 2 * panel, height - wheelHeight - 2 * panel, panel,
+      0, (height + wheelHeight) / 2, depth / 2 - panel / 2, white);
+    // Three shallow drawers over a deeper bottom drawer; details are illustrative.
+    const bottom = wheelHeight + panel;
+    const available = height - panel - bottom;
+    let y = bottom;
+    for (const proportion of [0.4, 0.2, 0.2, 0.2]) {
+      const drawerHeight = available * proportion;
+      this.box(drawers, width - 2 * panel - 0.004, drawerHeight - 0.004, panel,
+        0, y + drawerHeight / 2, -depth / 2 + panel / 2, white);
+      this.box(drawers, 0.1, 0.012, 0.004,
+        0, y + drawerHeight - 0.014, -depth / 2, 0x454847);
+      y += drawerHeight;
+    }
   }
 
   private addMickeDesk(x: number, z: number, rotation = 0): void {
