@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, NgZone, OnDestroy, ViewChild } from '@angular/core';
-import { UNDER_BED_STORAGE, WALL_STORAGE, storageCount, OLIVIA_LOFT_CANDIDATE, OLIVIA_VITVAL_CANDIDATE, VEVELSTAD_BED, STORKLINTA_BED, MICKE_DESK, MICKE_DRAWERS, ORFJALL_CHAIR, SMASTAD_WARDROBE, GURSKEN_WARDROBE, BedroomSelection, DEFAULT_BEDROOM_SELECTION, BedroomItemId, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
+import { UNDER_BED_STORAGE, storageCount, OLIVIA_LOFT_CANDIDATE, OLIVIA_VITVAL_CANDIDATE, VEVELSTAD_BED, STORKLINTA_BED, JACKSON_BED, MICKE_DESK, MICKE_DRAWERS, ORFJALL_CHAIR, SMASTAD_WARDROBE, GURSKEN_WARDROBE, BedroomSelection, DEFAULT_BEDROOM_SELECTION, BedroomItemId, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { RoomScene, RoomDimensions, RoomFixtures } from './room-scene';
@@ -41,6 +41,7 @@ export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
   readonly baseBedroomItems: readonly { id: BedroomItemId; name: string; price?: number; url?: string; detail: string }[] = [
     { id: 'vevelstad', name: 'VEVELSTAD bed', price: VEVELSTAD_BED.price, url: VEVELSTAD_BED.url, detail: 'Frame 96 × 197 cm · Slats included · Mattress extra' },
     { id: 'storklinta', name: 'STORKLINTA bed + LURÖY', price: STORKLINTA_BED.price + STORKLINTA_BED.slatsPrice, url: STORKLINTA_BED.url, detail: 'Frame 99 × 199 cm · €109 frame + €30 slats · Mattress extra' },
+    { id: 'jackson', name: 'CHILD JACKSON bed', price: JACKSON_BED.price, url: JACKSON_BED.url, detail: 'Frame 98 × 194 × 66 cm · two drawers · 90 × 190 mattress' },
     { id: 'desk', name: 'MICKE desk', price: MICKE_DESK.price, url: MICKE_DESK.url, detail: '73 × 50 × 75 cm' },
     { id: 'drawers', name: 'MICKE drawers', price: MICKE_DRAWERS.price, url: MICKE_DRAWERS.url, detail: '35 × 50 × 75 cm' },
     { id: 'chair', name: 'ÖRFJÄLL chair', price: ORFJALL_CHAIR.price, url: ORFJALL_CHAIR.url, detail: 'White / dark blue' },
@@ -48,22 +49,18 @@ export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
     { id: 'gursken', name: 'GURSKEN wardrobe', price: GURSKEN_WARDROBE.price, url: GURSKEN_WARDROBE.url, detail: '49 × 55 × 186 cm · Light beige' }
   ];
   get bedroomItems(): readonly { id: BedroomItemId; name: string; price?: number; url?: string; detail: string }[] {
-    const bed = this.bedroomSelection.storklinta ? STORKLINTA_BED : VEVELSTAD_BED;
+    const bed = this.bedroomSelection.storklinta ? STORKLINTA_BED : this.bedroomSelection.jackson ? JACKSON_BED : VEVELSTAD_BED;
     return [...this.baseBedroomItems, ...UNDER_BED_STORAGE.map(storage => {
       const count = storageCount(bed, storage);
       return { id: storage.id, name: `${count} × ${storage.name}`, price: count * storage.price, url: storage.url,
         detail: `${Math.round(storage.width * 100)} × ${Math.round(storage.depth * 100)} × ${Math.round(storage.height * 100)} cm each · One row under the bed` };
-    }), ...WALL_STORAGE.map(storage => ({ id: storage.id, name: storage.name, price: storage.price,
-      url: storage.url, detail: storage.detail }))];
+    })];
   }
 
   isStorageItem(id: BedroomItemId): boolean {
     return UNDER_BED_STORAGE.some(storage => storage.id === id);
   }
 
-  isWallStorageItem(id: BedroomItemId): boolean {
-    return WALL_STORAGE.some(storage => storage.id === id);
-  }
 
   readonly bedroomSelection: BedroomSelection = { ...DEFAULT_BEDROOM_SELECTION };
 
@@ -77,19 +74,16 @@ export class RoomRenderingComponent implements AfterViewInit, OnDestroy {
     if (this.isStorageItem(id) && !hasBed) return;
     this.bedroomSelection[id] = !this.bedroomSelection[id];
     if (this.bedroomSelection[id]) {
-      if (id === 'vevelstad' || id === 'storklinta') {
-        this.bedroomSelection[id === 'vevelstad' ? 'storklinta' : 'vevelstad'] = false;
+      if (id === 'vevelstad' || id === 'storklinta' || id === 'jackson') {
+        for (const bedId of ['vevelstad', 'storklinta', 'jackson'] as const) this.bedroomSelection[bedId] = bedId === id;
       }
       if (this.isStorageItem(id)) {
         for (const storage of UNDER_BED_STORAGE) this.bedroomSelection[storage.id] = storage.id === id;
       }
-      if (this.isWallStorageItem(id)) {
-        for (const option of WALL_STORAGE) this.bedroomSelection[option.id] = option.id === id;
-      }
       if (id === 'smastad') this.bedroomSelection.gursken = false;
       if (id === 'gursken') this.bedroomSelection.smastad = false;
     }
-    if (!this.bedroomSelection.vevelstad && !this.bedroomSelection.storklinta) {
+    if (!this.bedroomSelection.vevelstad && !this.bedroomSelection.storklinta && !this.bedroomSelection.jackson) {
       for (const storage of UNDER_BED_STORAGE) this.bedroomSelection[storage.id] = false;
     }
     this.refreshFurniture();

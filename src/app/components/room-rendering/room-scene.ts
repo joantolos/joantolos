@@ -1,4 +1,4 @@
-import { UNDER_BED_STORAGE, WALL_STORAGE, storageCount, UnderBedStorage, WallStorage, FurniturePlacement, OLIVIA_VITVAL_CANDIDATE, VEVELSTAD_BED, STORKLINTA_BED, MICKE_DESK, MICKE_DRAWERS, ORFJALL_CHAIR, SMASTAD_WARDROBE, GURSKEN_WARDROBE, BedroomSelection, DEFAULT_BEDROOM_SELECTION, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
+import { UNDER_BED_STORAGE, storageCount, UnderBedStorage, FurniturePlacement, OLIVIA_VITVAL_CANDIDATE, VEVELSTAD_BED, STORKLINTA_BED, JACKSON_BED, MICKE_DESK, MICKE_DRAWERS, ORFJALL_CHAIR, SMASTAD_WARDROBE, GURSKEN_WARDROBE, BedroomSelection, DEFAULT_BEDROOM_SELECTION, TUFFING_BED, KURA_BED, OliviaProductId } from './room-furniture';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -80,21 +80,21 @@ export class RoomScene {
     this.hasFixtures = !!fixtures;
     [this.room, this.walls, this.grid, this.furniture].forEach(group => this.clear(group));
     const { width, depth, height, notch } = dimensions;
-    this.floorBox(width, 0.14, depth, 0, -0.1, 0, 0xc4b49b);
+    this.floorBox(width, 0.14, depth, 0, -0.1, 0, floor === 'ceramic' ? 0x555856 : 0xc4b49b);
 
     if (floor === 'ceramic') {
-      // Neutral 40 cm ceramic tiles with 3 mm grout; tile finish/size are illustrative.
+      // Granite-look 40 cm tiles with darker grout and subtle stone variation.
       const tileSize = 0.4;
-      const grout = 0.003;
-      this.floorBox(width, 0.025, depth, 0, -0.02, 0, 0xaaa79f);
-      const shades = [0xd7d5ce, 0xdbd9d2, 0xd4d2cb];
+      const grout = 0.006;
+      this.floorBox(width, 0.025, depth, 0, -0.02, 0, 0x4a4d4c);
+      const shades = [0x777a77, 0x686c6a, 0x858783, 0x707371];
       for (let column = 0; column < Math.ceil(width / tileSize); column++) {
         for (let row = 0; row < Math.ceil(depth / tileSize); row++) {
           const tileWidth = Math.min(tileSize, width - column * tileSize);
           const tileDepth = Math.min(tileSize, depth - row * tileSize);
           this.floorBox(tileWidth - grout, 0.02, tileDepth - grout,
             -width / 2 + column * tileSize + tileWidth / 2, -0.005,
-            -depth / 2 + row * tileSize + tileDepth / 2, shades[(column + row * 2) % shades.length], 0.3);
+            -depth / 2 + row * tileSize + tileDepth / 2, shades[(column * 3 + row * 2) % shades.length], 0.72);
         }
       }
     } else {
@@ -371,14 +371,12 @@ export class RoomScene {
   }
 
   private setBedroomLayout(selection: Readonly<BedroomSelection>): void {
-    const bed = selection.vevelstad ? VEVELSTAD_BED : selection.storklinta ? STORKLINTA_BED : undefined;
+    const bed = selection.vevelstad ? VEVELSTAD_BED : selection.storklinta ? STORKLINTA_BED : selection.jackson ? JACKSON_BED : undefined;
     if (bed) {
       this.addSingleBed(bed);
       const storage = UNDER_BED_STORAGE.find(option => selection[option.id]);
       if (storage) this.addUnderBedStorage(bed, storage);
     }
-    const wallStorage = WALL_STORAGE.find(option => selection[option.id]);
-    if (wallStorage) this.addWallStorage(wallStorage);
     if (selection.desk) this.addMickeDesk(0.9, 0.75);
     if (selection.drawers) {
       this.addMickeDrawers(0.9 - MICKE_DESK.dimensions.width / 2 - MICKE_DRAWERS.dimensions.width / 2, 0.75);
@@ -394,25 +392,7 @@ export class RoomScene {
     }
   }
 
-  private addWallStorage(storage: WallStorage): void {
-    const group = new THREE.Group();
-    group.name = `${storage.name} wall storage`;
-    group.position.set(-this.dimensions.width / 2 + 0.12 + storage.width / 2,
-      1.35, -this.dimensions.depth / 2 + storage.depth / 2 + 0.025);
-    this.furniture.add(group);
-    const white = 0xf2f0e8;
-    const bracket = 0x777b76;
-    if (storage.id === 'enhet-wall') {
-      for (const y of [0, 0.34, 0.68]) this.box(group, storage.width, 0.025, storage.depth, 0, y, 0, white);
-      for (const x of [-storage.width / 2 + 0.04, storage.width / 2 - 0.04]) this.box(group, 0.025, storage.height, 0.025, x, 0.34, 0, bracket);
-    } else {
-      this.box(group, storage.width, 0.035, storage.depth, 0, 0, 0, white);
-      this.box(group, 0.035, 0.12, 0.035, -storage.width / 2 + 0.08, -0.06, 0, bracket);
-      this.box(group, 0.035, 0.12, 0.035, storage.width / 2 - 0.08, -0.06, 0, bracket);
-    }
-  }
-
-  private addUnderBedStorage(bed: typeof VEVELSTAD_BED | typeof STORKLINTA_BED, storage: UnderBedStorage): void {
+  private addUnderBedStorage(bed: typeof VEVELSTAD_BED | typeof STORKLINTA_BED | typeof JACKSON_BED, storage: UnderBedStorage): void {
     const row = new THREE.Group();
     row.name = `${storage.name} storage row`;
     this.furniture.add(row);
@@ -451,7 +431,7 @@ export class RoomScene {
     }
   }
 
-  private addSingleBed(product: typeof VEVELSTAD_BED | typeof STORKLINTA_BED): void {
+  private addSingleBed(product: typeof VEVELSTAD_BED | typeof STORKLINTA_BED | typeof JACKSON_BED): void {
     const bed = new THREE.Group();
     bed.name = product.name;
     const { width, depth, height, footboardHeight } = product.dimensions;
@@ -474,6 +454,19 @@ export class RoomScene {
     }
     for (const [pz, top] of [[-depth / 2 + panel / 2, height], [depth / 2 - panel / 2, footboardHeight]]) {
       this.box(bed, width, top - 0.20, panel, 0, (top + 0.20) / 2, pz, white);
+    }
+    if (product.name === 'CHILD JACKSON') {
+      // The Conforama frame includes two white drawers reaching the floor.
+      // They sit along the long side, each occupying half of the 189 cm span.
+      const drawerHeight = 0.21;
+      const drawerWidth = width / 2 - 0.012;
+      const drawerDepth = 0.42;
+      for (const x of [-width / 4, width / 4]) {
+        this.box(bed, drawerWidth, drawerHeight, drawerDepth,
+          x, drawerHeight / 2, depth / 2 - drawerDepth / 2, 0xf2f0e8);
+        this.box(bed, drawerWidth - 0.03, 0.014, 0.012,
+          x, drawerHeight * 0.56, depth / 2 + 0.006, 0x777971);
+      }
     }
     for (let i = 0; i < 15; i++) {
       this.box(bed, product.mattress.width, 0.015, 0.055,

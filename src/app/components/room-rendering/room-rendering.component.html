@@ -37,12 +37,12 @@
           <p class="product-detail">Check items to show them. Choose one bed, one wardrobe and one storage set, or hide any of them. Mattresses are not included.</p>
           <div class="furniture-item" *ngFor="let item of bedroomItems">
             <label class="item-selection">
-              <input type="checkbox" [checked]="bedroomSelection[item.id]" [disabled]="!oliviaLayoutPlaced || (isStorageItem(item.id) && !bedroomSelection.vevelstad && !bedroomSelection.storklinta)"
+              <input type="checkbox" [checked]="bedroomSelection[item.id]" [disabled]="!oliviaLayoutPlaced || (isStorageItem(item.id) && !bedroomSelection.vevelstad && !bedroomSelection.storklinta && !bedroomSelection.jackson)"
                 (change)="toggleBedroomItem(item.id)">
               <span>{{ item.name }}<span *ngIf="item.price !== undefined"> · {{ item.price | currency:'EUR':'symbol':'1.2-2' }}</span></span>
             </label>
             <p class="product-detail">{{ item.detail }}</p>
-            <a *ngIf="item.url" [href]="item.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="item.name + ' on IKEA'">View on IKEA ↗</a>
+            <a *ngIf="item.url" [href]="item.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="item.name + (item.id === 'jackson' ? ' on Conforama' : ' on IKEA')">{{ item.id === 'jackson' ? 'View in Conforama' : 'View on IKEA' }} ↗</a>
           </div>
         </article>
         <article *ngIf="selectedOliviaProduct === 'tuffing'" class="product-card">

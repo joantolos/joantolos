@@ -126,6 +126,14 @@ export const STORKLINTA_BED = {
   mattress: { width: 0.9, depth: 1.9 }
 } as const;
 
+/** Conforama / Miroytengo Child Jackson, checked 2026-10-03. */
+export const JACKSON_BED = {
+  name: 'CHILD JACKSON', articleNumber: 'CONFORAMA', price: 134, currency: 'EUR',
+  url: 'https://www.conforama.es/cama-juvenil-child-con-2-cajones-jackson',
+  dimensions: { width: 0.98, depth: 1.94, height: 0.66, footboardHeight: 0.66 },
+  mattress: { width: 0.90, depth: 1.90 }
+} as const;
+
 export type OliviaProductId = 'smastad' | 'vitval' | 'beds-micke' | 'tuffing' | 'kura';
 
 /** IKEA dimension drawing: 132 cm overall depth including the central ladder. */
@@ -167,19 +175,9 @@ export function storageCount(bed: BedModel, storage: UnderBedStorage): number {
   return Math.floor((availableLength + 0.01) / (storage.width + 0.01));
 }
 
-export const WALL_STORAGE = [
-  { id: 'enhet-wall', name: 'ENHET wall shelves', price: 40, width: 0.60, depth: 0.15, height: 0.75,
-    url: 'https://www.ikea.com/es/es/p/enhet-estructura-pared-con-baldas-blanco-00448967/', detail: '60 × 15 × 75 cm · three shelves' },
-  { id: 'lack-shelf', name: 'LACK wall shelf', price: 9.99, width: 0.30, depth: 0.26, height: 0.05,
-    url: 'https://www.ikea.com/es/es/p/lack-estante-pared-blanco-50282177/', detail: '30 × 26 cm · one shelf' },
-  { id: 'burhult-shelf', name: 'BURHULT / SIBBHULT shelf', price: 7.99, width: 0.59, depth: 0.20, height: 0.18,
-    url: 'https://www.ikea.com/es/es/p/burhult-sibbhult-estante-blanco-blanco-s89325963/', detail: '59 × 20 cm · shelf with brackets' }
-] as const;
-export type WallStorage = typeof WALL_STORAGE[number];
-export type BedroomItemId = 'vevelstad' | 'storklinta' | 'desk' | 'drawers' | 'chair' | 'smastad' | 'gursken' | UnderBedStorage['id'] | WallStorage['id'];
+export type BedroomItemId = 'vevelstad' | 'storklinta' | 'jackson' | 'desk' | 'drawers' | 'chair' | 'smastad' | 'gursken' | UnderBedStorage['id'];
 export type BedroomSelection = Record<BedroomItemId, boolean>;
 export const DEFAULT_BEDROOM_SELECTION: Readonly<BedroomSelection> = {
-  vevelstad: false, storklinta: true, desk: true, drawers: true, chair: true, smastad: true, gursken: false,
+  vevelstad: false, storklinta: true, jackson: false, desk: true, drawers: true, chair: true, smastad: true, gursken: false,
   'skubb-small': false, 'skubb-large': false, sockerbit: false, vardo: true,
-  'enhet-wall': false, 'lack-shelf': false, 'burhult-shelf': false
 };
